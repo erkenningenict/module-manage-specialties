@@ -1,0 +1,38 @@
+<div
+    class="panel-body"
+    *ngIf="!relevanteActualiteiten.length"
+>
+    <p>
+        Voor de geselecteerde sectoren zijn nog geen actualiteiten beschikbaar.
+    </p>
+</div>
+
+<table
+    class="table lightgrey"
+    *ngIf="relevanteActualiteiten.length"
+>
+    <thead>
+        <tr>
+            <th>Onderwerp</th>
+            <th>Link/omschrijving</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let onderwerp of onderwerpen">
+            <td>{{onderwerp}}</td>
+            <td>
+                <ul>
+                    <li *ngFor="let actualiteit of relevanteActualiteiten | filterActualiteitenByOnderwerp: onderwerp">
+                        <a
+                            [href]="actualiteit.link"
+                            target="_blank"
+                            [title]="actualiteit.omschrijving"
+                        >
+                            {{actualiteit.omschrijving}}
+                        </a>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,40 @@
+<div class="btn-group btn-group-xs pull-right">
+    <button
+        type="button"
+        id="btnShowAll"
+        tabindex="-1"
+        class="btn btn-default"
+        (click)="onShowAll()"
+        pTooltip="Toon alle wijzigingen"
+        *ngIf="allHistoryItems?.length >= 2 && showLast"
+    >
+        {{buttonAllText}} alle historie
+    </button>
+    <button
+        type="button"
+        id="btnShowLast"
+        tabindex="-1"
+        class="btn btn-default"
+        (click)="onShowLast()"
+        pTooltip="Toon laatste wijziging"
+        *ngIf="allHistoryItems?.length >= 1"
+    >
+        <span
+            class="glyphicon glyphicon-chevron-down"
+            title="Toon voorlaatste aanpassing"
+        ></span>
+    </button>
+</div>
+<div class="clearfix"></div>
+<ul
+    class="list-group"
+    *ngIf="showAll || showLast"
+>
+    <li
+        *ngFor="let historyItem of historyItems"
+        class="list-group-item"
+        pTooltip="Door: {{historyItem.by}} op: {{historyItem.date| date : 'dd-MM-yyyy HH:mm'}}"
+    >
+        <span>{{ historyItem.text}}</span>
+    </li>
+</ul>

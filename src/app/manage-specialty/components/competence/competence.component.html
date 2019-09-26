@@ -1,0 +1,16 @@
+<ngForm [formGroup]="form">
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Competentie *</label>
+
+        <div class="col-sm-4">
+            <p-dropdown
+                [options]="competenties"
+                optionLabel="Naam"
+                [style]="{'width':'100%'}"
+                dataKey="CompetentieID"
+                formControlName="competentie"
+                [disabled]="!enableEditing"
+            ></p-dropdown>
+        </div>
+    </div>
+</ngForm>

@@ -1,0 +1,2452 @@
+{
+  "Vakgroepen": [
+    {
+      "VakgroepID": 210514,
+      "VakgroepNaam": "AdVisie"
+    },
+    {
+      "VakgroepID": 210000,
+      "VakgroepNaam": "Aeres Flevoland"
+    },
+    {
+      "VakgroepID": 230153,
+      "VakgroepNaam": "Aeres Trainingscentrum B.V."
+    },
+    {
+      "VakgroepID": 230126,
+      "VakgroepNaam": "AgriHolland BV"
+    },
+    {
+      "VakgroepID": 210004,
+      "VakgroepNaam": "Agro Trainingscentrum Holland BV"
+    },
+    {
+      "VakgroepID": 230149,
+      "VakgroepNaam": "AgroBuren bv"
+    },
+    {
+      "VakgroepID": 210472,
+      "VakgroepNaam": "Agrodis"
+    },
+    {
+      "VakgroepID": 210182,
+      "VakgroepNaam": "Agrometeorologisch Adviesbureau Erno Bouma"
+    },
+    {
+      "VakgroepID": 210486,
+      "VakgroepNaam": "Agropoli BV"
+    },
+    {
+      "VakgroepID": 230151,
+      "VakgroepNaam": "AgroTechnics"
+    },
+    {
+      "VakgroepID": 210469,
+      "VakgroepNaam": "Agrovision"
+    },
+    {
+      "VakgroepID": 210465,
+      "VakgroepNaam": "Akkerbouw Studieclub Tiel"
+    },
+    {
+      "VakgroepID": 210471,
+      "VakgroepNaam": "Alliance B.V."
+    },
+    {
+      "VakgroepID": 210067,
+      "VakgroepNaam": "AOC Clusius College Alkmaar"
+    },
+    {
+      "VakgroepID": 210411,
+      "VakgroepNaam": "AOC Groene Welle"
+    },
+    {
+      "VakgroepID": 210081,
+      "VakgroepNaam": "AOC Terra-TerraNext"
+    },
+    {
+      "VakgroepID": 210019,
+      "VakgroepNaam": "Arend-Sosef B.V."
+    },
+    {
+      "VakgroepID": 211645,
+      "VakgroepNaam": "Arie Kok Cursusmakelaar"
+    },
+    {
+      "VakgroepID": 210216,
+      "VakgroepNaam": "Benfried"
+    },
+    {
+      "VakgroepID": 210506,
+      "VakgroepNaam": "Bloembollenstudieclub Drechterland e.o."
+    },
+    {
+      "VakgroepID": 210510,
+      "VakgroepNaam": "Boerenbond Helden Agro BV"
+    },
+    {
+      "VakgroepID": 210185,
+      "VakgroepNaam": "Boomkwekerijen Jos Frijns & Zonen BV"
+    },
+    {
+      "VakgroepID": 210494,
+      "VakgroepNaam": "BQ Support"
+    },
+    {
+      "VakgroepID": 210439,
+      "VakgroepNaam": "Bureau Erkenningen"
+    },
+    {
+      "VakgroepID": 210369,
+      "VakgroepNaam": "CAH Dronten"
+    },
+    {
+      "VakgroepID": 230104,
+      "VakgroepNaam": "Centrale Adviesdienst Fruitteelt"
+    },
+    {
+      "VakgroepID": 210041,
+      "VakgroepNaam": "CITAVERDE College"
+    },
+    {
+      "VakgroepID": 230143,
+      "VakgroepNaam": "CLEON International & Independent"
+    },
+    {
+      "VakgroepID": 210050,
+      "VakgroepNaam": "Clusius p/a bedrijfsopleVakgroepIDingen"
+    },
+    {
+      "VakgroepID": 230116,
+      "VakgroepNaam": "Colland/Stigas"
+    },
+    {
+      "VakgroepID": 210368,
+      "VakgroepNaam": "Cooperatie Arkervoort Twente"
+    },
+    {
+      "VakgroepID": 230165,
+      "VakgroepNaam": "Crop Science Division"
+    },
+    {
+      "VakgroepID": 210484,
+      "VakgroepNaam": "Cultus Agro Advies BV"
+    },
+    {
+      "VakgroepID": 230158,
+      "VakgroepNaam": "cursus.groenonderwijs.nl"
+    },
+    {
+      "VakgroepID": 210490,
+      "VakgroepNaam": "Dacom PLANT Service b.v."
+    },
+    {
+      "VakgroepID": 230161,
+      "VakgroepNaam": "De Samenwerking"
+    },
+    {
+      "VakgroepID": 210021,
+      "VakgroepNaam": "Delphy"
+    },
+    {
+      "VakgroepID": 230136,
+      "VakgroepNaam": "Delphy Akkerbouw en Vollegrond ZuVakgroepIDwest"
+    },
+    {
+      "VakgroepID": 230119,
+      "VakgroepNaam": "Delphy MG 504"
+    },
+    {
+      "VakgroepID": 230167,
+      "VakgroepNaam": "Delphy MG 505"
+    },
+    {
+      "VakgroepID": 210205,
+      "VakgroepNaam": "Delphy Mushrooms"
+    },
+    {
+      "VakgroepID": 210470,
+      "VakgroepNaam": "Delphy team Boomteelt (VakgroepID 10470)"
+    },
+    {
+      "VakgroepID": 210092,
+      "VakgroepNaam": "Delphy(MG snijbloemen)"
+    },
+    {
+      "VakgroepID": 210325,
+      "VakgroepNaam": "Dirksen Management Support"
+    },
+    {
+      "VakgroepID": 230133,
+      "VakgroepNaam": "DLV Advies"
+    },
+    {
+      "VakgroepID": 210187,
+      "VakgroepNaam": "Educa Gewas"
+    },
+    {
+      "VakgroepID": 210467,
+      "VakgroepNaam": "Edudelta College Barendrecht"
+    },
+    {
+      "VakgroepID": 210007,
+      "VakgroepNaam": "Edudelta College Goes"
+    },
+    {
+      "VakgroepID": 210394,
+      "VakgroepNaam": "Fa. DSD-Dokkum"
+    },
+    {
+      "VakgroepID": 210480,
+      "VakgroepNaam": "Fa. Erik TeeltbegeleVakgroepIDing"
+    },
+    {
+      "VakgroepID": 210107,
+      "VakgroepNaam": "Faber Agracentrum"
+    },
+    {
+      "VakgroepID": 230130,
+      "VakgroepNaam": "FD Plaagdierpreventie"
+    },
+    {
+      "VakgroepID": 210491,
+      "VakgroepNaam": "Fruitconsult"
+    },
+    {
+      "VakgroepID": 210513,
+      "VakgroepNaam": "Gent van, van der Meer Nuyens BV"
+    },
+    {
+      "VakgroepID": 210084,
+      "VakgroepNaam": "Geraets - Gosejacob"
+    },
+    {
+      "VakgroepID": 210479,
+      "VakgroepNaam": "GO B.V."
+    },
+    {
+      "VakgroepID": 230122,
+      "VakgroepNaam": "Groeibalans Teelt & Onderzoek"
+    },
+    {
+      "VakgroepID": 210040,
+      "VakgroepNaam": "Groeipunt BV BN 00.847.873"
+    },
+    {
+      "VakgroepID": 210466,
+      "VakgroepNaam": "Groene School Sommelsdijk"
+    },
+    {
+      "VakgroepID": 230146,
+      "VakgroepNaam": "Groenhorst Barneveld"
+    },
+    {
+      "VakgroepID": 210512,
+      "VakgroepNaam": "Groenhorst College Almere"
+    },
+    {
+      "VakgroepID": 210350,
+      "VakgroepNaam": "Groenhorst College Velp"
+    },
+    {
+      "VakgroepID": 210188,
+      "VakgroepNaam": "Handelsonderneming C.J. Klep B.V."
+    },
+    {
+      "VakgroepID": 230110,
+      "VakgroepNaam": "Handelsonderneming Zeinstra BV"
+    },
+    {
+      "VakgroepID": 230155,
+      "VakgroepNaam": "Helicon MBO Apeldoorn"
+    },
+    {
+      "VakgroepID": 210474,
+      "VakgroepNaam": "Helicon MBO Nijmegen"
+    },
+    {
+      "VakgroepID": 210042,
+      "VakgroepNaam": "Helicon opleVakgroepIDingen Den Bosch"
+    },
+    {
+      "VakgroepID": 210421,
+      "VakgroepNaam": "Helicon OpleVakgroepIDingen Geldermalsen"
+    },
+    {
+      "VakgroepID": 230150,
+      "VakgroepNaam": "Heyboer BV"
+    },
+    {
+      "VakgroepID": 230123,
+      "VakgroepNaam": "HLB BV"
+    },
+    {
+      "VakgroepID": 230131,
+      "VakgroepNaam": "Hoekstra Ongedierte Bestrijding Gieten"
+    },
+    {
+      "VakgroepID": 210493,
+      "VakgroepNaam": "HOMBURG MACHINEHANDEL B.V."
+    },
+    {
+      "VakgroepID": 230124,
+      "VakgroepNaam": "Horticoop b.v."
+    },
+    {
+      "VakgroepID": 230100,
+      "VakgroepNaam": "Huntjens BV"
+    },
+    {
+      "VakgroepID": 210502,
+      "VakgroepNaam": "Innogreen VOF"
+    },
+    {
+      "VakgroepID": 211644,
+      "VakgroepNaam": "Intervema B.V."
+    },
+    {
+      "VakgroepID": 230129,
+      "VakgroepNaam": "IntraFocus"
+    },
+    {
+      "VakgroepID": 210239,
+      "VakgroepNaam": "IPC Dier Oenkerk"
+    },
+    {
+      "VakgroepID": 210055,
+      "VakgroepNaam": "IPC plant.dier"
+    },
+    {
+      "VakgroepID": 230106,
+      "VakgroepNaam": "K&G Advies"
+    },
+    {
+      "VakgroepID": 210507,
+      "VakgroepNaam": "KAD"
+    },
+    {
+      "VakgroepID": 210504,
+      "VakgroepNaam": "KeesFloor.nl/weercursussen"
+    },
+    {
+      "VakgroepID": 230156,
+      "VakgroepNaam": "Kiemkracht BV"
+    },
+    {
+      "VakgroepID": 230162,
+      "VakgroepNaam": "KNGF"
+    },
+    {
+      "VakgroepID": 210487,
+      "VakgroepNaam": "Koppert Biological Systems"
+    },
+    {
+      "VakgroepID": 230115,
+      "VakgroepNaam": "Landbouwmechanisatiebedrijf Wout Hogervorst"
+    },
+    {
+      "VakgroepID": 210483,
+      "VakgroepNaam": "Lentiz cursus & consult"
+    },
+    {
+      "VakgroepID": 230141,
+      "VakgroepNaam": "Logiq Assist"
+    },
+    {
+      "VakgroepID": 230135,
+      "VakgroepNaam": "Loonbedrijf Ad van den Boer"
+    },
+    {
+      "VakgroepID": 210499,
+      "VakgroepNaam": "Loonbedrijf Maas b.v."
+    },
+    {
+      "VakgroepID": 210473,
+      "VakgroepNaam": "LTO Noord"
+    },
+    {
+      "VakgroepID": 210045,
+      "VakgroepNaam": "LTO Noord Glaskracht"
+    },
+    {
+      "VakgroepID": 230114,
+      "VakgroepNaam": "LTO Vollegrondsgroente.net"
+    },
+    {
+      "VakgroepID": 210100,
+      "VakgroepNaam": "Meijaard Agrarisch Advies"
+    },
+    {
+      "VakgroepID": 230134,
+      "VakgroepNaam": "Meijaard Agronomie"
+    },
+    {
+      "VakgroepID": 230152,
+      "VakgroepNaam": "Mertens B.V."
+    },
+    {
+      "VakgroepID": 210322,
+      "VakgroepNaam": "MeteoVista"
+    },
+    {
+      "VakgroepID": 230118,
+      "VakgroepNaam": "Mulder Agro BV"
+    },
+    {
+      "VakgroepID": 210438,
+      "VakgroepNaam": "N & S OpleVakgroepIDingen"
+    },
+    {
+      "VakgroepID": 230103,
+      "VakgroepNaam": "Naktuinbouw"
+    },
+    {
+      "VakgroepID": 230163,
+      "VakgroepNaam": "Nederl. Greenkeeper Associatie"
+    },
+    {
+      "VakgroepID": 210184,
+      "VakgroepNaam": "Nederlandse Aardappel Organisatie"
+    },
+    {
+      "VakgroepID": 230160,
+      "VakgroepNaam": "Nederlandse Vereniging Nederlandse Wijnproducenten"
+    },
+    {
+      "VakgroepID": 210468,
+      "VakgroepNaam": "NFO"
+    },
+    {
+      "VakgroepID": 210078,
+      "VakgroepNaam": "Nordwin College afd. CC"
+    },
+    {
+      "VakgroepID": 210096,
+      "VakgroepNaam": "Nordwin College MBO"
+    },
+    {
+      "VakgroepID": 210485,
+      "VakgroepNaam": "P.G. Kusters BV"
+    },
+    {
+      "VakgroepID": 210016,
+      "VakgroepNaam": "P3transfer"
+    },
+    {
+      "VakgroepID": 230107,
+      "VakgroepNaam": "Plant Care Education"
+    },
+    {
+      "VakgroepID": 210495,
+      "VakgroepNaam": "Plant Grow Management"
+    },
+    {
+      "VakgroepID": 210481,
+      "VakgroepNaam": "Praktijkonderzoek Plant en Omgeving (PPO)"
+    },
+    {
+      "VakgroepID": 230138,
+      "VakgroepNaam": "Proeftuin Zwaagdijk"
+    },
+    {
+      "VakgroepID": 230128,
+      "VakgroepNaam": "Profytodsd"
+    },
+    {
+      "VakgroepID": 230139,
+      "VakgroepNaam": "ProGrass B.V."
+    },
+    {
+      "VakgroepID": 210062,
+      "VakgroepNaam": "PTC+"
+    },
+    {
+      "VakgroepID": 210475,
+      "VakgroepNaam": "Q-point"
+    },
+    {
+      "VakgroepID": 210482,
+      "VakgroepNaam": "Reed Business - KPL11720 spuitlicentie.nl"
+    },
+    {
+      "VakgroepID": 230148,
+      "VakgroepNaam": "Rentokil Initial  B.V."
+    },
+    {
+      "VakgroepID": 230117,
+      "VakgroepNaam": "Ribesconsult"
+    },
+    {
+      "VakgroepID": 230120,
+      "VakgroepNaam": "ROC West-Brabant"
+    },
+    {
+      "VakgroepID": 230132,
+      "VakgroepNaam": "Schippers"
+    },
+    {
+      "VakgroepID": 230113,
+      "VakgroepNaam": "SPA Groep"
+    },
+    {
+      "VakgroepID": 230164,
+      "VakgroepNaam": "Spuitlicentie.nl"
+    },
+    {
+      "VakgroepID": 210521,
+      "VakgroepNaam": "Studieclub Akkerbouw \"MVakgroepIDden-Brabant\""
+    },
+    {
+      "VakgroepID": 210477,
+      "VakgroepNaam": "Studieclub CUMELA Geffen"
+    },
+    {
+      "VakgroepID": 210492,
+      "VakgroepNaam": "Studieclub De Kempen"
+    },
+    {
+      "VakgroepID": 230157,
+      "VakgroepNaam": "Taxatie en adviesbureau G. Schalk"
+    },
+    {
+      "VakgroepID": 210498,
+      "VakgroepNaam": "Telermaat"
+    },
+    {
+      "VakgroepID": 210505,
+      "VakgroepNaam": "Terra trainingen"
+    },
+    {
+      "VakgroepID": 230112,
+      "VakgroepNaam": "Testaanbieder"
+    },
+    {
+      "VakgroepID": 230154,
+      "VakgroepNaam": "Thallos Consultancy"
+    },
+    {
+      "VakgroepID": 230127,
+      "VakgroepNaam": "Traas Ongediertebestrijding"
+    },
+    {
+      "VakgroepID": 230105,
+      "VakgroepNaam": "Uitgeverij NWST"
+    },
+    {
+      "VakgroepID": 210186,
+      "VakgroepNaam": "Vaalburg natuurlijk"
+    },
+    {
+      "VakgroepID": 230166,
+      "VakgroepNaam": "Van Beek Agro Advies BV"
+    },
+    {
+      "VakgroepID": 210181,
+      "VakgroepNaam": "Van de Aast Agro"
+    },
+    {
+      "VakgroepID": 230144,
+      "VakgroepNaam": "Van Eck Bedrijfshygiëne B.V."
+    },
+    {
+      "VakgroepID": 210478,
+      "VakgroepNaam": "Van Oppen b.v."
+    },
+    {
+      "VakgroepID": 210509,
+      "VakgroepNaam": "Van Overloop BV"
+    },
+    {
+      "VakgroepID": 230142,
+      "VakgroepNaam": "VDH-Plaagdierpreventie"
+    },
+    {
+      "VakgroepID": 230137,
+      "VakgroepNaam": "Veldhuijzen van - Boxmeer Desinfectie"
+    },
+    {
+      "VakgroepID": 210488,
+      "VakgroepNaam": "VHG bedrijfsadvies B.V."
+    },
+    {
+      "VakgroepID": 210497,
+      "VakgroepNaam": "Vincotte ISACert Nederland B.V."
+    },
+    {
+      "VakgroepID": 210500,
+      "VakgroepNaam": "Vlamings B.V."
+    },
+    {
+      "VakgroepID": 210496,
+      "VakgroepNaam": "VOLSOG"
+    },
+    {
+      "VakgroepID": 230125,
+      "VakgroepNaam": "Vossebeld Milieudiensten"
+    },
+    {
+      "VakgroepID": 230101,
+      "VakgroepNaam": "Wageningen UR Glastuinbouw"
+    },
+    {
+      "VakgroepID": 210013,
+      "VakgroepNaam": "Wellantcollege"
+    },
+    {
+      "VakgroepID": 210476,
+      "VakgroepNaam": "Willems Balgoy CV"
+    },
+    {
+      "VakgroepID": 230140,
+      "VakgroepNaam": "X-it Ongediertebestrijding"
+    },
+    {
+      "VakgroepID": 230121,
+      "VakgroepNaam": "Zaadhandel Neutkens BV"
+    },
+    {
+      "VakgroepID": 210503,
+      "VakgroepNaam": "Zaadhandel W. van Maanen"
+    },
+    {
+      "VakgroepID": 210277,
+      "VakgroepNaam": "ZLTO"
+    }
+  ],
+  "Actualiteiten": [
+    {
+      "ActualiteitID": 107,
+      "KennisgebiedID": 4,
+      "Kennisgebied": "Akkerbouw",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link":
+        "http://www.toolboxwater.nl/uploads/pdf/Bladerversie%20website.pdf",
+      "Omschrijving":
+        "Zeer uitgebreide folder met praktische tips voor driftreductie in verschillende teelten. Zowel technische oplossingen als aanbevelingen voor inrichting van erf en perceel komen uitgebreid aan bod [toolboxwater.nl]"
+    },
+    {
+      "ActualiteitID": 108,
+      "KennisgebiedID": 16,
+      "Kennisgebied": "Boomteelt",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link":
+        "http://www.toolboxwater.nl/uploads/pdf/Bladerversie%20website.pdf",
+      "Omschrijving":
+        "Zeer uitgebreide folder met praktische tips voor driftreductie in verschillende teelten. Zowel technische oplossingen als aanbevelingen voor inrichting van erf en perceel komen uitgebreid aan bod [toolboxwater.nl]"
+    },
+    {
+      "ActualiteitID": 109,
+      "KennisgebiedID": 5,
+      "Kennisgebied": "Bollenteelt",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link":
+        "http://www.toolboxwater.nl/uploads/pdf/Bladerversie%20website.pdf",
+      "Omschrijving":
+        "Zeer uitgebreide folder met praktische tips voor driftreductie in verschillende teelten. Zowel technische oplossingen als aanbevelingen voor inrichting van erf en perceel komen uitgebreid aan bod [toolboxwater.nl]"
+    },
+    {
+      "ActualiteitID": 110,
+      "KennisgebiedID": 9,
+      "Kennisgebied": "Bloementeelt (buiten)",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link":
+        "http://www.toolboxwater.nl/uploads/pdf/Bladerversie%20website.pdf",
+      "Omschrijving":
+        "Zeer uitgebreide folder met praktische tips voor driftreductie in verschillende teelten. Zowel technische oplossingen als aanbevelingen voor inrichting van erf en perceel komen uitgebreid aan bod [toolboxwater.nl]"
+    },
+    {
+      "ActualiteitID": 111,
+      "KennisgebiedID": 15,
+      "Kennisgebied": "Fruitteelt",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link":
+        "http://www.toolboxwater.nl/uploads/pdf/Bladerversie%20website.pdf",
+      "Omschrijving":
+        "Zeer uitgebreide folder met praktische tips voor driftreductie in verschillende teelten. Zowel technische oplossingen als aanbevelingen voor inrichting van erf en perceel komen uitgebreid aan bod [toolboxwater.nl]"
+    },
+    {
+      "ActualiteitID": 112,
+      "KennisgebiedID": 7,
+      "Kennisgebied": "Grasland",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link":
+        "http://www.toolboxwater.nl/uploads/pdf/Bladerversie%20website.pdf",
+      "Omschrijving":
+        "Zeer uitgebreide folder met praktische tips voor driftreductie in verschillende teelten. Zowel technische oplossingen als aanbevelingen voor inrichting van erf en perceel komen uitgebreid aan bod [toolboxwater.nl]"
+    },
+    {
+      "ActualiteitID": 113,
+      "KennisgebiedID": 13,
+      "Kennisgebied": "Tuinbouw",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link":
+        "http://www.toolboxwater.nl/uploads/pdf/Bladerversie%20website.pdf",
+      "Omschrijving":
+        "Zeer uitgebreide folder met praktische tips voor driftreductie in verschillende teelten. Zowel technische oplossingen als aanbevelingen voor inrichting van erf en perceel komen uitgebreid aan bod [toolboxwater.nl]"
+    },
+    {
+      "ActualiteitID": 114,
+      "KennisgebiedID": 20,
+      "Kennisgebied": "Vaste Plantenteelt",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link":
+        "http://www.toolboxwater.nl/uploads/pdf/Bladerversie%20website.pdf",
+      "Omschrijving":
+        "Zeer uitgebreide folder met praktische tips voor driftreductie in verschillende teelten. Zowel technische oplossingen als aanbevelingen voor inrichting van erf en perceel komen uitgebreid aan bod [toolboxwater.nl]"
+    },
+    {
+      "ActualiteitID": 115,
+      "KennisgebiedID": 6,
+      "Kennisgebied": "Veehouderij (voedergewassen)",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link":
+        "http://www.toolboxwater.nl/uploads/pdf/Bladerversie%20website.pdf",
+      "Omschrijving":
+        "Zeer uitgebreide folder met praktische tips voor driftreductie in verschillende teelten. Zowel technische oplossingen als aanbevelingen voor inrichting van erf en perceel komen uitgebreid aan bod [toolboxwater.nl]"
+    },
+    {
+      "ActualiteitID": 116,
+      "KennisgebiedID": 8,
+      "Kennisgebied": "Vollegrondsgroententeelt",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link":
+        "http://www.toolboxwater.nl/uploads/pdf/Bladerversie%20website.pdf",
+      "Omschrijving":
+        "Zeer uitgebreide folder met praktische tips voor driftreductie in verschillende teelten. Zowel technische oplossingen als aanbevelingen voor inrichting van erf en perceel komen uitgebreid aan bod [toolboxwater.nl]"
+    },
+    {
+      "ActualiteitID": 117,
+      "KennisgebiedID": 21,
+      "Kennisgebied": "Witlofteelt",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link":
+        "http://www.toolboxwater.nl/uploads/pdf/Bladerversie%20website.pdf",
+      "Omschrijving":
+        "Zeer uitgebreide folder met praktische tips voor driftreductie in verschillende teelten. Zowel technische oplossingen als aanbevelingen voor inrichting van erf en perceel komen uitgebreid aan bod [toolboxwater.nl]"
+    },
+    {
+      "ActualiteitID": 118,
+      "KennisgebiedID": 4,
+      "Kennisgebied": "Akkerbouw",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link": "http://www.waterabc.nl/emissieroutes/",
+      "Omschrijving":
+        "De website waterabc.nl vindt je een uitgebreid rapport over emmissieroutes van gewasbeschermingsmiddelen naar het oppervlakte water. Het maakt met duidelijke tekeningen de emissieroutes per teelt inzichtelijk. [waterabc.nl]"
+    },
+    {
+      "ActualiteitID": 119,
+      "KennisgebiedID": 4,
+      "Kennisgebied": "Akkerbouw",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link":
+        "http://www.waterabc.nl/wp-content/uploads/2012/04/WaterABC_akkerbouw.zip",
+      "Omschrijving": "Emissieroute akkerbouw [waterabc.nl]"
+    },
+    {
+      "ActualiteitID": 120,
+      "KennisgebiedID": 5,
+      "Kennisgebied": "Bollenteelt",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link":
+        "http://www.waterabc.nl/wp-content/uploads/2012/04/WaterABC_bollenteelt.zip",
+      "Omschrijving": "Emissieroute bollenteelt [waterabc.nl]"
+    },
+    {
+      "ActualiteitID": 121,
+      "KennisgebiedID": 16,
+      "Kennisgebied": "Boomteelt",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link":
+        "http://www.waterabc.nl/wp-content/uploads/2012/04/WaterABC_boomkwekerij-april.ppt.zip",
+      "Omschrijving": "Emissieroute boomteelt [waterabc.nl]"
+    },
+    {
+      "ActualiteitID": 122,
+      "KennisgebiedID": 15,
+      "Kennisgebied": "Fruitteelt",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link":
+        "http://www.waterabc.nl/wp-content/uploads/2012/04/WaterABC_fruitteelt.zip",
+      "Omschrijving": "Emissieroute fruitteelt [waterabc.nl]"
+    },
+    {
+      "ActualiteitID": 123,
+      "KennisgebiedID": 6,
+      "Kennisgebied": "Veehouderij (voedergewassen)",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link":
+        "http://www.waterabc.nl/wp-content/uploads/2012/04/WaterABC_maisteelt.zip",
+      "Omschrijving": "Emissieroute maisteelt [waterabc.nl]"
+    },
+    {
+      "ActualiteitID": 124,
+      "KennisgebiedID": 4,
+      "Kennisgebied": "Akkerbouw",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link": "http://www.bestrijdingsmiddelenatlas.nl/",
+      "Omschrijving":
+        "De Bestrijdingsmiddelenatlas geeft op basis van meetgegevens van regionale waterbeheerders een landelijk beeld van de bestrijdingsmiddelen in het oppervlaktewater [bestrijdingsmiddelenatlas.nl]"
+    },
+    {
+      "ActualiteitID": 125,
+      "KennisgebiedID": 16,
+      "Kennisgebied": "Boomteelt",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link": "http://www.bestrijdingsmiddelenatlas.nl/",
+      "Omschrijving":
+        "De Bestrijdingsmiddelenatlas geeft op basis van meetgegevens van regionale waterbeheerders een landelijk beeld van de bestrijdingsmiddelen in het oppervlaktewater [bestrijdingsmiddelenatlas.nl]"
+    },
+    {
+      "ActualiteitID": 126,
+      "KennisgebiedID": 5,
+      "Kennisgebied": "Bollenteelt",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link": "http://www.bestrijdingsmiddelenatlas.nl/",
+      "Omschrijving":
+        "De Bestrijdingsmiddelenatlas geeft op basis van meetgegevens van regionale waterbeheerders een landelijk beeld van de bestrijdingsmiddelen in het oppervlaktewater [bestrijdingsmiddelenatlas.nl]"
+    },
+    {
+      "ActualiteitID": 127,
+      "KennisgebiedID": 9,
+      "Kennisgebied": "Bloementeelt (buiten)",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link": "http://www.bestrijdingsmiddelenatlas.nl/",
+      "Omschrijving":
+        "De Bestrijdingsmiddelenatlas geeft op basis van meetgegevens van regionale waterbeheerders een landelijk beeld van de bestrijdingsmiddelen in het oppervlaktewater [bestrijdingsmiddelenatlas.nl]"
+    },
+    {
+      "ActualiteitID": 128,
+      "KennisgebiedID": 15,
+      "Kennisgebied": "Fruitteelt",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link": "http://www.bestrijdingsmiddelenatlas.nl/",
+      "Omschrijving":
+        "De Bestrijdingsmiddelenatlas geeft op basis van meetgegevens van regionale waterbeheerders een landelijk beeld van de bestrijdingsmiddelen in het oppervlaktewater [bestrijdingsmiddelenatlas.nl]"
+    },
+    {
+      "ActualiteitID": 129,
+      "KennisgebiedID": 7,
+      "Kennisgebied": "Grasland",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link": "http://www.bestrijdingsmiddelenatlas.nl/",
+      "Omschrijving":
+        "De Bestrijdingsmiddelenatlas geeft op basis van meetgegevens van regionale waterbeheerders een landelijk beeld van de bestrijdingsmiddelen in het oppervlaktewater [bestrijdingsmiddelenatlas.nl]"
+    },
+    {
+      "ActualiteitID": 130,
+      "KennisgebiedID": 13,
+      "Kennisgebied": "Tuinbouw",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link": "http://www.bestrijdingsmiddelenatlas.nl/",
+      "Omschrijving":
+        "De Bestrijdingsmiddelenatlas geeft op basis van meetgegevens van regionale waterbeheerders een landelijk beeld van de bestrijdingsmiddelen in het oppervlaktewater [bestrijdingsmiddelenatlas.nl]"
+    },
+    {
+      "ActualiteitID": 131,
+      "KennisgebiedID": 20,
+      "Kennisgebied": "Vaste Plantenteelt",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link": "http://www.bestrijdingsmiddelenatlas.nl/",
+      "Omschrijving":
+        "De Bestrijdingsmiddelenatlas geeft op basis van meetgegevens van regionale waterbeheerders een landelijk beeld van de bestrijdingsmiddelen in het oppervlaktewater [bestrijdingsmiddelenatlas.nl]"
+    },
+    {
+      "ActualiteitID": 132,
+      "KennisgebiedID": 6,
+      "Kennisgebied": "Veehouderij (voedergewassen)",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link": "http://www.bestrijdingsmiddelenatlas.nl/",
+      "Omschrijving":
+        "De Bestrijdingsmiddelenatlas geeft op basis van meetgegevens van regionale waterbeheerders een landelijk beeld van de bestrijdingsmiddelen in het oppervlaktewater [bestrijdingsmiddelenatlas.nl]"
+    },
+    {
+      "ActualiteitID": 133,
+      "KennisgebiedID": 8,
+      "Kennisgebied": "Vollegrondsgroententeelt",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link": "http://www.bestrijdingsmiddelenatlas.nl/",
+      "Omschrijving":
+        "De Bestrijdingsmiddelenatlas geeft op basis van meetgegevens van regionale waterbeheerders een landelijk beeld van de bestrijdingsmiddelen in het oppervlaktewater [bestrijdingsmiddelenatlas.nl]"
+    },
+    {
+      "ActualiteitID": 134,
+      "KennisgebiedID": 21,
+      "Kennisgebied": "Witlofteelt",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link": "http://www.bestrijdingsmiddelenatlas.nl/",
+      "Omschrijving":
+        "De Bestrijdingsmiddelenatlas geeft op basis van meetgegevens van regionale waterbeheerders een landelijk beeld van de bestrijdingsmiddelen in het oppervlaktewater [bestrijdingsmiddelenatlas.nl]"
+    },
+    {
+      "ActualiteitID": 135,
+      "KennisgebiedID": 11,
+      "Kennisgebied": "Glastuinbouw",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link":
+        "http://www.toolboxwater.nl/uploads/pdf/Bladerversie%20website.pdf",
+      "Omschrijving":
+        "Zeer uitgebreide folder met praktische tips voor driftreductie in verschillende teelten. Zowel technische oplossingen als aanbevelingen voor inrichting van erf en perceel komen uitgebreid aan bod [toolboxwater.nl]"
+    },
+    {
+      "ActualiteitID": 136,
+      "KennisgebiedID": 12,
+      "Kennisgebied": "Glasgroenteteelt",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link":
+        "http://www.toolboxwater.nl/uploads/pdf/Bladerversie%20website.pdf",
+      "Omschrijving":
+        "Zeer uitgebreide folder met praktische tips voor driftreductie in verschillende teelten. Zowel technische oplossingen als aanbevelingen voor inrichting van erf en perceel komen uitgebreid aan bod [toolboxwater.nl]"
+    },
+    {
+      "ActualiteitID": 137,
+      "KennisgebiedID": 10,
+      "Kennisgebied": "Bloementeelt (binnen)",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link":
+        "http://www.toolboxwater.nl/uploads/pdf/Bladerversie%20website.pdf",
+      "Omschrijving":
+        "Zeer uitgebreide folder met praktische tips voor driftreductie in verschillende teelten. Zowel technische oplossingen als aanbevelingen voor inrichting van erf en perceel komen uitgebreid aan bod [toolboxwater.nl]"
+    },
+    {
+      "ActualiteitID": 138,
+      "KennisgebiedID": 14,
+      "Kennisgebied": "Potplantenteelt",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link":
+        "http://www.toolboxwater.nl/uploads/pdf/Bladerversie%20website.pdf",
+      "Omschrijving":
+        "Zeer uitgebreide folder met praktische tips voor driftreductie in verschillende teelten. Zowel technische oplossingen als aanbevelingen voor inrichting van erf en perceel komen uitgebreid aan bod [toolboxwater.nl]"
+    },
+    {
+      "ActualiteitID": 139,
+      "KennisgebiedID": 11,
+      "Kennisgebied": "Glastuinbouw",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link": "http://www.bestrijdingsmiddelenatlas.nl/",
+      "Omschrijving":
+        "De Bestrijdingsmiddelenatlas geeft op basis van meetgegevens van regionale waterbeheerders een landelijk beeld van de bestrijdingsmiddelen in het oppervlaktewater [bestrijdingsmiddelenatlas.nl]"
+    },
+    {
+      "ActualiteitID": 140,
+      "KennisgebiedID": 12,
+      "Kennisgebied": "Glasgroenteteelt",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link": "http://www.bestrijdingsmiddelenatlas.nl/",
+      "Omschrijving":
+        "De Bestrijdingsmiddelenatlas geeft op basis van meetgegevens van regionale waterbeheerders een landelijk beeld van de bestrijdingsmiddelen in het oppervlaktewater [bestrijdingsmiddelenatlas.nl]"
+    },
+    {
+      "ActualiteitID": 141,
+      "KennisgebiedID": 10,
+      "Kennisgebied": "Bloementeelt (binnen)",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link": "http://www.bestrijdingsmiddelenatlas.nl/",
+      "Omschrijving":
+        "De Bestrijdingsmiddelenatlas geeft op basis van meetgegevens van regionale waterbeheerders een landelijk beeld van de bestrijdingsmiddelen in het oppervlaktewater [bestrijdingsmiddelenatlas.nl]"
+    },
+    {
+      "ActualiteitID": 142,
+      "KennisgebiedID": 14,
+      "Kennisgebied": "Potplantenteelt",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link": "http://www.bestrijdingsmiddelenatlas.nl/",
+      "Omschrijving":
+        "De Bestrijdingsmiddelenatlas geeft op basis van meetgegevens van regionale waterbeheerders een landelijk beeld van de bestrijdingsmiddelen in het oppervlaktewater [bestrijdingsmiddelenatlas.nl]"
+    },
+    {
+      "ActualiteitID": 143,
+      "KennisgebiedID": 1,
+      "Kennisgebied": "Champignonteelt",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link": "http://www.bestrijdingsmiddelenatlas.nl/",
+      "Omschrijving":
+        "De Bestrijdingsmiddelenatlas geeft op basis van meetgegevens van regionale waterbeheerders een landelijk beeld van de bestrijdingsmiddelen in het oppervlaktewater [bestrijdingsmiddelenatlas.nl]"
+    },
+    {
+      "ActualiteitID": 144,
+      "KennisgebiedID": 19,
+      "Kennisgebied": "Gewasbeschermingshandel",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link":
+        "http://www.toolboxwater.nl/uploads/pdf/Bladerversie%20website.pdf",
+      "Omschrijving":
+        "Zeer uitgebreide folder met praktische tips voor driftreductie in verschillende teelten. Zowel technische oplossingen als aanbevelingen voor inrichting van erf en perceel komen uitgebreid aan bod [toolboxwater.nl]"
+    },
+    {
+      "ActualiteitID": 145,
+      "KennisgebiedID": 19,
+      "Kennisgebied": "Gewasbeschermingshandel",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link": "http://www.bestrijdingsmiddelenatlas.nl/",
+      "Omschrijving":
+        "De Bestrijdingsmiddelenatlas geeft op basis van meetgegevens van regionale waterbeheerders een landelijk beeld van de bestrijdingsmiddelen in het oppervlaktewater [bestrijdingsmiddelenatlas.nl]"
+    },
+    {
+      "ActualiteitID": 146,
+      "KennisgebiedID": 2,
+      "Kennisgebied": "Groenvoorziening",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link":
+        "http://www.toolboxwater.nl/uploads/pdf/Bladerversie%20website.pdf",
+      "Omschrijving":
+        "Zeer uitgebreide folder met praktische tips voor driftreductie in verschillende teelten. Zowel technische oplossingen als aanbevelingen voor inrichting van erf en perceel komen uitgebreid aan bod [toolboxwater.nl]"
+    },
+    {
+      "ActualiteitID": 147,
+      "KennisgebiedID": 7,
+      "Kennisgebied": "Grasland",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link":
+        "http://www.toolboxwater.nl/uploads/pdf/Bladerversie%20website.pdf",
+      "Omschrijving":
+        "Zeer uitgebreide folder met praktische tips voor driftreductie in verschillende teelten. Zowel technische oplossingen als aanbevelingen voor inrichting van erf en perceel komen uitgebreid aan bod [toolboxwater.nl]"
+    },
+    {
+      "ActualiteitID": 148,
+      "KennisgebiedID": 14,
+      "Kennisgebied": "Potplantenteelt",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link":
+        "http://www.toolboxwater.nl/uploads/pdf/Bladerversie%20website.pdf",
+      "Omschrijving":
+        "Zeer uitgebreide folder met praktische tips voor driftreductie in verschillende teelten. Zowel technische oplossingen als aanbevelingen voor inrichting van erf en perceel komen uitgebreid aan bod [toolboxwater.nl]"
+    },
+    {
+      "ActualiteitID": 149,
+      "KennisgebiedID": 2,
+      "Kennisgebied": "Groenvoorziening",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link": "http://www.bestrijdingsmiddelenatlas.nl/",
+      "Omschrijving":
+        "De Bestrijdingsmiddelenatlas geeft op basis van meetgegevens van regionale waterbeheerders een landelijk beeld van de bestrijdingsmiddelen in het oppervlaktewater [bestrijdingsmiddelenatlas.nl]"
+    },
+    {
+      "ActualiteitID": 150,
+      "KennisgebiedID": 7,
+      "Kennisgebied": "Grasland",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link": "http://www.bestrijdingsmiddelenatlas.nl/",
+      "Omschrijving":
+        "De Bestrijdingsmiddelenatlas geeft op basis van meetgegevens van regionale waterbeheerders een landelijk beeld van de bestrijdingsmiddelen in het oppervlaktewater [bestrijdingsmiddelenatlas.nl]"
+    },
+    {
+      "ActualiteitID": 151,
+      "KennisgebiedID": 14,
+      "Kennisgebied": "Potplantenteelt",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link": "http://www.bestrijdingsmiddelenatlas.nl/",
+      "Omschrijving":
+        "De Bestrijdingsmiddelenatlas geeft op basis van meetgegevens van regionale waterbeheerders een landelijk beeld van de bestrijdingsmiddelen in het oppervlaktewater [bestrijdingsmiddelenatlas.nl]"
+    },
+    {
+      "ActualiteitID": 152,
+      "KennisgebiedID": 17,
+      "Kennisgebied": "Loonwerk",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link":
+        "http://www.toolboxwater.nl/uploads/pdf/Bladerversie%20website.pdf",
+      "Omschrijving":
+        "Zeer uitgebreide folder met praktische tips voor driftreductie in verschillende teelten. Zowel technische oplossingen als aanbevelingen voor inrichting van erf en perceel komen uitgebreid aan bod [toolboxwater.nl]"
+    },
+    {
+      "ActualiteitID": 153,
+      "KennisgebiedID": 17,
+      "Kennisgebied": "Loonwerk",
+      "OnderwerpID": 3,
+      "Onderwerp": "Thema Water",
+      "Link": "http://www.bestrijdingsmiddelenatlas.nl/",
+      "Omschrijving":
+        "De Bestrijdingsmiddelenatlas geeft op basis van meetgegevens van regionale waterbeheerders een landelijk beeld van de bestrijdingsmiddelen in het oppervlaktewater [bestrijdingsmiddelenatlas.nl]"
+    },
+    {
+      "ActualiteitID": 154,
+      "KennisgebiedID": 4,
+      "Kennisgebied": "Akkerbouw",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "http://www.milieumeetlat.nl/nl/bereken-open-teelt/language/nl.html",
+      "Omschrijving":
+        "De Milieumeetlat geeft een overzicht van de milieubelasting van alle in Nederland toegelaten gewasbeschermingsmiddelen en maakt het mogelijk om middelen onderling te vergelijken. Zo kunt u kiezen voor de minst schadelijke gewasbeschermingsmaatregel [Milieumeetlat.nl]"
+    },
+    {
+      "ActualiteitID": 155,
+      "KennisgebiedID": 16,
+      "Kennisgebied": "Boomteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "http://www.milieumeetlat.nl/nl/bereken-open-teelt/language/nl.html",
+      "Omschrijving":
+        "De Milieumeetlat geeft een overzicht van de milieubelasting van alle in Nederland toegelaten gewasbeschermingsmiddelen en maakt het mogelijk om middelen onderling te vergelijken. Zo kunt u kiezen voor de minst schadelijke gewasbeschermingsmaatregel [Milieumeetlat.nl]"
+    },
+    {
+      "ActualiteitID": 156,
+      "KennisgebiedID": 5,
+      "Kennisgebied": "Bollenteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "http://www.milieumeetlat.nl/nl/bereken-open-teelt/language/nl.html",
+      "Omschrijving":
+        "De Milieumeetlat geeft een overzicht van de milieubelasting van alle in Nederland toegelaten gewasbeschermingsmiddelen en maakt het mogelijk om middelen onderling te vergelijken. Zo kunt u kiezen voor de minst schadelijke gewasbeschermingsmaatregel [Milieumeetlat.nl]"
+    },
+    {
+      "ActualiteitID": 157,
+      "KennisgebiedID": 9,
+      "Kennisgebied": "Bloementeelt (buiten)",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "http://www.milieumeetlat.nl/nl/bereken-open-teelt/language/nl.html",
+      "Omschrijving":
+        "De Milieumeetlat geeft een overzicht van de milieubelasting van alle in Nederland toegelaten gewasbeschermingsmiddelen en maakt het mogelijk om middelen onderling te vergelijken. Zo kunt u kiezen voor de minst schadelijke gewasbeschermingsmaatregel [Milieumeetlat.nl]"
+    },
+    {
+      "ActualiteitID": 158,
+      "KennisgebiedID": 15,
+      "Kennisgebied": "Fruitteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "http://www.milieumeetlat.nl/nl/bereken-open-teelt/language/nl.html",
+      "Omschrijving":
+        "De Milieumeetlat geeft een overzicht van de milieubelasting van alle in Nederland toegelaten gewasbeschermingsmiddelen en maakt het mogelijk om middelen onderling te vergelijken. Zo kunt u kiezen voor de minst schadelijke gewasbeschermingsmaatregel [Milieumeetlat.nl]"
+    },
+    {
+      "ActualiteitID": 159,
+      "KennisgebiedID": 7,
+      "Kennisgebied": "Grasland",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "http://www.milieumeetlat.nl/nl/bereken-open-teelt/language/nl.html",
+      "Omschrijving":
+        "De Milieumeetlat geeft een overzicht van de milieubelasting van alle in Nederland toegelaten gewasbeschermingsmiddelen en maakt het mogelijk om middelen onderling te vergelijken. Zo kunt u kiezen voor de minst schadelijke gewasbeschermingsmaatregel [Milieumeetlat.nl]"
+    },
+    {
+      "ActualiteitID": 160,
+      "KennisgebiedID": 13,
+      "Kennisgebied": "Tuinbouw",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "http://www.milieumeetlat.nl/nl/bereken-open-teelt/language/nl.html",
+      "Omschrijving":
+        "De Milieumeetlat geeft een overzicht van de milieubelasting van alle in Nederland toegelaten gewasbeschermingsmiddelen en maakt het mogelijk om middelen onderling te vergelijken. Zo kunt u kiezen voor de minst schadelijke gewasbeschermingsmaatregel [Milieumeetlat.nl]"
+    },
+    {
+      "ActualiteitID": 161,
+      "KennisgebiedID": 20,
+      "Kennisgebied": "Vaste Plantenteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "http://www.milieumeetlat.nl/nl/bereken-open-teelt/language/nl.html",
+      "Omschrijving":
+        "De Milieumeetlat geeft een overzicht van de milieubelasting van alle in Nederland toegelaten gewasbeschermingsmiddelen en maakt het mogelijk om middelen onderling te vergelijken. Zo kunt u kiezen voor de minst schadelijke gewasbeschermingsmaatregel [Milieumeetlat.nl]"
+    },
+    {
+      "ActualiteitID": 162,
+      "KennisgebiedID": 6,
+      "Kennisgebied": "Veehouderij (voedergewassen)",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "http://www.milieumeetlat.nl/nl/bereken-open-teelt/language/nl.html",
+      "Omschrijving":
+        "De Milieumeetlat geeft een overzicht van de milieubelasting van alle in Nederland toegelaten gewasbeschermingsmiddelen en maakt het mogelijk om middelen onderling te vergelijken. Zo kunt u kiezen voor de minst schadelijke gewasbeschermingsmaatregel [Milieumeetlat.nl]"
+    },
+    {
+      "ActualiteitID": 163,
+      "KennisgebiedID": 8,
+      "Kennisgebied": "Vollegrondsgroententeelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "http://www.milieumeetlat.nl/nl/bereken-open-teelt/language/nl.html",
+      "Omschrijving":
+        "De Milieumeetlat geeft een overzicht van de milieubelasting van alle in Nederland toegelaten gewasbeschermingsmiddelen en maakt het mogelijk om middelen onderling te vergelijken. Zo kunt u kiezen voor de minst schadelijke gewasbeschermingsmaatregel [Milieumeetlat.nl]"
+    },
+    {
+      "ActualiteitID": 164,
+      "KennisgebiedID": 21,
+      "Kennisgebied": "Witlofteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "http://www.milieumeetlat.nl/nl/bereken-open-teelt/language/nl.html",
+      "Omschrijving":
+        "De Milieumeetlat geeft een overzicht van de milieubelasting van alle in Nederland toegelaten gewasbeschermingsmiddelen en maakt het mogelijk om middelen onderling te vergelijken. Zo kunt u kiezen voor de minst schadelijke gewasbeschermingsmaatregel [Milieumeetlat.nl]"
+    },
+    {
+      "ActualiteitID": 165,
+      "KennisgebiedID": 4,
+      "Kennisgebied": "Akkerbouw",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link": "http://spuitdoppenkeuze.nl/",
+      "Omschrijving":
+        "Keuze voor de juiste dop is erg belangrijk voor een goed spuitresultaat én om drift te beperken. Welke dop geschikt is, hangt af van uw rijsnelheid, waterhoeveelheid, boomhoogte, spuittechniek en gewenste driftreductie. met een handige keuzehulp [spuitdoppenkeuze.nl]"
+    },
+    {
+      "ActualiteitID": 166,
+      "KennisgebiedID": 16,
+      "Kennisgebied": "Boomteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link": "http://spuitdoppenkeuze.nl/",
+      "Omschrijving":
+        "Keuze voor de juiste dop is erg belangrijk voor een goed spuitresultaat én om drift te beperken. Welke dop geschikt is, hangt af van uw rijsnelheid, waterhoeveelheid, boomhoogte, spuittechniek en gewenste driftreductie. met een handige keuzehulp [spuitdoppenkeuze.nl]"
+    },
+    {
+      "ActualiteitID": 167,
+      "KennisgebiedID": 5,
+      "Kennisgebied": "Bollenteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link": "http://spuitdoppenkeuze.nl/",
+      "Omschrijving":
+        "Keuze voor de juiste dop is erg belangrijk voor een goed spuitresultaat én om drift te beperken. Welke dop geschikt is, hangt af van uw rijsnelheid, waterhoeveelheid, boomhoogte, spuittechniek en gewenste driftreductie. met een handige keuzehulp [spuitdoppenkeuze.nl]"
+    },
+    {
+      "ActualiteitID": 168,
+      "KennisgebiedID": 9,
+      "Kennisgebied": "Bloementeelt (buiten)",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link": "http://spuitdoppenkeuze.nl/",
+      "Omschrijving":
+        "Keuze voor de juiste dop is erg belangrijk voor een goed spuitresultaat én om drift te beperken. Welke dop geschikt is, hangt af van uw rijsnelheid, waterhoeveelheid, boomhoogte, spuittechniek en gewenste driftreductie. met een handige keuzehulp [spuitdoppenkeuze.nl]"
+    },
+    {
+      "ActualiteitID": 169,
+      "KennisgebiedID": 15,
+      "Kennisgebied": "Fruitteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link": "http://spuitdoppenkeuze.nl/",
+      "Omschrijving":
+        "Keuze voor de juiste dop is erg belangrijk voor een goed spuitresultaat én om drift te beperken. Welke dop geschikt is, hangt af van uw rijsnelheid, waterhoeveelheid, boomhoogte, spuittechniek en gewenste driftreductie. met een handige keuzehulp [spuitdoppenkeuze.nl]"
+    },
+    {
+      "ActualiteitID": 170,
+      "KennisgebiedID": 7,
+      "Kennisgebied": "Grasland",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link": "http://spuitdoppenkeuze.nl/",
+      "Omschrijving":
+        "Keuze voor de juiste dop is erg belangrijk voor een goed spuitresultaat én om drift te beperken. Welke dop geschikt is, hangt af van uw rijsnelheid, waterhoeveelheid, boomhoogte, spuittechniek en gewenste driftreductie. met een handige keuzehulp [spuitdoppenkeuze.nl]"
+    },
+    {
+      "ActualiteitID": 171,
+      "KennisgebiedID": 13,
+      "Kennisgebied": "Tuinbouw",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link": "http://spuitdoppenkeuze.nl/",
+      "Omschrijving":
+        "Keuze voor de juiste dop is erg belangrijk voor een goed spuitresultaat én om drift te beperken. Welke dop geschikt is, hangt af van uw rijsnelheid, waterhoeveelheid, boomhoogte, spuittechniek en gewenste driftreductie. met een handige keuzehulp [spuitdoppenkeuze.nl]"
+    },
+    {
+      "ActualiteitID": 172,
+      "KennisgebiedID": 20,
+      "Kennisgebied": "Vaste Plantenteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link": "http://spuitdoppenkeuze.nl/",
+      "Omschrijving":
+        "Keuze voor de juiste dop is erg belangrijk voor een goed spuitresultaat én om drift te beperken. Welke dop geschikt is, hangt af van uw rijsnelheid, waterhoeveelheid, boomhoogte, spuittechniek en gewenste driftreductie. met een handige keuzehulp [spuitdoppenkeuze.nl]"
+    },
+    {
+      "ActualiteitID": 173,
+      "KennisgebiedID": 6,
+      "Kennisgebied": "Veehouderij (voedergewassen)",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link": "http://spuitdoppenkeuze.nl/",
+      "Omschrijving":
+        "Keuze voor de juiste dop is erg belangrijk voor een goed spuitresultaat én om drift te beperken. Welke dop geschikt is, hangt af van uw rijsnelheid, waterhoeveelheid, boomhoogte, spuittechniek en gewenste driftreductie. met een handige keuzehulp [spuitdoppenkeuze.nl]"
+    },
+    {
+      "ActualiteitID": 174,
+      "KennisgebiedID": 8,
+      "Kennisgebied": "Vollegrondsgroententeelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link": "http://spuitdoppenkeuze.nl/",
+      "Omschrijving":
+        "Keuze voor de juiste dop is erg belangrijk voor een goed spuitresultaat én om drift te beperken. Welke dop geschikt is, hangt af van uw rijsnelheid, waterhoeveelheid, boomhoogte, spuittechniek en gewenste driftreductie. met een handige keuzehulp [spuitdoppenkeuze.nl]"
+    },
+    {
+      "ActualiteitID": 175,
+      "KennisgebiedID": 21,
+      "Kennisgebied": "Witlofteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link": "http://spuitdoppenkeuze.nl/",
+      "Omschrijving":
+        "Keuze voor de juiste dop is erg belangrijk voor een goed spuitresultaat én om drift te beperken. Welke dop geschikt is, hangt af van uw rijsnelheid, waterhoeveelheid, boomhoogte, spuittechniek en gewenste driftreductie. met een handige keuzehulp [spuitdoppenkeuze.nl]"
+    },
+    {
+      "ActualiteitID": 176,
+      "KennisgebiedID": 4,
+      "Kennisgebied": "Akkerbouw",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link": "http://spuitdoppenkeuze.nl/filmpje-doppenkeuze",
+      "Omschrijving":
+        "Filmpje invloed van doppenkeuze & rijgedrag op drift [spuitdoppenkeuze.nl]"
+    },
+    {
+      "ActualiteitID": 177,
+      "KennisgebiedID": 16,
+      "Kennisgebied": "Boomteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link": "http://spuitdoppenkeuze.nl/filmpje-doppenkeuze",
+      "Omschrijving":
+        "Filmpje invloed van doppenkeuze & rijgedrag op drift [spuitdoppenkeuze.nl]"
+    },
+    {
+      "ActualiteitID": 178,
+      "KennisgebiedID": 5,
+      "Kennisgebied": "Bollenteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link": "http://spuitdoppenkeuze.nl/filmpje-doppenkeuze",
+      "Omschrijving":
+        "Filmpje invloed van doppenkeuze & rijgedrag op drift [spuitdoppenkeuze.nl]"
+    },
+    {
+      "ActualiteitID": 179,
+      "KennisgebiedID": 9,
+      "Kennisgebied": "Bloementeelt (buiten)",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link": "http://spuitdoppenkeuze.nl/filmpje-doppenkeuze",
+      "Omschrijving":
+        "Filmpje invloed van doppenkeuze & rijgedrag op drift [spuitdoppenkeuze.nl]"
+    },
+    {
+      "ActualiteitID": 180,
+      "KennisgebiedID": 15,
+      "Kennisgebied": "Fruitteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link": "http://spuitdoppenkeuze.nl/filmpje-doppenkeuze",
+      "Omschrijving":
+        "Filmpje invloed van doppenkeuze & rijgedrag op drift [spuitdoppenkeuze.nl]"
+    },
+    {
+      "ActualiteitID": 181,
+      "KennisgebiedID": 7,
+      "Kennisgebied": "Grasland",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link": "http://spuitdoppenkeuze.nl/filmpje-doppenkeuze",
+      "Omschrijving":
+        "Filmpje invloed van doppenkeuze & rijgedrag op drift [spuitdoppenkeuze.nl]"
+    },
+    {
+      "ActualiteitID": 182,
+      "KennisgebiedID": 13,
+      "Kennisgebied": "Tuinbouw",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link": "http://spuitdoppenkeuze.nl/filmpje-doppenkeuze",
+      "Omschrijving":
+        "Filmpje invloed van doppenkeuze & rijgedrag op drift [spuitdoppenkeuze.nl]"
+    },
+    {
+      "ActualiteitID": 183,
+      "KennisgebiedID": 20,
+      "Kennisgebied": "Vaste Plantenteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link": "http://spuitdoppenkeuze.nl/filmpje-doppenkeuze",
+      "Omschrijving":
+        "Filmpje invloed van doppenkeuze & rijgedrag op drift [spuitdoppenkeuze.nl]"
+    },
+    {
+      "ActualiteitID": 184,
+      "KennisgebiedID": 6,
+      "Kennisgebied": "Veehouderij (voedergewassen)",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link": "http://spuitdoppenkeuze.nl/filmpje-doppenkeuze",
+      "Omschrijving":
+        "Filmpje invloed van doppenkeuze & rijgedrag op drift [spuitdoppenkeuze.nl]"
+    },
+    {
+      "ActualiteitID": 185,
+      "KennisgebiedID": 8,
+      "Kennisgebied": "Vollegrondsgroententeelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link": "http://spuitdoppenkeuze.nl/filmpje-doppenkeuze",
+      "Omschrijving":
+        "Filmpje invloed van doppenkeuze & rijgedrag op drift [spuitdoppenkeuze.nl]"
+    },
+    {
+      "ActualiteitID": 186,
+      "KennisgebiedID": 21,
+      "Kennisgebied": "Witlofteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link": "http://spuitdoppenkeuze.nl/filmpje-doppenkeuze",
+      "Omschrijving":
+        "Filmpje invloed van doppenkeuze & rijgedrag op drift [spuitdoppenkeuze.nl]"
+    },
+    {
+      "ActualiteitID": 187,
+      "KennisgebiedID": 4,
+      "Kennisgebied": "Akkerbouw",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "http://www.milieumeetlat.nl/nl/milieubelastingkaarten/language/nl.html",
+      "Omschrijving":
+        "De milieubelastingskaarten die per gewas overzichtelijk de toegelaten gewasbeschermingsmiddelen, de adviesdosering en de bijbehorende milieubelasting weergeven. De kaarten zijn beschikbaar voor diverse gewassen in de akkerbouw, vollegrondsgroenteteelt, boomteelt en bollenteelt [milieumeetlat.nl]"
+    },
+    {
+      "ActualiteitID": 188,
+      "KennisgebiedID": 16,
+      "Kennisgebied": "Boomteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "http://www.milieumeetlat.nl/nl/milieubelastingkaarten/language/nl.html",
+      "Omschrijving":
+        "De milieubelastingskaarten die per gewas overzichtelijk de toegelaten gewasbeschermingsmiddelen, de adviesdosering en de bijbehorende milieubelasting weergeven. De kaarten zijn beschikbaar voor diverse gewassen in de akkerbouw, vollegrondsgroenteteelt, boomteelt en bollenteelt [milieumeetlat.nl]"
+    },
+    {
+      "ActualiteitID": 189,
+      "KennisgebiedID": 5,
+      "Kennisgebied": "Bollenteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "http://www.milieumeetlat.nl/nl/milieubelastingkaarten/language/nl.html",
+      "Omschrijving":
+        "De milieubelastingskaarten die per gewas overzichtelijk de toegelaten gewasbeschermingsmiddelen, de adviesdosering en de bijbehorende milieubelasting weergeven. De kaarten zijn beschikbaar voor diverse gewassen in de akkerbouw, vollegrondsgroenteteelt, boomteelt en bollenteelt [milieumeetlat.nl]"
+    },
+    {
+      "ActualiteitID": 190,
+      "KennisgebiedID": 9,
+      "Kennisgebied": "Bloementeelt (buiten)",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "http://www.milieumeetlat.nl/nl/milieubelastingkaarten/language/nl.html",
+      "Omschrijving":
+        "De milieubelastingskaarten die per gewas overzichtelijk de toegelaten gewasbeschermingsmiddelen, de adviesdosering en de bijbehorende milieubelasting weergeven. De kaarten zijn beschikbaar voor diverse gewassen in de akkerbouw, vollegrondsgroenteteelt, boomteelt en bollenteelt [milieumeetlat.nl]"
+    },
+    {
+      "ActualiteitID": 191,
+      "KennisgebiedID": 15,
+      "Kennisgebied": "Fruitteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "http://www.milieumeetlat.nl/nl/milieubelastingkaarten/language/nl.html",
+      "Omschrijving":
+        "De milieubelastingskaarten die per gewas overzichtelijk de toegelaten gewasbeschermingsmiddelen, de adviesdosering en de bijbehorende milieubelasting weergeven. De kaarten zijn beschikbaar voor diverse gewassen in de akkerbouw, vollegrondsgroenteteelt, boomteelt en bollenteelt [milieumeetlat.nl]"
+    },
+    {
+      "ActualiteitID": 192,
+      "KennisgebiedID": 7,
+      "Kennisgebied": "Grasland",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "http://www.milieumeetlat.nl/nl/milieubelastingkaarten/language/nl.html",
+      "Omschrijving":
+        "De milieubelastingskaarten die per gewas overzichtelijk de toegelaten gewasbeschermingsmiddelen, de adviesdosering en de bijbehorende milieubelasting weergeven. De kaarten zijn beschikbaar voor diverse gewassen in de akkerbouw, vollegrondsgroenteteelt, boomteelt en bollenteelt [milieumeetlat.nl]"
+    },
+    {
+      "ActualiteitID": 193,
+      "KennisgebiedID": 13,
+      "Kennisgebied": "Tuinbouw",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "http://www.milieumeetlat.nl/nl/milieubelastingkaarten/language/nl.html",
+      "Omschrijving":
+        "De milieubelastingskaarten die per gewas overzichtelijk de toegelaten gewasbeschermingsmiddelen, de adviesdosering en de bijbehorende milieubelasting weergeven. De kaarten zijn beschikbaar voor diverse gewassen in de akkerbouw, vollegrondsgroenteteelt, boomteelt en bollenteelt [milieumeetlat.nl]"
+    },
+    {
+      "ActualiteitID": 194,
+      "KennisgebiedID": 20,
+      "Kennisgebied": "Vaste Plantenteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "http://www.milieumeetlat.nl/nl/milieubelastingkaarten/language/nl.html",
+      "Omschrijving":
+        "De milieubelastingskaarten die per gewas overzichtelijk de toegelaten gewasbeschermingsmiddelen, de adviesdosering en de bijbehorende milieubelasting weergeven. De kaarten zijn beschikbaar voor diverse gewassen in de akkerbouw, vollegrondsgroenteteelt, boomteelt en bollenteelt [milieumeetlat.nl]"
+    },
+    {
+      "ActualiteitID": 195,
+      "KennisgebiedID": 6,
+      "Kennisgebied": "Veehouderij (voedergewassen)",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "http://www.milieumeetlat.nl/nl/milieubelastingkaarten/language/nl.html",
+      "Omschrijving":
+        "De milieubelastingskaarten die per gewas overzichtelijk de toegelaten gewasbeschermingsmiddelen, de adviesdosering en de bijbehorende milieubelasting weergeven. De kaarten zijn beschikbaar voor diverse gewassen in de akkerbouw, vollegrondsgroenteteelt, boomteelt en bollenteelt [milieumeetlat.nl]"
+    },
+    {
+      "ActualiteitID": 196,
+      "KennisgebiedID": 8,
+      "Kennisgebied": "Vollegrondsgroententeelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "http://www.milieumeetlat.nl/nl/milieubelastingkaarten/language/nl.html",
+      "Omschrijving":
+        "De milieubelastingskaarten die per gewas overzichtelijk de toegelaten gewasbeschermingsmiddelen, de adviesdosering en de bijbehorende milieubelasting weergeven. De kaarten zijn beschikbaar voor diverse gewassen in de akkerbouw, vollegrondsgroenteteelt, boomteelt en bollenteelt [milieumeetlat.nl]"
+    },
+    {
+      "ActualiteitID": 197,
+      "KennisgebiedID": 21,
+      "Kennisgebied": "Witlofteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "http://www.milieumeetlat.nl/nl/milieubelastingkaarten/language/nl.html",
+      "Omschrijving":
+        "De milieubelastingskaarten die per gewas overzichtelijk de toegelaten gewasbeschermingsmiddelen, de adviesdosering en de bijbehorende milieubelasting weergeven. De kaarten zijn beschikbaar voor diverse gewassen in de akkerbouw, vollegrondsgroenteteelt, boomteelt en bollenteelt [milieumeetlat.nl]"
+    },
+    {
+      "ActualiteitID": 198,
+      "KennisgebiedID": 15,
+      "Kennisgebied": "Fruitteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "https://landvis.be/sites/default/files/attachments/ipm-fruitteelt.pdf",
+      "Omschrijving": "IPM maatregelen voor fruitteelt [landvis.be]"
+    },
+    {
+      "ActualiteitID": 199,
+      "KennisgebiedID": 4,
+      "Kennisgebied": "Akkerbouw",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "https://landvis.be/sites/default/files/attachments/ipm-akkerbouw.pdf",
+      "Omschrijving": "IPM maatregelen voor akkerbouw [landvis.be]"
+    },
+    {
+      "ActualiteitID": 200,
+      "KennisgebiedID": 4,
+      "Kennisgebied": "Akkerbouw",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "https://landvis.be/sites/default/files/attachments/ipm-openluchtgroenten.pdf",
+      "Omschrijving": "IPM maatregelen voor openluchtgroenten [landvis.be]"
+    },
+    {
+      "ActualiteitID": 201,
+      "KennisgebiedID": 16,
+      "Kennisgebied": "Boomteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "https://landvis.be/sites/default/files/attachments/ipm-openluchtgroenten.pdf",
+      "Omschrijving": "IPM maatregelen voor openluchtgroenten [landvis.be]"
+    },
+    {
+      "ActualiteitID": 202,
+      "KennisgebiedID": 5,
+      "Kennisgebied": "Bollenteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "https://landvis.be/sites/default/files/attachments/ipm-openluchtgroenten.pdf",
+      "Omschrijving": "IPM maatregelen voor openluchtgroenten [landvis.be]"
+    },
+    {
+      "ActualiteitID": 203,
+      "KennisgebiedID": 9,
+      "Kennisgebied": "Bloementeelt (buiten)",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "https://landvis.be/sites/default/files/attachments/ipm-openluchtgroenten.pdf",
+      "Omschrijving": "IPM maatregelen voor openluchtgroenten [landvis.be]"
+    },
+    {
+      "ActualiteitID": 204,
+      "KennisgebiedID": 15,
+      "Kennisgebied": "Fruitteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "https://landvis.be/sites/default/files/attachments/ipm-openluchtgroenten.pdf",
+      "Omschrijving": "IPM maatregelen voor openluchtgroenten [landvis.be]"
+    },
+    {
+      "ActualiteitID": 205,
+      "KennisgebiedID": 7,
+      "Kennisgebied": "Grasland",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "https://landvis.be/sites/default/files/attachments/ipm-openluchtgroenten.pdf",
+      "Omschrijving": "IPM maatregelen voor openluchtgroenten [landvis.be]"
+    },
+    {
+      "ActualiteitID": 206,
+      "KennisgebiedID": 13,
+      "Kennisgebied": "Tuinbouw",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "https://landvis.be/sites/default/files/attachments/ipm-openluchtgroenten.pdf",
+      "Omschrijving": "IPM maatregelen voor openluchtgroenten [landvis.be]"
+    },
+    {
+      "ActualiteitID": 207,
+      "KennisgebiedID": 20,
+      "Kennisgebied": "Vaste Plantenteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "https://landvis.be/sites/default/files/attachments/ipm-openluchtgroenten.pdf",
+      "Omschrijving": "IPM maatregelen voor openluchtgroenten [landvis.be]"
+    },
+    {
+      "ActualiteitID": 208,
+      "KennisgebiedID": 6,
+      "Kennisgebied": "Veehouderij (voedergewassen)",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "https://landvis.be/sites/default/files/attachments/ipm-openluchtgroenten.pdf",
+      "Omschrijving": "IPM maatregelen voor openluchtgroenten [landvis.be]"
+    },
+    {
+      "ActualiteitID": 209,
+      "KennisgebiedID": 8,
+      "Kennisgebied": "Vollegrondsgroententeelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "https://landvis.be/sites/default/files/attachments/ipm-openluchtgroenten.pdf",
+      "Omschrijving": "IPM maatregelen voor openluchtgroenten [landvis.be]"
+    },
+    {
+      "ActualiteitID": 210,
+      "KennisgebiedID": 21,
+      "Kennisgebied": "Witlofteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "https://landvis.be/sites/default/files/attachments/ipm-openluchtgroenten.pdf",
+      "Omschrijving": "IPM maatregelen voor openluchtgroenten [landvis.be]"
+    },
+    {
+      "ActualiteitID": 211,
+      "KennisgebiedID": 4,
+      "Kennisgebied": "Akkerbouw",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "https://landvis.be/sites/default/files/attachments/ipm-sierteelt.pdf",
+      "Omschrijving": "IPM maatregelen voor sierteelt [landvis.be]"
+    },
+    {
+      "ActualiteitID": 212,
+      "KennisgebiedID": 16,
+      "Kennisgebied": "Boomteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "https://landvis.be/sites/default/files/attachments/ipm-sierteelt.pdf",
+      "Omschrijving": "IPM maatregelen voor sierteelt [landvis.be]"
+    },
+    {
+      "ActualiteitID": 213,
+      "KennisgebiedID": 5,
+      "Kennisgebied": "Bollenteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "https://landvis.be/sites/default/files/attachments/ipm-sierteelt.pdf",
+      "Omschrijving": "IPM maatregelen voor sierteelt [landvis.be]"
+    },
+    {
+      "ActualiteitID": 214,
+      "KennisgebiedID": 9,
+      "Kennisgebied": "Bloementeelt (buiten)",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "https://landvis.be/sites/default/files/attachments/ipm-sierteelt.pdf",
+      "Omschrijving": "IPM maatregelen voor sierteelt [landvis.be]"
+    },
+    {
+      "ActualiteitID": 215,
+      "KennisgebiedID": 15,
+      "Kennisgebied": "Fruitteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "https://landvis.be/sites/default/files/attachments/ipm-sierteelt.pdf",
+      "Omschrijving": "IPM maatregelen voor sierteelt [landvis.be]"
+    },
+    {
+      "ActualiteitID": 216,
+      "KennisgebiedID": 7,
+      "Kennisgebied": "Grasland",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "https://landvis.be/sites/default/files/attachments/ipm-sierteelt.pdf",
+      "Omschrijving": "IPM maatregelen voor sierteelt [landvis.be]"
+    },
+    {
+      "ActualiteitID": 217,
+      "KennisgebiedID": 13,
+      "Kennisgebied": "Tuinbouw",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "https://landvis.be/sites/default/files/attachments/ipm-sierteelt.pdf",
+      "Omschrijving": "IPM maatregelen voor sierteelt [landvis.be]"
+    },
+    {
+      "ActualiteitID": 218,
+      "KennisgebiedID": 20,
+      "Kennisgebied": "Vaste Plantenteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "https://landvis.be/sites/default/files/attachments/ipm-sierteelt.pdf",
+      "Omschrijving": "IPM maatregelen voor sierteelt [landvis.be]"
+    },
+    {
+      "ActualiteitID": 219,
+      "KennisgebiedID": 6,
+      "Kennisgebied": "Veehouderij (voedergewassen)",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "https://landvis.be/sites/default/files/attachments/ipm-sierteelt.pdf",
+      "Omschrijving": "IPM maatregelen voor sierteelt [landvis.be]"
+    },
+    {
+      "ActualiteitID": 220,
+      "KennisgebiedID": 8,
+      "Kennisgebied": "Vollegrondsgroententeelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "https://landvis.be/sites/default/files/attachments/ipm-sierteelt.pdf",
+      "Omschrijving": "IPM maatregelen voor sierteelt [landvis.be]"
+    },
+    {
+      "ActualiteitID": 221,
+      "KennisgebiedID": 21,
+      "Kennisgebied": "Witlofteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "https://landvis.be/sites/default/files/attachments/ipm-sierteelt.pdf",
+      "Omschrijving": "IPM maatregelen voor sierteelt [landvis.be]"
+    },
+    {
+      "ActualiteitID": 222,
+      "KennisgebiedID": 4,
+      "Kennisgebied": "Akkerbouw",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "http://www.groenkennisnet.nl/nl/groenkennisnet/dossier/dossier-fab.htm",
+      "Omschrijving":
+        "Groenkennisnet geeft handvatten voor het benutten van de natuurlijke soortenrijkdom in agrarische systemen (agrobiodiversiteit) [groenkennisnet.nl]"
+    },
+    {
+      "ActualiteitID": 223,
+      "KennisgebiedID": 16,
+      "Kennisgebied": "Boomteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "http://www.groenkennisnet.nl/nl/groenkennisnet/dossier/dossier-fab.htm",
+      "Omschrijving":
+        "Groenkennisnet geeft handvatten voor het benutten van de natuurlijke soortenrijkdom in agrarische systemen (agrobiodiversiteit) [groenkennisnet.nl]"
+    },
+    {
+      "ActualiteitID": 224,
+      "KennisgebiedID": 5,
+      "Kennisgebied": "Bollenteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "http://www.groenkennisnet.nl/nl/groenkennisnet/dossier/dossier-fab.htm",
+      "Omschrijving":
+        "Groenkennisnet geeft handvatten voor het benutten van de natuurlijke soortenrijkdom in agrarische systemen (agrobiodiversiteit) [groenkennisnet.nl]"
+    },
+    {
+      "ActualiteitID": 225,
+      "KennisgebiedID": 9,
+      "Kennisgebied": "Bloementeelt (buiten)",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "http://www.groenkennisnet.nl/nl/groenkennisnet/dossier/dossier-fab.htm",
+      "Omschrijving":
+        "Groenkennisnet geeft handvatten voor het benutten van de natuurlijke soortenrijkdom in agrarische systemen (agrobiodiversiteit) [groenkennisnet.nl]"
+    },
+    {
+      "ActualiteitID": 226,
+      "KennisgebiedID": 15,
+      "Kennisgebied": "Fruitteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "http://www.groenkennisnet.nl/nl/groenkennisnet/dossier/dossier-fab.htm",
+      "Omschrijving":
+        "Groenkennisnet geeft handvatten voor het benutten van de natuurlijke soortenrijkdom in agrarische systemen (agrobiodiversiteit) [groenkennisnet.nl]"
+    },
+    {
+      "ActualiteitID": 227,
+      "KennisgebiedID": 7,
+      "Kennisgebied": "Grasland",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "http://www.groenkennisnet.nl/nl/groenkennisnet/dossier/dossier-fab.htm",
+      "Omschrijving":
+        "Groenkennisnet geeft handvatten voor het benutten van de natuurlijke soortenrijkdom in agrarische systemen (agrobiodiversiteit) [groenkennisnet.nl]"
+    },
+    {
+      "ActualiteitID": 228,
+      "KennisgebiedID": 13,
+      "Kennisgebied": "Tuinbouw",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "http://www.groenkennisnet.nl/nl/groenkennisnet/dossier/dossier-fab.htm",
+      "Omschrijving":
+        "Groenkennisnet geeft handvatten voor het benutten van de natuurlijke soortenrijkdom in agrarische systemen (agrobiodiversiteit) [groenkennisnet.nl]"
+    },
+    {
+      "ActualiteitID": 229,
+      "KennisgebiedID": 20,
+      "Kennisgebied": "Vaste Plantenteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "http://www.groenkennisnet.nl/nl/groenkennisnet/dossier/dossier-fab.htm",
+      "Omschrijving":
+        "Groenkennisnet geeft handvatten voor het benutten van de natuurlijke soortenrijkdom in agrarische systemen (agrobiodiversiteit) [groenkennisnet.nl]"
+    },
+    {
+      "ActualiteitID": 230,
+      "KennisgebiedID": 6,
+      "Kennisgebied": "Veehouderij (voedergewassen)",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "http://www.groenkennisnet.nl/nl/groenkennisnet/dossier/dossier-fab.htm",
+      "Omschrijving":
+        "Groenkennisnet geeft handvatten voor het benutten van de natuurlijke soortenrijkdom in agrarische systemen (agrobiodiversiteit) [groenkennisnet.nl]"
+    },
+    {
+      "ActualiteitID": 231,
+      "KennisgebiedID": 8,
+      "Kennisgebied": "Vollegrondsgroententeelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "http://www.groenkennisnet.nl/nl/groenkennisnet/dossier/dossier-fab.htm",
+      "Omschrijving":
+        "Groenkennisnet geeft handvatten voor het benutten van de natuurlijke soortenrijkdom in agrarische systemen (agrobiodiversiteit) [groenkennisnet.nl]"
+    },
+    {
+      "ActualiteitID": 232,
+      "KennisgebiedID": 21,
+      "Kennisgebied": "Witlofteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "http://www.groenkennisnet.nl/nl/groenkennisnet/dossier/dossier-fab.htm",
+      "Omschrijving":
+        "Groenkennisnet geeft handvatten voor het benutten van de natuurlijke soortenrijkdom in agrarische systemen (agrobiodiversiteit) [groenkennisnet.nl]"
+    },
+    {
+      "ActualiteitID": 233,
+      "KennisgebiedID": 4,
+      "Kennisgebied": "Akkerbouw",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link": "http://www.kennisakker.nl/node/139",
+      "Omschrijving": "Kennisakker [kennisakker.nl]"
+    },
+    {
+      "ActualiteitID": 234,
+      "KennisgebiedID": 16,
+      "Kennisgebied": "Boomteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link": "http://www.kennisakker.nl/node/139",
+      "Omschrijving": "Kennisakker [kennisakker.nl]"
+    },
+    {
+      "ActualiteitID": 235,
+      "KennisgebiedID": 5,
+      "Kennisgebied": "Bollenteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link": "http://www.kennisakker.nl/node/139",
+      "Omschrijving": "Kennisakker [kennisakker.nl]"
+    },
+    {
+      "ActualiteitID": 236,
+      "KennisgebiedID": 9,
+      "Kennisgebied": "Bloementeelt (buiten)",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link": "http://www.kennisakker.nl/node/139",
+      "Omschrijving": "Kennisakker [kennisakker.nl]"
+    },
+    {
+      "ActualiteitID": 237,
+      "KennisgebiedID": 15,
+      "Kennisgebied": "Fruitteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link": "http://www.kennisakker.nl/node/139",
+      "Omschrijving": "Kennisakker [kennisakker.nl]"
+    },
+    {
+      "ActualiteitID": 238,
+      "KennisgebiedID": 7,
+      "Kennisgebied": "Grasland",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link": "http://www.kennisakker.nl/node/139",
+      "Omschrijving": "Kennisakker [kennisakker.nl]"
+    },
+    {
+      "ActualiteitID": 239,
+      "KennisgebiedID": 13,
+      "Kennisgebied": "Tuinbouw",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link": "http://www.kennisakker.nl/node/139",
+      "Omschrijving": "Kennisakker [kennisakker.nl]"
+    },
+    {
+      "ActualiteitID": 240,
+      "KennisgebiedID": 20,
+      "Kennisgebied": "Vaste Plantenteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link": "http://www.kennisakker.nl/node/139",
+      "Omschrijving": "Kennisakker [kennisakker.nl]"
+    },
+    {
+      "ActualiteitID": 241,
+      "KennisgebiedID": 6,
+      "Kennisgebied": "Veehouderij (voedergewassen)",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link": "http://www.kennisakker.nl/node/139",
+      "Omschrijving": "Kennisakker [kennisakker.nl]"
+    },
+    {
+      "ActualiteitID": 242,
+      "KennisgebiedID": 8,
+      "Kennisgebied": "Vollegrondsgroententeelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link": "http://www.kennisakker.nl/node/139",
+      "Omschrijving": "Kennisakker [kennisakker.nl]"
+    },
+    {
+      "ActualiteitID": 243,
+      "KennisgebiedID": 21,
+      "Kennisgebied": "Witlofteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link": "http://www.kennisakker.nl/node/139",
+      "Omschrijving": "Kennisakker [kennisakker.nl]"
+    },
+    {
+      "ActualiteitID": 244,
+      "KennisgebiedID": 11,
+      "Kennisgebied": "Glastuinbouw",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "https://www.ltoglaskrachtnederland.nl/content/ltoglaskrachtnederland/docs/themas/Plantgezondheid/IPM/IPM_leaflet.pdf",
+      "Omschrijving":
+        "Folder voor de glastuinbouw met de 8 principes van IMP [ltoglaskrachtnederland.nl]"
+    },
+    {
+      "ActualiteitID": 245,
+      "KennisgebiedID": 12,
+      "Kennisgebied": "Glasgroenteteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "https://www.ltoglaskrachtnederland.nl/content/ltoglaskrachtnederland/docs/themas/Plantgezondheid/IPM/IPM_leaflet.pdf",
+      "Omschrijving":
+        "Folder voor de glastuinbouw met de 8 principes van IMP [ltoglaskrachtnederland.nl]"
+    },
+    {
+      "ActualiteitID": 246,
+      "KennisgebiedID": 10,
+      "Kennisgebied": "Bloementeelt (binnen)",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "https://www.ltoglaskrachtnederland.nl/content/ltoglaskrachtnederland/docs/themas/Plantgezondheid/IPM/IPM_leaflet.pdf",
+      "Omschrijving":
+        "Folder voor de glastuinbouw met de 8 principes van IMP [ltoglaskrachtnederland.nl]"
+    },
+    {
+      "ActualiteitID": 247,
+      "KennisgebiedID": 14,
+      "Kennisgebied": "Potplantenteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "https://www.ltoglaskrachtnederland.nl/content/ltoglaskrachtnederland/docs/themas/Plantgezondheid/IPM/IPM_leaflet.pdf",
+      "Omschrijving":
+        "Folder voor de glastuinbouw met de 8 principes van IMP [ltoglaskrachtnederland.nl]"
+    },
+    {
+      "ActualiteitID": 248,
+      "KennisgebiedID": 11,
+      "Kennisgebied": "Glastuinbouw",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link": "http://sideeffect.biobest.be/neveneffecten/1/none?iframe=true",
+      "Omschrijving":
+        "Handige keuzehulp op basis van neveneffecten op natuurlijke vijanden en bestuivers [sideeffect.biobest.be]"
+    },
+    {
+      "ActualiteitID": 249,
+      "KennisgebiedID": 12,
+      "Kennisgebied": "Glasgroenteteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link": "http://sideeffect.biobest.be/neveneffecten/1/none?iframe=true",
+      "Omschrijving":
+        "Handige keuzehulp op basis van neveneffecten op natuurlijke vijanden en bestuivers [sideeffect.biobest.be]"
+    },
+    {
+      "ActualiteitID": 250,
+      "KennisgebiedID": 10,
+      "Kennisgebied": "Bloementeelt (binnen)",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link": "http://sideeffect.biobest.be/neveneffecten/1/none?iframe=true",
+      "Omschrijving":
+        "Handige keuzehulp op basis van neveneffecten op natuurlijke vijanden en bestuivers [sideeffect.biobest.be]"
+    },
+    {
+      "ActualiteitID": 251,
+      "KennisgebiedID": 14,
+      "Kennisgebied": "Potplantenteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link": "http://sideeffect.biobest.be/neveneffecten/1/none?iframe=true",
+      "Omschrijving":
+        "Handige keuzehulp op basis van neveneffecten op natuurlijke vijanden en bestuivers [sideeffect.biobest.be]"
+    },
+    {
+      "ActualiteitID": 252,
+      "KennisgebiedID": 11,
+      "Kennisgebied": "Glastuinbouw",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "http://www.milieumeetlat.nl/nl/bereken-glastuinbouw/language/nl.html",
+      "Omschrijving":
+        "De Milieumeetlat geeft een overzicht van de milieubelasting van alle in Nederland toegelaten gewasbeschermingsmiddelen en maakt het mogelijk om middelen onderling te vergelijken. Zo kunt u kiezen voor de minst schadelijke gewasbeschermingsmaatregel [milieumeetlat.nl]"
+    },
+    {
+      "ActualiteitID": 253,
+      "KennisgebiedID": 12,
+      "Kennisgebied": "Glasgroenteteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "http://www.milieumeetlat.nl/nl/bereken-glastuinbouw/language/nl.html",
+      "Omschrijving":
+        "De Milieumeetlat geeft een overzicht van de milieubelasting van alle in Nederland toegelaten gewasbeschermingsmiddelen en maakt het mogelijk om middelen onderling te vergelijken. Zo kunt u kiezen voor de minst schadelijke gewasbeschermingsmaatregel [milieumeetlat.nl]"
+    },
+    {
+      "ActualiteitID": 254,
+      "KennisgebiedID": 10,
+      "Kennisgebied": "Bloementeelt (binnen)",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "http://www.milieumeetlat.nl/nl/bereken-glastuinbouw/language/nl.html",
+      "Omschrijving":
+        "De Milieumeetlat geeft een overzicht van de milieubelasting van alle in Nederland toegelaten gewasbeschermingsmiddelen en maakt het mogelijk om middelen onderling te vergelijken. Zo kunt u kiezen voor de minst schadelijke gewasbeschermingsmaatregel [milieumeetlat.nl]"
+    },
+    {
+      "ActualiteitID": 255,
+      "KennisgebiedID": 14,
+      "Kennisgebied": "Potplantenteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "http://www.milieumeetlat.nl/nl/bereken-glastuinbouw/language/nl.html",
+      "Omschrijving":
+        "De Milieumeetlat geeft een overzicht van de milieubelasting van alle in Nederland toegelaten gewasbeschermingsmiddelen en maakt het mogelijk om middelen onderling te vergelijken. Zo kunt u kiezen voor de minst schadelijke gewasbeschermingsmaatregel [milieumeetlat.nl]"
+    },
+    {
+      "ActualiteitID": 256,
+      "KennisgebiedID": 11,
+      "Kennisgebied": "Glastuinbouw",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "https://landvis.be/sites/default/files/attachments/ipm_glasgroenten_0.pdf",
+      "Omschrijving":
+        "IPM maatregelen voor groententeelt onder glas [landvis.be]"
+    },
+    {
+      "ActualiteitID": 257,
+      "KennisgebiedID": 12,
+      "Kennisgebied": "Glasgroenteteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "https://landvis.be/sites/default/files/attachments/ipm_glasgroenten_0.pdf",
+      "Omschrijving":
+        "IPM maatregelen voor groententeelt onder glas [landvis.be]"
+    },
+    {
+      "ActualiteitID": 258,
+      "KennisgebiedID": 10,
+      "Kennisgebied": "Bloementeelt (binnen)",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "https://landvis.be/sites/default/files/attachments/ipm_glasgroenten_0.pdf",
+      "Omschrijving":
+        "IPM maatregelen voor groententeelt onder glas [landvis.be]"
+    },
+    {
+      "ActualiteitID": 259,
+      "KennisgebiedID": 14,
+      "Kennisgebied": "Potplantenteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "https://landvis.be/sites/default/files/attachments/ipm_glasgroenten_0.pdf",
+      "Omschrijving":
+        "IPM maatregelen voor groententeelt onder glas [landvis.be]"
+    },
+    {
+      "ActualiteitID": 260,
+      "KennisgebiedID": 2,
+      "Kennisgebied": "Groenvoorziening",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "http://www.milieumeetlat.nl/nl/bereken-gemeenten/language/nl.html",
+      "Omschrijving":
+        "De Milieumeetlat geeft een overzicht van de milieubelasting van alle in Nederland toegelaten gewasbeschermingsmiddelen en maakt het mogelijk om middelen onderling te vergelijken. Zo kunt u kiezen voor de minst schadelijke middel [milieumeetlat.nl]"
+    },
+    {
+      "ActualiteitID": 261,
+      "KennisgebiedID": 7,
+      "Kennisgebied": "Grasland",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "http://www.milieumeetlat.nl/nl/bereken-gemeenten/language/nl.html",
+      "Omschrijving":
+        "De Milieumeetlat geeft een overzicht van de milieubelasting van alle in Nederland toegelaten gewasbeschermingsmiddelen en maakt het mogelijk om middelen onderling te vergelijken. Zo kunt u kiezen voor de minst schadelijke middel [milieumeetlat.nl]"
+    },
+    {
+      "ActualiteitID": 262,
+      "KennisgebiedID": 14,
+      "Kennisgebied": "Potplantenteelt",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "http://www.milieumeetlat.nl/nl/bereken-gemeenten/language/nl.html",
+      "Omschrijving":
+        "De Milieumeetlat geeft een overzicht van de milieubelasting van alle in Nederland toegelaten gewasbeschermingsmiddelen en maakt het mogelijk om middelen onderling te vergelijken. Zo kunt u kiezen voor de minst schadelijke middel [milieumeetlat.nl]"
+    },
+    {
+      "ActualiteitID": 263,
+      "KennisgebiedID": 17,
+      "Kennisgebied": "Loonwerk",
+      "OnderwerpID": 4,
+      "Onderwerp": "Thema Verduurzaming\r\n",
+      "Link":
+        "https://www.cumela.nl/agrarisch-loonwerk-gewasbescherming-milieu-en-omgeving-afvalstoffen/meer-inzicht-met-erfemissiescan",
+      "Omschrijving":
+        "Online tool waarmee loonwerkers en agrariërs eenvoudig inzicht krijgen waar mogelijkheden zijn om de milieubelasting te verminderen [cumelia.nl]"
+    }
+  ],
+  "Themas": [
+    {
+      "ThemaID": 1,
+      "Naam": "Veiligheid en Techniek"
+    },
+    {
+      "ThemaID": 2,
+      "Naam": "Teelt"
+    },
+    {
+      "ThemaID": 3,
+      "Naam": "Transport en opslag"
+    },
+    {
+      "ThemaID": 24,
+      "Naam": "KBA"
+    },
+    {
+      "ThemaID": 25,
+      "Naam": "Mollen en Woelratten"
+    },
+    {
+      "ThemaID": 26,
+      "Naam": "KBA-GB"
+    }
+  ],
+  "Competenties": [
+    {
+      "CompetentieID": 3,
+      "Naam": "Bedrijfsvoeren + Distribueren"
+    },
+    {
+      "CompetentieID": 2,
+      "Naam": "Bedrijfsvoeren Gewasbescherming"
+    },
+    {
+      "CompetentieID": 5,
+      "Naam": "Distribueren Bestrijdingsmiddelen"
+    },
+    {
+      "CompetentieID": 22,
+      "Naam": "KBA"
+    },
+    {
+      "CompetentieID": 23,
+      "Naam": "KBA-GB"
+    },
+    {
+      "CompetentieID": 4,
+      "Naam": "Mollen en woelratten"
+    },
+    {
+      "CompetentieID": 1,
+      "Naam": "Uitvoeren Gewasbescherming"
+    }
+  ],
+  "Kennisgebieden": [
+    {
+      "KennisgebiedID": 4,
+      "Naam": "Akkerbouw"
+    },
+    {
+      "KennisgebiedID": 10,
+      "Naam": "Bloementeelt (binnen)"
+    },
+    {
+      "KennisgebiedID": 9,
+      "Naam": "Bloementeelt (buiten)"
+    },
+    {
+      "KennisgebiedID": 5,
+      "Naam": "Bollenteelt"
+    },
+    {
+      "KennisgebiedID": 16,
+      "Naam": "Boomteelt"
+    },
+    {
+      "KennisgebiedID": 1,
+      "Naam": "Champignonteelt"
+    },
+    {
+      "KennisgebiedID": 15,
+      "Naam": "Fruitteelt"
+    },
+    {
+      "KennisgebiedID": 19,
+      "Naam": "Gewasbeschermingshandel"
+    },
+    {
+      "KennisgebiedID": 12,
+      "Naam": "Glasgroenteteelt"
+    },
+    {
+      "KennisgebiedID": 11,
+      "Naam": "Glastuinbouw"
+    },
+    {
+      "KennisgebiedID": 7,
+      "Naam": "Grasland"
+    },
+    {
+      "KennisgebiedID": 2,
+      "Naam": "Groenvoorziening"
+    },
+    {
+      "KennisgebiedID": 17,
+      "Naam": "Loonwerk"
+    },
+    {
+      "KennisgebiedID": 14,
+      "Naam": "Potplantenteelt"
+    },
+    {
+      "KennisgebiedID": 13,
+      "Naam": "Tuinbouw"
+    },
+    {
+      "KennisgebiedID": 20,
+      "Naam": "Vaste Plantenteelt"
+    },
+    {
+      "KennisgebiedID": 6,
+      "Naam": "Veehouderij (voedergewassen)"
+    },
+    {
+      "KennisgebiedID": 8,
+      "Naam": "Vollegrondsgroententeelt"
+    },
+    {
+      "KennisgebiedID": 21,
+      "Naam": "Witlofteelt"
+    }
+  ],
+  "GeldigeThemaCompetentieCombinaties": [
+    {
+      "ThemaID": 1,
+      "CompetentieID": 1
+    },
+    {
+      "ThemaID": 24,
+      "CompetentieID": 1
+    },
+    {
+      "ThemaID": 1,
+      "CompetentieID": 2
+    },
+    {
+      "ThemaID": 2,
+      "CompetentieID": 2
+    },
+    {
+      "ThemaID": 24,
+      "CompetentieID": 2
+    },
+    {
+      "ThemaID": 1,
+      "CompetentieID": 3
+    },
+    {
+      "ThemaID": 2,
+      "CompetentieID": 3
+    },
+    {
+      "ThemaID": 3,
+      "CompetentieID": 3
+    },
+    {
+      "ThemaID": 3,
+      "CompetentieID": 5
+    },
+    {
+      "ThemaID": 24,
+      "CompetentieID": 22
+    },
+    {
+      "ThemaID": 25,
+      "CompetentieID": 4
+    },
+    {
+      "ThemaID": 26,
+      "CompetentieID": 23
+    }
+  ],
+  "Beoordelaars": [
+    {
+      "PersoonID": "",
+      "BeoordelaarNaam": "< kies een beoordelaar >"
+    },
+    {
+      "PersoonID": 109,
+      "BeoordelaarNaam": "Groot, Antoon G. de"
+    },
+    {
+      "PersoonID": 117,
+      "BeoordelaarNaam": "Rood, P. van 't"
+    },
+    {
+      "PersoonID": 112,
+      "BeoordelaarNaam": "Schott, G. "
+    },
+    {
+      "PersoonID": 311761,
+      "BeoordelaarNaam": "Simmelink, J.G. "
+    }
+  ]
+}

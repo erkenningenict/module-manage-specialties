@@ -1,0 +1,77 @@
+<li class="as-sortable-item">
+    <div
+        [formGroup]="form"
+        novalidate
+    >
+        <div class="row">
+            <div class="col-xs-2">
+                <input
+                    type="text"
+                    formControlName="tijd"
+                    placeholder="Tijd"
+                    name="tijd"
+                    class="form-control"
+                >
+            </div>
+            <div class="col-xs-2">
+                <input
+                    type="text"
+                    formControlName="docent"
+                    placeholder="Naam"
+                    name="docent"
+                    class="form-control"
+                >
+            </div>
+            <div class="col-xs-6">
+                <textarea
+                    beAutosize
+                    formControlName="omschrijving"
+                    placeholder="Omschrijf wat en hoe"
+                    name="TijdschemaOmschrijving"
+                    class="form-control"
+                ></textarea>
+            </div>
+            <div class="col-xs-2">
+                <div
+                    class="btn-group btn-group-sm"
+                    role="group"
+                    *ngIf="enableEditing"
+                >
+
+                    <button
+                        class="ui-button"
+                        pButton
+                        [disabled]="index == 0"
+                        (click)="move(-1)"
+                        type="button"
+                        icon="fa-sort-up"
+                        title="Verplaats deze regel naar boven"
+                    >
+                    </button>
+                    <button
+                        class="ui-button"
+                        pButton
+                        [disabled]="index == periodCount - 1"
+                        (click)="move(1)"
+                        type="button"
+                        icon="fa-sort-down"
+                        title="Verplaats deze regel naar beneden"
+                    >
+                    </button>
+
+                    <button
+                        class="ui-button-danger"
+                        pButton
+                        type="button"
+                        [disabled]="!enableEditing"
+                        icon="fa-trash"
+                        (click)="deletePeriod.emit(period)"
+                        title="Verwijder deze regel"
+                    >
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</li>

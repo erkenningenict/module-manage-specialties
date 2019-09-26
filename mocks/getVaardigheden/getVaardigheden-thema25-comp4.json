@@ -1,0 +1,18 @@
+{
+  "expression":
+    "^/DesktopModules/AOCRaad.Erkenningen.WebAPI/API/Specialty/GetVaardigheden\\?themaID=25\\&competentieID=4\\&specialtyDate=(\\d*)$",
+  "method": "GET",
+  "name": "getVaardighedenThema25Comp4",
+  "isArray": false,
+  "responses": {
+    "200": {
+      "default": true,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "status": 200,
+      "file": "mocks/getVaardigheden/data/getVaardigheden-thema25-comp4.json",
+      "delay": 200
+    }
+  }
+}

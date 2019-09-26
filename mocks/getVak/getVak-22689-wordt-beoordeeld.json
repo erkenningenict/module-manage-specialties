@@ -1,0 +1,27 @@
+{
+  "expression":
+    "^/DesktopModules/AOCRaad.Erkenningen.WebAPI/API/Specialty/GetVak\\?vakID=22689&forPrinting=false$",
+  "method": "GET",
+  "name": "getVakWordtBeoordeeld",
+  "isArray": true,
+  "responses": {
+    "200-wordt-beoordeeld-as-rector": {
+      "default": true,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "status": 200,
+      "file": "mocks/getVak/data/getVak-22689-wordt-beoordeeld-as-rector.json",
+      "delay": 200
+    },
+    "200-wordt-beoordeeld-as-beoordelaar": {
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "status": 200,
+      "file":
+        "mocks/getVak/data/getVak-22689-wordt-beoordeeld-as-beoordelaar.json",
+      "delay": 200
+    }
+  }
+}

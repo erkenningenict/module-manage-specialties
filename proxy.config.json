@@ -1,0 +1,14 @@
+{
+  "/ngapimock": {
+    "target": "http://localhost:3000"
+  },
+  "/mocking": {
+    "target": "http://localhost:3000",
+    "secure": false
+  },
+  "/DesktopModules/*": {
+    "target": "http://localhost:3000",
+    "secure": false,
+    "logLevel": "debug"
+  }
+}

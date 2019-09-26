@@ -1,0 +1,59 @@
+<li class="list-group-item list-group-item-custom">
+    <div class="row">
+        <div class="col-md-6 hide-long-text">
+            <small>
+                <span>
+                    {{changeLogItem.date | date : 'dd-MM-yyyy HH:mm:ss'}}
+                </span>
+                |
+                <span>{{changeLogItem.by}}</span>
+                |
+                <span>{{changeLogItem.changes}}</span>
+            </small>
+        </div>
+        <div class="col-md-6">
+
+            <button
+                type="button"
+                (mouseenter)="opFields.show($event)"
+                (mouseleave)="opFields.hide($event)"
+                [disabled]="changeLogItem.changedFields.length == 0"
+                class="btn btn-info btn-xs"
+            >
+                Toon gewijzigde
+        velden ({{changeLogItem.changedFields.length}})
+            </button>
+            <p-overlayPanel
+                #opFields
+                appendTo="body"
+                [dismissable]="false"
+            >
+                <p>Gewijzigde velden:</p>
+                <ul *ngFor="let field of changeLogItem.changedFields">
+                    <li>{{getFieldFormatted(field)}}</li>
+                </ul>
+            </p-overlayPanel>
+
+            <button
+                type="button"
+                *ngIf="changeLogItem.changedComments.length"
+                class="btn btn-info btn-xs"
+                (mouseenter)="opComments.show($event)"
+                (mouseleave)="opComments.hide($event)"
+            >
+                Toon
+        toegevoegd commentaar ({{changeLogItem.changedComments.length}})
+            </button>
+            <p-overlayPanel
+                #opComments
+                appendTo="body"
+                [dismissable]="false"
+            >
+                <p>Toegevoegd commentaar:</p>
+                <ul *ngFor="let comment of changeLogItem.changedComments">
+                    <li>{{getCommentName(comment)}}</li>
+                </ul>
+            </p-overlayPanel>
+        </div>
+    </div>
+</li>

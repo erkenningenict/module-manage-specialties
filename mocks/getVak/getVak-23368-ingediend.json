@@ -1,0 +1,26 @@
+{
+  "expression":
+    "^/DesktopModules/AOCRaad.Erkenningen.WebAPI/API/Specialty/GetVak\\?vakID=23368&forPrinting=false$",
+  "method": "GET",
+  "name": "getVakIngediend",
+  "isArray": true,
+  "responses": {
+    "200-ingediend-as-rector": {
+      "default": true,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "status": 200,
+      "file": "mocks/getVak/data/getVak-23368-ingediend-as-rector.json",
+      "delay": 200
+    },
+    "200-ingediend-as-indiener": {
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "status": 200,
+      "file": "mocks/getVak/data/getVak-23368-ingediend-as-indiener.json",
+      "delay": 200
+    }
+  }
+}

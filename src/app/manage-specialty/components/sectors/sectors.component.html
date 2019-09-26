@@ -1,0 +1,36 @@
+<!-- Kennisgebied / Doelgroep -->
+<div
+    class="panel panel-default"
+    [formGroup]="form"
+>
+    <div class="panel-heading">
+        <h3 class="panel-title">Doelgroep</h3>
+
+        <p>
+            Voor welke sector is het aanbod bestemd? Kies minimaal 1 sector.
+        </p>
+    </div>
+    <div class="panel-body">
+        <div
+            class="alert alert-danger"
+            *ngIf="minimaalAantalSectorenGeselecteerd"
+        >
+            <i class="glyphicon glyphicon-warning-sign"></i>
+            Kies minimaal 1 sector!
+        </div>
+        <ol class="list-unstyled columnCheckboxes">
+            <li *ngFor="let kennisgebied of kennisgebieden">
+                <label>
+                    <input
+                        type="checkbox"
+                        [attr.data-test]="'kennisgebied'+kennisgebied.Naam"
+                        (change)="kennisgebiedSelected($event, kennisgebied)"
+                        [checked]="isSelected(kennisgebied)"
+                        [disabled]="!enableEditing"
+                    >
+                    <span>{{kennisgebied.Naam}}</span>
+                </label>
+            </li>
+        </ol>
+    </div>
+</div>

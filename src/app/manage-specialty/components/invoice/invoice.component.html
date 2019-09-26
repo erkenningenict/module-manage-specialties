@@ -1,0 +1,16 @@
+<div
+    class="row"
+    *ngIf="invoiceId !== 0 && isHoogleraar"
+>
+    <div class="col-md-12">
+        <p>
+            Er is een factuur aangemaakt. Deze factuur staat ook in het facturen overzicht bij 'Facturen'.
+            <button
+                (click)="getInvoiceLink()"
+                type="button"
+                pButton
+                label="Factuur bekijken"
+            ></button>
+        </p>
+    </div>
+</div>

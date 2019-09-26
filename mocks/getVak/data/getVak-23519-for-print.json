@@ -1,0 +1,311 @@
+{
+  "CurrentUserName": "Groot, Antoon G. de",
+  "CurrentPersoonID": 109,
+  "VakID": 23519,
+  "Afkorting": "",
+  "Doelgroep":
+    "praktiserende ondernemers bestaande uit akkerbouwers, vollegrondsgroententelers en het personeel",
+  "Titel": "Wat speelt er in 2018 in de akkerbouw en vollegrondsgroententeelt?",
+  "TitelData":
+    "[{\"text\":\"Wat speelt er de komende tijd in de akkerbouw en vollegrondsgroententeelt?\",\"date\":\"2018-03-19T08:12:02.462Z\",\"by\":\"Splunter, J.P. van\"},{\"text\":\"Wat speelt er in 2018 in de akkerbouw en vollegrondsgroententeelt?\",\"date\":\"2018-03-19T08:25:45.859Z\",\"by\":\"Splunter, J.P. van\"}]",
+  "Status": "WordtBeoordeeld",
+  "AanbodCode": "23519",
+  "NormVersieID": 10009,
+  "DatumAangemaakt": "2018-03-19T00:00:00",
+  "VakgroepID": 210007,
+  "VakgroepNaam": "Edudelta College Goes",
+  "VakgroepAdres":
+    "Postbus 244, 3240 AE &nbsp;&nbsp;Middelharnis<br/>mw. Corine de Vries<br/>0187-480561<br/>contract@edudelta.nl",
+  "ThemaID": 2,
+  "CompetentieID": 2,
+  "GekozenVaardigheden": [
+    { "VaardigheidID": 2126 },
+    { "VaardigheidID": 2131 },
+    { "VaardigheidID": 2166 },
+    { "VaardigheidID": 2171 },
+    { "VaardigheidID": 2194 }
+  ],
+  "GekozenKennisgebieden": [4, 17, 13, 8],
+  "DoelstellingData":
+    "{\"Doelstelling\":[{\"text\":\"Dit kennisaanbod heeft als doel om de aanwezigen (telers, sprekers en specialisten) op de hoogte te brengen over de resultaten van het afgelopen en de actualiteiten voor het  komende jaar op gebied van resistentiemanagement, teelt en wetgeving. Deze informatie is bedoeld voor gebruik op het eigen bedrijf en de advisering naar derden. Het uiteindelijk doel is dat men zich bewust is van het juist handelen bij het gebruik van chemische gewasbescherming, er wordt gemeten of de kennisoverdracht is geslaagd. Het resultaat wordt gemeten met behulp afsluitende rondvraag met evaluatie\",\"date\":\"2017-04-07T09:40:34.211Z\",\"by\":\"Splunter, J.P. van\"},{\"text\":\"Dit kennisaanbod heeft als doel om de aanwezigen (telers, sprekers en specialisten) op de hoogte te brengen over de resultaten van het afgelopen en de actualiteiten voor het  komende jaar op gebied van teelt en wetgeving. Deze informatie is bedoeld voor gebruik op het eigen bedrijf en de advisering naar derden. Het uiteindelijk doel is dat men zich bewust is van het juist handelen bij het gebruik van chemische gewasbescherming. Het resultaat wordt gemeten met behulp afsluitende collegiale vragenronde.\",\"date\":\"2017-04-07T09:51:43.306Z\",\"by\":\"Splunter, J.P. van\"},{\"text\":\"Dit kennisaanbod heeft als doel om de aanwezige gebruikers en bedrijfsleiders op de hoogte te brengen over de resultaten van het afgelopen en de actualiteiten voor het  komende jaar op gebied van gewasbescherming op een agrarisch bedrijf in de open teelt. Hierdoor is men zich bewust van het juist handelen bij het gebruik van chemische gewasbescherming. Het resultaat wordt gemeten met behulp afsluitende collegiale vragenronde en een tussentijdse overlegronde\",\"date\":\"2018-03-20T10:31:27.472Z\",\"by\":\"Splunter, J.P. van\"}],\"DoelstellingS\":[{\"text\":\"Ja\",\"date\":\"2017-04-07T09:40:34.211Z\",\"by\":\"Splunter, J.P. van\"}],\"DoelstellingM\":[{\"text\":\"meting door een afsluitende rondvraag met evaluatie.\",\"date\":\"2017-04-07T09:40:34.211Z\",\"by\":\"Splunter, J.P. van\"},{\"text\":\"meting door een afsluitende collegiale vragenronde\",\"date\":\"2017-04-07T09:51:43.306Z\",\"by\":\"Splunter, J.P. van\"},{\"text\":\"meting door een afsluitende vragenronde\",\"date\":\"2017-04-11T15:03:58.470Z\",\"by\":\"Splunter, J.P. van\"}],\"DoelstellingA\":[{\"text\":\"door gerichte uitnodiging is dit een vergelijkbare situatie waardoor het doel herkenbaar is\",\"date\":\"2017-04-07T09:40:34.211Z\",\"by\":\"Splunter, J.P. van\"},{\"text\":\"door gerichte uitnodiging is dit een vergelijkbare situatie van praktiserende telers met medewerkers waardoor het doel herkenbaar is. Door een inventarisatie vooraf door voorlichters bij deelnemers en door inbreng bij aanvang van deelnemers wordt de bewustwording van de eigen situatie van deelnemers geactiveerd\",\"date\":\"2017-04-07T09:51:43.306Z\",\"by\":\"Splunter, J.P. van\"}],\"DoelstellingR\":[{\"text\":\"Ja\",\"date\":\"2017-04-07T09:40:34.211Z\",\"by\":\"Splunter, J.P. van\"},{\"text\":\"Ja, door gerichte uitnodiging\",\"date\":\"2017-04-07T09:51:43.306Z\",\"by\":\"Splunter, J.P. van\"},{\"text\":\"Ja, deelnemers zijn bezit van het vakbekwaamheidsbewijs en dienen zodanig in staat te zijn deze bijeenkomst te volgen en daarmee de kennis te verhogen en de vernieuwingen te volgen\",\"date\":\"2017-04-11T15:03:58.470Z\",\"by\":\"Splunter, J.P. van\"}],\"DoelstellingT\":[{\"text\":\"Binnen een teeltseizoen moeten aanpassingen uitgevoerd zijn\",\"date\":\"2017-04-07T09:40:34.211Z\",\"by\":\"Splunter, J.P. van\"},{\"text\":\"eind van de bijeenkomst moet de kennis zijn gedeeld\",\"date\":\"2017-04-07T09:51:43.306Z\",\"by\":\"Splunter, J.P. van\"}]}",
+  "Inhoud":
+    "[{\"text\":\"Deze sectorbijeenkomst richt zich op akkerbouw en vollegrondsgroenten. Resultaten van landelijk en regionaal onderzoek worden gepresenteerd. Naast gerichte teeltinformatie wordt ingegaan op recente wijzigingen in wetgeving, toelating of beperking van middelen en te verwachten knelpunten in de teelt.\",\"date\":\"2017-04-07T09:40:34.212Z\",\"by\":\"Splunter, J.P. van\"},{\"text\":\"Deze sectorbijeenkomst richt zich op akkerbouw en vollegrondsgroenten. Aktuele resultaten van landelijk en regionaal onderzoek met betrekking tot de sector worden gepresenteerd. Naast gerichte teeltinformatie wordt ingegaan op recente wijzigingen in wetgeving, toelating of beperking van middelen en te verwachten knelpunten in de teelt.\",\"date\":\"2018-03-20T10:31:27.472Z\",\"by\":\"Splunter, J.P. van\"}]",
+  "GeintegreerdeGewasbeschermingData":
+    "{\"GeintegreerdeGewasbescherming\":[{\"text\":\"Belangrijk is de geïntegreerde teelt en de mogelijkheid van voortdurende gesprekken die niet ophouden bij de in- en uitgang van de zaal. Aandacht wordt gegeven voor actualiteiten rondom wetgeving en teelt met daarin de laatste inzichten over geintegreerde gewasbescherming op gebied van preventie, teelttechnische maatregelen, niet-chemische gewasbescherming,  toedieningstechnieken en emissiebeperking. Resistentiemanagement wordt nadrukkelijk aan de orde gebracht.\",\"date\":\"2017-04-07T09:40:34.212Z\",\"by\":\"Splunter, J.P. van\"},{\"text\":\"Belangrijk is de geïntegreerde teelt en de mogelijkheid van voortdurende gesprekken die niet ophouden bij de in- en uitgang van de zaal. Aandacht wordt gegeven voor actualiteiten rondom wetgeving en teelt met daarin de laatste inzichten over geintegreerde gewasbescherming op gebied van preventie, teelttechnische maatregelen, niet-chemische gewasbescherming,  toedieningstechnieken en emissiebeperking. Waterkwaliteit en emissie wordt nadrukkelijk onder de aandacht gebracht\",\"date\":\"2017-04-07T09:51:43.306Z\",\"by\":\"Splunter, J.P. van\"}],\"PreventieveMaatregelen\":[{\"text\":\"rassenkeuze en perceelskeuze\",\"date\":\"2017-04-07T09:40:34.212Z\",\"by\":\"Splunter, J.P. van\"}],\"TeelttechnischeMaatregelen\":[{\"text\":\"Geen gegevens\",\"date\":\"2017-04-07T09:40:34.212Z\",\"by\":\"Splunter, J.P. van\"},{\"text\":\"mechanisatie indien van toepassing voor de diverse gewassen\",\"date\":\"2017-04-07T09:51:43.306Z\",\"by\":\"Splunter, J.P. van\"},{\"text\":\"Gebruik van plantversterkers en juiste bemesting\",\"date\":\"2018-03-20T10:31:27.472Z\",\"by\":\"Splunter, J.P. van\"}],\"WaarschuwingEnAdviesSystemen\":[{\"text\":\"aandacht wordt gegeven aan het gewasmonitoringsplan. volgens de staatssecretaris maakt iedere agrariër gebruik van een registratiemodule\",\"date\":\"2017-04-07T09:40:34.212Z\",\"by\":\"Splunter, J.P. van\"},{\"text\":\"aandacht wordt gegeven aan het gewasmonitoringsplan.\",\"date\":\"2018-03-19T08:25:45.859Z\",\"by\":\"Splunter, J.P. van\"}],\"NietChemischeMogelijkheden\":[{\"text\":\"ja, daar waar mogelijk\",\"date\":\"2017-04-07T09:40:34.212Z\",\"by\":\"Splunter, J.P. van\"}],\"ChemischeGewasbescherming\":[{\"text\":\"door de actualiteit wordt hier aandacht aangegeven. denk aan doppenkeuze en middelenkeuze in relatie tot emissiebeperking\",\"date\":\"2017-04-07T09:40:34.212Z\",\"by\":\"Splunter, J.P. van\"},{\"text\":\"door de actualiteit wordt hier aandacht aangegeven. Middelenkeuze in relatie tot emissiebeperking en waterkwaliteit\",\"date\":\"2017-04-07T09:51:43.306Z\",\"by\":\"Splunter, J.P. van\"}],\"EmissieBeperking\":[{\"text\":\"is gekoppeld aan chemische gewasbescherming\",\"date\":\"2017-04-07T09:40:34.212Z\",\"by\":\"Splunter, J.P. van\"}]}",
+  "Actualiteiten":
+    "[{\"text\":\"Ieder jaar zijn er nieuwe resultaten die worden gecombineerd met bestaande kennis. Hierbij wordt geanticipeerd op markt en wettelijke veranderingen. Op basis van inbreng van telers en specialisten tijdens of voorafgaand aan de bijeenkomst komen er ook ideeen voor nieuw onderzoek. De gesprekken beginnen zodoende al voor de bijeenkomst en gaan door na de uitgang.\",\"date\":\"2017-04-07T09:40:34.211Z\",\"by\":\"Splunter, J.P. van\"},{\"text\":\"Waterkwaliteit en verduurzaming komen aan de orde op basis van de nieuwe regels rondom DRD en DRT lijsten en tenminste 75% driftreductie. Verder wordt ingegaan op emissieroutes om onnodige verliezen te voorkomen waardoor milieu niet onnodig wordt belast\",\"date\":\"2018-03-20T10:31:27.472Z\",\"by\":\"Splunter, J.P. van\"}]",
+  "IndividueleRelevantie":
+    "[{\"text\":\"door een gerichte uitnodiging en de gesprekken tijdens de bijeenkomst deelt de deelnemer zijn ervaringen met ervaringsgenoten\",\"date\":\"2018-03-19T08:25:45.859Z\",\"by\":\"Splunter, J.P. van\"}]",
+  "WerkvormData":
+    "{\"Werkvorm\":[{\"text\":\"powerpoint presentatie en discussie\",\"date\":\"2017-04-07T09:40:34.213Z\",\"by\":\"Splunter, J.P. van\"},{\"text\":\"powerpoint presentatie en actieve discussie tussen aanwezige begeleiders en deelnemers. Op basis van ervaringen uit het verleden is er per 15 deelnemers een begeleider. Er wordt gewerkt met een centrale presentatie, waarbij desgewenst de andere begeleiders inspringen ter ondersteuning en activering van deelnemers.\",\"date\":\"2017-04-11T15:03:58.470Z\",\"by\":\"Splunter, J.P. van\"},{\"text\":\"powerpoint presentatie en actieve discussie tussen aanwezige begeleiders en deelnemers. Er wordt gewerkt met een centrale presentatie, waarbij desgewenst de andere begeleiders inspringen ter ondersteuning en activering van deelnemers. Om de uitwisseling van ervaringen te organiseren worden er tafelgesprekken gearrangeerd waarbij de begeleiders zijn betrokken om de gesprekken op gang te helpen\",\"date\":\"2018-03-19T08:25:45.859Z\",\"by\":\"Splunter, J.P. van\"}],\"Schema\":[]}",
+  "Docenten":
+    "[{\"text\":\"deskundingen vanuit de praktijk ondersteund door docenten en onderzoek\",\"date\":\"2017-04-07T09:40:34.212Z\",\"by\":\"Splunter, J.P. van\"}]",
+  "Promotietekst":
+    "Gewasbescherming in de akkerbouw en/of vollegrondsgroententeelt. Een advies begint niet bij de ingang of de uitgang, maar gebeurt jaarrond.",
+  "PromotietekstData":
+    "[{\"text\":\"Gewasbescherming in de akkerbouw en/of vollegrondsgroententeelt. Een advies begint niet bij de ingang of de uitgang, maar gebeurt jaarrond.\",\"date\":\"2018-03-19T08:12:02.464Z\",\"by\":\"Splunter, J.P. van\"}]",
+  "EvaluatieWijze":
+    "[{\"text\":\"rondvraag met evaluatie en vragenlijst. Deze vragenlijst is bij meer bijeenkomsten te gebruiken en wordt vastgelegd, daardoor meer structuur.\",\"date\":\"2017-04-07T09:40:34.212Z\",\"by\":\"Splunter, J.P. van\"},{\"text\":\"Collegiale vragenronde, evaluatieformulier\",\"date\":\"2017-04-07T09:52:18.330Z\",\"by\":\"Splunter, J.P. van\"},{\"text\":\"vragenronde, evaluatieformulier\",\"date\":\"2017-04-11T15:03:58.470Z\",\"by\":\"Splunter, J.P. van\"}]",
+  "DigitaalAanbod": false,
+  "Materiaal":
+    "[{\"text\":\"korte samenvatting\",\"date\":\"2017-04-07T09:40:34.211Z\",\"by\":\"Splunter, J.P. van\"}]",
+  "Tijdsduur": "3,0",
+  "Groepsgrootte": 60,
+  "AantalSessies": 1,
+  "KostenPerDeelname": 40.95,
+  "Website":
+    "[{\"text\":\"www.edudelta.nl\",\"date\":\"2017-04-07T09:40:34.211Z\",\"by\":\"Splunter, J.P. van\"}]",
+  "Begindatum": null,
+  "Einddatum": null,
+  "BijlagenData": [],
+  "Discussies": [
+    {
+      "Commentaar":
+        "{\"12\":\"Zie ook de beschrijving van de werkvormen. Akkoord.\",\"05\":\"Deze tekst is niet ter zake doende. Ik verzoek u te beschrijven hoe aandacht wordt besteed aan de twee landelijk gedefinieerde actualiteiten, in maart 2017 opnieuw gedefinieerd: het thema “Water” en het thema “Verduurzaming”. Deze beschrijving kan in de plaats komen van uw huidige tekst.\",\"08B\":\"Mechanisatie is een breed begrip. Bedoeld u hier dat aandacht wordt besteed aan mechanische onkruidbestrijding?\",\"06\":\"Deze omschrijving is te weinig specifiek. Onder deze teksten kan een breed scale van onderwerpen aan bod komen. Ik verzoek u meer specifiek te formuleren wat de deelnemers aan het einde van de bijeenkomst moeten weten, kunnen enz.\",\"07\":\"Zie mijn opmerking bij \\\"Doelstelling\\\". Graag specifieker beschrijven wat er wordt behandeld.\",\"09\":\"Mijn complimenten voor deze wijze van uitwisselen van ervaringen.\"}",
+      "DatumTijd": "2018-03-20T11:09:17.327",
+      "Bron": "Beoordelaar",
+      "Auteur": "Rood, P. van 't"
+    },
+    {
+      "Commentaar":
+        "{\"06\":\"aangepast\",\"07\":\"Gezien de actualiteit is het moeilijk om dit specifiek in te vullen. Het is sector- en tijdgericht\",\"08B\":\"dank voor de aanscherping\",\"05\":\"aangepast\"}",
+      "DatumTijd": "2018-03-20T11:32:17.027",
+      "Bron": "Kennisaanbieder",
+      "Auteur": "Splunter, J.P. van"
+    }
+  ],
+  "Commentaren": null,
+  "Beoordeling": {
+    "BeoordelingID": 0,
+    "PersoonID": 117,
+    "Status": "TerBeoordeling",
+    "Rapport": "",
+    "Rapportcijfer": 0,
+    "DatumRapport": null,
+    "DatumGepland": "2018-04-19T00:00:00",
+    "BeoordelingChanged": false
+  },
+  "CreateFactuur": false,
+  "FactuurID": 45901,
+  "InvoiceLink":
+    "window.open('iDeal/Factuur.aspx?SafeKey=0llZaIoTJsYwTeoX3RIT8QyfYlay7GTqkqJHL6qQ2DOJagZJJvvApwjp2hUdk5o4h3enOWmFi52CPKHeVvzMLjy/OCES+Hwey7bzFZcWrMbUxgiRpszbk3dyYmnkOb0x2yK60L5MVrE3SrG9bJfB/w==','FactuurVenster','left=100,top=50,width=700,height=800,location=0,resizable=1,toolbar=1')",
+  "ThemaCompetentieChanged": false,
+  "VaardighedenChanged": false,
+  "KennisgebiedenChanged": false,
+  "BijlagenChanged": false,
+  "IsRector": true,
+  "IsHoogleraar": true,
+  "IsBeoordelaar": true,
+  "IsVakcommissieAG": false,
+  "GewijzigdActie": "Wordt beoordeeld, commentaar kennisaanbieder",
+  "GewijzigdDatum": "2018-03-28T21:36:55.5420498+02:00",
+  "Historie":
+    "[{\"changes\":\"Aangemaakt\",\"changedFields\":[\"Titel\",\"Sectoren\",\"Waarschuwings- en adviessystemen\",\"Individuele relevantie\",\"Werkvormen\",\"Groepsgrootte\"],\"changedComments\":[],\"date\":\"2018-03-19T08:25:45.859Z\",\"by\":\"Splunter, J.P. van\"},{\"changes\":\"Ingediend\",\"changedFields\":[],\"changedComments\":[],\"date\":\"2018-03-19T08:25:52.109Z\",\"by\":\"Splunter, J.P. van\"},{\"changes\":\"Beoordelaar toegewezen\",\"changedFields\":[],\"changedComments\":[],\"date\":\"2018-03-20T06:54:44.399Z\",\"by\":\"Houthuijzen, M.\"},{\"changes\":\"Wordt beoordeeld, commentaar beoordelaar\",\"changedFields\":[],\"changedComments\":[\"12\",\"05\",\"08B\",\"06\",\"07\",\"09\"],\"date\":\"2018-03-20T10:08:29.838Z\",\"by\":\"Rood, P. van 't\"},{\"changes\":\"Wordt beoordeeld, commentaar kennisaanbieder\",\"changedFields\":[\"Doelstelling\",\"Inhoud\",\"Teelttechnische maatregelen\",\"Actualiteit\"],\"changedComments\":[\"06\",\"07\",\"08B\",\"05\"],\"date\":\"2018-03-20T10:31:27.472Z\",\"by\":\"Splunter, J.P. van\"}]",
+  "Thema": "Teelt",
+  "Competentie": "Bedrijfsvoeren Gewasbescherming",
+  "Vaardigheden":
+    "* analyseren en evalueren van uitgevoerde gewasbescherming.* bij advisering rekening houden met milieu, veiligheid en resistentierisico.* kennis van wet- en regelgeving over het gebruik van bestrijdingsmiddelen om de klanten te adviseren.* ontwikkelingen in de sector op het gebied van de gewasbescherming bijhouden.* werkt volgens het principe van de geïntegreerde gewasbescherming.",
+  "Beoordelaar": "Rood, P. van 't",
+  "Vakvragen": [
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Titel",
+      "Omschrijving": null,
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Promotietekst",
+      "Omschrijving": null,
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Website",
+      "Omschrijving": null,
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Doelgroep",
+      "Omschrijving": null,
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Actualiteit",
+      "Omschrijving": null,
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Doelstelling",
+      "Omschrijving": null,
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Doelstelling S",
+      "Omschrijving": null,
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Doelstelling M",
+      "Omschrijving": null,
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Doelstelling A",
+      "Omschrijving": null,
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Doelstelling R",
+      "Omschrijving": null,
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Doelstelling T",
+      "Omschrijving": null,
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Inhoud",
+      "Omschrijving": null,
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Ge&iuml;ntegreerde Gewasbescherming",
+      "Omschrijving": null,
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Preventieve maatregelen",
+      "Omschrijving": null,
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Teelttechnische maatregelen",
+      "Omschrijving": null,
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Waarschuwings- en adviessystemen",
+      "Omschrijving": null,
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Niet-chemische mogelijkheden",
+      "Omschrijving": null,
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Chemische gewasbescherming en toedieningstechnieken",
+      "Omschrijving": null,
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Emissiebeperking",
+      "Omschrijving": null,
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Werkvormen",
+      "Omschrijving": null,
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Maak een tijdschema",
+      "Omschrijving": null,
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Docenten",
+      "Omschrijving": null,
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Individuele relevantie",
+      "Omschrijving": null,
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Materiaal",
+      "Omschrijving": null,
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Evaluatie",
+      "Omschrijving": null,
+      "Zichtbaar": true
+    }
+  ]
+}

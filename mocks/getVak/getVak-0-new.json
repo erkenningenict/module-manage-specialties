@@ -1,0 +1,18 @@
+{
+  "expression":
+    "^/DesktopModules/AOCRaad.Erkenningen.WebAPI/API/Specialty/GetVak\\?vakID=0&forPrinting=false$",
+  "method": "GET",
+  "name": "getVakNew",
+  "isArray": true,
+  "responses": {
+    "200-ok-with-discussion": {
+      "default": true,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "status": 200,
+      "file": "mocks/getVak/data/getVak-0.json",
+      "delay": 200
+    }
+  }
+}

@@ -1,0 +1,350 @@
+{
+  "Vaardigheden": [
+    {
+      "VaardigheidID": 3383,
+      "Code": "901",
+      "Omschrijving":
+        "De deelnemer kan de risico’s voor de gezondheid, het milieu en de veiligheid tijdens de voorbereiding, de uitvoering en de nazorg van de bestrijding herkennen (risico's).",
+      "Punten": 10,
+      "MinimumPunten": 70,
+      "IsEnabled": true,
+      "IsVerplicht": false,
+      "Tooltip": ""
+    },
+    {
+      "VaardigheidID": 3384,
+      "Code": "902",
+      "Omschrijving":
+        "De deelnemer kan de chemische achtergronden van fosforwaterstofvormende bestrijdingsmiddelen benoemen voor de herkenning, de beoordeling en de beheersing van de risico’s (risico's).",
+      "Punten": 10,
+      "MinimumPunten": 70,
+      "IsEnabled": true,
+      "IsVerplicht": false,
+      "Tooltip": ""
+    },
+    {
+      "VaardigheidID": 3385,
+      "Code": "903",
+      "Omschrijving":
+        "De deelnemer kan de risico’s voor de gezondheid, het milieu en de veiligheid beoordelen tijdens de voorbereiding, de uitvoering en de nazorg van de bestrijding (risico's).",
+      "Punten": 10,
+      "MinimumPunten": 70,
+      "IsEnabled": true,
+      "IsVerplicht": false,
+      "Tooltip": ""
+    },
+    {
+      "VaardigheidID": 3386,
+      "Code": "904",
+      "Omschrijving":
+        "De deelnemer kan de risico’s voor de gezondheid, het milieu en de veiligheid beheersen tijdens de voorbereiding, de uitvoering en de nazorg van de bestrijding (risico's).",
+      "Punten": 10,
+      "MinimumPunten": 70,
+      "IsEnabled": true,
+      "IsVerplicht": false,
+      "Tooltip": ""
+    },
+    {
+      "VaardigheidID": 3387,
+      "Code": "905",
+      "Omschrijving":
+        "De deelnemer kan het doel van de verschillende handelingen benoemen tijdens het uitvoeren van de bestrijding (bestrijding).",
+      "Punten": 10,
+      "MinimumPunten": 70,
+      "IsEnabled": true,
+      "IsVerplicht": false,
+      "Tooltip": ""
+    },
+    {
+      "VaardigheidID": 3388,
+      "Code": "906",
+      "Omschrijving":
+        "De deelnemer kan een bestrijding van mollen en woelratten uitvoeren met inachtneming van de risico’s en de wetgeving (bestrijding). (verplicht)",
+      "Punten": 10,
+      "MinimumPunten": 70,
+      "IsEnabled": false,
+      "IsVerplicht": true,
+      "Tooltip": "Deze vaardigheid is verplicht"
+    },
+    {
+      "VaardigheidID": 3389,
+      "Code": "907",
+      "Omschrijving":
+        "De deelnemer kan de wijze van de bestrijding aan de weersinvloeden en de omgeving aanpassen rekening houdend met de veiligheid van hemzelf en anderen (bestrijding).",
+      "Punten": 10,
+      "MinimumPunten": 70,
+      "IsEnabled": true,
+      "IsVerplicht": false,
+      "Tooltip": ""
+    },
+    {
+      "VaardigheidID": 3390,
+      "Code": "908",
+      "Omschrijving":
+        "De deelnemer kan de restanten van de bestrijdingsmiddelen en verpakkingen van bestrijdingsmiddelen op de juiste manier verwerken (bestrijding).",
+      "Punten": 10,
+      "MinimumPunten": 70,
+      "IsEnabled": true,
+      "IsVerplicht": false,
+      "Tooltip": ""
+    },
+    {
+      "VaardigheidID": 3391,
+      "Code": "909",
+      "Omschrijving":
+        "De deelnemer kan een bestrijdingsplan voor de bestrijding van mollen en woelratten opzetten met inachtneming van risico’s en wetgeving (bestrijding).",
+      "Punten": 10,
+      "MinimumPunten": 70,
+      "IsEnabled": true,
+      "IsVerplicht": false,
+      "Tooltip": ""
+    },
+    {
+      "VaardigheidID": 3392,
+      "Code": "910",
+      "Omschrijving":
+        "De deelnemer kan de regels die gelden voor de toepassing van de fosforwaterstof-vormende middelen ter bestrijding van woelratten en mollen herkennen (verantwoordelijkheid).",
+      "Punten": 10,
+      "MinimumPunten": 70,
+      "IsEnabled": true,
+      "IsVerplicht": false,
+      "Tooltip": ""
+    },
+    {
+      "VaardigheidID": 3393,
+      "Code": "911",
+      "Omschrijving":
+        "De deelnemer kan de verantwoordelijkheden, rechten en plichten die aan een deskundige voor de bestrijding van mollen en woelratten volgens de verschillende relevante wetten worden gesteld herkennen (verantwoordelijkheid).",
+      "Punten": 10,
+      "MinimumPunten": 70,
+      "IsEnabled": true,
+      "IsVerplicht": false,
+      "Tooltip": ""
+    },
+    {
+      "VaardigheidID": 3394,
+      "Code": "912",
+      "Omschrijving":
+        "De deelnemer kan de persoonlijke beschermingsmiddelen en de beschuttingsmiddelen tijdens de bestrijding op juiste wijze gebruiken (verantwoordelijkheid). (verplicht)",
+      "Punten": 10,
+      "MinimumPunten": 70,
+      "IsEnabled": false,
+      "IsVerplicht": true,
+      "Tooltip": "Deze vaardigheid is verplicht"
+    }
+  ],
+  "MinimumPunten": 70,
+  "VakVragen": [
+    {
+      "ThemaID": 25,
+      "CompetentieID": 4,
+      "VraagID": "01",
+      "Titel": "Titel",
+      "Omschrijving": "Wat is de titel van het kennisaanbod?",
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 25,
+      "CompetentieID": 4,
+      "VraagID": "02",
+      "Titel": "Promotietekst",
+      "Omschrijving":
+        "Schrijf 1 wervende \"reclametekst\" voor uw kennisaanbod.",
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 25,
+      "CompetentieID": 4,
+      "VraagID": "03",
+      "Titel": "Website",
+      "Omschrijving": "Vermeld uw bedrijfswebsite.",
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 25,
+      "CompetentieID": 4,
+      "VraagID": "04",
+      "Titel": "Doelgroep",
+      "Omschrijving": "Voor welke doelgroep is het aanbod bestemd?",
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 25,
+      "CompetentieID": 4,
+      "VraagID": "05",
+      "Titel": "Actualiteit",
+      "Omschrijving": "Hoe weeft u de genoemde actualiteit in het geheel?",
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 25,
+      "CompetentieID": 4,
+      "VraagID": "06",
+      "Titel": "Doelstelling",
+      "Omschrijving":
+        "Wat moeten de deelnemers aan het einde van de bijeenkomst weten, kennen, kunnen of bewust zijn?",
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 25,
+      "CompetentieID": 4,
+      "VraagID": "06A",
+      "Titel": "Doelstelling S",
+      "Omschrijving":
+        "Is er maar &eacute;&eacute;n interpretatie van de doelstelling mogelijk? Maak de doelstelling specifiek.",
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 25,
+      "CompetentieID": 4,
+      "VraagID": "06B",
+      "Titel": "Doelstelling M",
+      "Omschrijving":
+        "Hoe meetbaar is het doel? Maak de doelstelling meetbaar.",
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 25,
+      "CompetentieID": 4,
+      "VraagID": "06C",
+      "Titel": "Doelstelling A",
+      "Omschrijving":
+        "Hoe wordt het doel omgezet naar de eigen situatie van de deelnemer? Maak de doelstelling relevant voor de eigen situatie van de deelnemer.",
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 25,
+      "CompetentieID": 4,
+      "VraagID": "06D",
+      "Titel": "Doelstelling R",
+      "Omschrijving":
+        "Is het doel haalbaar voor de deelnemers? Maak de doelstelling haalbaar voor de deelnemers.",
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 25,
+      "CompetentieID": 4,
+      "VraagID": "06E",
+      "Titel": "Doelstelling T",
+      "Omschrijving":
+        "Wanneer moet het doel bereikt zijn? Maak de doelstelling tijdgebonden.",
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 25,
+      "CompetentieID": 4,
+      "VraagID": "07",
+      "Titel": "Inhoud",
+      "Omschrijving": "Wat is de inhoud van het aanbod?",
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 25,
+      "CompetentieID": 4,
+      "VraagID": "08",
+      "Titel": "Geïntegreerde mollen- en woelrattenbestrijding",
+      "Omschrijving": "Wat gebeurt er op het gebied van",
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 25,
+      "CompetentieID": 4,
+      "VraagID": "08A",
+      "Titel": "Preventieve maatregelen",
+      "Omschrijving": "Omschrijf de preventieve maatregelen.",
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 25,
+      "CompetentieID": 4,
+      "VraagID": "08B",
+      "Titel": "Teeltechnische",
+      "Omschrijving": "",
+      "Zichtbaar": false
+    },
+    {
+      "ThemaID": 25,
+      "CompetentieID": 4,
+      "VraagID": "08C",
+      "Titel": "Waarschuwings- en adviessystemen",
+      "Omschrijving": "Omschrijf de waarschuwings- en adviessystemen.",
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 25,
+      "CompetentieID": 4,
+      "VraagID": "08D",
+      "Titel": "Niet-chemische bestrijding",
+      "Omschrijving": "Omschrijf de niet- chemische bestrijding.",
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 25,
+      "CompetentieID": 4,
+      "VraagID": "08E",
+      "Titel": "Chemische bestrijding en toedieningstechnieken",
+      "Omschrijving":
+        "Omschrijf de chemische bestrijding en toedieningstechnieken.",
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 25,
+      "CompetentieID": 4,
+      "VraagID": "08F",
+      "Titel": "Mw",
+      "Omschrijving": "",
+      "Zichtbaar": false
+    },
+    {
+      "ThemaID": 25,
+      "CompetentieID": 4,
+      "VraagID": "09",
+      "Titel": "Werkvormen",
+      "Omschrijving":
+        "Hoe pakt u het aan om te bereiken wat u zich heeft voorgenomen.",
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 25,
+      "CompetentieID": 4,
+      "VraagID": "10",
+      "Titel": "Maak een tijdschema",
+      "Omschrijving": "Optioneel.",
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 25,
+      "CompetentieID": 4,
+      "VraagID": "11",
+      "Titel": "Docenten",
+      "Omschrijving": "Welke docenten staan voor de groep.",
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 25,
+      "CompetentieID": 4,
+      "VraagID": "12",
+      "Titel": "Individuele relevantie",
+      "Omschrijving":
+        "Hoe komen de werk- en bedrijfservaringen van de deelnemers aan bod, in relatie tot de inhoud?",
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 25,
+      "CompetentieID": 4,
+      "VraagID": "13",
+      "Titel": "Materiaal",
+      "Omschrijving": "Wat krijgen de deelnemers mee naar huis?",
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 25,
+      "CompetentieID": 4,
+      "VraagID": "14",
+      "Titel": "Evaluatie",
+      "Omschrijving":
+        "Hoe meet u wat de deelnemers van de bijeenkomst vonden+ hoe vraagt u naar de inhoud+ hoe vraagt u naar de omstandigheden?",
+      "Zichtbaar": true
+    }
+  ]
+}

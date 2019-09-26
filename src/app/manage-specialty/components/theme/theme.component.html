@@ -1,0 +1,16 @@
+<ngForm [formGroup]="form">
+    <div class="form-group">
+        <label class="col-sm-2 control-label">Thema *</label>
+
+        <div class="col-sm-4">
+            <p-dropdown
+                [options]="themas"
+                optionLabel="Naam"
+                [style]="{'width':'100%'}"
+                dataKey="ThemaID"
+                formControlName="thema"
+                [disabled]="!enableEditing"
+            ></p-dropdown>
+        </div>
+    </div>
+</ngForm>

@@ -1,0 +1,34 @@
+{
+  "expression":
+    "^/DesktopModules/AOCRaad.Erkenningen.WebAPI/API/Specialty/UpdateVak$",
+  "method": "PUT",
+  "name": "updateVak",
+  "isArray": false,
+  "responses": {
+    "200-vakid-23369": {
+      "default": true,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "status": 200,
+      "file": "mocks/updateVak/data/200.json",
+      "delay": 200
+    },
+    "200-vakid-22689": {
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "status": 200,
+      "file": "mocks/updateVak/data/200-vakid-22689.json",
+      "delay": 200
+    },
+    "500": {
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "status": 500,
+      "file": "mocks/updateVak/data/500.json",
+      "delay": 200
+    }
+  }
+}

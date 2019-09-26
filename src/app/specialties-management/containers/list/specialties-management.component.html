@@ -1,0 +1,13 @@
+<p-panel header="Vakken beheren">
+    <!-- <p-blockUI [blocked]="loading$ | async"></p-blockUI> -->
+    <be-search
+        [query]="searchQuery$ | async"
+        [searching]="loading$ | async"
+        [error]="error$ | async"
+        (search)="search($event)"
+    ></be-search>
+    <be-table
+        [loading]="loading$ | async"
+        [list]="list$ | async"
+    ></be-table>
+</p-panel>

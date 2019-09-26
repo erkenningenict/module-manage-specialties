@@ -1,0 +1,26 @@
+{
+  "expression":
+    "^/DesktopModules/AOCRaad.Erkenningen.WebAPI/API/Specialty/RevokeVak\\?vakID=(.*)\\&i=(.*)$",
+  "method": "PUT",
+  "name": "revokeVak",
+  "isArray": false,
+  "responses": {
+    "200-vakid-23369": {
+      "default": true,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "status": 200,
+      "file": "mocks/revokeVak/data/200.json",
+      "delay": 200
+    },
+    "500": {
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "status": 500,
+      "file": "mocks/revokeVak/data/500.json",
+      "delay": 200
+    }
+  }
+}

@@ -1,0 +1,34 @@
+<div [formGroup]="form">
+    <div [ngClass]="showComments ? 'col-sm-6' : 'col-sm-12'">
+        <div
+            [ngClass]="{'has-error': form.controls[controlName].invalid && form.controls[controlName].dirty}"
+            class="form-group"
+        >
+            <label class="control-label pull-left">
+                <span>{{labelText}}</span>
+                <span *ngIf="!requiredItem">*</span>
+            </label>
+            <ng-content></ng-content>
+            <textarea
+                beAutosize
+                class="form-control"
+                name="FormLabel"
+                [formControlName]="controlName"
+            ></textarea>
+            <span
+                class="pull-right"
+                *ngIf="showNrOfCharacters"
+            >
+                {{maxLength - form.controls[controlName]?.value?.length}} tekens over
+            </span>
+            <div class="clearfix"></div>
+            <div
+                class="help-block"
+                *ngIf="form.controls[controlName].dirty"
+            >
+                <span class="fa fa-warning-sign"></span>
+                Verplicht veld
+            </div>
+        </div>
+    </div>
+</div>

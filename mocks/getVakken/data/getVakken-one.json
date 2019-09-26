@@ -1,0 +1,29 @@
+[
+  {
+    "DatumAangemaaktString": "10-11-2017",
+    "DatumGewijzigdString": "10-11-2017",
+    "DatumTijdGewijzigdString": "10-11-2017 11:23",
+    "MaximumDatumString": "",
+    "RevokeVisible": false,
+    "DeleteVisible": true,
+    "EditVisible": true,
+    "VakID": 23369,
+    "VakgroepID": 210471,
+    "VakgroepNaam": "Alliance B.V.",
+    "Afkorting": "",
+    "Code": "",
+    "DatumAangemaakt": "2017-11-10T00:00:00",
+    "GewijzigdActie": "",
+    "GewijzigdDatum": "2017-11-10T11:23:05.69",
+    "IsSjabloon": false,
+    "Status": "Voorlopig",
+    "Titel": "EVAX en Den Dekker 2018",
+    "MaximumDatum": null,
+    "MaximumCursisten": 75,
+    "CompetentieID": 2,
+    "ThemaID": 1,
+    "Competentie": "BG",
+    "Thema": "VT",
+    "DigitaalAanbod": false
+  }
+]

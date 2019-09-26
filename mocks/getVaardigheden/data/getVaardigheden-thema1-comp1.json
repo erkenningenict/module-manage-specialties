@@ -1,0 +1,380 @@
+{
+  "Vaardigheden": [
+    {
+      "VaardigheidID": 2147,
+      "Code": "02",
+      "Omschrijving": "herkent onkruiden in het gewas.",
+      "Punten": 10,
+      "MinimumPunten": 60,
+      "IsEnabled": true,
+      "IsVerplicht": false,
+      "Tooltip": ""
+    },
+    {
+      "VaardigheidID": 2146,
+      "Code": "03",
+      "Omschrijving":
+        "herkent en noemt de meest relevante ziekten, plagen, en abiotische afwijkingen in het gewas.",
+      "Punten": 10,
+      "MinimumPunten": 60,
+      "IsEnabled": true,
+      "IsVerplicht": false,
+      "Tooltip": ""
+    },
+    {
+      "VaardigheidID": 2174,
+      "Code": "04",
+      "Omschrijving":
+        "past richtlijnen en beeldtaal op het etiket van een bestrijdingsmiddel toe en zoekt gegevens op.",
+      "Punten": 10,
+      "MinimumPunten": 60,
+      "IsEnabled": true,
+      "IsVerplicht": false,
+      "Tooltip": ""
+    },
+    {
+      "VaardigheidID": 2145,
+      "Code": "05",
+      "Omschrijving":
+        "herkent en beoordeelt risico’s voor veiligheid en gezondheid van specifieke bestrijding en bestrijdingsmethoden.",
+      "Punten": 10,
+      "MinimumPunten": 60,
+      "IsEnabled": true,
+      "IsVerplicht": false,
+      "Tooltip": ""
+    },
+    {
+      "VaardigheidID": 2175,
+      "Code": "06",
+      "Omschrijving":
+        "past tijdens en na het uitvoeren van de bestrijding alle maatregelen ter voorkoming van risico’s voor veiligheid, gezondheid en milieu toe.",
+      "Punten": 10,
+      "MinimumPunten": 60,
+      "IsEnabled": true,
+      "IsVerplicht": false,
+      "Tooltip": ""
+    },
+    {
+      "VaardigheidID": 2130,
+      "Code": "07",
+      "Omschrijving":
+        "berekent de benodigde hoeveelheid middel voor de chemische bestrijding.",
+      "Punten": 10,
+      "MinimumPunten": 60,
+      "IsEnabled": true,
+      "IsVerplicht": false,
+      "Tooltip": ""
+    },
+    {
+      "VaardigheidID": 2167,
+      "Code": "08",
+      "Omschrijving":
+        "maakt apparatuur en middelen klaar voor chemische bestrijding met inachtneming van veiligheids- en gezondheidsmaatregelen.",
+      "Punten": 10,
+      "MinimumPunten": 60,
+      "IsEnabled": true,
+      "IsVerplicht": false,
+      "Tooltip": ""
+    },
+    {
+      "VaardigheidID": 2127,
+      "Code": "09",
+      "Omschrijving":
+        "bedient de apparatuur met inachtneming van veiligheids –en gezondheidsmaatregelen.",
+      "Punten": 10,
+      "MinimumPunten": 60,
+      "IsEnabled": true,
+      "IsVerplicht": false,
+      "Tooltip": ""
+    },
+    {
+      "VaardigheidID": 2190,
+      "Code": "10",
+      "Omschrijving":
+        "verwijdert onkruiden uit het gewas en voert bestrijding in het gewas uit gebruikmakend van de juiste persoonlijke beschermingsmiddelen.",
+      "Punten": 10,
+      "MinimumPunten": 60,
+      "IsEnabled": true,
+      "IsVerplicht": false,
+      "Tooltip": ""
+    },
+    {
+      "VaardigheidID": 2168,
+      "Code": "11",
+      "Omschrijving":
+        "maakt de apparatuur op een veilige manier schoon en voert de verpakking op wettelijk voorgeschreven manier af.",
+      "Punten": 10,
+      "MinimumPunten": 60,
+      "IsEnabled": true,
+      "IsVerplicht": false,
+      "Tooltip": ""
+    },
+    {
+      "VaardigheidID": 2192,
+      "Code": "12",
+      "Omschrijving":
+        "voert restmiddelen veilig af met inachtneming van wet- en regelgeving.",
+      "Punten": 10,
+      "MinimumPunten": 60,
+      "IsEnabled": true,
+      "IsVerplicht": false,
+      "Tooltip": ""
+    },
+    {
+      "VaardigheidID": 2191,
+      "Code": "13",
+      "Omschrijving":
+        "voert het dagelijks onderhoud aan de apparatuur uit met inachtneming van eigen en andermans veiligheid.",
+      "Punten": 10,
+      "MinimumPunten": 60,
+      "IsEnabled": true,
+      "IsVerplicht": false,
+      "Tooltip": ""
+    },
+    {
+      "VaardigheidID": 2170,
+      "Code": "14",
+      "Omschrijving":
+        "noemt de belangrijkste bestrijdings- en emissiebeperkingsmethoden.",
+      "Punten": 10,
+      "MinimumPunten": 60,
+      "IsEnabled": true,
+      "IsVerplicht": false,
+      "Tooltip": ""
+    },
+    {
+      "VaardigheidID": 2148,
+      "Code": "15",
+      "Omschrijving": "herkent spuitsystemen.",
+      "Punten": 10,
+      "MinimumPunten": 60,
+      "IsEnabled": true,
+      "IsVerplicht": false,
+      "Tooltip": ""
+    },
+    {
+      "VaardigheidID": 2194,
+      "Code": "27",
+      "Omschrijving":
+        "werkt volgens het principe van de geïntegreerde gewasbescherming.",
+      "Punten": 10,
+      "MinimumPunten": 60,
+      "IsEnabled": true,
+      "IsVerplicht": false,
+      "Tooltip": ""
+    }
+  ],
+  "MinimumPunten": 60,
+  "VakVragen": [
+    {
+      "ThemaID": 1,
+      "CompetentieID": 1,
+      "VraagID": "01",
+      "Titel": "Titel",
+      "Omschrijving": "Wat is de titel van het kennisaanbod?",
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 1,
+      "CompetentieID": 1,
+      "VraagID": "02",
+      "Titel": "Promotietekst",
+      "Omschrijving":
+        "Schrijf een wervende \"reclametekst\" voor uw kennisaanbod.",
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 1,
+      "CompetentieID": 1,
+      "VraagID": "03",
+      "Titel": "Website",
+      "Omschrijving": "Vermeld uw bedrijfswebsite.",
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 1,
+      "CompetentieID": 1,
+      "VraagID": "04",
+      "Titel": "Doelgroep",
+      "Omschrijving": "Voor welke doelgroep is het aanbod bestemd?",
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 1,
+      "CompetentieID": 1,
+      "VraagID": "05",
+      "Titel": "Actualiteit",
+      "Omschrijving": "Hoe weeft u de genoemde actualiteit in het geheel?",
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 1,
+      "CompetentieID": 1,
+      "VraagID": "06",
+      "Titel": "Doelstelling",
+      "Omschrijving":
+        "Wat moeten de deelnemers aan het einde van de bijeenkomst weten, kennen, kunnen of bewust zijn?",
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 1,
+      "CompetentieID": 1,
+      "VraagID": "06A",
+      "Titel": "Doelstelling S",
+      "Omschrijving":
+        "Is er maar &eacute;&eacute;n interpretatie van de doelstelling mogelijk? Maak de doelstelling specifiek.",
+      "Zichtbaar": false
+    },
+    {
+      "ThemaID": 1,
+      "CompetentieID": 1,
+      "VraagID": "06B",
+      "Titel": "Doelstelling M",
+      "Omschrijving":
+        "Hoe meetbaar is het doel? Maak de doelstelling meetbaar.",
+      "Zichtbaar": false
+    },
+    {
+      "ThemaID": 1,
+      "CompetentieID": 1,
+      "VraagID": "06C",
+      "Titel": "Doelstelling A",
+      "Omschrijving":
+        "Hoe wordt het doel omgezet naar de eigen situatie van de deelnemer? Maak de doelstelling relevant voor de eigen situatie van de deelnemer.",
+      "Zichtbaar": false
+    },
+    {
+      "ThemaID": 1,
+      "CompetentieID": 1,
+      "VraagID": "06D",
+      "Titel": "Doelstelling R",
+      "Omschrijving":
+        "Is het doel haalbaar voor de deelnemers? Maak de doelstelling haalbaar voor de deelnemers.",
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 1,
+      "CompetentieID": 1,
+      "VraagID": "06E",
+      "Titel": "Doelstelling T",
+      "Omschrijving":
+        "Wanneer moet het doel bereikt zijn? Maak de doelstelling tijdgebonden.",
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 1,
+      "CompetentieID": 1,
+      "VraagID": "07",
+      "Titel": "Inhoud",
+      "Omschrijving": "Test Wat is de inhoud van het aanbod?",
+      "Zichtbaar": false
+    },
+    {
+      "ThemaID": 1,
+      "CompetentieID": 1,
+      "VraagID": "08",
+      "Titel": "Geïntegreerde Gewasbescherming",
+      "Omschrijving": "Hoe is geïntegreerde aanpak in het aanbod opgenomen?",
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 1,
+      "CompetentieID": 1,
+      "VraagID": "08A",
+      "Titel": "Preventieve maatregelen",
+      "Omschrijving": "Toelichtende gegevens.",
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 1,
+      "CompetentieID": 1,
+      "VraagID": "08B",
+      "Titel": "Teeltechnische",
+      "Omschrijving": "",
+      "Zichtbaar": false
+    },
+    {
+      "ThemaID": 1,
+      "CompetentieID": 1,
+      "VraagID": "08C",
+      "Titel": "Waarschuwings- en adviessystemen",
+      "Omschrijving": "Toelichtende gegevens.",
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 1,
+      "CompetentieID": 1,
+      "VraagID": "08D",
+      "Titel": "Niet-chemische mogelijkheden",
+      "Omschrijving": "",
+      "Zichtbaar": false
+    },
+    {
+      "ThemaID": 1,
+      "CompetentieID": 1,
+      "VraagID": "08E",
+      "Titel": "Chemische gewasbescherming en toedieningstechnieken",
+      "Omschrijving": "Toelichtende gegevens.",
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 1,
+      "CompetentieID": 1,
+      "VraagID": "08F",
+      "Titel": "Emissiebeperking",
+      "Omschrijving": "Toelichtende gegevens.",
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 1,
+      "CompetentieID": 1,
+      "VraagID": "09",
+      "Titel": "Werkvormen",
+      "Omschrijving":
+        "Hoe pakt u het aan om te bereiken wat u zich heeft voorgenomen.",
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 1,
+      "CompetentieID": 1,
+      "VraagID": "10",
+      "Titel": "Maak een tijdschema",
+      "Omschrijving": "Optioneel.",
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 1,
+      "CompetentieID": 1,
+      "VraagID": "11",
+      "Titel": "Docenten",
+      "Omschrijving": "Welke docenten staan voor de groep.",
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 1,
+      "CompetentieID": 1,
+      "VraagID": "12",
+      "Titel": "Individuele relevantie",
+      "Omschrijving":
+        "Hoe komen de werk- en bedrijfservaringen van de deelnemers aan bod, in relatie tot de inhoud?",
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 1,
+      "CompetentieID": 1,
+      "VraagID": "13",
+      "Titel": "Materiaal",
+      "Omschrijving": "Wat krijgen de deelnemers mee naar huis?",
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 1,
+      "CompetentieID": 1,
+      "VraagID": "14",
+      "Titel": "Evaluatie",
+      "Omschrijving":
+        "Hoe meet u wat de deelnemers van de bijeenkomst vonden+ hoe vraagt u naar de inhoud+ hoe vraagt u naar de omstandigheden?",
+      "Zichtbaar": true
+    }
+  ]
+}

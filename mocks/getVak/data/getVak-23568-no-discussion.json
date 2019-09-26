@@ -1,0 +1,283 @@
+{
+  "CurrentUserName": "Groot, Antoon G. de",
+  "CurrentPersoonID": 109,
+  "VakID": 23568,
+  "Afkorting": "",
+  "Doelgroep": "",
+  "Titel": "de derde",
+  "TitelData":
+    "[{\"text\":\"de derde\",\"date\":\"2018-10-05T21:06:19.391Z\",\"by\":\"Groot, Antoon G. de\"}]",
+  "Status": "Voorlopig",
+  "AanbodCode": "23568",
+  "NormVersieID": 20005,
+  "DatumAangemaakt": "2018-10-05T00:00:00",
+  "VakgroepID": 210439,
+  "VakgroepNaam": "Bureau Erkenningen",
+  "VakgroepAdres":
+    "Bronland 12A, 6708 WH&nbsp;&nbsp;Wageningen<br/>Antoon G. de Groot<br/>0318 648 900<br/>secretariaat.erkenningen@aocraad.nl",
+  "ThemaID": 28,
+  "CompetentieID": 24,
+  "GekozenVaardigheden": [
+    { "VaardigheidID": 3408 },
+    { "VaardigheidID": 3407 },
+    { "VaardigheidID": 3406 },
+    { "VaardigheidID": 3404 },
+    { "VaardigheidID": 3403 }
+  ],
+  "GekozenKennisgebieden": [19],
+  "DoelstellingData":
+    "{\"Doelstelling\":[{\"date\":\"2018-10-05T21:06:19.391Z\",\"by\":\"Groot, Antoon G. de\"},{\"text\":\"dfdg\",\"date\":\"2018-10-05T21:09:58.181Z\",\"by\":\"Groot, Antoon G. de\"}],\"DoelstellingS\":[{\"date\":\"2018-10-05T21:06:19.391Z\",\"by\":\"Groot, Antoon G. de\"}],\"DoelstellingM\":[{\"date\":\"2018-10-05T21:06:19.391Z\",\"by\":\"Groot, Antoon G. de\"}],\"DoelstellingA\":[{\"date\":\"2018-10-05T21:06:19.391Z\",\"by\":\"Groot, Antoon G. de\"}],\"DoelstellingR\":[{\"date\":\"2018-10-05T21:06:19.391Z\",\"by\":\"Groot, Antoon G. de\"}],\"DoelstellingT\":[{\"date\":\"2018-10-05T21:06:19.391Z\",\"by\":\"Groot, Antoon G. de\"}]}",
+  "Inhoud":
+    "[{\"text\":\"sdf\",\"date\":\"2018-10-05T21:09:58.181Z\",\"by\":\"Groot, Antoon G. de\"}]",
+  "GeintegreerdeGewasbeschermingData":
+    "{\"GeintegreerdeGewasbescherming\":[{\"date\":\"2018-10-05T21:06:19.391Z\",\"by\":\"Groot, Antoon G. de\"},{\"text\":\"s\",\"date\":\"2018-10-05T21:09:58.181Z\",\"by\":\"Groot, Antoon G. de\"}],\"PreventieveMaatregelen\":[{\"date\":\"2018-10-05T21:06:19.391Z\",\"by\":\"Groot, Antoon G. de\"}],\"TeelttechnischeMaatregelen\":[{\"date\":\"2018-10-05T21:06:19.391Z\",\"by\":\"Groot, Antoon G. de\"}],\"WaarschuwingEnAdviesSystemen\":[{\"date\":\"2018-10-05T21:06:19.391Z\",\"by\":\"Groot, Antoon G. de\"}],\"NietChemischeMogelijkheden\":[{\"date\":\"2018-10-05T21:06:19.391Z\",\"by\":\"Groot, Antoon G. de\"}],\"ChemischeGewasbescherming\":[{\"date\":\"2018-10-05T21:06:19.391Z\",\"by\":\"Groot, Antoon G. de\"}],\"EmissieBeperking\":[{\"date\":\"2018-10-05T21:06:19.391Z\",\"by\":\"Groot, Antoon G. de\"}]}",
+  "Actualiteiten":
+    "[{\"text\":\"asd\",\"date\":\"2018-10-05T21:09:58.181Z\",\"by\":\"Groot, Antoon G. de\"}]",
+  "IndividueleRelevantie":
+    "[{\"text\":\"asd\",\"date\":\"2018-10-05T21:09:58.181Z\",\"by\":\"Groot, Antoon G. de\"}]",
+  "WerkvormData":
+    "{\"Werkvorm\":[{\"text\":\"d\",\"date\":\"2018-10-05T21:10:30.499Z\",\"by\":\"Groot, Antoon G. de\"}],\"Schema\":[]}",
+  "Docenten":
+    "[{\"text\":\"wd\",\"date\":\"2018-10-05T21:10:30.499Z\",\"by\":\"Groot, Antoon G. de\"}]",
+  "Promotietekst": "w",
+  "PromotietekstData":
+    "[{\"text\":\"w\",\"date\":\"2018-10-05T21:10:30.499Z\",\"by\":\"Groot, Antoon G. de\"}]",
+  "EvaluatieWijze":
+    "[{\"text\":\"w\",\"date\":\"2018-10-05T21:10:30.499Z\",\"by\":\"Groot, Antoon G. de\"}]",
+  "DigitaalAanbod": false,
+  "Materiaal": "",
+  "Tijdsduur": "",
+  "Groepsgrootte": 0,
+  "AantalSessies": 0,
+  "KostenPerDeelname": 0.0,
+  "Website": "",
+  "Begindatum": null,
+  "Einddatum": null,
+  "BijlagenData": [],
+  "Discussies": null,
+  "Commentaren": null,
+  "Beoordeling": null,
+  "CreateFactuur": false,
+  "FactuurID": 0,
+  "InvoiceLink":
+    "window.open('iDeal/Factuur.aspx?SafeKey=0llZaIoTJsYwTeoX3RIT8QyfYlay7GTqkqJHL6qQ2DOJagZJJvvApwjp2hUdk5o4h3enOWmFi52CPKHeVvzMLjy/OCES+Hwey7bzFZcWrMbUxgiRpszbk3dyYmnkOb0x2yK60L5MVrE3SrG9bJfB/w==','FactuurVenster','left=100,top=50,width=700,height=800,location=0,resizable=1,toolbar=1')",
+  "ThemaCompetentieChanged": false,
+  "VaardighedenChanged": false,
+  "KennisgebiedenChanged": false,
+  "BijlagenChanged": false,
+  "IsRector": true,
+  "IsHoogleraar": true,
+  "IsBeoordelaar": true,
+  "IsVakcommissieAG": false,
+  "GewijzigdActie": "Aangemaakt",
+  "GewijzigdDatum": "2018-10-09T20:32:36.3679046+02:00",
+  "Historie":
+    "[{\"changes\":\"Aangemaakt\",\"changedFields\":[\"aanbieder\",\"themaEn/OfCompetentie\",\"vaardigheden\",\"sectoren\"],\"changedComments\":[],\"date\":\"2018-10-05T21:06:19.391Z\",\"by\":\"Groot, Antoon G. de\"},{\"changes\":\"Aangemaakt\",\"changedFields\":[\"aanbieder\",\"titel\",\"doelstelling\",\"inhoud\",\"geintegreerdeGewasbescherming\",\"actualiteiten\",\"individueleRelevantie\"],\"changedComments\":[],\"date\":\"2018-10-05T21:09:58.181Z\",\"by\":\"Groot, Antoon G. de\"},{\"changes\":\"Aangemaakt\",\"changedFields\":[\"aanbieder\",\"titel\",\"doelstelling\",\"inhoud\",\"geintegreerdeGewasbescherming\",\"actualiteiten\",\"individueleRelevantie\",\"werkvorm\",\"docenten\",\"promotietekst\",\"evaluatieWijze\"],\"changedComments\":[],\"date\":\"2018-10-05T21:10:30.499Z\",\"by\":\"Groot, Antoon G. de\"}]",
+  "Thema": "Kennis- en Informatieoverdracht",
+  "Competentie": "Adviseren Gewasbescherming",
+  "Vaardigheden":
+    "* Kan: Netwerken, Werken in teamverband, Auditen (intern en extern)* Kan: Analyseren,  Anticiperen op mogelijke problemen, Creatieve technieken toepassen, Feedback geven* Kan: Helder rapporteren, Artikelen schrijven, Mondelinge en schriftelijke vaardigheden, Presenteren.* Kan: Luisteren, Inleven in de klant, Informatie verzamelen, Vragen stellen, Samenvatten* Heeft kennis van Gesprekstechnieken, Communicatieproces, Digitale communicatie, Reflectiemethoden, Analysetechnieken, Argumentatie leer, Besluit- en beslistechnieken",
+  "Beoordelaar": null,
+  "Vakvragen": [
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Titel",
+      "Omschrijving": null,
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Promotietekst",
+      "Omschrijving": null,
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Website",
+      "Omschrijving": null,
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Doelgroep",
+      "Omschrijving": null,
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Actualiteit",
+      "Omschrijving": null,
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Doelstelling",
+      "Omschrijving": null,
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Doelstelling S",
+      "Omschrijving": null,
+      "Zichtbaar": false
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Doelstelling M",
+      "Omschrijving": null,
+      "Zichtbaar": false
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Doelstelling A",
+      "Omschrijving": null,
+      "Zichtbaar": false
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Doelstelling R",
+      "Omschrijving": null,
+      "Zichtbaar": false
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Doelstelling T",
+      "Omschrijving": null,
+      "Zichtbaar": false
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Inhoud",
+      "Omschrijving": null,
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Geïntegreerde Gewasbescherming",
+      "Omschrijving": null,
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Preventieve maatregelen",
+      "Omschrijving": null,
+      "Zichtbaar": false
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Teeltechnische",
+      "Omschrijving": null,
+      "Zichtbaar": false
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Waarschuwings- en adviessystemen",
+      "Omschrijving": null,
+      "Zichtbaar": false
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Niet-chemische mogelijkheden",
+      "Omschrijving": null,
+      "Zichtbaar": false
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Chemische gewasbescherming en toedieningstechnieken",
+      "Omschrijving": null,
+      "Zichtbaar": false
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Emissiebeperking",
+      "Omschrijving": null,
+      "Zichtbaar": false
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Werkvormen",
+      "Omschrijving": null,
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Maak een tijdschema",
+      "Omschrijving": null,
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Docenten",
+      "Omschrijving": null,
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Individuele relevantie",
+      "Omschrijving": null,
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Materiaal",
+      "Omschrijving": null,
+      "Zichtbaar": true
+    },
+    {
+      "ThemaID": 0,
+      "CompetentieID": 0,
+      "VraagID": null,
+      "Titel": "Evaluatie",
+      "Omschrijving": null,
+      "Zichtbaar": true
+    }
+  ]
+}

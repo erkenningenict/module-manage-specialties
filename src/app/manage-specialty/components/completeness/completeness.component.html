@@ -1,0 +1,33 @@
+<div class="form-horizontal" *ngIf="loaded && invalidControlCollection?.length > 0">
+  <div class="form-group">
+    <label class="col-xs-6 control-label">
+      Compleetheid {{forJudgement ? 'beoordeling' : ''}}
+    </label>
+    <div class="col-xs-2" *ngIf="invalidControlCollection?.length">
+      <progress [value]="getValueOfProgress" max="100" class="be-progress">
+      </progress>
+    </div>
+    <div class="col-xs-4">
+      <div data-test="invalidControls">
+
+      {{nrOfControls - invalidControlCollection?.length}} / {{nrOfControls}}
+      <i
+        class="glyphicon glyphicon-warning-sign warning-sign"
+        (mouseenter)="op.show($event)"
+      ></i>
+      </div>
+      <p-overlayPanel
+        #op
+        appendTo="body"
+        [dismissable]="false"
+        [showCloseIcon]="true"
+      >
+        <p>Onvolledige velden:</p>
+        <ul *ngFor="let invalidControl of invalidControlCollection">
+          <li>{{invalidControl}}</li>
+        </ul>
+      </p-overlayPanel>
+
+    </div>
+  </div>
+</div>

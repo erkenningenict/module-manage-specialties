@@ -1,0 +1,82 @@
+{
+  "CurrentUserName": "Groot, Antoon G. de",
+  "CurrentPersoonID": 109,
+  "VakID": 0,
+  "Afkorting": "",
+  "Doelgroep": "",
+  "Titel": "titel",
+  "TitelData":
+    "[{\"text\":\"titel\",\"date\":\"2018-03-23T19:30:19.327Z\",\"by\":\"Groot, Antoon G. de\"}]",
+  "Status": "Nieuw",
+  "AanbodCode": "",
+  "NormVersieID": 20004,
+  "DatumAangemaakt": "2018-03-23T19:29:56.448Z",
+  "VakgroepID": 210472,
+  "VakgroepAdres": null,
+  "ThemaID": 1,
+  "CompetentieID": 3,
+  "GekozenVaardigheden": [
+    { "VaardigheidID": 2174 },
+    { "VaardigheidID": 2145 },
+    { "VaardigheidID": 2175 },
+    { "VaardigheidID": 2130 },
+    { "VaardigheidID": 2167 },
+    { "VaardigheidID": 2128 }
+  ],
+  "GekozenKennisgebieden": [4],
+  "DoelstellingData":
+    "{\"Doelstelling\":[{\"text\":\"doelstelling\",\"date\":\"2018-03-23T19:30:19.327Z\",\"by\":\"Groot, Antoon G. de\"}],\"DoelstellingS\":[{\"text\":\"doelstellingS\",\"date\":\"2018-03-23T19:30:19.327Z\",\"by\":\"Groot, Antoon G. de\"}],\"DoelstellingM\":[{\"text\":\"doelstellingM\",\"date\":\"2018-03-23T19:30:19.327Z\",\"by\":\"Groot, Antoon G. de\"}],\"DoelstellingA\":[{\"text\":\"doelstellingA\",\"date\":\"2018-03-23T19:30:19.327Z\",\"by\":\"Groot, Antoon G. de\"}],\"DoelstellingR\":[{\"text\":\"doelstellingR\",\"date\":\"2018-03-23T19:30:19.327Z\",\"by\":\"Groot, Antoon G. de\"}],\"DoelstellingT\":[{\"text\":\"doelstellingT\",\"date\":\"2018-03-23T19:30:19.327Z\",\"by\":\"Groot, Antoon G. de\"}]}",
+  "Inhoud":
+    "[{\"text\":\"inhoud\",\"date\":\"2018-03-23T19:30:19.327Z\",\"by\":\"Groot, Antoon G. de\"}]",
+  "GeintegreerdeGewasbeschermingData":
+    "{\"GeintegreerdeGewasbescherming\":[{\"text\":\"geintegreerdeGewasbescherming\",\"date\":\"2018-03-23T19:30:19.327Z\",\"by\":\"Groot, Antoon G. de\"}],\"PreventieveMaatregelen\":[{\"text\":\"preventieveMaatregelen\",\"date\":\"2018-03-23T19:30:19.327Z\",\"by\":\"Groot, Antoon G. de\"}],\"TeelttechnischeMaatregelen\":[{\"date\":\"2018-03-23T19:30:19.327Z\",\"by\":\"Groot, Antoon G. de\"}],\"WaarschuwingEnAdviesSystemen\":[{\"text\":\"waarschuwingEnAdviesSystemen\",\"date\":\"2018-03-23T19:30:19.327Z\",\"by\":\"Groot, Antoon G. de\"}],\"NietChemischeMogelijkheden\":[{\"date\":\"2018-03-23T19:30:19.327Z\",\"by\":\"Groot, Antoon G. de\"}],\"ChemischeGewasbescherming\":[{\"text\":\"chemischeGewasbescherming\",\"date\":\"2018-03-23T19:30:19.327Z\",\"by\":\"Groot, Antoon G. de\"}],\"EmissieBeperking\":[{\"text\":\"emissieBeperking\",\"date\":\"2018-03-23T19:30:19.327Z\",\"by\":\"Groot, Antoon G. de\"}]}",
+  "Actualiteiten":
+    "[{\"text\":\"actualiteiten\",\"date\":\"2018-03-23T19:30:19.327Z\",\"by\":\"Groot, Antoon G. de\"}]",
+  "IndividueleRelevantie":
+    "[{\"text\":\"individueleRelevantie\",\"date\":\"2018-03-23T19:30:19.327Z\",\"by\":\"Groot, Antoon G. de\"}]",
+  "WerkvormData":
+    "{\"Werkvorm\":[{\"text\":\"werkvorm\",\"date\":\"2018-03-23T19:30:19.327Z\",\"by\":\"Groot, Antoon G. de\"}],\"Schema\":[]}",
+  "Docenten":
+    "[{\"text\":\"docenten\",\"date\":\"2018-03-23T19:30:19.327Z\",\"by\":\"Groot, Antoon G. de\"}]",
+  "Promotietekst": "promotietekst",
+  "PromotietekstData":
+    "[{\"text\":\"promotietekst\",\"date\":\"2018-03-23T19:30:19.327Z\",\"by\":\"Groot, Antoon G. de\"}]",
+  "EvaluatieWijze":
+    "[{\"text\":\"evaluatieWijze\",\"date\":\"2018-03-23T19:30:19.327Z\",\"by\":\"Groot, Antoon G. de\"}]",
+  "DigitaalAanbod": false,
+  "Materiaal":
+    "[{\"text\":\"materiaal\",\"date\":\"2018-03-23T19:30:19.327Z\",\"by\":\"Groot, Antoon G. de\"}]",
+  "Tijdsduur": "3,5",
+  "Groepsgrootte": "50",
+  "AantalSessies": "1",
+  "KostenPerDeelname": 12.5,
+  "Website":
+    "[{\"text\":\"website\",\"date\":\"2018-03-23T19:30:19.327Z\",\"by\":\"Groot, Antoon G. de\"}]",
+  "Begindatum": null,
+  "Einddatum": null,
+  "BijlagenData": [],
+  "Discussies": null,
+  "Commentaren": null,
+  "Beoordeling": {},
+  "CreateFactuur": false,
+  "FactuurID": 0,
+  "InvoiceLink":
+    "window.open('iDeal/Factuur.aspx?SafeKey=0llZaIoTJsYwTeoX3RIT8QyfYlay7GTqkqJHL6qQ2DOJagZJJvvApwjp2hUdk5o4h3enOWmFi52CPKHeVvzMLjy/OCES+Hwey7bzFZcWrMbUxgiRpszbk3dyYmnkOb0x2yK60L5MVrE3SrG9bJfB/w==','FactuurVenster','left=100,top=50,width=700,height=800,location=0,resizable=1,toolbar=1')",
+  "ThemaCompetentieChanged": true,
+  "VaardighedenChanged": true,
+  "KennisgebiedenChanged": true,
+  "BijlagenChanged": false,
+  "IsRector": true,
+  "IsHoogleraar": true,
+  "IsBeoordelaar": true,
+  "GewijzigdActie": "Aangemaakt",
+  "GewijzigdDatum": "2017-12-19T18:06:24.2555868+01:00",
+  "Historie":
+    "[{\"changes\":\"Aangemaakt\",\"changedFields\":[\"aanbieder\",\"titel\",\"doelstelling\",\"doelstellingS\",\"doelstellingM\",\"doelstellingA\",\"doelstellingR\",\"doelstellingT\",\"inhoud\",\"geintegreerdeGewasbescherming\",\"preventieveMaatregelen\",\"waarschuwingEnAdviesSystemen\",\"chemischeGewasbescherming\",\"emissieBeperking\",\"actualiteiten\",\"individueleRelevantie\",\"werkvorm\",\"docenten\",\"promotietekst\",\"evaluatieWijze\",\"materiaal\",\"kostenPerDeelname\",\"groepsgrootte\",\"aantalSessies\",\"tijdsduur\",\"website\"],\"changedComments\":[],\"date\":\"2018-03-23T19:30:19.327Z\",\"by\":\"Groot, Antoon G. de\"}]",
+  "Thema": null,
+  "Competentie": null,
+  "Vaardigheden": null,
+  "Beoordelaar": null,
+  "Vakvragen": null,
+  "Werkvorm": "werkvorm"
+}

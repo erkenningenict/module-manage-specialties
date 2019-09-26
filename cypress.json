@@ -1,0 +1,8 @@
+{
+  "baseUrl": "http://localhost:4200",
+  "viewportWidth": 1225,
+  "viewportHeight": 800,
+  "env": {
+    "apiUrl": "/DesktopModules/AOCRaad.Erkenningen.Vakken/API/Vakken"
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "CurrentUserName": "Groot, Antoon G. de",
+  "CurrentPersoonID": 109,
+  "VakID": 23369,
+  "Afkorting": "",
+  "Doelgroep":
+    "Groenvoorziening, Boomkwekers, Tuinbouwers, Akkerbouwers, Veetelers",
+  "Titel":
+    "Veilig, verantwoord en duurzaam omgaan met gewasbeschermingsmiddelen",
+  "TitelData":
+    "[{\"text\":\"Veilig, verantwoord en duurzaam omgaan met gewasbeschermingsmiddelen\",\"date\":\"2017-11-09T13:25:01.176Z\",\"by\":\"Even, S.\"},{\"text\":\"Veilig,2 verantwoord en duurzaam omgaan met gewasbeschermingsmiddelen\",\"date\":\"2017-11-09T13:25:01.176Z\",\"by\":\"Even, S.\"},{\"text\":\"Veilig,3 verantwoord en duurzaam omgaan met gewasbeschermingsmiddelen\",\"date\":\"2017-11-10T13:25:01.176Z\",\"by\":\"Even, S.\"}]",
+  "Status": "Goedgekeurd",
+  "AanbodCode": "23369",
+  "NormVersieID": 10009,
+  "DatumAangemaakt": "2017-11-09T00:00:00",
+  "VakgroepID": 210484,
+  "VakgroepNaam": "Cultus Agro Advies BV",
+  "VakgroepAdres":
+    "Zandterweg 5, 5973 RB&nbsp;&nbsp;LOTTUM<br/>Stefan Even<br/>077 46 37 118<br/>info@cultus.nl",
+  "ThemaID": 1,
+  "CompetentieID": 2,
+  "GekozenVaardigheden": [
+    {
+      "VaardigheidID": 2170
+    },
+    {
+      "VaardigheidID": 2169
+    },
+    {
+      "VaardigheidID": 2194
+    },
+    {
+      "VaardigheidID": 2145
+    },
+    {
+      "VaardigheidID": 2167
+    },
+    {
+      "VaardigheidID": 2127
+    }
+  ],
+  "GekozenKennisgebieden": [4, 16],
+  "DoelstellingData":
+    "{\"Doelstelling\":[{\"text\":\"Bewustwording van de risico’s die ontstaan bij mens en milieu door het gebruik van gewasbeschermingsmiddelen. De mogelijkheden voor persoonlijke bescherming worden uitgelegd. De deelnemers verhogen de kennis over de keuzemogelijkheid op het gebied van de beschermingsmiddelen, maar ook het juiste gebruik en onderhoud is daarbij van belang. Daarnaast wordt de deelnemers bewust gemaakt van de risico's voor het milieu, waarbij emissie een belangrijke rol speelt. Keuzes m.b.t. emissie beperkende worden besproken. \\nEen ander doel is het goed begrijpen en vinden van etiketten en veiligheidsbladen van gewasbeschermingsmiddelen. \\nBij de actualiteiten zal ingegaan worden op wijzigingen m.b.t. regelgeving en toelatingen van middelen, en de keuze van middelen binnen de geintegreerde aanpak. Hierbij zullen deelnemers ook bewust gemaakt worden van vernieuwde inzichten. Alles met als doel zo veilig, efficiënt en geïntegreerd mogelijk om te gaan met gewasbescherming. \",\"date\":\"2015-10-29T12:31:12.838Z\",\"by\":\"Even, S.\"},{\"text\":\"Bewustwording van de risico’s die ontstaan bij mens en milieu door het gebruik van gewasbeschermingsmiddelen. Aan bod komen o.a. gebruik persoonlijke bescherming, gebruik en onderhoud. Verder zal ingegaan worden op risico's voor milieu door o.a. emissie. Keuzes m.b.t. emissie beperkende maatregelen worden besproken. \\nEen ander doel is het goed begrijpen en vinden van etiketten en veiligheidsbladen van gewasbeschermingsmiddelen. \\nBij de actualiteiten zal ingegaan worden op wijzigingen m.b.t. regelgeving en toelatingen van middelen, en de keuze van middelen binnen de geintegreerde aanpak. Vernieuwde inzichten met als doel zo veilig, efficiënt en geïntegreerd  om te gaan met gewasbescherming worden besproken.\",\"date\":\"2015-11-16T09:39:30.455Z\",\"by\":\"Even, S.\"},{\"text\":\"Bewustwording van de risico’s van gewasbescherming voor mens (gebruiker) en milieu. Door het uitdiepen van de volgende onderwerpen:\\n- Persoonlijke bescherming\\n- Etikettering\\n- Actualiteiten middelen\\n- Emissie\",\"date\":\"2015-11-17T10:11:47.874Z\",\"by\":\"Even, S.\"}],\"DoelstellingS\":[{\"text\":\"Geen gegevens\",\"date\":\"2015-10-29T12:31:12.839Z\",\"by\":\"Even, S.\"},{\"text\":\"Bewustwording van de gebruiker van gewasbeschermingsmiddelen, hij/zij moet zich bewust zijn van de juiste maatregelen om veilig om te gaan met gewasbeschermingsmiddelen/apparatuur/persoonlijke beschermingsmiddelen.\",\"date\":\"2015-10-29T13:41:03.521Z\",\"by\":\"Even, S.\"}],\"DoelstellingM\":[{\"text\":\"Geen gegevens\",\"date\":\"2015-10-29T12:31:12.839Z\",\"by\":\"Even, S.\"},{\"text\":\"Aan de hand van interactie met het publiek door het stellen van vragen, het inbrengen van een stelling of door een quiz wordt het publiek geprikkeld om mee te denken. Dit zorgt voor nog meer bewustwording van het publiek.\",\"date\":\"2015-10-29T13:41:03.521Z\",\"by\":\"Even, S.\"}],\"DoelstellingA\":[{\"text\":\"Geen gegevens\",\"date\":\"2015-10-29T12:31:12.839Z\",\"by\":\"Even, S.\"},{\"text\":\"Tijdens de bijeenkomst zullen praktijkvoorbeelden worden behandeld welke herkenbaar zijn voor de deelnemer. Hierdoor zullen ze aan het denken gezet m.b.t. het handelen van de deelnemer in de eigen situatie.\",\"date\":\"2015-10-29T13:41:03.521Z\",\"by\":\"Even, S.\"}],\"DoelstellingR\":[{\"text\":\"Geen gegevens\",\"date\":\"2015-10-29T12:31:12.839Z\",\"by\":\"Even, S.\"},{\"text\":\"Het doel is haalbaar, wanneer de deelnemer oplet en actief meedoet met bijv. een quiz krijgt de deelnemer voldoende handvatten uitgereikt om zelf mee aan de slag te gaan.\",\"date\":\"2015-10-29T13:41:03.521Z\",\"by\":\"Even, S.\"}],\"DoelstellingT\":[{\"text\":\"Geen gegevens\",\"date\":\"2015-10-29T12:31:12.839Z\",\"by\":\"Even, S.\"},{\"text\":\"Na afloop van de bijeenkomst heeft de deelnemer voldoende handvatten uitgereikt gekregen om zich bewust te zijn van veilig en verantwoord omgaan met gewasbescherming. De lezingen kan de deelnemer thuis nog eens rustig doornemen aan de hand van de nagezonden handouts van de lezingen.\",\"date\":\"2015-10-29T13:41:03.521Z\",\"by\":\"Even, S.\"}]}",
+  "Inhoud":
+    "[{\"text\":\"De bijeenkomst gaat voor 2/3 deel over veiligheid en techniek en 1/3 deel zal gaan over de actualiteiten.\\nBij het gedeelte over veiligheid-techniek zal interactief ingegaan worden op de volgende vragen:\\n-\\tWat zijn de risico’s voor mens en milieu bij het gebruik van gewasbescherming?\\n-               Hoe kan emissie van gewasbeschermingsmiddelen naar het milieu voorkomen worden? Hierbij worden praktisch inzetbare maatregelen besproken. \\n-\\tHoe kunnen deze risico’s zoveel mogelijk beperkt worden?\\n-\\tWelke persoonlijke beschermingsmiddelen zijn er op de markt en wat zijn de criteria voor het maken van een keuze uit de mogelijkheden? Er wordt interactief gewerkt met demonstratie materiaal.\\n-\\tHoe moeten deze beschermingsmiddelen correct gebruikt en onderhouden worden?\\n-\\tWaar is de informatie over etiketten en veiligheidsbladen terug te vinden en hoe moet deze informatie gelezen worden? Denk daarbij onder andere aan de uitleg van de diverse symbolen die gebruikt worden.\\nDe actualiteiten van geïntegreerde gewasbescherming worden besproken. Daarbij zal ingegaan worden op de ervaringen met ziekten en plagen, de wijzigingen op het gebied van middelen, nieuwe inzichten m.b.t. de geintegreerde aanpak.\",\"date\":\"2015-10-29T12:31:12.839Z\",\"by\":\"Even, S.\"},{\"text\":\"De bijeenkomst gaat voor 2/3 deel over veiligheid en techniek en 1/3 deel zal gaan over de actualiteiten.\\nBij het gedeelte over veiligheid-techniek zal interactief ingegaan worden op de volgende vragen:\\n-\\tWat zijn de risico’s voor mens en milieu bij het gebruik van gewasbescherming?\\n-       Hoe kan emissie van gewasbeschermingsmiddelen naar het milieu voorkomen worden? Hierbij worden praktisch inzetbare maatregelen besproken. \\n-\\tHoe kunnen deze risico’s zoveel mogelijk beperkt worden?\\n-\\tWelke persoonlijke beschermingsmiddelen zijn er op de markt en wat zijn de criteria voor het maken van een keuze uit de mogelijkheden? Er wordt interactief gewerkt met demonstratie materiaal.\\n-\\tHoe moeten deze beschermingsmiddelen correct gebruikt en onderhouden worden?\\n-\\tWaar is de informatie over etiketten en veiligheidsbladen terug te vinden en hoe moet deze informatie gelezen worden? Denk daarbij onder andere aan de uitleg van de diverse symbolen die gebruikt worden.\\nDe actualiteiten van geïntegreerde gewasbescherming worden besproken. Daarbij zal ingegaan worden op de ervaringen met ziekten en plagen, de wijzigingen op het gebied van middelen, nieuwe inzichten m.b.t. de geintegreerde aanpak.\",\"date\":\"2017-11-09T13:29:33.560Z\",\"by\":\"Even, S.\"}]",
+  "GeintegreerdeGewasbeschermingData":
+    "{\"GeintegreerdeGewasbescherming\":[{\"text\":\"Er wordt bewustwording gecreëerd over de risico’s bij het gebruik van gewasbeschermingsmiddelen. Daardoor worden deelnemers aangespoord ook goed na te denken over alternatieven voor chemische gewasbescherming met als doel zo geïntegreerd mogelijk bezig te zijn.\\nDe kennis van de geintegreerde aanpak m.b.t. ziekten en plagen wordt verbeterd waardoor het gebruik van chemische gewasbescherming beperkt kan worden. Dit wordt mede bereikt door het delen van nieuwe ervaringen en inzichten met de deelnemers. Ook zullen nieuwe ontwikkelingen om niet chemisch bepaalde ziekte en plagen te voorkomen of te bestrijden besproken worden. \",\"date\":\"2015-10-29T12:31:12.840Z\",\"by\":\"Even, S.\"}],\"PreventieveMaatregelen\":[{\"text\":\"Geen gegevens\",\"date\":\"2015-10-29T12:31:12.840Z\",\"by\":\"Even, S.\"},{\"text\":\"Preventieve maatregelen om ziekten en plagen te voorkomen staan op nr 1. Door het aanreiken van o.a. teelttechnische handelingen of preventieve maatregelen om het gewas vrij te houden van ziekten en plagen zal gewerkt worden aan de bewustwording van de deelnemer m.b.t. het zoveel mogelijk voorkomen van chemische maatregelen.\",\"date\":\"2015-10-29T13:41:03.521Z\",\"by\":\"Even, S.\"}],\"TeelttechnischeMaatregelen\":[{\"text\":\"Geen gegevens\",\"date\":\"2015-10-29T12:31:12.840Z\",\"by\":\"Even, S.\"}],\"WaarschuwingEnAdviesSystemen\":[{\"text\":\"Geen gegevens\",\"date\":\"2015-10-29T12:31:12.840Z\",\"by\":\"Even, S.\"},{\"text\":\"Waarschuwingssystemen zoals modellen om een druk van ziekten en plagen te voorspellen, en weersmodellen gericht op het optimale spuitmoment kunnen ondersteunen in de keuze van de teler.\",\"date\":\"2015-10-29T13:41:03.521Z\",\"by\":\"Even, S.\"}],\"NietChemischeMogelijkheden\":[{\"text\":\"Geen gegevens\",\"date\":\"2015-10-29T12:31:12.840Z\",\"by\":\"Even, S.\"}],\"ChemischeGewasbescherming\":[{\"text\":\"Geen gegevens\",\"date\":\"2015-10-29T12:31:12.840Z\",\"by\":\"Even, S.\"},{\"text\":\"Door het gebruik van emissiebeperkende technieken zoals driftreducerende doppen, Laag volume spuitsystemen of depositieverbeteraars kan de uitstoot naar het milieu bij toediening worden gereduceerd.\",\"date\":\"2015-10-29T13:41:03.521Z\",\"by\":\"Even, S.\"}],\"EmissieBeperking\":[{\"text\":\"Geen gegevens\",\"date\":\"2015-10-29T12:31:12.840Z\",\"by\":\"Even, S.\"},{\"text\":\"Door het gebruik van emissiebeperkende technieken zoals driftreducerende doppen, Laag volume strooitechniek of depositieverbeteraars kan de emissie bij toediening worden gereduceerd.\",\"date\":\"2015-10-29T13:41:03.521Z\",\"by\":\"Even, S.\"}]}",
+  "Actualiteiten":
+    "[{\"text\":\"Gewasbescherming blijft in ontwikkeling. Er komen voortdurend nieuwe inzichten, beschermingsmiddelen, bestrijdingsmethodes (zowel chemisch als niet-chemisch) en technieken. Ook komt er door onderzoek steeds meer informatie en kennis over een bepaalde ziekte of plaag. De nieuwste inzichten en ervaringen worden gepresenteerd. \",\"date\":\"2015-10-29T12:31:12.838Z\",\"by\":\"Even, S.\"},{\"text\":\"Gewasbescherming blijft in ontwikkeling. Er komen voortdurend nieuwe inzichten, beschermingsmiddelen, bestrijdingsmethodes (zowel chemisch als niet-chemisch) en technieken om de teelt te verduurzamen. Zo zien we de laatste jaren een trend ontstaan waarbij gezocht wordt naar plantversterkers om de plant weerbaarder te maken zodat het gebruik van gewasbeschermingsmiddelen teruggebracht kan worden. Ook komt er door onderzoek steeds meer informatie en kennis over strategieën om een bepaalde ziekte of plaag te voorkomen/bestrijden. Daarnaast wordt ingegaan op emissie en de gevolgen op waterkwaliteit om bewustwording onder deelnemers te vergroten. De nieuwste inzichten en ervaringen worden gepresenteerd.\",\"date\":\"2017-11-21T07:07:33.937Z\",\"by\":\"Even, S.\"}]",
+  "IndividueleRelevantie":
+    "[{\"text\":\"\",\"date\":\"2017-11-09T13:26:09.342Z\",\"by\":\"Even, S.\"},{\"text\":\"Tijdens lezingen wordt gevraagd naar ervaringen vanuit deelnemers welke zij in de eigen werksituatie zijn tegengekomen. Ook worden praktijkvoorbeelden gegeven welke duidelijk herkenbaar zijn voor de deelnemers.\",\"date\":\"2017-11-09T13:29:33.560Z\",\"by\":\"Even, S.\"}]",
+  "WerkvormData":
+    "{\"Werkvorm\":[{\"text\":\"Inleiders zullen de deelnemers actief betrekken bij hun presentatie door de zaal gedurende de presentatie te vragen hun ervaringen te delen. Door het houden van relatief korte inleidingen verdeeld in 3 blokken blijven de deelnemers actiever betrokken. Bij het gedeelte over veiligheid zal demonstratiemateriaal het verhaal praktisch aanvullen. Er is voldoende ruimte voor het stellen van vragen, en discussie.\",\"date\":\"2015-10-29T12:31:12.841Z\",\"by\":\"Even, S.\"},{\"text\":\"Inleiders zullen de deelnemers actief betrekken bij hun presentatie door de zaal gedurende de presentatie te vragen hun ervaringen te delen. Door het houden van relatief korte inleidingen verdeeld in 3 blokken blijven de deelnemers actiever betrokken. Bij het gedeelte over veiligheid zal demonstratiemateriaal het verhaal praktisch aanvullen. Er is voldoende ruimte voor het stellen van vragen, en discussie. Tevens zal de gewasbeschermingsmonitor besproken en uitgereikt worden, deze kan de deelnemer tijdens of na de bijeenkomst thuis invullen en gebruiken als evaluatie voor zijn teelt.\",\"date\":\"2015-11-17T10:28:57.156Z\",\"by\":\"Even, S.\"}],\"Schema\":[]}",
+  "Docenten":
+    "[{\"text\":\"Vakbekwame adviseurs, bijgestaan door vakbekwame gastdocenten (zie bijgevoegde presentatie).\",\"date\":\"2015-10-29T12:31:12.840Z\",\"by\":\"Even, S.\"}]",
+  "Promotietekst":
+    "Tijdens deze bijeenkomst krijgt u inzicht in actuele zaken rondom gewasbescherming en persoonlijke veiligheid. Waarbij wordt ingegaan op o.a.: \n- risico's gewasbescherming voor mens en milieu\n- voorkomen van deze risico's door persoonlijke bescherming en de juiste matregelen m.b.t. gebruik en emissie\n- actualiteiten op middelengebied en etikettering\nTijdens deze bijeenkomst krijgt u veel kennis en nieuwe inzichten mee naar huis. De aangeboden informatie is concreet en toepasbaar op uw eigen praktijksituatie. U vergroot hiermee de kennis op het gebied van risico’s en gebruik van gewasbescherming. Alles met als doel zo geïntegreerd en veilig mogelijk bezig te zijn met gewasbescherming.",
+  "PromotietekstData":
+    "[{\"text\":\"Tijdens deze bijeenkomst krijgt u inzicht in actuele zaken rondom gewasbescherming en persoonlijke veiligheid. Waarbij wordt ingegaan op o.a.: \\n- risico's gewasbescherming voor mens en milieu\\n- voorkomen van deze risico's door persoonlijke bescherming en de juiste matregelen m.b.t. gebruik en emissie\\n- actualiteiten op middelengebied en etikettering\\nTijdens deze bijeenkomst krijgt u veel kennis en nieuwe inzichten mee naar huis. De aangeboden informatie is concreet en toepasbaar op uw eigen praktijksituatie. U vergroot hiermee de kennis op het gebied van risico’s en gebruik van gewasbescherming. Alles met als doel zo geïntegreerd en veilig mogelijk bezig te zijn met gewasbescherming.\",\"date\":\"2017-11-09T13:25:01.178Z\",\"by\":\"Even, S.\"}]",
+  "EvaluatieWijze":
+    "[{\"text\":null,\"date\":\"2015-10-29T12:31:12.841Z\",\"by\":\"Even, S.\"},{\"text\":\"Na afloop van de bijeenkomst wordt de bijeenkomst geëvalueerd middels het evaluatieformulier. De deelnemers kunnen hierop aangeven of de bijeenkomst voldeed aan de verwachtingen en wat zij vonden van de verschillende sprekers. De evaluatieformulieren worden door ons na afloop doorgenomen om hieruit mogelijke verbeterpunten te halen voor volgende bijeenkomsten.\",\"date\":\"2015-10-29T13:50:02.307Z\",\"by\":\"Even, S.\"},{\"text\":\"Na afloop van de bijeenkomst wordt de bijeenkomst geëvalueerd middels het meest actuele evaluatieformulier BE. De deelnemers kunnen hierop aangeven of de bijeenkomst voldeed aan de verwachtingen en wat zij vonden van de verschillende sprekers. De evaluatieformulieren worden door ons na afloop doorgenomen om hieruit mogelijke verbeterpunten te halen voor volgende bijeenkomsten.\",\"date\":\"2017-11-09T13:35:23.077Z\",\"by\":\"Even, S.\"}]",
+  "DigitaalAanbod": false,
+  "Materiaal":
+    "[{\"text\":\"De inleiders zijn als adviseur actief in de sector en kennen de bedrijfsproblematiek aangaande toepassing van gewasbeschermingsmiddelen en de daarvoor benodigde technieken. Ook kennen zij de gevaren voor het milieu, en weten emissie beperkende maatregelen te benoemen. Doordat de adviseurs op de bedrijven komen is er veel kennis en ervaring wat gedeeld wordt met de deelnemers. Voorbeelden uit de praktijk worden aan de deelnemers gevraagd, toegelicht en besproken. \",\"date\":\"2015-10-29T12:31:12.838Z\",\"by\":\"Even, S.\"},{\"text\":\"De deelnemers krijgen een kladblokje uitgereikt om aantekeningen te maken tijdens de bijeenkomst. De hand-outs van de presentaties worden per email nagezonden aan de deelnemers zodat ze deze thuis nog eens kunnen nalezen. Daarnaast kunnen zij op deze wijze thuis nog eens achtergrondinformatie nazoeken (in de presentaties zal soms worden doorverwezen naar websites waar men zicht individueel verder kan verdiepen).\",\"date\":\"2015-11-16T09:46:06.279Z\",\"by\":\"Even, S.\"},{\"text\":\"De deelnemers krijgen een kladblokje uitgereikt om aantekeningen te maken tijdens de bijeenkomst. De hand-outs van de presentaties worden per email nagezonden aan de deelnemers zodat ze deze thuis nog eens kunnen nalezen. Daarnaast kunnen zij op deze wijze thuis nog eens achtergrondinformatie nazoeken (in de presentaties zal soms worden doorverwezen naar websites waar men zicht individueel verder kan verdiepen). Tevens zal de gewasbeschermingsmonitor worden uitgereikt welke de deelnemer mee naar huis krijgt.\",\"date\":\"2015-11-17T10:28:57.156Z\",\"by\":\"Even, S.\"},{\"text\":\"De deelnemers krijgen een kladblokje uitgereikt om aantekeningen te maken tijdens de bijeenkomst. De hand-outs van de presentaties worden per email nagezonden aan de deelnemers zodat ze deze thuis nog eens kunnen nalezen. Daarnaast kunnen zij op deze wijze thuis nog eens achtergrondinformatie nazoeken (in de presentaties zal soms worden doorverwezen naar websites waar men zicht individueel verder kan verdiepen).\",\"date\":\"2017-11-09T13:41:24.942Z\",\"by\":\"Even, S.\"}]",
+  "Tijdsduur": "3",
+  "Groepsgrootte": 60,
+  "AantalSessies": 1,
+  "KostenPerDeelname": 65,
+  "Website":
+    "[{\"text\":\"www.cultus.nl\",\"date\":\"2015-10-29T12:31:12.838Z\",\"by\":\"Even, S.\"}]",
+  "Begindatum": "2017-11-21T00:00:00",
+  "Einddatum": "2019-11-21T00:00:00",
+  "BijlagenData": [
+    {
+      "DocumentID": 1040,
+      "Naam": "3130815f-fd2b-435d-8075-65c5cd6953f9.pdf",
+      "Lokatie":
+        "/Portals/1/VakDocument/3130815f-fd2b-435d-8075-65c5cd6953f9.pdf",
+      "Omschrijving": "Voorbeeld persoonlijke veiligheid Houweling 012017",
+      "Status": 0
+    },
+    {
+      "DocumentID": 1041,
+      "Naam": "4abc7876-77a9-4dc7-88ab-3ca56e86b02b.pdf",
+      "Lokatie":
+        "/Portals/1/VakDocument/4abc7876-77a9-4dc7-88ab-3ca56e86b02b.pdf",
+      "Omschrijving": "Voorbeeld veiligheid en emissie 012017",
+      "Status": 0
+    },
+    {
+      "DocumentID": 1042,
+      "Naam": "1ef7c45d-8d79-498d-ae2e-9100debab326.pdf",
+      "Lokatie":
+        "/Portals/1/VakDocument/1ef7c45d-8d79-498d-ae2e-9100debab326.pdf",
+      "Omschrijving": "Voorbeeld actualiteitenlezing GBM Cultus",
+      "Status": 0
+    }
+  ],
+  "Discussies": [
+    {
+      "Commentaar":
+        "{\"01\":\"Titel commentaar\",\"07\":\"De groepsgrootte heeft u op 60 deelnemers gezet. Welke werkvorm gaat u gebruiken om alle deelnemers actief te betrekken bij het programma. Is een demonstratie van materiaal zinvol voor een groep van 60 deelnemers?\"}",
+      "DatumTijd": "2017-11-14T09:40:12.787",
+      "Bron": "Beoordelaar",
+      "Auteur": "Simmelink, J.G. "
+    },
+    {
+      "Commentaar":
+        "{\"05\":\"Met het kopje Actualiteit wordt hier bedoeld de hierboven omschreven thema's Verduurzaming en Water. Tussen overheid en bedrijfsleven zijn afspraken gemaakt over deze thema's. En wilt u hier formuleren hoe één of beide thema's in het kennisaanbod aan de orde komen?\",\"09\":\"De groepsgrootte heeft u op 60 deelnemers gezet. Welke werkvorm gaat u gebruiken om alle deelnemers actief te betrekken bij het programma. Is een demonstratie van materiaal zinvol voor een groep van 60 deelnemers?\"}",
+      "DatumTijd": "2017-11-14T09:40:12.787",
+      "Bron": "Beoordelaar",
+      "Auteur": "Simmelink, J.G. "
+    },
+    {
+      "Commentaar":
+        "{\"07\":\"Tekst is aangepast. Duurzaamheid en emissie/waterkwaliteit zijn altijd belangrijke onderwerpen van gesprek tijdens de spuitlicentie bijeenkomsten. In samenwerking met diverse gastsprekers zorgen we dat deze punten altijd terugkomen in de bijeenkomsten.\"}",
+      "DatumTijd": "2017-11-21T08:07:34.217",
+      "Bron": "Kennisaanbieder",
+      "Auteur": "Even, S. "
+    },
+    {
+      "Commentaar":
+        "{\"07\":\"Middels een quiz met meerkeuzevragen waarbij ingegaan wordt op persoonlijke beschermingsmiddelen worden de deelnemers altijd actief betrokken. Daarnaast wordt de deelnemer aan de hand van praktische voorbeelden en vragen door de spreker ook altijd getriggerd actief mee te doen. Het demonstreren van materiaal is aanvullend op de PowerPoint presentatie om wat voorbeelden te laten zien/demonstreren zodat de deelnemer een beter beeld krijgt waar hij op moet letten. Ook komt het regelmatig voor dat er (afhankelijk van spreker) iets wordt uitgedeeld flyer/tool waar de deelnemer thuis aan de keukentafel zich nog eens verder in kan verdiepen.\"}",
+      "DatumTijd": "2017-11-21T08:14:01.407",
+      "Bron": "Kennisaanbieder",
+      "Auteur": "Even, S. "
+    },
+    {
+      "Commentaar": "Geen commentaar toegevoegd, maar veld(en) gewijzigd.",
+      "DatumTijd": "2017-11-21T08:14:15.687",
+      "Bron": "Kennisaanbieder",
+      "Auteur": "Even, S. "
+    },
+    {
+      "Commentaar": "Goedgekeurd, geen commentaar toegevoegd.",
+      "DatumTijd": "2017-11-21T12:00:29.073",
+      "Bron": "Beoordelaar",
+      "Auteur": "Simmelink, J.G. "
+    }
+  ],
+  "Commentaren": null,
+  "Beoordeling": {
+    "BeoordelingID": 0,
+    "PersoonID": 311761,
+    "Status": "Goedgekeurd",
+    "Rapport":
+      "Het kennisaanbod is goedgekeurd op voorwaarde dat tijdens de bijeenkomst alle deelnemers actief worden betrokken bij de inhoud van de bijeenkomst, waardoor de uitwisseling goed op gang komt. Wens u goede bijeenkomsten met de deelnemers, Johan Simmelink",
+    "Rapportcijfer": 0,
+    "DatumRapport": "2017-11-21T00:00:00",
+    "DatumGepland": "2017-12-13T00:00:00",
+    "BeoordelingChanged": false
+  },
+  "CreateFactuur": false,
+  "FactuurID": 43170,
+  "InvoiceLink":
+    "window.open('iDeal/Factuur.aspx?SafeKey=0llZaIoTJsYwTeoX3RIT8QyfYlay7GTqkqJHL6qQ2DOJagZJJvvApwjp2hUdk5o4h3enOWmFi52CPKHeVvzMLjy/OCES+Hwey7bzFZcWrMbUxgiRpszbk3dyYmnkOb0x2yK60L5MVrE3SrG9bJfB/w==','FactuurVenster','left=100,top=50,width=700,height=800,location=0,resizable=1,toolbar=1')",
+  "ThemaCompetentieChanged": false,
+  "VaardighedenChanged": false,
+  "KennisgebiedenChanged": false,
+  "BijlagenChanged": false,
+  "IsRector": true,
+  "IsHoogleraar": true,
+  "IsBeoordelaar": true,
+  "GewijzigdActie": "Is goedgekeurd, commentaar beoordelaar",
+  "GewijzigdDatum": "2017-11-26T22:37:55.9408687+01:00",
+  "Historie":
+    "[{\"changes\":\"Aangemaakt\",\"changedFields\":[\"Sectoren\"],\"changedComments\":[],\"date\":\"2017-11-09T13:26:09.342Z\",\"by\":\"Even, S.\"},{\"changes\":\"Aangemaakt\",\"changedFields\":[\"Individuele relevantie\",\"Inhoud\"],\"changedComments\":[],\"date\":\"2017-11-09T13:29:33.560Z\",\"by\":\"Even, S.\"},{\"changes\":\"Aangemaakt\",\"changedFields\":[\"Evaluatie\"],\"changedComments\":[],\"date\":\"2017-11-09T13:35:23.077Z\",\"by\":\"Even, S.\"},{\"changes\":\"Aangemaakt\",\"changedFields\":[\"Aantal_sessies\",\"Kosten_per_deelname\",\"Materiaal\"],\"changedComments\":[],\"date\":\"2017-11-09T13:41:24.942Z\",\"by\":\"Even, S.\"},{\"changes\":\"Aangemaakt\",\"changedFields\":[],\"changedComments\":[],\"date\":\"2017-11-09T13:41:36.285Z\",\"by\":\"Even, S.\"},{\"changes\":\"Aangemaakt\",\"changedFields\":[],\"changedComments\":[],\"date\":\"2017-11-09T13:42:13.740Z\",\"by\":\"Even, S.\"},{\"changes\":\"Aangemaakt\",\"changedFields\":[],\"changedComments\":[],\"date\":\"2017-11-09T13:43:11.827Z\",\"by\":\"Even, S.\"},{\"changes\":\"Aangemaakt\",\"changedFields\":[],\"changedComments\":[],\"date\":\"2017-11-09T13:43:36.263Z\",\"by\":\"Even, S.\"},{\"changes\":\"Aangemaakt\",\"changedFields\":[],\"changedComments\":[],\"date\":\"2017-11-09T13:44:32.587Z\",\"by\":\"Even, S.\"},{\"changes\":\"Ingediend\",\"changedFields\":[],\"changedComments\":[],\"date\":\"2017-11-09T13:44:43.620Z\",\"by\":\"Even, S.\"},{\"changes\":\"Ingediend, gegevens gewijzigd\",\"changedFields\":[],\"changedComments\":[],\"date\":\"2017-11-09T13:45:44.795Z\",\"by\":\"Even, S.\"},{\"changes\":\"Ingediend, gegevens gewijzigd\",\"changedFields\":[],\"changedComments\":[],\"date\":\"2017-11-09T13:47:25.097Z\",\"by\":\"Even, S.\"},{\"changes\":\"Ingediend, gegevens gewijzigd\",\"changedFields\":[],\"changedComments\":[],\"date\":\"2017-11-09T13:47:41.364Z\",\"by\":\"Even, S.\"},{\"changes\":\"Ingediend, gegevens gewijzigd\",\"changedFields\":[],\"changedComments\":[],\"date\":\"2017-11-09T13:48:26.988Z\",\"by\":\"Even, S.\"},{\"changes\":\"Beoordelaar toegewezen\",\"changedFields\":[],\"changedComments\":[],\"date\":\"2017-11-13T07:31:04.143Z\",\"by\":\"Houthuijzen, M.\"},{\"changes\":\"Wordt beoordeeld, commentaar beoordelaar\",\"changedFields\":[],\"changedComments\":[\"05\",\"09\"],\"date\":\"2017-11-14T08:40:15.372Z\",\"by\":\"Simmelink, J.G.\"},{\"changes\":\"Wordt beoordeeld, commentaar kennisaanbieder\",\"changedFields\":[\"Actualiteit\"],\"changedComments\":[\"05\"],\"date\":\"2017-11-21T07:07:33.937Z\",\"by\":\"Even, S.\"},{\"changes\":\"Wordt beoordeeld, commentaar kennisaanbieder\",\"changedFields\":[],\"changedComments\":[\"09\"],\"date\":\"2017-11-21T07:14:01.199Z\",\"by\":\"Even, S.\"},{\"changes\":\"Wordt beoordeeld, commentaar kennisaanbieder\",\"changedFields\":[],\"changedComments\":[],\"date\":\"2017-11-21T07:14:15.522Z\",\"by\":\"Even, S.\"},{\"changes\":\"Goedgekeurd\",\"changedFields\":[\"Beoordeling_status\",\"Beoordeling_rapport\"],\"changedComments\":[],\"date\":\"2017-11-21T11:00:31.711Z\",\"by\":\"Simmelink, J.G.\"}]",
+  "Thema": null,
+  "Competentie": null,
+  "Vaardigheden": null,
+  "Beoordelaar": null,
+  "Vakvragen": null
+}

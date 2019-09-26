@@ -1,0 +1,20 @@
+.tmp
+.vscode
+coverage
+dist
+e2e
+# mocks
+node_modules
+# src
+.editorconfig
+.gitignore
+.prettierignore
+angular-cli.json
+karma.conf.js
+package.json
+protractor.conf.js
+proxy.conf.json
+README.md
+tslint.json
+wallaby.js
+yarn.lock

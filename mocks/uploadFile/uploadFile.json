@@ -1,0 +1,18 @@
+{
+  "expression":
+    "^/DesktopModules/AOCRaad.Erkenningen.WebAPI/API/Specialty/UploadDocument$",
+  "method": "POST",
+  "name": "postUploadFile",
+  "isArray": false,
+  "responses": {
+    "200-response": {
+      "default": true,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "status": 200,
+      "file": "mocks/uploadFile/data/200-response.json",
+      "delay": 200
+    }
+  }
+}

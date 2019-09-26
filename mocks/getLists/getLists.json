@@ -1,0 +1,18 @@
+{
+  "expression":
+    "^/DesktopModules/AOCRaad.Erkenningen.WebAPI/API/Specialty/GetLists$",
+  "method": "GET",
+  "name": "getLists",
+  "isArray": false,
+  "responses": {
+    "200-some": {
+      "default": true,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "status": 200,
+      "file": "mocks/getLists/data/getLists.json",
+      "delay": 200
+    }
+  }
+}

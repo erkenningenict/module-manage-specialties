@@ -1,0 +1,26 @@
+{
+  "expression":
+    "^/DesktopModules/AOCRaad.Erkenningen.WebAPI/API/Specialty/GetVak\\?vakID=23369&forPrinting=false$",
+  "method": "GET",
+  "name": "getVakOkWithDiscussion",
+  "isArray": true,
+  "responses": {
+    "200-ok-with-discussion": {
+      "default": true,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "status": 200,
+      "file": "mocks/getVak/data/getVak-23369-goedgekeurd-with-discussion.json",
+      "delay": 200
+    },
+    "200-test": {
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "status": 200,
+      "file": "mocks/getVak/data/getVak-11608.json",
+      "delay": 200
+    }
+  }
+}

@@ -1,0 +1,185 @@
+<div class="content-container">
+
+    <!-- <pre>{{ beoordeling | json}}</pre> -->
+
+    <!-- Form: {{ formBeoordelaar.valid }} -->
+    <!-- beoordelaar: {{formBeoordelaar.controls.beoordelaar.valid}} -->
+    <!-- status: {{formStatus.controls.beoordelingStatus.valid}} -->
+    <!-- rapport: {{formRapport.controls.rapport.valid}} -->
+
+    <div
+        class="alert alert-info"
+        *ngIf="!showBeoordelingData"
+    >
+        Er is nog geen beoordelaar toegewezen.
+    </div>
+
+    <div
+        class="form-horizontal"
+        *ngIf="showBeoordelingData"
+    >
+        <div
+            class="form-group"
+            [formGroup]="formBeoordelaar"
+            beNgrxForm="manageSpecialty.specialty.modelJudgement.beoordelaar"
+            [ngClass]="{'has-error': canUpdateBeoordelaar && formBeoordelaar.invalid}"
+        >
+            <label class="col-xs-3 control-label">Beoordelaar</label>
+
+            <div class="col-xs-4">
+                <select
+                    formControlName="beoordelaar"
+                    placeholder="Kies een beoordelaar"
+                    *ngIf="canUpdateBeoordelaar"
+                    class="form-control"
+                    data-test="beoordelaar"
+                >
+                    <option
+                        *ngFor="let judge of judges"
+                        [value]="judge.PersoonID"
+                    >
+                        {{judge.BeoordelaarNaam}}
+                    </option>
+                </select>
+                <!-- <p-dropdown -->
+                <!-- *ngIf="canUpdateBeoordelaar" -->
+                <!-- [options]="judges" -->
+                <!-- data-test="beoordelaar" -->
+                <!-- optionLabel="BeoordelaarNaam" -->
+                <!-- [style]="{'width':'100%'}" -->
+                <!-- formControlName="beoordelaar" -->
+                <!-- dataKey="PersoonID" -->
+                <!-- placeholder="Kies een beoordelaar" -->
+                <!-- &gt;</p-dropdown> -->
+                <p
+                    class="form-control-static"
+                    *ngIf="!canUpdateBeoordelaar"
+                >
+                    {{beoordelaarNaam}}
+                </p>
+            </div>
+        </div>
+        <ng-container *ngIf="formStatus.controls?.beoordelingStatus && beoordeling?.DatumGepland">
+            <div>
+                <div
+                    class="form-group"
+                    [formGroup]="formStatus"
+                    beNgrxForm="manageSpecialty.specialty.modelJudgement.beoordelingStatus"
+                    [ngClass]="{'has-error': canUpdateBeoordeling && formStatus.invalid}"
+                >
+                    <label class="col-xs-3 control-label">Status</label>
+
+                    <div class="col-xs-3">
+                        <p
+                            class="form-control-static"
+                            *ngIf="!canUpdateBeoordeling"
+                        >
+                            {{beoordeling.Status}}
+                        </p>
+                        <!-- <select
+                            formControlName="beoordelingStatus"
+                            placeholder="Kies een status"
+                            *ngIf="canUpdateBeoordeling"
+                            data-test="status"
+                        >
+                            <option
+                                *ngFor="let stat of statusItems"
+                                [value]="stat.Status"
+                            >
+                                {{stat.label}}
+                            </option>
+                        </select> -->
+                        <p-dropdown
+                            *ngIf="canUpdateBeoordeling"
+                            [options]="statusItems"
+                            optionLabel="label"
+                            dataKey="Status"
+                            required="true"
+                            [style]="{'width':'100%'}"
+                            formControlName="beoordelingStatus"
+                            placeholder="Geef een beoordeling"
+                        ></p-dropdown>
+
+                        <div
+                            class="help-block"
+                            *ngIf="canUpdateBeoordeling && formStatus.invalid && formStatus.controls.beoordelingStatus.invalid"
+                        >
+                            <span class="glyphicon glyphicon-warning-sign"></span>
+                            Beoordeel het aanbod met goed- of afkeur.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-xs-3 control-label">Gepland</label>
+
+                <div class="col-xs-9">
+                    <p class="form-control-static">
+                        {{beoordeling.DatumGepland | date:'dd-MM-yyyy'}}
+                    </p>
+                </div>
+            </div>
+            <div
+                class="alert alert-info"
+                *ngIf="beoordeling.Status == 'TerBeoordeling' || beoordeling.Status == 'CommentaarGevraagd'"
+            >
+                Rapport nog niet gemaakt.
+            </div>
+
+            <ng-container *ngIf="beoordeling.Status == 'Goedgekeurd' || beoordeling.Status == 'Afgekeurd'">
+
+                <div
+                    class="form-group"
+                    *ngIf="beoordeling.DatumRapport"
+                >
+                    <label class="col-xs-3 control-label">Rapport datum</label>
+
+                    <div class="col-xs-9">
+                        <p class="form-control-static">
+                            {{beoordeling.DatumRapport | date:'dd-MM-yyyy'}}
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <div
+                        class="form-group"
+                        [formGroup]="formRapport"
+                        beNgrxForm="manageSpecialty.specialty.modelJudgement.rapport"
+                        [ngClass]="{'has-error': formRapport.invalid && formRapport.controls.rapport.errors.required}"
+                    >
+                        <label class="col-xs-3 control-label">Rapport tekst</label>
+
+                        <div class="col-xs-9">
+                            <p
+                                class="form-control-static"
+                                *ngIf="!canUpdateBeoordeling"
+                            >
+                                {{beoordeling.Rapport}}
+                            </p>
+                            <textarea
+                                *ngIf="canUpdateBeoordeling"
+                                beAutosize
+                                name="Rapport"
+                                [required]="beoordelingRapportRequired"
+                                placeholder="Voer de rapport tekst in"
+                                class="form-control"
+                                formControlName="rapport"
+                            ></textarea>
+
+                            <div
+                                class="help-block"
+                                *ngIf="formRapport.invalid && formRapport.controls.rapport.errors.required"
+                            >
+                                <span class="glyphicon glyphicon-warning-sign"></span>
+                                U dient een samenvattend eindoordeel te schrijven voordat u de
+                beoordeling kunt opslaan.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ng-container>
+        </ng-container>
+    </div>
+</div>

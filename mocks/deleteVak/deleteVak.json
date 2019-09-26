@@ -1,0 +1,26 @@
+{
+  "expression":
+    "^/DesktopModules/AOCRaad.Erkenningen.WebAPI/API/Specialty/DeleteVak\\?vakID=(.*)\\&i=(.*)$",
+  "method": "DELETE",
+  "name": "deleteVak",
+  "isArray": false,
+  "responses": {
+    "200-vakid-23369": {
+      "default": true,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "status": 200,
+      "file": "mocks/deleteVak/data/200.json",
+      "delay": 200
+    },
+    "500": {
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "status": 500,
+      "file": "mocks/deleteVak/data/500.json",
+      "delay": 200
+    }
+  }
+}

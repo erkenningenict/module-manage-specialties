@@ -1,0 +1,31 @@
+<div class="form-horizontal">
+  <div class="form-group"
+       [formGroup]="form"
+       beNgrxForm="manageSpecialty.specialty.model.aanbieder"
+       [beNgrxFormDebounce]="500"
+       [ngClass]="{'has-error': status === 'Nieuw' && form.controls.aanbieder.invalid}">
+    <label class="col-xs-4 control-label">Aanbieder</label>
+
+    <div class="col-xs-8">
+      <p class="form-control-static" *ngIf="status !== 'Nieuw'">
+        {{vakgroepNaam ? vakgroepNaam : 'Nog geen aanbieder'}}</p>
+      <!--<select formControlName="aanbieder">-->
+      <!--<option *ngFor="let vakgroep of vakgroepen" [value]="vakgroep.VakgroepID">-->
+      <!--{{vakgroep.VakgroepNaam}}-->
+      <!--</option>-->
+      <!--</select>-->
+      <p-dropdown
+        data-test="aanbieder"
+        *ngIf="status === 'Nieuw'"
+        [options]="vakgroepen"
+        optionLabel="VakgroepNaam"
+        filter="true"
+        [style]="{'width':'100%'}"
+        dataKey="VakgroepID"
+        formControlName="aanbieder"
+        [required]="true"
+        placeholder="Kies een organisatie"
+      ></p-dropdown>
+    </div>
+  </div>
+</div>

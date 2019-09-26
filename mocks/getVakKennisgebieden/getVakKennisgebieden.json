@@ -1,0 +1,18 @@
+{
+  "expression":
+    "^/DesktopModules/AOCRaad.Erkenningen.WebAPI/API/Specialty/GetVakkennisgebieden\\?vakId=(\\d*)\\&time=(\\d*)$",
+  "method": "GET",
+  "name": "getVakkennisgebieden",
+  "isArray": true,
+  "responses": {
+    "200": {
+      "default": true,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "status": 200,
+      "file": "mocks/getVakKennisgebieden/data/getVakKennisgebieden-200.json",
+      "delay": 200
+    }
+  }
+}

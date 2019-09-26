@@ -1,0 +1,56 @@
+<div class="schema-wrapper">
+    <button
+        type="button"
+        class="ui-button-secondary"
+        pButton
+        [disabled]="!enableEditing"
+        *ngIf="!showScheme"
+        (click)="createScheme()"
+        label="Maak optioneel een schema"
+        title="Voeg optioneel een tijdschema toe van uw programma"
+    >
+    </button>
+</div>
+<div
+    *ngIf="showScheme"
+    class="schema-wrapper"
+>
+    <div class="row">
+        <div class="col-xs-2">
+            <label>Tijd</label>
+        </div>
+        <div class="col-xs-2">
+            <label>Wie</label>
+        </div>
+        <div class="col-xs-6">
+            <label>Wat en hoe</label>
+        </div>
+        <div class="col-xs-2">
+            <label *ngIf="enableEditing">Acties</label>
+        </div>
+    </div>
+    <ul class="schema">
+        <be-work-form-schema-item
+            *ngFor="let period of scheme; let i = index; trackBy: trackByFunction"
+            [period]="period"
+            [index]="i"
+            [periodCount]="scheme.length"
+            [enableEditing]="enableEditing"
+            (moveItem)="onMoveItem($event)"
+            (deletePeriod)="onDeletePeriod($event)"
+            (changePeriod)="onChangePeriod($event)"
+        ></be-work-form-schema-item>
+    </ul>
+    <button
+        type="button"
+        pButton
+        [disabled]="!enableEditing"
+        *ngIf="enableEditing"
+        (click)="addPeriod()"
+        label="Voeg periode toe"
+        title="Voeg een regel toe"
+        icon="fa-plus"
+    >
+    </button>
+
+</div>

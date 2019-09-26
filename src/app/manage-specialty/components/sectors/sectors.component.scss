@@ -1,0 +1,18 @@
+ol.columnCheckboxes {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  column-count: 4;
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+
+  & li {
+    display: inline-block;
+    width: 102%;
+  }
+
+  & li label {
+    margin-left: 2px;
+    font-weight: normal;
+  }
+}

@@ -1,0 +1,65 @@
+<div
+    class="form-group"
+    *ngIf="comments?.length"
+>
+    <label class="control-label">Commentaren ({{allComments?.length}})</label>
+    <div class="btn-group btn-group-xs pull-right">
+        <button
+            id="btnShowAll"
+            tabindex="-1"
+            class="btn btn-default"
+            (click)="onShowAll()"
+            type="button"
+            *ngIf="allComments?.length >= 2 && showLast"
+        >
+            {{buttonAllText}} alle
+        </button>
+        <button
+            id="btnShowLast"
+            tabindex="-1"
+            class="btn btn-default"
+            type="button"
+            (click)="onShowLast()"
+            *ngIf="allComments?.length >= 1"
+        >
+            <span
+                class="glyphicon glyphicon-chevron-down"
+                title="Toon laatste commentaar"
+            ></span>
+        </button>
+    </div>
+
+    <ul
+        class="list-group no-margin-bottom"
+        *ngIf="showAll || showLast"
+    >
+        <li
+            class="list-group-item list-group-item-custom"
+            [ngClass]="{even: even && comments.length > 1}"
+            *ngFor="let comment of comments; let even= even;"
+        >
+            <div class="row">
+                <div class="col-sm-4">
+                    <h6>
+                        <strong>
+                            {{comment.DatumTijd | date:'dd-MM-yyyy HH:mm'}}
+                        </strong>
+                    </h6>
+                </div>
+                <div class="col-sm-4">
+                    <h6>
+                        <strong>{{comment.Auteur}}</strong>
+                    </h6>
+                </div>
+                <div class="col-sm-4">
+                    <h6>
+                        <strong>{{comment.Bron}}</strong>
+                    </h6>
+                </div>
+            </div>
+            <div class="row">
+                <p class="col-sm-12">{{comment.Commentaar}}</p>
+            </div>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,219 @@
+<div class="padding">
+    <div
+        class="row"
+        data-ng-if="bijlagen?.length == 0"
+    >
+        <p class="col-md-12">Dit aanbod heeft (nog) geen bijlagen</p>
+    </div>
+
+    <!-- <pre>{{attachments | json }}</pre> -->
+    <div
+        class="form"
+        *ngIf="bijlagen?.length"
+    >
+        <div class="form-group">
+            <label class="control-label">Bijlage(n) bij dit aanbod:</label>
+        </div>
+
+        <div
+            class="row"
+            *ngFor="let bijlage of bijlagen | filterDeletedAttachments; trackBy: trackByFunction; let index = index;"
+        >
+            <div
+                class="col-md-12"
+                *ngIf="!bijlage.visible"
+            >
+                <a
+                    [href]="downloadUrl(bijlage.Naam)"
+                    target="_blank"
+                    class="btn btn-default btn-sm"
+                    role="button"
+                    title="Download document"
+                >
+                    <i class="glyphicon glyphicon-download-alt"></i>
+                </a>
+
+                <button
+                    class="btn btn-danger btn-sm"
+                    title="Verwijder document"
+                    type="button"
+                    *ngIf="enableEditing"
+                    (click)="updateBijlage(bijlage, index, 3)"
+                >
+                    <i class="glyphicon glyphicon-trash"></i>
+                </button>
+
+                <button
+                    class="btn btn-default btn-sm"
+                    title="Wijzig omschrijving"
+                    type="button"
+                    *ngIf="enableEditing"
+                    (click)="wijzigBijlage(bijlage)"
+                >
+                    <i class="glyphicon glyphicon-pencil"></i>
+                </button>
+                <a
+                    [href]="downloadUrl(bijlage.Naam)"
+                    target="_blank"
+                >
+                    {{bijlage.Omschrijving}}
+                </a>
+            </div>
+
+            <div
+                class="col-md-12"
+                *ngIf="bijlage.visible"
+            >
+                <div
+                    class="form form-horizontal"
+                    [formGroup]="bijlageOmschrijving"
+                >
+                    <div
+                        class="form-group"
+                        [ngClass]="{'has-error': bijlageOmschrijving.invalid}"
+                    >
+
+                        <label
+                            class="control-label col-md-3"
+                            for="omschrijving"
+                        >
+                            Omschrijving
+              document:
+              *
+                        </label>
+                        <div class="col-md-6">
+                            <input
+                                id="omschrijving"
+                                type="text"
+                                name="omschrijving-{{index}}"
+                                placeholder="Voer een omschrijving in"
+                                class="form-control"
+                                maxlength="150"
+                                formControlName="omschrijving"
+                            >
+                        </div>
+                        <div class="col-md-3">
+                            <div
+                                class="help-block inline-block col-md-6"
+                                *ngIf="bijlageOmschrijving.invalid && bijlageOmschrijving.controls.omschrijving.errors.required"
+                            >
+                                <span class="glyphicon glyphicon-warning-sign"></span>
+                                Verplicht
+                            </div>
+                            <button
+                                class="btn btn-success btn-sm"
+                                type="button"
+                                [disabled]="bijlageOmschrijving.invalid"
+                                (click)="updateBijlage(bijlage, index, 2)"
+                                title="Opslaan"
+                            >
+                                <i class="glyphicon glyphicon-ok"></i>
+                            </button>
+
+                            <button
+                                class="btn btn-default btn-sm"
+                                type="button"
+                                (click)="maakWijzigingOngedaan(bijlage)"
+                                title="Annuleren"
+                            >
+                                <i class="glyphicon glyphicon-remove"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div *ngIf="enableEditing">
+
+        <div
+            class="form-horizontal"
+            [formGroup]="formUpload"
+        >
+
+            <p>Voeg optioneel documenten toe:</p>
+            <div class="form-group">
+                <label class="col-md-3 control-label">Selecteer bestand</label>
+
+                <div class="col-md-9">
+                    <p-fileUpload
+                        #uploader
+                        name="myfile[]"
+                        auto="auto"
+                        customUpload="true"
+                        accept="image/*,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/msword,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/msexcel,application/mspowerpoint,application/vnd.ms-powerpoint,application/vnd.openxmlformats-officedocument.presentationml.presentation"
+                        (uploadHandler)="upload($event)"
+                        maxFileSize="10240000"
+                        chooseLabel="Upload bestand"
+                        cancelLabel="Annuleren"
+                        mode="advanced"
+                        invalidFileSizeMessageSummary="{0} is een te groot bestand"
+                        invalidFileSizeMessageDetail="maximum toegestane bestandsgrootte is {0}."
+                        invalidFileTypeMessageSummary="{0}: Invalide bestandsformaat,"
+                        invalidFileTypeMessageDetail="toegestane bestandstypen zijn: {0}"
+                    >
+                    </p-fileUpload>
+                </div>
+                <div class="col-md-offset-3 col-md-9 help-block">
+                    Bestand mag niet groter zijn dan 10 mb. Toegestane types:
+          pdf,doc,docx,ppt,pptx,xlsx,png,jpg,jpeg.
+                </div>
+            </div>
+
+            <div
+                class="form-group"
+                [ngClass]="{'has-error': formUpload.invalid && formUpload.controls.omschrijving.errors.required && formUpload.dirty}"
+            >
+                <label
+                    for="omschrijving2"
+                    class="col-md-3 control-label"
+                >
+                    Omschrijving document *
+                </label>
+
+                <div class="col-md-5">
+                    <input
+                        id="omschrijving2"
+                        type="text"
+                        name="omschrijving"
+                        placeholder="Voer een omschrijving in"
+                        class="form-control"
+                        formControlName="omschrijving"
+                    >
+
+                    <div
+                        class="help-block"
+                        *ngIf="formUpload.invalid && formUpload.controls.omschrijving.errors.required && formUpload.dirty"
+                    >
+                        <span class="glyphicon glyphicon-warning-sign"></span>
+                        Verplicht
+            veld
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-3 col-md-2">
+                    <button
+                        type="button"
+                        class="btn btn-success btn-s"
+                        (click)="uploadFiles() && uploader.clear()"
+                        [disabled]="!fileUploaded || ((formUpload.invalid && formUpload.pristine) || (formUpload.invalid && formUpload.dirty))"
+                    >
+                        <span class="glyphicon glyphicon-upload"></span>
+                        Upload
+                    </button>
+
+                </div>
+                <div
+                    class="col-md-6 help-block"
+                    *ngIf="showUploadButton"
+                >
+                    Sla na het uploaden de wijzigingen in het vak op.
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>

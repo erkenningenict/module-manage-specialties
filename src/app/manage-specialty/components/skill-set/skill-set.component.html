@@ -1,0 +1,149 @@
+<!-- Vaardigheden -->
+<div [formGroup]="form">
+    <!-- Valid? {{ form.valid}} -->
+    <input
+        style="display: none;"
+        required
+        formControlName="gekozenVaardigheden"
+    >
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Vaardigheden</h3>
+
+            <p>
+                Welke vaardigheden worden door dit kennisaanbod bevorderd?
+            </p>
+        </div>
+        <div class="panel-body">
+            <div *ngIf="showVaardigheden">
+
+                <div class="pull-left">
+                    <p class="btn-align">
+                        Totaal geselecteerde punten:
+                        <span
+                            class="label"
+                            [ngClass]="{'label-danger': (totaalGeselecteerdePunten < aantalBenodigdePunten), 'label-success': totaalGeselecteerdePunten >= aantalBenodigdePunten}"
+                        >
+                            {{totaalGeselecteerdePunten}}
+                        </span>
+                        {{' '}}
+                        <span>
+                            (Benodigd aantal punten: {{aantalBenodigdePunten}})
+                        </span>
+
+                    </p>
+
+                </div>
+                <div
+                    class="btn-group btn-group-xs pull-right"
+                    *ngIf="enableEditing"
+                >
+                    <button
+                        type="button"
+                        class="btn btn-default"
+                        (click)="showFilter = !showFilter"
+                        title="Filter op omschrijving en/of op code"
+                    >
+                        {{showFilter ? 'Verberg filter' : 'Filter'}}
+                    </button>
+                    <button
+                        type="button"
+                        class="btn btn-default"
+                        title="Toon geselecteerde of alle vaardigheden"
+                        [disabled]="totaalGeselecteerdePunten === 0"
+                        (click)="toggleSkills()"
+                    >
+                        Toon {{!showAll ? 'geselecteerde' : 'alle'}} vaardigheden
+                    </button>
+                </div>
+                <div class="clearfix"></div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div
+                            class="alert alert-danger"
+                            *ngIf="totaalGeselecteerdePunten < aantalBenodigdePunten"
+                        >
+                            <i class="glyphicon glyphicon-warning-sign"></i>
+                            Kies nog minstens
+                            <span>
+                                {{aantalBenodigdePunten - totaalGeselecteerdePunten}}
+                            </span>
+                            punten.
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <div
+                            class="alert alert-info"
+                            *ngIf="themaId === 24"
+                        >
+                            Kies minstens 20 punten uit de voorbereiding (=V).
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div
+                            class="alert alert-info"
+                            *ngIf="themaId === 25"
+                        >
+                            Kies (naast de 2 verplichte vaardigheden) aanvullend 5 vaardigheden, met minstens 2 uit risico’s, 2 uit
+              bestrijding uitvoeren en 1 uit verantwoordelijkheid.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div *ngIf="editableSkills.length > 0">
+            <p-dataTable
+                [value]="editableSkills"
+                #dt
+                emptyMessage="Er zijn geen gegevens gevonden."
+            >
+
+                <p-column
+                    header
+                    [style]="{'width': '40px'}"
+                >
+                    <ng-template
+                        let-col
+                        let-vaardigheid="rowData"
+                        pTemplate="body"
+                    >
+                        <label>
+                            <input
+                                type="checkbox"
+                                class="checkbox"
+                                [attr.data-test]="'vaardigheidid'+vaardigheid.VaardigheidID"
+                                (change)="vaardigheidSelected($event, vaardigheid)"
+                                [checked]="isSelected(vaardigheid)"
+                                [disabled]="!enableEditing || vaardigheid.IsVerplicht"
+                            >
+                        </label>
+                    </ng-template>
+                </p-column>
+                <p-column
+                    field="Code"
+                    header="Code"
+                    filterPlaceholder="Code"
+                    [sortable]="true"
+                    [filter]="showFilter"
+                    [style]="{'width': '80px'}"
+                ></p-column>
+                <p-column
+                    field="Omschrijving"
+                    header="Omschrijving"
+                    filterPlaceholder="Filter op omschrijving"
+                    [filter]="showFilter"
+                    [sortable]="true"
+                ></p-column>
+                <p-column
+                    field="Punten"
+                    header="Punten"
+                    [filter]="showFilter"
+                    [sortable]="true"
+                    [style]="{'width': '80px', 'text-align': 'center'}"
+                ></p-column>
+            </p-dataTable>
+        </div>
+    </div>
+</div>

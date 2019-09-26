@@ -1,0 +1,34 @@
+{
+  "expression":
+    "^/DesktopModules/AOCRaad.Erkenningen.WebAPI/API/Specialty/GetVakken\\?zoekCode=(all|!one|)$",
+  "method": "GET",
+  "name": "getVakken",
+  "isArray": true,
+  "responses": {
+    "200-some": {
+      "default": true,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "status": 200,
+      "file": "mocks/getVakken/data/getVakken-some.json",
+      "delay": 200
+    },
+    "200-all": {
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "status": 200,
+      "file": "mocks/getVakken/data/getVakken-all.json",
+      "delay": 200
+    },
+    "200-one": {
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "status": 200,
+      "file": "mocks/getVakken/data/getVakken-one.json",
+      "delay": 200
+    }
+  }
+}

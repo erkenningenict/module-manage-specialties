@@ -1,0 +1,10 @@
+<table class="table">
+    <tbody>
+        <tr *ngIf="visible">
+            <td>
+                <h4>{{questionTitle}}: {{questionText}}</h4>
+                <ng-content></ng-content>
+            </td>
+        </tr>
+    </tbody>
+</table>

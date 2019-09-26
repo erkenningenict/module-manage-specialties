@@ -1,0 +1,36 @@
+<div>
+    <div class="form-horizontal">
+        <div class="form-group">
+            <label
+                class="control-label col-md-3"
+                for="searchCriteria"
+            >
+                Zoek op aanbod code of titel
+            </label>
+
+            <div class="col-md-3">
+                <input
+                    name="searchCriteria"
+                    id="searchCriteria"
+                    type="text"
+                    class="form-control"
+                    [value]="query"
+                    (keyup)="searchEvent($event)"
+                >
+                {{query}}
+            </div>
+        </div>
+        <a
+            [routerLink]="['/manage-specialty', 0]"
+            *ngIf="showNew()"
+        >
+            New
+        </a>
+        <!-- <div class="form-group"> -->
+        <!-- <div class="col-md-offset-3 col-md-9"> -->
+        <!-- <button type="submit" pButton icon="fa-check" label="Zoeken" (click)="searchSpecialty()"></button> -->
+        <!-- <button type="button" pButton class="ui-button-secondary" label="Alle weergeven" (click)="showAll()"></button> -->
+        <!-- </div> -->
+        <!-- </div> -->
+    </div>
+</div>

@@ -1,0 +1,18 @@
+{
+  "expression":
+    "^/DesktopModules/AOCRaad.Erkenningen.WebAPI/API/Specialty/GetVak\\?vakID=23519&forPrinting=true$",
+  "method": "GET",
+  "name": "getVakForPrintWithDiscussion",
+  "isArray": false,
+  "responses": {
+    "200-for-print-with-discussion": {
+      "default": true,
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "status": 200,
+      "file": "mocks/getVak/data/getVak-23519-for-print.json",
+      "delay": 200
+    }
+  }
+}
