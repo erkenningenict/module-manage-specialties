@@ -1,22 +1,19 @@
-import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/catch';
-import 'rxjs/add/operator/switchMap';
 import { Injectable } from '@angular/core';
 import { Action } from '@ngrx/store';
-import { Effect, Actions } from '@ngrx/effects';
-import { Observable } from 'rxjs/Observable';
-import { of } from 'rxjs/observable/of';
+import { Effect, Actions, ofType } from '@ngrx/effects';
 import * as skillsActions from '../actions/skills.action';
 import { ISkills } from '../../models/skills';
 import { SpecialtyService } from '../../../services/specialty.service';
+import { map, switchMap } from 'rxjs/operators';
+import { Observable, of } from 'rxjs';
 
 @Injectable()
 export class SkillsEffects {
   @Effect()
-  fetchSkills$: Observable<Action> = this.actions$
-    .ofType<skillsActions.LoadSkills>(skillsActions.LOAD_SKILLS)
-    .map((action) => action)
-    .switchMap((payload) =>
+  fetchSkills$: Observable<Action> = this.actions$.pipe(
+    ofType<skillsActions.LoadSkills>(skillsActions.LOAD_SKILLS),
+    map((action) => action),
+    switchMap((payload) =>
       this.specialtyService
         .getVaardigheden(
           payload.themaId,
@@ -25,7 +22,8 @@ export class SkillsEffects {
         )
         .map((_: ISkills) => new skillsActions.LoadSkillsSuccess(_))
         .catch((error) => of(new skillsActions.LoadSkillsFail(error))),
-    );
+    ),
+  );
 
   constructor(
     private actions$: Actions,
