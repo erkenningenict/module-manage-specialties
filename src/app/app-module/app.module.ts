@@ -46,12 +46,12 @@ export const ROUTES: Routes = [
   {
     path: 'specialties',
     loadChildren:
-      '../specialties-management/specialties-management.module#SpecialtiesManagementModule',
+      () => import('../specialties-management/specialties-management.module').then(m => m.SpecialtiesManagementModule),
   },
   {
     path: 'manage-specialty',
     loadChildren:
-      '../manage-specialty/manage-specialty.module#ManageSpecialtyModule',
+      () => import('../manage-specialty/manage-specialty.module').then(m => m.ManageSpecialtyModule),
   },
 ];
 
