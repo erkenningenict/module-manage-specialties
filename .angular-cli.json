@@ -6,7 +6,7 @@
   "apps": [
     {
       "root": "src",
-      "outDir": "dist",
+      "outDir": "build",
       "assets": [
         { "glob": "**/*", "input": "./assets/", "output": "./images/" }
       ],
@@ -27,7 +27,8 @@
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
-        "dnn": "environments/environment.dnn.ts"
+        "dnn": "environments/environment.dnn.ts",
+        "prod": "environments/environment.prod.ts"
       }
     }
   ],
