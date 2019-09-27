@@ -60,8 +60,6 @@
     "@types/node": "6.0.60",
     "angular2-template-loader": "0.6.2",
     "codelyzer": "3.2.0",
-    "cypress": "2.1.0",
-    "electron": "1.7.10",
     "husky": "0.14.3",
     "jasmine-core": "2.6.2",
     "jasmine-spec-reporter": "4.1.0",
