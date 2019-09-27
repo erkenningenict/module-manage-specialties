@@ -19,8 +19,7 @@
     "build:dnn": "npm-run-all build:release:dnn build:before-nant nant",
     "build:netlify": "cp src/index.netlify.html src/index.html && ng build --target=production --environment=prod --output-hashing none",
     "mockserver": "node ./mocks/mocks.js",
-    ":precommit": "lint-staged",
-    "prettier:all": "prettier --write \"**/*.{css,js,json,md,scss,ts}\"",
+    "tempdisabledprecommit": "lint-staged",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "co": "npm run cypress:open"
