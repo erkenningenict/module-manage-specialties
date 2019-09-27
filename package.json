@@ -7,8 +7,8 @@
     "start": "run-p -r mockserver serve",
     "start:dev": "run-p -r serve:dev",
     "start:prod": "run-p -r mockserver serve:prod",
-    "serve": "ng serve --aot --locale nl --sourcemap --proxy-config proxy.config.json",
-    "serve:dev": "ng serve --aot --locale nl --environment=dnndev --sourcemap --proxy-config proxy.config.localdev.json",
+    "serve": "ng serve --aot --locale nl --source-map --proxy-config proxy.config.json",
+    "serve:dev": "ng serve --aot --locale nl --environment=dnndev --source-map --proxy-config proxy.config.localdev.json",
     "serve:prod": "ng serve --prod --environment=dev --proxy-config proxy.config.json",
     "test": "ng test",
     "lint": "ng lint",
@@ -20,6 +20,7 @@
     "build:netlify": "cp src/index.netlify.html src/index.html && ng build --target=production --environment=prod --output-hashing none",
     "mockserver": "node ./mocks/mocks.js",
     "tempdisabledprecommit": "lint-staged",
+    "prettier:all": "prettier --write \"**/*.{css,js,json,md,scss,ts}\"",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "co": "npm run cypress:open"
