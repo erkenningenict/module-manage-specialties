@@ -5,6 +5,7 @@ import { ISpecialty } from '../../models/ISpecialty';
 @Component({
   selector: 'be-table',
   templateUrl: './table.component.html',
+  styleUrls: ['./table.component.scss'],
 })
 export class TableComponent implements OnChanges {
   @Input() list: ISpecialty[];
@@ -12,6 +13,9 @@ export class TableComponent implements OnChanges {
 
   data: ISpecialty[];
   organizers: SelectItem[] = [];
+  statusList: SelectItem[] = [];
+  tList: SelectItem[] = [];
+  cList: SelectItem[] = [];
   vakIdPrint: number;
   vakIdAction: number;
   titel: string;
@@ -27,7 +31,7 @@ export class TableComponent implements OnChanges {
   }
 
   setSpecialties(specialties: ISpecialty[]) {
-    this.data = specialties;
+    this.data = [...specialties];
     specialties.map((specialty: ISpecialty) => {
       // this.data = data;
       // create filter for organizers
@@ -41,6 +45,31 @@ export class TableComponent implements OnChanges {
         )
       ) {
         this.organizers.push(organizer);
+      }
+      const status: { label: string; value: string } = {
+        label: specialty.Status,
+        value: specialty.Status,
+      };
+      if (
+        !this.statusList.find((item: SelectItem) => item.value === status.value)
+      ) {
+        this.statusList.push(status);
+      }
+      const thema: { label: string; value: string } = {
+        label: specialty.Thema,
+        value: specialty.Thema,
+      };
+      if (!this.tList.find((item: SelectItem) => item.value === thema.value)) {
+        this.tList.push(thema);
+      }
+      const competentie: { label: string; value: string } = {
+        label: specialty.Competentie,
+        value: specialty.Competentie,
+      };
+      if (
+        !this.cList.find((item: SelectItem) => item.value === competentie.value)
+      ) {
+        this.cList.push(competentie);
       }
     });
   }

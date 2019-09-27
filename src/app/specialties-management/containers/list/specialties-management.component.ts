@@ -4,10 +4,10 @@ import * as fromSpecialties from '../../store/reducers/index';
 import * as fromList from '../../store/reducers/index';
 import * as list from '../../store/actions/list';
 import { ISpecialty } from '../../models/ISpecialty';
-import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/operator/take';
+import { Observable } from 'rxjs';
+
 import { MessageService } from 'primeng/components/common/messageservice';
-import { filter } from 'rxjs/operators';
+import { filter, take } from 'rxjs/operators';
 
 @Component({
   selector: 'be-specialties-management',
@@ -28,7 +28,7 @@ export class SpecialtiesManagementComponent implements OnInit {
   ) {
     this.searchQuery$ = this.store
       .select(fromSpecialties.getSearchQuery)
-      .take(1);
+      .pipe(take(1));
     this.list$ = this.store.select(fromList.getList);
     this.loading$ = this.store.select(fromSpecialties.getListLoading);
     this.error$ = this.store.select(fromSpecialties.getSearchError);

@@ -14,7 +14,7 @@ import { reducers, effects, CustomSerializer } from './store/index';
 
 // not used in production
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
-import { storeFreeze } from 'ngrx-store-freeze';
+
 
 // import { form, NgrxFormModule } from 'ngrx-form';
 import { form } from './store/reducers/form.reducer';
@@ -25,7 +25,7 @@ const environment = {
 };
 
 export const metaReducers: MetaReducer<any>[] = !environment.production
-  ? [form, storeFreeze]
+  ? [form]
   : [form];
 
 // bootstrap
@@ -63,9 +63,9 @@ registerLocaleData(localeNl);
     GrowlModule,
     BrowserAnimationsModule,
     RouterModule.forRoot(ROUTES),
-    StoreModule.forRoot(reducers, { metaReducers }),
+    StoreModule.forRoot(reducers, { metaReducers, runtimeChecks: { strictStateImmutability: true, strictActionImmutability: true } }),
     EffectsModule.forRoot(effects),
-    StoreRouterConnectingModule,
+    StoreRouterConnectingModule.forRoot(),
     // environment.development ? StoreDevtoolsModule.instrument() : [],
   ],
   providers: [

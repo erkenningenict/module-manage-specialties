@@ -1,16 +1,11 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
-import { Observable } from 'rxjs/Observable';
-
+import { HttpClient } from '@angular/common/http';
+import { Observable, of } from 'rxjs';
 import { HttpBaseService } from './http-base.service';
 import { IManageSpecialty } from '../manage-specialty/models/manage-specialty';
-import { of } from 'rxjs/observable/of';
-import { getCommentListFromFormValue } from '../shared/utils';
 import { CurrentDataService } from './current-data.service';
 import { ParserService } from './parser.service';
 import { State } from '../manage-specialty/store/reducers/manage-specialty.reducer';
-// import { toPayload } from '@ngrx/effects';
-import { environment } from '../../environments/environment';
 import { ISector } from '../specialties-management/models/ISpecialty';
 
 @Injectable()

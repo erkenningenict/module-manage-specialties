@@ -1,22 +1,13 @@
-import 'rxjs/add/operator/catch';
-import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/switchMap';
-import 'rxjs/add/operator/debounceTime';
-import 'rxjs/add/operator/skip';
-import 'rxjs/add/operator/takeUntil';
 import { Injectable, InjectionToken, Optional, Inject } from '@angular/core';
 import { Effect, Actions, ofType } from '@ngrx/effects';
 import { Action } from '@ngrx/store';
-import { Observable } from 'rxjs/Observable';
-import { Scheduler } from 'rxjs/Scheduler';
-import { of } from 'rxjs/observable/of';
+import { Observable, Scheduler, of } from 'rxjs';
 
 import { SpecialtyService } from '../../../services/specialty.service';
 import * as specialty from '../actions/specialty';
-import { ISector, ISpecialty } from '../../models/ISpecialty';
+import { ISector } from '../../models/ISpecialty';
 import { IManageSpecialty } from '../../../manage-specialty/models/manage-specialty';
-import { map } from 'rxjs/operators';
-import { switchMap } from 'rxjs/operators';
+import { map, switchMap, catchError } from 'rxjs/operators';
 import { HttpErrorResponse } from '@angular/common/http';
 
 export const SEARCH_DEBOUNCE = new InjectionToken<number>('Search Debounce');
@@ -64,12 +55,12 @@ export class SpecialtyEffects {
     ofType<specialty.LoadOne>(specialty.LOAD_ONE),
     map((action: specialty.LoadOne) => action.payload),
     switchMap((vakId: any) => {
-      return this.specialtyService
-        .getVak(vakId, true)
-        .map((vak: IManageSpecialty) => new specialty.LoadOneSuccess(vak))
-        .catch((error: HttpErrorResponse) => {
+      return this.specialtyService.getVak(vakId, true).pipe(
+        map((vak: IManageSpecialty) => new specialty.LoadOneSuccess(vak)),
+        catchError((error: HttpErrorResponse) => {
           return of(new specialty.LoadOneFail(error.error));
-        });
+        }),
+      );
     }),
   );
 
@@ -80,8 +71,10 @@ export class SpecialtyEffects {
     switchMap((vakId: any) => {
       return this.specialtyService
         .getVakKennisgebieden(vakId)
-        .map((data: ISector[]) => new specialty.LoadSectorenSuccess(data))
-        .catch((error) => of(new specialty.LoadSectorenFail(error)));
+        .pipe(
+          map((data: ISector[]) => new specialty.LoadSectorenSuccess(data)),
+          catchError((error) => of(new specialty.LoadSectorenFail(error))),
+        );
     }),
   );
 

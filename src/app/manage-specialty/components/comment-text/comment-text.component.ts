@@ -1,6 +1,6 @@
 import { Component, Input, OnChanges, OnInit } from '@angular/core';
-import 'rxjs/add/operator/debounceTime';
-import 'rxjs/add/operator/filter';
+
+
 import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 
 @Component({

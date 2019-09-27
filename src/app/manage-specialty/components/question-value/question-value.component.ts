@@ -7,8 +7,8 @@ import {
   SimpleChanges,
 } from '@angular/core';
 import { FormBuilder, FormControl, Validators } from '@angular/forms';
-import 'rxjs/add/operator/debounceTime';
-import 'rxjs/add/operator/filter';
+
+
 @Component({
   selector: 'be-question-value',
   templateUrl: './question-value.component.html',

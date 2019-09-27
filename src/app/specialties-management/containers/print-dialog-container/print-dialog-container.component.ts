@@ -7,13 +7,12 @@ import {
   OnDestroy,
 } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { Observable } from 'rxjs/Observable';
+import { Observable, Subject } from 'rxjs';
 import * as fromSpecialties from '../../store/reducers/index';
 import * as fromSpecialtyActions from '../../store/actions/specialty';
 import { IManageSpecialty } from '../../../manage-specialty/models/manage-specialty';
-import { filter } from 'rxjs/operators';
+import { filter, takeUntil } from 'rxjs/operators';
 import { MessageService } from 'primeng/components/common/messageservice';
-import { Subject } from 'rxjs/Subject';
 
 @Component({
   selector: 'be-print-dialog-container',
@@ -40,8 +39,7 @@ export class PrintDialogContainerComponent implements OnChanges, OnDestroy {
     this.loading$ = this.store.select(fromSpecialties.getLoadingSpecialty);
     this.store
       .select(fromSpecialties.getLoadOneError)
-      .pipe(filter((v) => v !== undefined))
-      .takeUntil(this.onDestroy$)
+      .pipe(filter((v) => v !== undefined), takeUntil(this.onDestroy$))
       .subscribe((error: string) => {
         this.error = true;
         this.messageService.add({

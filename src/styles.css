@@ -2,12 +2,35 @@ body .ui-panel {
   margin-bottom: 10px;
 }
 
+/* body a {
+  color: #dd6b02 !important;
+  text-decoration: inherit !important;
+}
+body a:hover {
+  color: #aa5302 !important;
+} */
+
 span.ui-panel-title {
   font-weight: bold;
 }
 
+body .ui-widget {
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+
+body .ui-widget-content p {
+  line-height: inherit !important;
+  margin: 0;
+}
+
 .ui-dialog-content.ui-widget-content {
   /*height: calc(100vh - 180px);*/
+}
+
+.ui-paginator-bottom .ui-dropdown {
+  width: 80px;
+  height: 31px !important;
 }
 
 body.modal-open {
@@ -95,6 +118,7 @@ body .ui-datatable thead th.ui-state-active {
 body .ui-button {
   color: #ffffff;
   background-color: #dd6b02;
+  border-color: #dd6b02;
 }
 
 body .ui-button:focus,
@@ -124,11 +148,20 @@ body
   background-color: #aa5302;
 }
 
+body .ui-paginator .ui-paginator-pages .ui-paginator-page.ui-state-active {
+  background-color: #aa5302;
+  color: #fff;
+}
+
 body
-  .ui-dropdown-panel
-  .ui-dropdown-items
-  .ui-dropdown-item.ui-state-highlight {
+  .ui-multiselect-panel
+  .ui-multiselect-items
+  .ui-multiselect-item.ui-state-highlight {
   background-color: #dd6b02;
+}
+
+.ui-multiselect-panel .ui-multiselect-item span {
+  display: contents !important;
 }
 
 body .ui-dropdown-panel .ui-dropdown-items .ui-dropdown-item {
@@ -166,4 +199,9 @@ body .ui-inputtext:focus {
 body .ui-fileupload-choose:not(.ui-state-disabled):hover,
 body .ui-fileupload-choose.ui-state-focus {
   background-color: #aa5302;
+}
+
+body .ui-table .ui-sortable-column.ui-state-highlight {
+  background-color: #dd6b02;
+  color: #ffffff;
 }

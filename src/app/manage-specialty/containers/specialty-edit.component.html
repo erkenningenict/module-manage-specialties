@@ -930,7 +930,7 @@
                 type="button"
                 *ngIf="showIndienenButton$ | async"
                 label="Indienen"
-                icon="fa-check"
+                icon="fa fa-check"
                 [disabled]="submitDisabled"
                 (click)="save(true)"
             ></button>
@@ -939,7 +939,7 @@
                 pButton
                 type="button"
                 label="Opslaan"
-                icon="fa-check"
+                icon="fa fa-check"
                 [disabled]="saveDisabled"
                 (click)="save(false)"
                 *ngIf="!(isVakcommissieAG$ | async)"

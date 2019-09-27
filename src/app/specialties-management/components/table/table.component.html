@@ -2,185 +2,184 @@
     class="spinner"
     [loading]="loading"
 ></be-loader>
-<p-dataTable
+<p-table
     [value]="data"
     [rows]="10"
     [paginator]="true"
     [pageLinks]="3"
+    [responsive]="true"
     [rowsPerPageOptions]="[5,10,20,50,100]"
     #dt
     styleClass="planningTable"
-    [emptyMessage]="loading ? 'Gegevens worden geladen' : 'Er zijn geen gegevens gevonden.'"
 >
-    <p-column
-        field
-        header
-        [style]="{width: '125px'}"
+    <ng-template
+        pTemplate="emptyMessage"
+        let-columns
     >
-        <!-- <ng-template pTemplate="filter" let-col> -->
-        <!-- <p-multiSelect [options]="specialties" [style]="{'width':'100%'}" defaultLabel="[Alle aanboden]" -->
-        <!-- (onChange)="dt.filter($event.value,col.field,col.filterMatchMode)" -->
-        <!-- styleClass="ui-column-filter"></p-multiSelect> -->
-        <!-- </ng-template> -->
-        <ng-template
-            let-col
-            let-specialty="rowData"
-            pTemplate="body"
-        >
-            <button
-                type="button"
-                pButton
-                icon="fa-print"
-                title="Printen"
-                (click)="openPrintDialog(specialty.VakID)"
-            ></button>
-            <button
-                *ngIf="specialty.EditVisible"
-                type="button"
-                pButton
-                icon="fa-edit"
-                [routerLink]="['/manage-specialty', specialty.VakID]"
-                title="Bewerken"
+        <tr>
+            <td [attr.colspan]="columns.length">Er zijn geen gegevens gevonden</td>
+        </tr>
+    </ng-template>
+
+    <ng-template pTemplate="header">
+        <tr>
+            <th style="width: 65px"></th>
+            <th
+                style="width: 102px"
+                pSortableColumn="DatumAangemaakt"
             >
-            </button>
-            <button
-                *ngIf="specialty.ViewVisible"
-                type="button"
-                pButton
-                icon="fa-search"
-                [routerLink]="['/manage-specialty', specialty.VakID]"
-                title="Bekijken"
+                Datum aangemaakt
+                <p-sortIcon field="DatumAangemaakt"></p-sortIcon>
+            </th>
+            <th
+                style="width: 65px"
+                pSortableColumn="Code"
             >
-            </button>
-            <button
-                *ngIf="specialty.DeleteVisible"
-                type="button"
-                pButton
-                class="ui-button-danger"
-                icon="fa-remove"
-                (click)="openActionDialog(specialty.VakID, specialty.Titel, true)"
-                title="Verwijderen"
+                Code
+                <p-sortIcon field="Code"></p-sortIcon>
+            </th>
+            <th>
+                <p-multiSelect
+                    [showHeader]="false"
+                    [options]="statusList"
+                    [style]="{'width':'100%'}"
+                    defaultLabel="[Alles]"
+                    (onChange)="dt.filter($event.value,'Status','in')"
+                    styleClass="ui-column-filter"
+                ></p-multiSelect>
+            </th>
+            <th>
+                <p-multiSelect
+                    [options]="organizers"
+                    [style]="{'width':'100%'}"
+                    defaultLabel="[Alle aanbieders]"
+                    filterPlaceHolder="Zoek op naam"
+                    (onChange)="dt.filter($event.value,'VakgroepNaam','in')"
+                    styleClass="ui-column-filter"
+                ></p-multiSelect>
+
+            </th>
+            <th>Titel</th>
+            <th style="width: 63px">
+
+                <p-multiSelect
+                    [showHeader]="false"
+                    [options]="cList"
+                    [style]="{'width':'100%'}"
+                    defaultLabel="[Alles]"
+                    (onChange)="dt.filter($event.value,'Competentie','in')"
+                    styleClass="ui-column-filter"
+                ></p-multiSelect>
+            </th>
+            <th style="width: 63px">
+                <p-multiSelect
+                    [showHeader]="false"
+                    [options]="tList"
+                    [style]="{'width':'100%'}"
+                    defaultLabel="[Alles]"
+                    (onChange)="dt.filter($event.value,'Thema','in')"
+                    styleClass="ui-column-filter"
+                ></p-multiSelect>
+            </th>
+            <th
+                style="width: 102px"
+                pSortableColumn="MaximumDatumString"
             >
-            </button>
-            <button
-                *ngIf="specialty.RevokeVisible"
-                type="button"
-                pButton
-                icon="fa-ban"
-                (click)="openActionDialog(specialty.VakID, specialty.Titel, false)"
-                title="Intrekken"
+                Geldig tot
+                <p-sortIcon field="MaximumDatumString"></p-sortIcon>
+            </th>
+            <th
+                style="width: 102px"
+                pSortableColumn="GewijzigdDatum"
             >
-            </button>
-            <!-- <button type="button" pButton (click)="showSpecialtyData(planningData.specialtyId)" -->
-            <!-- icon="fa-file-text" pTooltip="Bekijk aanbod details"></button> -->
-            <!-- <span><strong>{{planningData.specialtyId}}</strong> {{planningData.title}}</span> -->
-            <!-- <div><strong><i>{{planningData.specialtyType === 'Examen' ? 'Examen': ''}}</i></strong></div> -->
-            <!-- <div><i>{{planningData.nrOfDaysSinceLastVisit ? -->
-            <!-- '(' + planningData.nrOfDaysSinceLastVisit + ' dagen geleden bezocht)' : ''}}</i></div> -->
-        </ng-template>
-    </p-column>
-    <p-column
-        field="DatumAangemaakt"
-        header="Aangemaakt"
-        [sortable]="true"
+                Gewijzigd
+                <p-sortIcon field="GewijzigdDatum"></p-sortIcon>
+            </th>
+            <th pSortableColumn="GewijzigdActie">
+                Gewijzigd actie
+                <p-sortIcon field="GewijzigdActie"></p-sortIcon>
+            </th>
+        </tr>
+    </ng-template>
+
+    <ng-template
+        pTemplate="body"
+        let-rowData
     >
-        <ng-template
-            let-col
-            let-specialty="rowData"
-            pTemplate="body"
-        >
-            {{specialty[col.field] | date:'dd-MM-yyyy'}}
-        </ng-template>
-    </p-column>
-    <p-column
-        field="Code"
-        header="Code"
-        [sortable]="true"
-    ></p-column>
-    <p-column
-        field="Status"
-        header="Status"
-        [sortable]="true"
-        bodyStyleClass="overflow"
-    >
-    </p-column>
-    <p-column
-        field="VakgroepNaam"
-        header="Aanbieder"
-        [sortable]="true"
-        [filter]="true"
-        filterMatchMode="in"
-        bodyStyleClass="overflow"
-    >
-        <ng-template
-            let-col
-            pTemplate="filter"
-        >
-            <p-multiSelect
-                [options]="organizers"
-                [style]="{'width':'100%'}"
-                defaultLabel="[Alle aanbieders]"
-                (onChange)="dt.filter($event.value,col.field,col.filterMatchMode)"
-                styleClass="ui-column-filter"
-            ></p-multiSelect>
-        </ng-template>
-        <ng-template
-            let-col
-            let-specialty="rowData"
-            pTemplate="body"
-        >
-            <span>{{specialty[col.field]}}</span>
-        </ng-template>
-    </p-column>
-    <p-column
-        field="Titel"
-        header="Titel"
-        bodyStyleClass="overflow"
-        [sortable]="true"
-    ></p-column>
-    <p-column
-        field="Competentie"
-        header="C"
-        [sortable]="true"
-        [style]="{width: '50px'}"
-    ></p-column>
-    <p-column
-        field="Thema"
-        header="T"
-        [sortable]="true"
-        [style]="{width: '50px'}"
-    ></p-column>
-    <p-column
-        field="MaximumDatumString"
-        header="Geldig tot"
-        [sortable]="true"
-    ></p-column>
-    <p-column
-        field="GewijzigdDatum"
-        header="Gewijzigd"
-        [sortable]="true"
-    >
-        <ng-template
-            let-col
-            let-specialty="rowData"
-            pTemplate="body"
-        >
-            {{specialty[col.field] | date:'dd-MM-yyyy'}}
-        </ng-template>
-    </p-column>
-    <p-column
-        field="GewijzigdActie"
-        header
-        [sortable]="true"
-        bodyStyleClass="overflow"
-    >
-    </p-column>
-    <p-footer>
+        <tr>
+            <td>
+                <button
+                    type="button"
+                    pButton
+                    icon="fa fa-print"
+                    title="Printen"
+                    (click)="openPrintDialog(rowData.VakID)"
+                ></button>
+                <button
+                    *ngIf="rowData.EditVisible"
+                    type="button"
+                    pButton
+                    icon="fa fa-edit"
+                    [routerLink]="['/manage-specialty', rowData.VakID]"
+                    title="Bewerken"
+                >
+                </button>
+                <button
+                    *ngIf="rowData.ViewVisible"
+                    type="button"
+                    pButton
+                    icon="fa fa-search"
+                    [routerLink]="['/manage-specialty', rowData.VakID]"
+                    title="Bekijken"
+                >
+                </button>
+                <button
+                    *ngIf="rowData.DeleteVisible"
+                    type="button"
+                    pButton
+                    class="ui-button-danger"
+                    icon="fa fa-remove"
+                    (click)="openActionDialog(rowData.VakID, rowData.Titel, true)"
+                    title="Verwijderen"
+                >
+                </button>
+                <button
+                    *ngIf="rowData.RevokeVisible"
+                    type="button"
+                    pButton
+                    icon="fa fa-ban"
+                    (click)="openActionDialog(rowData.VakID, rowData.Titel, false)"
+                    title="Intrekken"
+                >
+                </button>
+
+            </td>
+            <td>
+                {{rowData.DatumAangemaakt | date:'dd-MM-yyyy'}}
+            </td>
+            <td>{{rowData.Code}}</td>
+            <td>{{rowData.Status}}</td>
+            <td>{{rowData.VakgroepNaam}}</td>
+            <td>{{rowData.Titel}}</td>
+            <td>{{rowData.Competentie}}</td>
+            <td>{{rowData.Thema}}</td>
+            <td>{{rowData.MaximumDatumString}}</td>
+            <td>
+                {{rowData.GewijzigdDatum  | date:'dd-MM-yyyy'}}
+            </td>
+            <td>{{rowData.GewijzigdActie}}</td>
+
+        </tr>
+
+    </ng-template>
+
+    <ng-template pTemplate="summary">
         {{dt?.totalRecords != data?.length ? dt?.totalRecords + ' /' : ''}}
     {{data?.length}}
     rijen
-    </p-footer>
-</p-dataTable>
+    </ng-template>
+
+</p-table>
 
 <be-print-dialog-container
     [vakId]="vakIdPrint"

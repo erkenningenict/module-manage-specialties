@@ -6,8 +6,8 @@ import {
 } from '@angular/core';
 import { Store } from '@ngrx/store';
 import * as fromStore from '../store';
-import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/operator/take';
+import { Observable, Subject, combineLatest } from 'rxjs';
+
 import {
   IBeoordeling,
   IBijlagenData,
@@ -25,11 +25,10 @@ import {
   IActualiteit,
   IBeoordelaar,
 } from '../models/lists';
-import 'rxjs/add/observable/combineLatest';
+
 import { IVaardigheid, IVakVraag } from '../models/skills';
-import 'rxjs/add/operator/debounceTime';
+
 import { MessageService } from 'primeng/components/common/messageservice';
-import { Subject } from 'rxjs/Subject';
 import { takeUntil } from 'rxjs/operators';
 
 @Component({
@@ -297,7 +296,7 @@ export class SpecialtyEditComponent implements OnInit, OnDestroy {
       fromStore.getShowIndienenButton,
     );
 
-    Observable.combineLatest(
+    combineLatest(
       this.store.select(fromStore.getAllControls),
       this.store.select(fromStore.getAllJudgementControls),
     )

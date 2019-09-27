@@ -5,8 +5,8 @@ import {
   OnChanges,
   OnInit,
 } from '@angular/core';
-import 'rxjs/add/operator/debounceTime';
-import 'rxjs/add/operator/filter';
+
+
 import { IHistoryObject } from '../../models/manage-specialty';
 import {
   capitalizeFirstLetter,

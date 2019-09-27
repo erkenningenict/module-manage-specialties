@@ -3,25 +3,8 @@ import { NgModule, LOCALE_ID } from '@angular/core';
 /**
  * Third party modules
  */
-import {
-  DataTableModule,
-  SharedModule,
-  DropdownModule,
-  MultiSelectModule,
-  ButtonModule,
-  DialogModule,
-  TooltipModule,
-  GrowlModule,
-  PanelModule,
-  CheckboxModule,
-  InputTextModule,
-  ProgressSpinnerModule,
-  TabViewModule,
-  InputTextareaModule,
-  CalendarModule,
-  FileUploadModule,
-  BlockUIModule,
-} from 'primeng/primeng';
+
+import { DropdownModule } from 'primeng/dropdown';
 import { SpecialtyEditComponent } from './containers/specialty-edit.component';
 import { AuthInterceptor } from '../services/auth-interceptor.service';
 import { ApiErrorService } from '../services/api-error.service';
@@ -45,7 +28,6 @@ import { SkillSetComponent } from './components/skill-set/skill-set.component';
 import { SectorsComponent } from './components/sectors/sectors.component';
 import { QuestionContainerComponent } from './components/question-container/question-container.component';
 import { CommentComponent } from './components/comment/comment.component';
-import { CommentHistoryComponent } from '../shared/components/comment-history/comment-history.component';
 import { ParserService } from '../services/parser.service';
 import { CurrentDataService } from '../services/current-data.service';
 import { TextareaAutosizeModule } from 'ngx-textarea-autosize';
@@ -70,6 +52,24 @@ import { CommentTextComponent } from './components/comment-text/comment-text.com
 import { LoaderComponentModule } from '../shared/components/loader/loader.component.module';
 import { CommentHistoryComponentModule } from '../shared/components/comment-history/comment-history.component.module';
 import { InvoiceComponent } from './components/invoice/invoice.component';
+import { TableModule } from 'primeng/table';
+import {
+  ButtonModule,
+  CalendarModule,
+  CheckboxModule,
+  DialogModule,
+  InputTextModule,
+  BlockUIModule,
+  InputTextareaModule,
+  MultiSelectModule,
+  PanelModule,
+  ProgressSpinnerModule,
+  SharedModule,
+  TooltipModule,
+  TabViewModule,
+  FileUploadModule,
+} from 'primeng/primeng';
+import { GrowlModule } from 'primeng/growl';
 
 @NgModule({
   imports: [
@@ -80,8 +80,8 @@ import { InvoiceComponent } from './components/invoice/invoice.component';
     // primeng
     ButtonModule,
     CalendarModule,
+    TableModule,
     CheckboxModule,
-    DataTableModule,
     DialogModule,
     DropdownModule,
     GrowlModule,

@@ -5,21 +5,7 @@ import { TableComponent } from './components/table/table.component';
 /**
  * Third party modules
  */
-import {
-  DataTableModule,
-  SharedModule,
-  DropdownModule,
-  MultiSelectModule,
-  ButtonModule,
-  DialogModule,
-  TooltipModule,
-  GrowlModule,
-  PanelModule,
-  CheckboxModule,
-  InputTextModule,
-  ProgressSpinnerModule,
-  BlockUIModule,
-} from 'primeng/primeng';
+import { TableModule } from 'primeng/table';
 import { SpecialtiesManagementComponent } from './containers/list/specialties-management.component';
 import { AuthInterceptor } from '../services/auth-interceptor.service';
 import { ApiErrorService } from '../services/api-error.service';
@@ -41,6 +27,20 @@ import { LoaderComponentModule } from '../shared/components/loader/loader.compon
 import { PrintDiscussionComponent } from './components/print-discussion/print-discussion.component';
 import { CommentHistoryComponentModule } from '../shared/components/comment-history/comment-history.component.module';
 import { ActionDialogContainerComponent } from './containers/action-dialog-container/action-dialog-container.component';
+import {
+  ButtonModule,
+  CheckboxModule,
+  DialogModule,
+  DropdownModule,
+  InputTextModule,
+  MultiSelectModule,
+  BlockUIModule,
+  PanelModule,
+  ProgressSpinnerModule,
+  SharedModule,
+  TooltipModule,
+} from 'primeng/primeng';
+import { GrowlModule } from 'primeng/growl';
 
 @NgModule({
   imports: [
@@ -51,7 +51,7 @@ import { ActionDialogContainerComponent } from './containers/action-dialog-conta
     // primeng
     ButtonModule,
     CheckboxModule,
-    DataTableModule,
+    TableModule,
     DialogModule,
     DropdownModule,
     GrowlModule,

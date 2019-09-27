@@ -1,13 +1,19 @@
 import { Injectable } from '@angular/core';
 import { Action } from '@ngrx/store';
 import { Effect, Actions, ofType } from '@ngrx/effects';
-import { Observable } from 'rxjs/Observable';
-import { of } from 'rxjs/observable/of';
+import { Observable, of } from 'rxjs';
 import * as list from '../actions/list';
 import { ISpecialty } from '../../models/ISpecialty';
 import { SpecialtyService } from '../../../services/specialty.service';
 import { HttpErrorResponse } from '@angular/common/http';
-import { switchMap, skip, debounceTime, map } from 'rxjs/operators';
+import {
+  switchMap,
+  skip,
+  debounceTime,
+  map,
+  catchError,
+  takeUntil,
+} from 'rxjs/operators';
 
 @Injectable()
 export class ListEffects {
@@ -17,8 +23,10 @@ export class ListEffects {
     switchMap(() =>
       this.specialtyService
         .getVakken('')
-        .map((specialties: ISpecialty[]) => new list.LoadSuccess(specialties))
-        .catch((error) => of(new list.LoadFail(error))),
+        .pipe(
+          map((specialties: ISpecialty[]) => new list.LoadSuccess(specialties)),
+          catchError((error) => of(new list.LoadFail(error))),
+        ),
     ),
   );
 
@@ -28,17 +36,15 @@ export class ListEffects {
     debounceTime(300),
     map((action) => action.payload),
     switchMap((query) => {
-      // if (query === '') {
-      //   return empty();
-      // }
-
       const nextSearch$ = this.actions$.pipe(ofType(list.SEARCH), skip(1));
 
       return this.specialtyService
         .getVakken(query)
-        .takeUntil(nextSearch$)
-        .map((specialties: ISpecialty[]) => new list.LoadSuccess(specialties))
-        .catch((err) => of(new list.LoadFail(err)));
+        .pipe(
+          takeUntil(nextSearch$),
+          map((specialties: ISpecialty[]) => new list.LoadSuccess(specialties)),
+          catchError((err) => of(new list.LoadFail(err))),
+        );
     }),
   );
 
@@ -47,19 +53,19 @@ export class ListEffects {
     ofType(list.DELETE_SPECIALTY),
     map((action: list.DeleteSpecialty) => action.payload),
     switchMap((vakId) =>
-      this.specialtyService
-        .deleteVak(vakId)
-        .switchMap(() => [
+      this.specialtyService.deleteVak(vakId).pipe(
+        switchMap(() => [
           new list.Load(),
           new list.DeleteSpecialtySuccess('test'),
-        ])
-        .catch((error: HttpErrorResponse) => {
+        ]),
+        catchError((error: HttpErrorResponse) => {
           return of(
             new list.DeleteSpecialtyFail(
               error.error ? error.error.error : error.error,
             ),
           );
         }),
+      ),
     ),
   );
 
@@ -70,11 +76,13 @@ export class ListEffects {
     switchMap((vakId) =>
       this.specialtyService
         .revokeVak(vakId)
-        .switchMap(() => [new list.Load(), new list.RevokeSpecialtySuccess()])
-        .catch((error: HttpErrorResponse) =>
-          of(
-            new list.RevokeSpecialtyFail(
-              error.error ? error.error.error : error.error,
+        .pipe(
+          switchMap(() => [new list.Load(), new list.RevokeSpecialtySuccess()]),
+          catchError((error: HttpErrorResponse) =>
+            of(
+              new list.RevokeSpecialtyFail(
+                error.error ? error.error.error : error.error,
+              ),
             ),
           ),
         ),

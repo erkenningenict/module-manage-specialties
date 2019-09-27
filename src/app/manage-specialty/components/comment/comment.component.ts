@@ -5,8 +5,8 @@ import {
   OnChanges,
   SimpleChanges,
 } from '@angular/core';
-import 'rxjs/add/operator/debounceTime';
-import 'rxjs/add/operator/filter';
+
+
 import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({

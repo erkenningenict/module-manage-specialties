@@ -44,7 +44,7 @@
                         [disabled]="index == 0"
                         (click)="move(-1)"
                         type="button"
-                        icon="fa-sort-up"
+                        icon="fa fa-sort-up"
                         title="Verplaats deze regel naar boven"
                     >
                     </button>
@@ -54,7 +54,7 @@
                         [disabled]="index == periodCount - 1"
                         (click)="move(1)"
                         type="button"
-                        icon="fa-sort-down"
+                        icon="fa fa-sort-down"
                         title="Verplaats deze regel naar beneden"
                     >
                     </button>
@@ -64,7 +64,7 @@
                         pButton
                         type="button"
                         [disabled]="!enableEditing"
-                        icon="fa-trash"
+                        icon="fa fa-trash"
                         (click)="deletePeriod.emit(period)"
                         title="Verwijder deze regel"
                     >

@@ -94,56 +94,93 @@
 
         </div>
         <div *ngIf="editableSkills.length > 0">
-            <p-dataTable
+            <p-table
                 [value]="editableSkills"
+                [columns]="cols"
                 #dt
-                emptyMessage="Er zijn geen gegevens gevonden."
             >
-
-                <p-column
-                    header
-                    [style]="{'width': '40px'}"
+                <ng-template
+                    pTemplate="header"
+                    let-columns
                 >
-                    <ng-template
-                        let-col
-                        let-vaardigheid="rowData"
-                        pTemplate="body"
-                    >
-                        <label>
-                            <input
-                                type="checkbox"
-                                class="checkbox"
-                                [attr.data-test]="'vaardigheidid'+vaardigheid.VaardigheidID"
-                                (change)="vaardigheidSelected($event, vaardigheid)"
-                                [checked]="isSelected(vaardigheid)"
-                                [disabled]="!enableEditing || vaardigheid.IsVerplicht"
+                    <tr>
+                        <ng-container
+                            *ngFor="let col of columns"
+                            [ngSwitch]="col.field"
+                        >
+                            <th
+                                *ngSwitchCase="'Checkbox'"
+                                style="width: 40px"
+                            ></th>
+                            <th
+                                *ngSwitchCase="'Code'"
+                                style="width: 95px"
+                                pSortableColumn="Code"
                             >
-                        </label>
-                    </ng-template>
-                </p-column>
-                <p-column
-                    field="Code"
-                    header="Code"
-                    filterPlaceholder="Code"
-                    [sortable]="true"
-                    [filter]="showFilter"
-                    [style]="{'width': '80px'}"
-                ></p-column>
-                <p-column
-                    field="Omschrijving"
-                    header="Omschrijving"
-                    filterPlaceholder="Filter op omschrijving"
-                    [filter]="showFilter"
-                    [sortable]="true"
-                ></p-column>
-                <p-column
-                    field="Punten"
-                    header="Punten"
-                    [filter]="showFilter"
-                    [sortable]="true"
-                    [style]="{'width': '80px', 'text-align': 'center'}"
-                ></p-column>
-            </p-dataTable>
+                                {{col.field}}
+                                <p-sortIcon [field]="col.field"></p-sortIcon>
+                            </th>
+                            <th
+                                *ngSwitchCase="'Omschrijving'"
+                                pSortableColumn="Omschrijving"
+                            >
+                                {{col.field}}
+                                <p-sortIcon [field]="col.field"></p-sortIcon>
+                            </th>
+                            <th
+                                *ngSwitchCase="'Punten'"
+                                style="width: 105px; text-align: center"
+                                pSortableColumn="Punten"
+                            >
+                                {{col.field}}
+                                <p-sortIcon [field]="col.field"></p-sortIcon>
+                            </th>
+
+                        </ng-container>
+
+                    </tr>
+                    <tr *ngIf="showFilter">
+                        <ng-container *ngFor="let col of columns">
+                            <th *ngIf="col.field == 'Checkbox'"></th>
+                            <th *ngIf="col.field != 'Checkbox'">
+                                <input
+                                    pInputText
+                                    type="text"
+                                    style="width: 100%"
+                                    [placeholder]="col.field == 'Omschrijving' ? 'Zoek op deel van ' + col.field : col.field"
+                                    (input)="dt.filter($event.target.value, col.field, 'contains')"
+                                >
+                            </th>
+                        </ng-container>
+                    </tr>
+
+                </ng-template>
+
+                <ng-template
+                    pTemplate="body"
+                    let-rowData
+                >
+                    <tr>
+                      <td>
+                            <label>
+                                <input
+                                    type="checkbox"
+                                    class="checkbox"
+                                    [attr.data-test]="'vaardigheidid'+rowData.VaardigheidID"
+                                    (change)="vaardigheidSelected($event, rowData)"
+                                    [checked]="isSelected(rowData)"
+                                    [disabled]="!enableEditing || rowData.IsVerplicht"
+                                >
+                            </label>
+                        </td>
+                        <td>{{rowData.Code}}</td>
+                        <td>{{rowData.Omschrijving}}</td>
+                        <td>{{rowData.Punten}}</td>
+                    </tr>
+
+                </ng-template>
+
+            </p-table>
         </div>
     </div>
 </div>

@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import 'rxjs/add/operator/debounceTime';
-import 'rxjs/add/operator/filter';
+
+
 import { IManageSpecialty } from '../../models/manage-specialty';
 import { environment } from '../../../../environments/environment';
 

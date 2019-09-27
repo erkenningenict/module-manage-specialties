@@ -7,13 +7,12 @@ import {
   OnDestroy,
 } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { Observable } from 'rxjs/Observable';
+import { Observable, Subject } from 'rxjs';
 import * as fromSpecialties from '../../store/reducers/index';
 import * as fromListActions from '../../store/actions/list';
 import { ISpecialty } from '../../models/ISpecialty';
-import { Subject } from 'rxjs/Subject';
 import { MessageService } from 'primeng/components/common/messageservice';
-import { filter } from 'rxjs/operators';
+import { filter, takeUntil } from 'rxjs/operators';
 
 @Component({
   selector: 'be-action-dialog-container',
@@ -37,8 +36,7 @@ export class ActionDialogContainerComponent implements OnChanges, OnDestroy {
     this.actionLoading$ = this.store.select(fromSpecialties.getActionLoading);
     this.store
       .select(fromSpecialties.getActionError)
-      .pipe(filter((v) => v !== undefined))
-      .takeUntil(this.onDestroy$)
+      .pipe(filter((v) => v !== undefined), takeUntil(this.onDestroy$))
       .subscribe((error: string) => {
         this.messageService.add({
           severity: 'error',
@@ -48,7 +46,7 @@ export class ActionDialogContainerComponent implements OnChanges, OnDestroy {
       });
     this.store
       .select(fromSpecialties.getActionCompleted)
-      .takeUntil(this.onDestroy$)
+      .pipe(takeUntil(this.onDestroy$))
       .subscribe((completed: boolean) => {
         if (!!completed) {
           this.display = false;

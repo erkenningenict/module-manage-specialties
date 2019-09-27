@@ -4,13 +4,11 @@ import {
   OnDestroy,
   ChangeDetectorRef,
   Directive,
-  OnChanges,
 } from '@angular/core';
 import { FormGroupDirective } from '@angular/forms';
 import { Store } from '@ngrx/store';
-import { Subject } from 'rxjs/Subject';
-import { takeUntil } from 'rxjs/operators/takeUntil';
-import { debounceTime } from 'rxjs/operators/debounceTime';
+import { Subject } from 'rxjs';
+import { takeUntil, debounceTime } from 'rxjs/operators';
 import {
   UpdateFormStatus,
   UpdateFormValue,
@@ -34,7 +32,6 @@ export class BeNgrxFormDirective implements OnInit, OnDestroy {
   @Input('ngrxFormClearOnDestroy') clearDestroy = false;
 
   private _destroy$ = new Subject<null>();
-  private _updating = false;
 
   constructor(
     private _store: Store<any>,
@@ -54,7 +51,6 @@ export class BeNgrxFormDirective implements OnInit, OnDestroy {
         //   console.log('!DH! ', this._updating, model);
         // }
         // if (!this._updating) {
-        this._updating = false;
         // if (model !== undefined) {
         // console.log('!DH! path', this.path);
         if (model === '' || model !== '') {
@@ -105,7 +101,6 @@ export class BeNgrxFormDirective implements OnInit, OnDestroy {
     this._formGroupDirective.valueChanges
       .pipe(debounceTime(this.debounce), takeUntil(this._destroy$))
       .subscribe((value) => {
-        this._updating = true;
         // if (
         //   this.path ===
         //   'manageSpecialty.specialty.model.teelttechnischeMaatregelen'

@@ -41,6 +41,12 @@ export class SkillSetComponent implements OnInit, OnChanges {
   showAll: boolean;
   checkedVaardigheden: number[];
   editableSkills: IVaardigheid[] = [];
+  cols = [
+    { field: 'Checkbox' },
+    { field: 'Code' },
+    { field: 'Omschrijving' },
+    { field: 'Punten' },
+  ];
 
   constructor() {}
 

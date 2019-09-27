@@ -4,7 +4,7 @@ import { Effect, Actions, ofType } from '@ngrx/effects';
 import * as skillsActions from '../actions/skills.action';
 import { ISkills } from '../../models/skills';
 import { SpecialtyService } from '../../../services/specialty.service';
-import { map, switchMap } from 'rxjs/operators';
+import { map, switchMap, catchError } from 'rxjs/operators';
 import { Observable, of } from 'rxjs';
 
 @Injectable()
@@ -20,8 +20,10 @@ export class SkillsEffects {
           payload.competentieId,
           payload.specialtyDate,
         )
-        .map((_: ISkills) => new skillsActions.LoadSkillsSuccess(_))
-        .catch((error) => of(new skillsActions.LoadSkillsFail(error))),
+        .pipe(
+          map((_: ISkills) => new skillsActions.LoadSkillsSuccess(_)),
+          catchError((error) => of(new skillsActions.LoadSkillsFail(error))),
+        ),
     ),
   );
 
