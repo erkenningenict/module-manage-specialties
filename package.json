@@ -17,7 +17,7 @@
     "nant": "run-nant.bat",
     "build:release:dnn": "ng build --target=production --environment=dnn --deploy-url /DesktopModules/AOCRaad.Erkenningen.VakkenBeheer/",
     "build:dnn": "npm-run-all build:release:dnn build:before-nant nant",
-    "build:netlify": "cp src/index.netlify.html src/index.html && ng build --target=production --environment=prod --output-hashing none",
+    "build:netlify": "cp src/index.netlify.html src/index.html && ng build --prod=true",
     "mockserver": "node ./mocks/mocks.js",
     "tempdisabledprecommit": "lint-staged",
     "prettier:all": "prettier --write \"**/*.{css,js,json,md,scss,ts}\"",
