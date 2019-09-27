@@ -15,7 +15,6 @@ import { reducers, effects, CustomSerializer } from './store/index';
 // not used in production
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
-
 // import { form, NgrxFormModule } from 'ngrx-form';
 import { form } from './store/reducers/form.reducer';
 // this would be done dynamically with webpack for builds
@@ -45,13 +44,17 @@ export const ROUTES: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'specialties' },
   {
     path: 'specialties',
-    loadChildren:
-      () => import('../specialties-management/specialties-management.module').then(m => m.SpecialtiesManagementModule),
+    loadChildren: () =>
+      import('../specialties-management/specialties-management.module').then(
+        (m) => m.SpecialtiesManagementModule,
+      ),
   },
   {
     path: 'manage-specialty',
-    loadChildren:
-      () => import('../manage-specialty/manage-specialty.module').then(m => m.ManageSpecialtyModule),
+    loadChildren: () =>
+      import('../manage-specialty/manage-specialty.module').then(
+        (m) => m.ManageSpecialtyModule,
+      ),
   },
 ];
 
@@ -63,7 +66,13 @@ registerLocaleData(localeNl);
     GrowlModule,
     BrowserAnimationsModule,
     RouterModule.forRoot(ROUTES),
-    StoreModule.forRoot(reducers, { metaReducers, runtimeChecks: { strictStateImmutability: true, strictActionImmutability: true } }),
+    StoreModule.forRoot(reducers, {
+      metaReducers,
+      runtimeChecks: {
+        strictStateImmutability: true,
+        strictActionImmutability: true,
+      },
+    }),
     EffectsModule.forRoot(effects),
     StoreRouterConnectingModule.forRoot(),
     // environment.development ? StoreDevtoolsModule.instrument() : [],
@@ -76,6 +85,14 @@ registerLocaleData(localeNl);
     { provide: LocationStrategy, useClass: HashLocationStrategy },
   ],
   declarations: [AppComponent],
-  bootstrap: [AppComponent],
+  entryComponents: [AppComponent],
 })
-export class AppModule {}
+export class AppModule {
+  ngDoBootstrap(app: any) {
+    const bootEl = document.querySelector('#module-manage-specialties');
+    const componentElement = document.createElement('be-root');
+    bootEl.appendChild(componentElement);
+    // bootstrap the application with the selected component
+    app.bootstrap(AppComponent);
+  }
+}
