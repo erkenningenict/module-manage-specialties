@@ -1,0 +1,29 @@
+<dotnetnuke version="5.0" type="Module">
+	<folders>
+		<folder>
+			<name>erkVakkenBeheer</name>
+			<friendlyname>erkVakkenBeheer</friendlyname>
+			<foldername>AOCRaad.Erkenningen.VakkenBeheer</foldername>
+			<modulename>erkVakkenBeheer</modulename>
+			<description></description>
+			<version>01.00.01</version>
+			<businesscontrollerclass></businesscontrollerclass>
+			<modules>
+				<module>
+					<friendlyname>erkVakkenBeheer</friendlyname>
+					<controls>
+						<control>
+							<src>DesktopModules/AOCRaad.Erkenningen.VakkenBeheer/VakkenBeheer.ascx</src>
+							<type>View</type>
+							<helpurl></helpurl>
+						</control>
+
+					</controls>
+				</module>
+			</modules>
+			<files>
+<file><name>VakkenBeheer.ascx</name></file>
+			</files>
+		</folder>
+	</folders>
+</dotnetnuke>

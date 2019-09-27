@@ -18,19 +18,12 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
+# Deployment to DNN
 
-
-# TODO
-
-- In Vakvragen, replace &uml; with ï.
-- Mollen woelratten zichtbaar maken, Thema 25, comp4,
-  * "Titel": "Geïntegreerde mollen- en woelrattenbestrijding",
-  * "Omschrijving": "Wat gebeurt er op het gebied van", 
+1. Run `npm run build:dnn`. The Angular files are built in the `./dist` directory and the VakkenBeheer.ascx is updated with the new files.
+2. Clear the contents of the `AOCRaad.Erkenningen.VakkenBeheer` directory.
+3. Copy the contents of the `./dist` folder in this directory.
