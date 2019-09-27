@@ -42,7 +42,7 @@ export class AttachmentsComponent implements OnInit, OnChanges {
     file: any;
     omschrijving: string;
   }> = new EventEmitter<{ file: any; omschrijving: string }>();
-  @ViewChild('uploader') uploader;
+  @ViewChild('uploader', { static: false }) uploader;
 
   bijlagen: IBijlagenDataExtend[];
   bijlageOmschrijving: FormGroup = new FormGroup({
