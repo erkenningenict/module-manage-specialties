@@ -10,10 +10,10 @@ import {
 import { StoreModule, MetaReducer } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
 
-import { reducers, effects, CustomSerializer } from './store/index';
-
 // not used in production
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+
+import { reducers, effects, CustomSerializer } from './store/index';
 
 // import { form, NgrxFormModule } from 'ngrx-form';
 import { form } from './store/reducers/form.reducer';
