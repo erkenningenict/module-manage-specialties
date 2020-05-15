@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
   apiPath: 'DesktopModules/AOCRaad.Erkenningen.WebAPI/API/Specialty/',
-  baseUrl: '',
+  baseUrl: 'https://administratie.erkenningen.nl/',
 };

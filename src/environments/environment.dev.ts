@@ -4,7 +4,7 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
 export const environment = {
-  production: true,
+  production: false,
   apiPath: 'DesktopModules/AOCRaad.Erkenningen.WebAPI/API/Specialty/',
-  baseUrl: 'https://administratie.acceptatie.erkenningen.nl/',
+  baseUrl: 'https://dev.erkenningen.nl/',
 };

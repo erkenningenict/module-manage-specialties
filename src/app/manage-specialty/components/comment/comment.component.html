@@ -1,22 +1,18 @@
 <div
-    class="col-sm-6"
-    [ngClass]="{'col-sm-12': largeCommentArea}"
-    *ngIf="showComments"
+  class="col-sm-6"
+  [ngClass]="{ 'col-sm-12': largeCommentArea }"
+  *ngIf="showComments"
 >
-    <ng-content></ng-content>
-    <div
-        [formGroup]="form"
-        class="form-group"
-        *ngIf="enableEditing"
-    >
-        <label class="control-label">Uw commentaar</label>
-        <textarea
-            rows="1"
-            name="{{questionId}}"
-            placeholder="Voeg uw commentaar toe"
-            class="form-control"
-            [formControlName]="'Commentaar' + questionId"
-        ></textarea>
-
-    </div>
+  <ng-content></ng-content>
+  <div [formGroup]="form" class="form-group" *ngIf="enableEditing">
+    <label class="control-label">Uw commentaar</label>
+    <textarea
+      beAutosize
+      rows="1"
+      name="{{ questionId }}"
+      placeholder="Voeg uw commentaar toe"
+      class="form-control"
+      [formControlName]="'Commentaar' + questionId"
+    ></textarea>
+  </div>
 </div>
