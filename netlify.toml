@@ -6,10 +6,10 @@
   publish = "build"
   command = "npm run build:netlify"
 [context.production]
-  command = "ng build --configuration=production"
+  command = "ng build --configuration=production --deploy-url=https://erkenningen-module-manage-specialties.netlify.app"
 [context.acceptance]
-  command = "ng build --configuration=acceptance"
+  command = "ng build --configuration=acceptance --deploy-url=https://acceptance--erkenningen-module-manage-specialties.netlify.app"
 [context.develop]
   command = "ng build --configuration=develop"
 [context.deploy-preview]
-  command = "ng build --configuration=acceptance"
+  command = "ng build --configuration=acceptance --deploy-url=https://acceptance--erkenningen-module-manage-specialties.netlify.app"
