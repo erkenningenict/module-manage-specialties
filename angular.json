@@ -74,6 +74,10 @@
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
+              "index": {
+                "input": "src/index.netlify.html",
+                "output": "index.html"
+              },
               "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
@@ -91,6 +95,10 @@
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
+              "index": {
+                "input": "src/index.netlify.html",
+                "output": "index.html"
+              },
               "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
