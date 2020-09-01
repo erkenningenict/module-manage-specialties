@@ -1,274 +1,292 @@
 <div class="col-md-12">
-    <div class="row">
-        <div class="col-md-6">
-            <div class="form-horizontal">
-                <div
-                    class="form-group"
-                    [formGroup]="formKostenPerDeelname"
-                    beNgrxForm="manageSpecialty.specialty.model.kostenPerDeelname"
-                    [ngClass]="{'has-error': formKostenPerDeelname.invalid}"
-                >
-                    <label class="col-md-6 control-label">Kosten per deelname (excl. btw) *</label>
-                    <div class="col-md-3">
-                        <input
-                            type="text"
-                            class="col-md-2 form-control"
-                            name="KostenPerDeelname"
-                            [attr.data-test]="'kostenPerDeelname'"
-                            maxlength="6"
-                            formControlName="kostenPerDeelname"
-                            pattern="(\d){1,3}(,{0,1})\d{0,2}"
-                            title="Verplicht veld. Vul een bedrag in met dit formaat: 42,50"
-                        >
-                    </div>
-                    <div
-                        class="help-block"
-                        *ngIf="formKostenPerDeelname.invalid && formKostenPerDeelname.dirty && formKostenPerDeelname.controls.kostenPerDeelname.errors.required"
-                    >
-                        <span class="glyphicon glyphicon-warning-sign"></span>
-                        Verplicht veld
-                    </div>
-                    <div
-                        class="help-block"
-                        *ngIf="formKostenPerDeelname.invalid && !formKostenPerDeelname.controls.kostenPerDeelname.errors.required && formKostenPerDeelname.dirty"
-                    >
-                        <span class="glyphicon glyphicon-warning-sign"></span>
-                        Vul een bedrag in met dit formaat: 42,50.
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="form-horizontal">
-                <div
-                    class="form-group"
-                    [formGroup]="formGroepsgrootte"
-                    beNgrxForm="manageSpecialty.specialty.model.groepsgrootte"
-                    [ngClass]="{'has-error': formGroepsgrootte.invalid}"
-                >
-                    <label class="col-md-6 control-label">Maximum groepsgrootte
-              *</label>
-
-                    <div class="col-md-3">
-                        <input
-                            type="text"
-                            class="col-md-2 form-control"
-                            name="Groepsgrootte"
-                            [attr.data-test]="'groepsgrootte'"
-                            formControlName="groepsgrootte"
-                            maxlength="3"
-                            pattern="[1-9][0-9]{0,2}"
-                            title="Verplicht veld. Vul een geheel getal in tussen 1 en 999."
-                        >
-                    </div>
-                    <div
-                        class="help-block"
-                        *ngIf="formGroepsgrootte.invalid && formGroepsgrootte.dirty && formGroepsgrootte.controls.groepsgrootte.errors.required"
-                    >
-                        <span class="glyphicon glyphicon-warning-sign"></span>
-                        Verplicht veld
-                    </div>
-                    <div
-                        class="help-block"
-                        *ngIf="formGroepsgrootte.invalid && !formGroepsgrootte.controls.groepsgrootte.errors.required && formGroepsgrootte.dirty"
-                    >
-                        <span class="glyphicon glyphicon-warning-sign"></span>
-                        Vul een geheel getal in tussen 1 en 999.
-                    </div>
-
-                </div>
-            </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-horizontal">
+        <div
+          class="form-group"
+          [formGroup]="formKostenPerDeelname"
+          beNgrxForm="manageSpecialty.specialty.model.kostenPerDeelname"
+          [ngClass]="{ 'has-error': formKostenPerDeelname.invalid }"
+        >
+          <label class="col-md-6 control-label"
+            >Kosten per deelname (excl. btw) *</label
+          >
+          <div class="col-md-3">
+            <input
+              type="text"
+              class="col-md-2 form-control"
+              name="KostenPerDeelname"
+              [attr.data-test]="'kostenPerDeelname'"
+              maxlength="6"
+              formControlName="kostenPerDeelname"
+              pattern="(\d){1,3}(,{0,1})\d{0,2}"
+              title="Verplicht veld. Vul een bedrag in met dit formaat: 42,50"
+            />
+          </div>
+          <div
+            class="help-block"
+            *ngIf="
+              formKostenPerDeelname.invalid &&
+              formKostenPerDeelname.dirty &&
+              formKostenPerDeelname.controls.kostenPerDeelname.errors.required
+            "
+          >
+            <span class="glyphicon glyphicon-warning-sign"></span>
+            Verplicht veld
+          </div>
+          <div
+            class="help-block"
+            *ngIf="
+              formKostenPerDeelname.invalid &&
+              !formKostenPerDeelname.controls.kostenPerDeelname.errors
+                .required &&
+              formKostenPerDeelname.dirty
+            "
+          >
+            <span class="glyphicon glyphicon-warning-sign"></span>
+            Vul een bedrag in met dit formaat: 42,50.
+          </div>
         </div>
+      </div>
 
-        <div class="col-md-6">
+      <div class="form-horizontal">
+        <div
+          class="form-group"
+          [formGroup]="formGroepsgrootte"
+          beNgrxForm="manageSpecialty.specialty.model.groepsgrootte"
+          [ngClass]="{ 'has-error': formGroepsgrootte.invalid }"
+        >
+          <label class="col-md-6 control-label">Maximum groepsgrootte *</label>
 
-            <div class="form-horizontal">
-                <div class="form-group">
-                    <label class="col-md-4 control-label">Begindatum</label>
-
-                    <div class="col-md-6">
-                        <p
-                            class="form-control-static"
-                            *ngIf="begindatum == null"
-                        >
-                            Nog niet bekend.
-                        </p>
-
-                        <p
-                            class="form-control-static"
-                            *ngIf="begindatum != null"
-                        >
-                            {{ begindatum | date :'dd-MM-yyyy'}}
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="form-horizontal">
-                <div
-                    class="form-group"
-                    [formGroup]="formEinddatum"
-                    beNgrxForm="manageSpecialty.specialty.model.einddatum"
-                    [ngClass]="{'has-error': einddatum != null && formEinddatum.invalid}"
-                >
-                    <label class="col-md-4 control-label">Einddatum</label>
-                    <div class="col-md-5">
-                        <p
-                            class="form-control-static"
-                            *ngIf="einddatum != null && !enableEditingEinddatum"
-                        >
-                            {{einddatum | date: 'dd-MM-yyyy' }}
-                        </p>
-                        <p
-                            class="form-control-static"
-                            *ngIf="einddatum == null"
-                        >
-                            Nog niet bekend.
-                        </p>
-
-                        <p-calendar
-                            *ngIf="enableEditingEinddatum"
-                            formControlName="einddatum"
-                            [minDate]="minDate"
-                            dateFormat="dd-mm-yy"
-                            [locale]="nl"
-                            [monthNavigator]="true"
-                            [yearNavigator]="true"
-                            [yearRange]="'2014:2025'"
-                            [showIcon]="true"
-                        ></p-calendar>
-                    </div>
-                    <div
-                        class="help-block"
-                        *ngIf="formEinddatum.invalid && !formEinddatum.controls.einddatum.errors.required && formEinddatum.dirty"
-                    >
-                        <span class="glyphicon glyphicon-warning-sign"></span>
-                        Voer een geldige datum in met formaat 'dd-mm-jjjj', bijv.
-              25-12-2018.
-                    </div>
-
-                </div>
-            </div>
+          <div class="col-md-3">
+            <input
+              type="text"
+              class="col-md-2 form-control"
+              name="Groepsgrootte"
+              [attr.data-test]="'groepsgrootte'"
+              formControlName="groepsgrootte"
+              maxlength="3"
+              pattern="[1-9][0-9]{0,2}"
+              title="Verplicht veld. Vul een geheel getal in tussen 1 en 999."
+            />
+          </div>
+          <div
+            class="help-block"
+            *ngIf="
+              formGroepsgrootte.invalid &&
+              formGroepsgrootte.dirty &&
+              formGroepsgrootte.controls.groepsgrootte.errors.required
+            "
+          >
+            <span class="glyphicon glyphicon-warning-sign"></span>
+            Verplicht veld
+          </div>
+          <div
+            class="help-block"
+            *ngIf="
+              formGroepsgrootte.invalid &&
+              !formGroepsgrootte.controls.groepsgrootte.errors.required &&
+              formGroepsgrootte.dirty
+            "
+          >
+            <span class="glyphicon glyphicon-warning-sign"></span>
+            Vul een geheel getal in tussen 1 en 999.
+          </div>
         </div>
-
+      </div>
     </div>
-    <div class="row">
-        <div class="row">
-            <div class="col-md-12">
 
-                <div class="form-horizontal">
-                    <div
-                        class="form-group"
-                        [formGroup]="formAantalSessies"
-                        beNgrxForm="manageSpecialty.specialty.model.aantalSessies"
-                        [ngClass]="{'has-error': formAantalSessies.invalid}"
-                    >
-                        <label class="col-md-3 control-label">Aantal sessies *</label>
+    <div class="col-md-6">
+      <div class="form-horizontal">
+        <div class="form-group">
+          <label class="col-md-4 control-label">Begindatum</label>
 
-                        <div class="col-md-1">
-                            <input
-                                type="text"
-                                class="col-md-2 form-control"
-                                name="aantalSessies"
-                                [attr.data-test]="'aantalSessies'"
-                                formControlName="aantalSessies"
-                                maxlength="2"
-                                pattern="[1-9]{0,1}"
-                                title="Verplicht veld. Aantal ontmoetingen die samen één bijeenkomst vormen"
-                            >
-                        </div>
-                        <div
-                            class="help-block"
-                            *ngIf="formAantalSessies.invalid && formAantalSessies.dirty && formAantalSessies.controls.aantalSessies.errors.required"
-                        >
-                            <span class="glyphicon glyphicon-warning-sign"></span>
-                            Verplicht veld
-                        </div>
-                        <div
-                            class="help-block"
-                            *ngIf="formAantalSessies.invalid && !formAantalSessies.controls.aantalSessies.errors.required && formAantalSessies.dirty"
-                        >
-                            <span class="glyphicon glyphicon-warning-sign"></span>
-                            Vul een geheel getal in tussen 1 en 2.
-                        </div>
-                        <div class="help-block">
-                            Aantal ontmoetingen die samen één
-              bijeenkomst
-              vormen
-                        </div>
-                    </div>
-                </div>
-            </div>
+          <div class="col-md-6">
+            <p class="form-control-static" *ngIf="begindatum == null">
+              Nog niet bekend.
+            </p>
+
+            <p class="form-control-static" *ngIf="begindatum != null">
+              {{ begindatum | date: 'dd-MM-yyyy' }}
+            </p>
+          </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="form-horizontal">
-                <div
-                    class="form-group"
-                    [formGroup]="formTijdsduur"
-                    beNgrxForm="manageSpecialty.specialty.model.tijdsduur"
-                    [ngClass]="{'has-error': formTijdsduur.invalid}"
-                >
-                    <label class="col-md-6 control-label">Tijdsduur in uren *</label>
+      </div>
 
-                    <div class="col-md-3">
-                        <input
-                            type="text"
-                            class="col-md-2 form-control"
-                            name="Tijdsduur"
-                            formControlName="tijdsduur"
-                            [attr.data-test]="'tijdsduur'"
-                            maxlength="4"
-                            pattern="[<|>]{0,1}[0-9]{1,1}(|[,][05]{1,1})"
-                            title="Verplicht veld. Hele of halve uren tussen 0 en 9. Bijv. 2 of 5,5. Groter '>' of kleiner '<' zijn
+      <div class="form-horizontal">
+        <div
+          class="form-group"
+          [formGroup]="formEinddatum"
+          beNgrxForm="manageSpecialty.specialty.model.einddatum"
+          [ngClass]="{
+            'has-error': einddatum != null && formEinddatum.invalid
+          }"
+        >
+          <label class="col-md-4 control-label">Einddatum</label>
+          <div class="col-md-5">
+            <p
+              class="form-control-static"
+              *ngIf="einddatum != null && !enableEditingEinddatum"
+            >
+              {{ einddatum | date: 'dd-MM-yyyy' }}
+            </p>
+            <p class="form-control-static" *ngIf="einddatum == null">
+              Nog niet bekend.
+            </p>
+
+            <p-calendar
+              *ngIf="enableEditingEinddatum"
+              formControlName="einddatum"
+              [minDate]="minDate"
+              dateFormat="dd-mm-yy"
+              [locale]="nl"
+              [monthNavigator]="true"
+              [yearNavigator]="true"
+              [yearRange]="'2014:2025'"
+              [showIcon]="true"
+            ></p-calendar>
+          </div>
+          <div
+            class="help-block"
+            *ngIf="
+              formEinddatum.invalid &&
+              !formEinddatum.controls.einddatum.errors.required &&
+              formEinddatum.dirty
+            "
+          >
+            <span class="glyphicon glyphicon-warning-sign"></span>
+            Voer een geldige datum in met formaat 'dd-mm-jjjj', bijv.
+            25-12-2018.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="form-horizontal">
+          <div
+            class="form-group"
+            [formGroup]="formAantalSessies"
+            beNgrxForm="manageSpecialty.specialty.model.aantalSessies"
+            [ngClass]="{ 'has-error': formAantalSessies.invalid }"
+          >
+            <label class="col-md-3 control-label">Aantal sessies *</label>
+
+            <div class="col-md-1">
+              <input
+                type="text"
+                class="col-md-2 form-control"
+                name="aantalSessies"
+                [attr.data-test]="'aantalSessies'"
+                formControlName="aantalSessies"
+                maxlength="2"
+                pattern="[1-9]{0,1}"
+                title="Verplicht veld. Aantal ontmoetingen die samen één bijeenkomst vormen"
+              />
+            </div>
+            <div
+              class="help-block"
+              *ngIf="
+                formAantalSessies.invalid &&
+                formAantalSessies.dirty &&
+                formAantalSessies.controls.aantalSessies.errors.required
+              "
+            >
+              <span class="glyphicon glyphicon-warning-sign"></span>
+              Verplicht veld
+            </div>
+            <div
+              class="help-block"
+              *ngIf="
+                formAantalSessies.invalid &&
+                !formAantalSessies.controls.aantalSessies.errors.required &&
+                formAantalSessies.dirty
+              "
+            >
+              <span class="glyphicon glyphicon-warning-sign"></span>
+              Vul een geheel getal in tussen 1 en 2.
+            </div>
+            <div class="help-block">
+              Aantal ontmoetingen die samen één bijeenkomst vormen
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-horizontal">
+        <div
+          class="form-group"
+          [formGroup]="formTijdsduur"
+          beNgrxForm="manageSpecialty.specialty.model.tijdsduur"
+          [ngClass]="{ 'has-error': formTijdsduur.invalid }"
+        >
+          <label class="col-md-6 control-label">Tijdsduur in uren *</label>
+
+          <div class="col-md-3">
+            <input
+              type="text"
+              class="col-md-2 form-control"
+              name="Tijdsduur"
+              formControlName="tijdsduur"
+              [attr.data-test]="'tijdsduur'"
+              maxlength="4"
+              pattern="[<|>]{0,1}[0-9]{1,1}(|[,][05]{1,1})"
+              title="Verplicht veld. Hele of halve uren tussen 0 en 9. Bijv. 2 of 5,5. Groter '>' of kleiner '<' zijn
     toegestaan, bijv. >1 of >3,5."
-                        >
-                    </div>
-                    <div
-                        class="help-block"
-                        *ngIf="formTijdsduur.invalid && formTijdsduur.dirty && formTijdsduur.controls.tijdsduur.errors.required"
-                    >
-                        <span class="glyphicon glyphicon-warning-sign"></span>
-                        Verplicht veld
-                    </div>
-                    <div
-                        class="help-block"
-                        *ngIf="formTijdsduur.invalid && !formTijdsduur.controls.tijdsduur.errors.required && formTijdsduur.dirty"
-                    >
-                        <span class="glyphicon glyphicon-warning-sign"></span>
-                        Hele of halve uren tussen 0 en 9. Bijv. 2 of 5,5. Groter '>' of
-              kleiner '<' zijn
-              toegestaan, bijv. >1 of >3,5.
-                    </div>
-
-                </div>
-            </div>
-
+            />
+          </div>
+          <div
+            class="help-block"
+            *ngIf="
+              formTijdsduur.invalid &&
+              formTijdsduur.dirty &&
+              formTijdsduur.controls.tijdsduur.errors.required
+            "
+          >
+            <span class="glyphicon glyphicon-warning-sign"></span>
+            Verplicht veld
+          </div>
+          <div
+            class="help-block"
+            *ngIf="
+              formTijdsduur.invalid &&
+              !formTijdsduur.controls.tijdsduur.errors.required &&
+              formTijdsduur.dirty
+            "
+          >
+            <span class="glyphicon glyphicon-warning-sign"></span>
+            Hele of halve uren tussen 0 en 9. Bijv. 2 of 5,5. Groter '>' of
+            kleiner '<' zijn toegestaan, bijv. >1 of >3,5.
+          </div>
         </div>
-        <div class="col-md-6">
-            <div class="form-horizontal">
-                <div
-                    class="form-group"
-                    [formGroup]="formDigitaalAanbod"
-                    beNgrxForm="manageSpecialty.specialty.model.digitaalAanbod"
-                >
-                    <label
-                        class="col-md-4 control-label"
-                        for="digitaalAanbod"
-                    >
-                        Is digitaal aanbod
-                    </label>
-                    <div class="col-md-4">
-                        <input
-                            type="checkbox"
-                            id="digitaalAanbod"
-                            [attr.data-test]="'digitaalAanbod'"
-                            formControlName="digitaalAanbod"
-                        >
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
+    <div class="col-md-6">
+      <div class="form-horizontal">
+        <div
+          class="form-group"
+          [formGroup]="formDigitaalAanbod"
+          beNgrxForm="manageSpecialty.specialty.model.digitaalAanbod"
+        >
+          <label class="col-md-4 control-label" for="digitaalAanbod">
+            Is digitaal aanbod
+          </label>
+          <div class="col-md-4">
+            <input
+              type="checkbox"
+              id="digitaalAanbod"
+              [attr.data-test]="'digitaalAanbod'"
+              formControlName="digitaalAanbod"
+            />
+            <span>(NB: Betreft geen webinar)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

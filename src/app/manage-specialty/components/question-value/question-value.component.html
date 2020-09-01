@@ -1,41 +1,42 @@
 <div
-    [formGroup]="form"
-    [beNgrxForm]="'manageSpecialty.specialty.model.'+controlName"
-    [beNgrxFormDebounce]="500"
+  [formGroup]="form"
+  [beNgrxForm]="'manageSpecialty.specialty.model.' + controlName"
+  [beNgrxFormDebounce]="500"
 >
-    <!-- <input type="text" formControlName="titel" /> -->
-    <div [ngClass]="showComments ? 'col-sm-6' : 'col-sm-12'">
-        <div
-            [ngClass]="{'has-error': form.controls[controlName].invalid}"
-            class="form-group"
-        >
-            <label class="control-label pull-left">
-                <span>{{labelText}}</span>
-                <span *ngIf="!requiredItem">*</span>
-            </label>
-            <ng-content></ng-content>
-            <textarea
-                [attr.data-test]="controlName"
-                beAutosize
-                class="form-control"
-                name="FormLabel"
-                [formControlName]="controlName"
-            >
-            </textarea>
-            <span
-                class="pull-right"
-                *ngIf="showNrOfCharacters && (maxLength - form.controls[controlName]?.value?.length - 500 < 0)"
-            >
-                {{maxLength - form.controls[controlName]?.value?.length}} tekens over
-            </span>
-            <div class="clearfix"></div>
-            <div
-                class="help-block"
-                *ngIf="form.controls[controlName].invalid"
-            >
-                <span class="fa fa-warning-sign"></span>
-                Verplicht veld
-            </div>
-        </div>
+  <!-- <input type="text" formControlName="titel" /> -->
+  <div [ngClass]="showComments ? 'col-sm-6' : 'col-sm-12'">
+    <div
+      [ngClass]="{ 'has-error': form.controls[controlName].invalid }"
+      class="form-group"
+    >
+      <label class="control-label pull-left">
+        <span>{{ labelText }}</span>
+        <span *ngIf="!requiredItem">*</span>
+      </label>
+      <ng-content></ng-content>
+      <textarea
+        [attr.data-test]="controlName"
+        beAutosize
+        class="form-control"
+        name="FormLabel"
+        [formControlName]="controlName"
+        [maxlength]="maxLength"
+      >
+      </textarea>
+      <span
+        class="pull-right"
+        *ngIf="
+          showNrOfCharacters &&
+          maxLength - form.controls[controlName]?.value?.length - 500 < 0
+        "
+      >
+        {{ maxLength - form.controls[controlName]?.value?.length }} tekens over
+      </span>
+      <div class="clearfix"></div>
+      <div class="help-block" *ngIf="form.controls[controlName].invalid">
+        <span class="fa fa-warning-sign"></span>
+        Verplicht veld
+      </div>
     </div>
+  </div>
 </div>
