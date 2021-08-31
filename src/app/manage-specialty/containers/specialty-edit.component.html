@@ -566,7 +566,7 @@
             <be-question-container
                 questionTitle="Actualiteiten"
                 questionText="Bekijk de volgende links voor actuele informatie per sector."
-                [visible]="true"
+                [visible]="getVisibility('05')"
             >
                 <be-actualities [relevanteActualiteiten]="relevanteActualiteiten$ | async"></be-actualities>
             </be-question-container>
