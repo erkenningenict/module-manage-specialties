@@ -1,75 +1,72 @@
 <div class="panel panel-default">
-    <div class="panel-heading">
-        <div class="panel-title">Informatie over het aanbod</div>
+  <div class="panel-heading">
+    <div class="panel-title">Informatie over het aanbod</div>
+  </div>
+  <ng-container *ngIf="data">
+    <div class="table-container">
+      <div class="text-right">
+        <strong>Aanbodcode</strong>
+      </div>
+      <div>
+        <span>{{ data.AanbodCode }}</span>
+      </div>
+      <div class="text-right">
+        <strong>Ingediend</strong>
+      </div>
+      <div>
+        {{ data.DatumAangemaakt | date : 'dd-MM-yyyy' }}
+      </div>
+
+      <div class="text-right">
+        <strong>Kosten</strong>
+      </div>
+      <div>
+        {{ data.KostenPerDeelname | number : '1.2-2' }} Euro (excl. btw)
+      </div>
+      <div class="text-right">
+        <strong>Max deelnemers</strong>
+      </div>
+      <div>
+        {{ data.Groepsgrootte }}
+      </div>
+
+      <div class="text-right">
+        <strong>Thema</strong>
+      </div>
+      <div>{{ data.Thema }}</div>
+      <div class="text-right">
+        <strong>Competentie</strong>
+      </div>
+      <div class="">
+        {{ data.Competentie }}
+      </div>
+
+      <div class="text-right">
+        <strong>Vaardigheden</strong>
+      </div>
+      <div class="grid-span-3">{{ data.Vaardigheden }}</div>
+
+      <div class="text-right">
+        <strong>Aanbieder</strong>
+      </div>
+      <div>
+        <span>{{ data.VakgroepNaam }}</span>
+        <br />
+        <span [innerHTML]="data.VakgroepAdres"></span>
+      </div>
+      <div class="text-right">
+        <strong>Sectoren</strong>
+      </div>
+      <div>
+        {{ sectoren | concatenateList }}
+      </div>
+
+      <div class="text-right">
+        <strong>Beoordelaar</strong>
+      </div>
+      <div class="grid-span-3">
+        {{ data.Beoordelaar || 'Er is nog geen beoordelaar bekend.' }}
+      </div>
     </div>
-    <ng-container *ngIf="data">
-        <table class="table table-condensed">
-            <tbody>
-                <tr>
-                    <td class="text-right">
-                        <strong>Aanbodcode:</strong>
-                    </td>
-                    <td>
-                        <span>{{data.AanbodCode}}</span>
-                    </td>
-                    <td>
-                        <strong>Ingediend:</strong>
-                        {{data.DatumAangemaakt | date:'dd-MM-yyyy'}}
-                    </td>
-                </tr>
-                <tr>
-                    <td class="text-right">
-                        <strong>Kosten:</strong>
-                    </td>
-                    <td>
-                        {{data.KostenPerDeelname | number:'1.2-2'}} Euro (excl. btw)
-                    </td>
-                    <td>
-                        <strong>Max deelnemers:</strong>
-                        {{data.Groepsgrootte}}
-                    </td>
-                </tr>
-                <tr>
-                    <td class="text-right">
-                        <strong>Thema:</strong>
-                    </td>
-                    <td>{{data.Thema}}</td>
-                    <td>
-                        <strong>Competentie:</strong>
-                        {{data.Competentie}}
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="text-right">
-                        <strong>Vaardigheden</strong>
-                    </td>
-                    <td colspan="2">{{data.Vaardigheden}}</td>
-                </tr>
-
-                <tr>
-                    <td class="text-right">
-                        <strong>Aanbieder:</strong>
-                    </td>
-                    <td>
-                        <span>{{data.VakgroepNaam}}</span>
-                        <br>
-                        <span [innerHTML]="data.VakgroepAdres"></span>
-                    </td>
-                    <td>
-                        <strong>Sectoren:</strong>
-                        {{sectoren | concatenateList}}
-                    </td>
-                </tr>
-                <tr>
-                    <td class="text-right">
-                        <strong>Beoordelaar:</strong>
-                    </td>
-                    <td colspan="2">
-                        {{data.Beoordelaar || 'Er is nog geen beoordelaar bekend.'}}
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </ng-container>
+  </ng-container>
 </div>

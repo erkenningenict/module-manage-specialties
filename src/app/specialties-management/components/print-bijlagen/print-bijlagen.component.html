@@ -1,0 +1,20 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <div class="panel-title">Bijlagen</div>
+    </div>
+    <ng-container *ngIf="bijlagen.length === 0">
+        <div class="panel-body">
+            <div class="alert alert-info">Er zijn geen bijlagen.</div>
+        </div>
+    </ng-container>
+    <ng-container *ngIf="bijlagen.length > 0">
+        <table class="table table-condensed table-striped">
+            <tbody>
+                <tr *ngFor="let bijlage of bijlagen">
+                    <td><a [href]="bijlage.Lokatie" target="_blank">{{bijlage.Omschrijving}}</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </ng-container>
+</div>
+

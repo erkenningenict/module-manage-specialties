@@ -36,7 +36,10 @@ export class ActionDialogContainerComponent implements OnChanges, OnDestroy {
     this.actionLoading$ = this.store.select(fromSpecialties.getActionLoading);
     this.store
       .select(fromSpecialties.getActionError)
-      .pipe(filter((v) => v !== undefined), takeUntil(this.onDestroy$))
+      .pipe(
+        filter((v) => v !== undefined),
+        takeUntil(this.onDestroy$),
+      )
       .subscribe((error: string) => {
         this.messageService.add({
           severity: 'error',
@@ -88,7 +91,7 @@ export class ActionDialogContainerComponent implements OnChanges, OnDestroy {
   onHide(): void {
     const body = document.getElementsByTagName('body')[0];
     body.classList.remove('modal-open');
-    this.dialogClosed.emit();
     this.display = false;
+    this.dialogClosed.emit();
   }
 }

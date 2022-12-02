@@ -13,6 +13,7 @@ import {
 @Component({
   selector: 'be-print-specialty-content',
   templateUrl: './print-specialty-content.component.html',
+  styleUrls: ['./print-specialty-content.component.scss'],
 })
 export class PrintSpecialtyContentComponent implements OnInit, OnChanges {
   @Input() data: IManageSpecialty;

@@ -39,7 +39,10 @@ export class PrintDialogContainerComponent implements OnChanges, OnDestroy {
     this.loading$ = this.store.select(fromSpecialties.getLoadingSpecialty);
     this.store
       .select(fromSpecialties.getLoadOneError)
-      .pipe(filter((v) => v !== undefined), takeUntil(this.onDestroy$))
+      .pipe(
+        filter((v) => v !== undefined),
+        takeUntil(this.onDestroy$),
+      )
       .subscribe((error: string) => {
         this.error = true;
         this.messageService.add({
@@ -200,6 +203,26 @@ export class PrintDialogContainerComponent implements OnChanges, OnDestroy {
         .ng-hide, .clearfix, .btn, .btn-default, .btn-group, .btn-group-xs, .control-label {
           display: none;
         }
+        .table-container {
+          display: grid;
+          gap: 10px;
+          grid-template-columns: 100px auto 150px auto;
+          > div {
+            padding: 5px;
+            border-top: 1px solid #eee;
+          }
+        
+          @media (max-width: 768.1px) {
+            grid-template-columns: auto auto;
+          }
+        }
+        
+        .grid-span-3 {
+          @media (min-width: 768.1px) {
+            grid-column-start: span 3;
+          }
+        }
+        
     </style>
     `;
     printWindow.document.write(

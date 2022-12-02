@@ -1,52 +1,47 @@
 <p-dialog
-    [visible]="display"
-    (onHide)="onHide()"
-    (onShow)="onShow()"
-    [modal]="true"
-    appendTo="body"
+  [visible]="display"
+  (onHide)="onHide()"
+  (onShow)="onShow()"
+  appendTo="body"
+  [closeOnEscape]="true"
 >
-    <p-header>
-        Aanbod {{isDelete ? 'verwijderen' : 'intrekken' }}
-    </p-header>
-    <div
-        class="container-fluid"
-        id="wholeContainer"
-    >
-        <be-loader
-            *ngIf="actionLoading$ | async; else content"
-            [loading]="true"
-        ></be-loader>
-        <ng-template #content>
-            <p>
-                Weet u zeker dat u het aanbod met deze titel wilt {{isDelete ? 'verwijderen' : 'intrekken' }}?
-            </p>
-            <p>Aanbodecode: {{vakId}}</p>
-            <p>
-                Titel:
-                <strong>{{titel}}</strong>
-            </p>
-        </ng-template>
+  <p-header> Aanbod {{ isDelete ? 'verwijderen' : 'intrekken' }} </p-header>
+  <div class="container-fluid" id="wholeContainer">
+    <be-loader
+      *ngIf="actionLoading$ | async; else content"
+      [loading]="true"
+    ></be-loader>
+    <ng-template #content>
+      <p>
+        Weet u zeker dat u het aanbod met deze titel wilt
+        {{ isDelete ? 'verwijderen' : 'intrekken' }}?
+      </p>
+      <p>Aanbodcode: {{ vakId }}</p>
+      <p>
+        Titel:
+        <strong>{{ titel }}</strong>
+      </p>
+    </ng-template>
+  </div>
+  <p-footer>
+    <div class="button-group">
+      <button
+        data-test="actionButton"
+        pButton
+        class="ui-button-danger"
+        type="button"
+        [label]="isDelete ? 'Verwijderen' : 'Intrekken'"
+        icon="fa fa-remove"
+        (click)="doAction()"
+      ></button>
+      <button
+        data-test="cancelButton"
+        pButton
+        type="button"
+        label="Annuleren"
+        icon="fa fa-check"
+        (click)="onHide()"
+      ></button>
     </div>
-    <p-footer>
-        <div class="button-group">
-            <button
-                data-test="actionButton"
-                pButton
-                class="ui-button-danger"
-                type="button"
-                [label]="isDelete ? 'Verwijderen' : 'Intrekken'"
-                icon="fa fa-remove"
-                (click)="doAction()"
-            ></button>
-            <button
-                data-test="cancelButton"
-                pButton
-                type="button"
-                label="Annuleren"
-                icon="fa fa-check"
-                (click)="onHide()"
-            ></button>
-        </div>
-
-    </p-footer>
+  </p-footer>
 </p-dialog>

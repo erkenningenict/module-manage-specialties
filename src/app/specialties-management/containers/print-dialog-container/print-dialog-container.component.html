@@ -1,53 +1,52 @@
 <p-dialog
-    [(visible)]="display"
-    (onHide)="onHide()"
-    (onShow)="onShow()"
-    [modal]="true"
-    [positionLeft]="30"
-    [positionTop]="30"
-    appendTo="body"
-    [contentStyle]="{'max-height': 'calc(100vh - 200px)', 'width': 'calc(100vw - 60px)'}"
+  [(visible)]="display"
+  (onHide)="onHide()"
+  (onShow)="onShow()"
+  [modal]="true"
+  [positionLeft]="30"
+  [positionTop]="30"
+  appendTo="body"
+  styleClass="be-dialog"
 >
-    <p-header>Aanbod printen</p-header>
-    <div
-        class="container-fluid"
-        id="wholeContainer"
-    >
-        <be-loader
-            *ngIf="loading$ | async; else content"
-            [loading]="true"
-        ></be-loader>
-        <ng-template #content>
-            <ng-container *ngIf="!!error">
-                <div class="alert alert-danger">
-                    Er is een fout opgetreden. Probeer het later opnieuw
-                </div>
-            </ng-container>
-            <ng-container *ngIf="!error">
-                <ng-container *ngIf="specialty$ | async as specialty">
-                    <be-print-specialty-information
-                        [data]="specialty"
-                        [sectoren]="sectoren$ | async"
-                    >
-                    </be-print-specialty-information>
-                    <be-print-specialty-content [data]="specialty"></be-print-specialty-content>
-
-                    <be-print-discussion [data]="specialty"></be-print-discussion>
-                </ng-container>
-            </ng-container>
-        </ng-template>
-    </div>
-    <p-footer>
-        <div class="print-specialty__button-group">
-            <button
-                data-test="printButton"
-                pButton
-                type="button"
-                label="Print"
-                icon="fa fa-print"
-                (click)="print()"
-            ></button>
+  <p-header>Aanbod printen</p-header>
+  <div id="wholeContainer">
+    <be-loader
+      *ngIf="loading$ | async; else content"
+      [loading]="true"
+    ></be-loader>
+    <ng-template #content>
+      <ng-container *ngIf="!!error">
+        <div class="alert alert-danger">
+          Er is een fout opgetreden. Probeer het later opnieuw
         </div>
+      </ng-container>
+      <ng-container *ngIf="!error">
+        <ng-container *ngIf="specialty$ | async as specialty">
+          <be-print-specialty-information
+            [data]="specialty"
+            [sectoren]="sectoren$ | async"
+          >
+          </be-print-specialty-information>
+          <be-print-specialty-content
+            [data]="specialty"
+          ></be-print-specialty-content>
 
-    </p-footer>
+          <be-print-discussion [data]="specialty"></be-print-discussion>
+          <be-print-bijlagen [data]="specialty"></be-print-bijlagen>
+        </ng-container>
+      </ng-container>
+    </ng-template>
+  </div>
+  <p-footer>
+    <div class="print-specialty__button-group">
+      <button
+        data-test="printButton"
+        pButton
+        type="button"
+        label="Print"
+        icon="fa fa-print"
+        (click)="print()"
+      ></button>
+    </div>
+  </p-footer>
 </p-dialog>

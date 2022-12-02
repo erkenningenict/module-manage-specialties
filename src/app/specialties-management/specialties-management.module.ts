@@ -41,6 +41,7 @@ import {
   TooltipModule,
 } from 'primeng/primeng';
 import { GrowlModule } from 'primeng/growl';
+import { PrintBijlagenComponent } from './components/print-bijlagen/print-bijlagen.component';
 
 @NgModule({
   imports: [
@@ -100,6 +101,7 @@ import { GrowlModule } from 'primeng/growl';
     PrintSpecialtyInformationComponent,
     PrintSpecialtyContentComponent,
     PrintDiscussionComponent,
+    PrintBijlagenComponent,
     ActionDialogContainerComponent,
     ConcatenateListPipe,
   ],

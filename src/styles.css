@@ -24,10 +24,6 @@ body .ui-widget-content p {
   margin: 0;
 }
 
-.ui-dialog-content.ui-widget-content {
-  /*height: calc(100vh - 180px);*/
-}
-
 .ui-paginator-bottom .ui-dropdown {
   width: 80px;
   height: 31px !important;
@@ -204,4 +200,17 @@ body .ui-fileupload-choose.ui-state-focus {
 body .ui-table .ui-sortable-column.ui-state-highlight {
   background-color: #dd6b02;
   color: #ffffff;
+}
+
+.be-dialog.ui-dialog {
+  max-height: calc(100vh - 200px);
+  width: calc(100vw - 60px);
+}
+
+.be-dialog > .ui-dialog-content.ui-widget-content {
+  height: calc(100vh - 180px);
+}
+
+.font-bold {
+  font-weight: bold;
 }

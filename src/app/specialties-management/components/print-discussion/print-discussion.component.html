@@ -1,317 +1,314 @@
 <div class="panel panel-default">
-    <div class="panel-heading">
-        <div class="panel-title">Discussie</div>
-    </div>
-    <ng-container *ngIf="!data || !discussions">
-        <div class="panel-body">
-            <div class="alert alert-info">Er zijn nog geen discussies.</div>
-        </div>
-    </ng-container>
-    <ng-container *ngIf="data.hasOwnProperty('VakID') && discussions">
-        <table class="table table-condensed table-striped">
-            <tbody>
-                <tr *ngIf="discussions?.Commentaren01">
-                    <!-- Titel -->
-                    <td [innerHTML]="data.Vakvragen[0].Titel"></td>
-                    <td>
-                        <be-comment-history
-                            [showComments]="showComments"
-                            questionId="01"
-                            [discussions]="discussions"
-                            [showAllComments]="true"
-                        ></be-comment-history>
-                    </td>
-                </tr>
-                <tr *ngIf="discussions.Commentaren02">
-                    <!-- Promotietekst -->
-                    <td [innerHTML]="data.Vakvragen[1].Titel"></td>
-                    <td>
-                        <be-comment-history
-                            [showComments]="showComments"
-                            questionId="02"
-                            [discussions]="discussions"
-                            [showAllComments]="true"
-                        ></be-comment-history>
-                    </td>
-                </tr>
-                <tr *ngIf="discussions.Commentaren06">
-                    <!-- Doelstelling -->
-                    <td [innerHTML]="data.Vakvragen[5].Titel"></td>
-                    <td>
-                        <be-comment-history
-                            [showComments]="showComments"
-                            questionId="06"
-                            [discussions]="discussions"
-                            [showAllComments]="true"
-                        ></be-comment-history>
-                    </td>
-                </tr>
-                <tr *ngIf="discussions.Commentaren06A">
-                    <!-- Doelstelling S -->
-                    <td [innerHTML]="data.Vakvragen[6].Titel"></td>
-                    <td>
-                        <be-comment-history
-                            [showComments]="showComments"
-                            questionId="06A"
-                            [discussions]="discussions"
-                            [showAllComments]="true"
-                        ></be-comment-history>
-                    </td>
-                </tr>
-                <tr *ngIf="discussions.Commentaren06B">
-                    <!-- Doelstelling M -->
-                    <td [innerHTML]="data.Vakvragen[7].Titel"></td>
-                    <td>
-                        <be-comment-history
-                            [showComments]="showComments"
-                            questionId="06B"
-                            [discussions]="discussions"
-                            [showAllComments]="true"
-                        ></be-comment-history>
-                    </td>
-                </tr>
-                <tr *ngIf="discussions.Commentaren06C">
-                    <!-- Doelstelling A -->
-                    <td [innerHTML]="data.Vakvragen[8].Titel"></td>
-                    <td>
-                        <be-comment-history
-                            [showComments]="showComments"
-                            questionId="06C"
-                            [discussions]="discussions"
-                            [showAllComments]="true"
-                        ></be-comment-history>
-                    </td>
-                </tr>
-                <tr *ngIf="discussions.Commentaren06D">
-                    <!-- Doelstelling R -->
-                    <td [innerHTML]="data.Vakvragen[9].Titel"></td>
-                    <td>
-                        <be-comment-history
-                            [showComments]="showComments"
-                            questionId="06D"
-                            [discussions]="discussions"
-                            [showAllComments]="true"
-                        ></be-comment-history>
-                    </td>
-                </tr>
-                <tr *ngIf="discussions.Commentaren06E">
-                    <!-- Doelstelling T -->
-                    <td [innerHTML]="data.Vakvragen[10].Titel"></td>
-                    <td>
-                        <be-comment-history
-                            [showComments]="showComments"
-                            questionId="06E"
-                            [discussions]="discussions"
-                            [showAllComments]="true"
-                        ></be-comment-history>
-                    </td>
-                </tr>
-                <tr *ngIf="discussions.Commentaren07">
-                    <!-- Inhoud -->
-                    <td [innerHTML]="data.Vakvragen[11].Titel"></td>
-                    <td>
-                        <be-comment-history
-                            [showComments]="showComments"
-                            questionId="07"
-                            [discussions]="discussions"
-                            [showAllComments]="true"
-                        ></be-comment-history>
-                    </td>
-                </tr>
-
-                <tr *ngIf="discussions.Commentaren08">
-                    <!-- GeintegreerdeGewasbescherming -->
-                    <td [innerHTML]="data.Vakvragen[12].Titel"></td>
-                    <td>
-                        <be-comment-history
-                            [showComments]="showComments"
-                            questionId="08"
-                            [discussions]="discussions"
-                            [showAllComments]="true"
-                        ></be-comment-history>
-                    </td>
-                </tr>
-
-                <tr *ngIf="discussions.Commentaren08A">
-                    <!-- Preventieve maatregelen -->
-                    <td [innerHTML]="data.Vakvragen[13].Titel"></td>
-                    <td>
-                        <be-comment-history
-                            [showComments]="showComments"
-                            questionId="08A"
-                            [discussions]="discussions"
-                            [showAllComments]="true"
-                        ></be-comment-history>
-                    </td>
-                </tr>
-
-                <tr *ngIf="discussions.Commentaren08B">
-                    <!-- Teelttechnische maatregelen -->
-                    <td [innerHTML]="data.Vakvragen[14].Titel"></td>
-                    <td>
-                        <be-comment-history
-                            [showComments]="showComments"
-                            questionId="08B"
-                            [discussions]="discussions"
-                            [showAllComments]="true"
-                        ></be-comment-history>
-                    </td>
-                </tr>
-
-                <tr *ngIf="discussions.Commentaren08C">
-                    <!-- WaarschuwingEnAdviesSystemen -->
-                    <td [innerHTML]="data.Vakvragen[15].Titel"></td>
-                    <td>
-                        <be-comment-history
-                            [showComments]="showComments"
-                            questionId="08C"
-                            [discussions]="discussions"
-                            [showAllComments]="true"
-                        ></be-comment-history>
-                    </td>
-                </tr>
-
-                <tr *ngIf="discussions.Commentaren08D">
-                    <!-- NietChemischeMogelijkheden -->
-                    <td [innerHTML]="data.Vakvragen[16].Titel"></td>
-                    <td>
-                        <be-comment-history
-                            [showComments]="showComments"
-                            questionId="08D"
-                            [discussions]="discussions"
-                            [showAllComments]="true"
-                        ></be-comment-history>
-                    </td>
-                </tr>
-
-                <tr *ngIf="discussions.Commentaren08E">
-                    <!-- ChemischeGewasbescherming -->
-                    <td [innerHTML]="data.Vakvragen[17].Titel"></td>
-                    <td>
-                        <be-comment-history
-                            [showComments]="showComments"
-                            questionId="08E"
-                            [discussions]="discussions"
-                            [showAllComments]="true"
-                        ></be-comment-history>
-                    </td>
-                </tr>
-
-                <tr *ngIf="discussions.Commentaren08F">
-                    <!-- Emissiebeperking -->
-                    <td [innerHTML]="data.Vakvragen[18].Titel"></td>
-                    <td>
-                        <be-comment-history
-                            [showComments]="showComments"
-                            questionId="08F"
-                            [discussions]="discussions"
-                            [showAllComments]="true"
-                        ></be-comment-history>
-                    </td>
-                </tr>
-
-                <tr *ngIf="discussions.Commentaren05">
-                    <!-- Onderwerp -->
-                    <td [innerHTML]="data.Vakvragen[4].Titel"></td>
-                    <td>
-                        <be-comment-history
-                            [showComments]="showComments"
-                            questionId="05"
-                            [discussions]="discussions"
-                            [showAllComments]="true"
-                        ></be-comment-history>
-                    </td>
-                </tr>
-
-                <tr *ngIf="discussions.Commentaren12">
-                    <!-- Individuele relevantie -->
-                    <td [innerHTML]="data.Vakvragen[22].Titel"></td>
-                    <td>
-                        <be-comment-history
-                            [showComments]="showComments"
-                            questionId="12"
-                            [discussions]="discussions"
-                            [showAllComments]="true"
-                        ></be-comment-history>
-                    </td>
-                </tr>
-
-                <tr *ngIf="discussions.Commentaren09">
-                    <!-- Werkvormen -->
-                    <td [innerHTML]="data.Vakvragen[19].Titel"></td>
-                    <td>
-                        <be-comment-history
-                            [showComments]="showComments"
-                            questionId="09"
-                            [discussions]="discussions"
-                            [showAllComments]="true"
-                        ></be-comment-history>
-                    </td>
-                </tr>
-
-                <tr *ngIf="discussions.Commentaren11">
-                    <!-- Docenten -->
-                    <td [innerHTML]="data.Vakvragen[21].Titel"></td>
-                    <td>
-                        <be-comment-history
-                            [showComments]="showComments"
-                            questionId="11"
-                            [discussions]="discussions"
-                            [showAllComments]="true"
-                        ></be-comment-history>
-                    </td>
-                </tr>
-
-                <tr *ngIf="discussions.Commentaren14">
-                    <!-- Evalutatie -->
-                    <td [innerHTML]="data.Vakvragen[24].Titel"></td>
-                    <td>
-                        <be-comment-history
-                            [showComments]="showComments"
-                            questionId="14"
-                            [discussions]="discussions"
-                            [showAllComments]="true"
-                        ></be-comment-history>
-                    </td>
-                </tr>
-
-                <tr *ngIf="discussions.Commentaren13">
-                    <!-- Materiaal -->
-                    <td [innerHTML]="data.Vakvragen[23].Titel"></td>
-                    <td>
-                        <be-comment-history
-                            [showComments]="showComments"
-                            questionId="13"
-                            [discussions]="discussions"
-                            [showAllComments]="true"
-                        ></be-comment-history>
-                    </td>
-                </tr>
-
-                <tr *ngIf="discussions.CommentarenAlgemeen">
-                    <!-- Algemeen -->
-                    <td>Algemeen</td>
-                    <td>
-                        <be-comment-history
-                            [showComments]="showComments"
-                            questionId="Algemeen"
-                            [discussions]="discussions"
-                            [showAllComments]="true"
-                        ></be-comment-history>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </ng-container>
-</div>
-<div
-    class="panel panel-default"
-    *ngIf="data?.Beoordeling?.Rapport"
->
-    <div class="panel-heading">
-        <div class="panel-title">Rapportage beoordelaar</div>
-    </div>
+  <div class="panel-heading">
+    <div class="panel-title">Discussie</div>
+  </div>
+  <ng-container *ngIf="!data || !discussions">
     <div class="panel-body">
-        <p>{{data.Beoordeling.Rapport}}</p>
+      <div class="alert alert-info">Er zijn nog geen discussies.</div>
     </div>
+  </ng-container>
+  <ng-container *ngIf="data.hasOwnProperty('VakID') && discussions">
+    <table class="table table-condensed table-striped">
+      <tbody>
+        <tr *ngIf="discussions?.Commentaren01">
+          <!-- Titel -->
+          <td class="font-bold" [innerHTML]="data.Vakvragen[0].Titel"></td>
+          <td>
+            <be-comment-history
+              [showComments]="showComments"
+              questionId="01"
+              [discussions]="discussions"
+              [showAllComments]="true"
+            ></be-comment-history>
+          </td>
+        </tr>
+        <tr *ngIf="discussions.Commentaren02">
+          <!-- Promotietekst -->
+          <td class="font-bold" [innerHTML]="data.Vakvragen[1].Titel"></td>
+          <td>
+            <be-comment-history
+              [showComments]="showComments"
+              questionId="02"
+              [discussions]="discussions"
+              [showAllComments]="true"
+            ></be-comment-history>
+          </td>
+        </tr>
+        <tr *ngIf="discussions.Commentaren06">
+          <!-- Doelstelling -->
+          <td class="font-bold" [innerHTML]="data.Vakvragen[5].Titel"></td>
+          <td>
+            <be-comment-history
+              [showComments]="showComments"
+              questionId="06"
+              [discussions]="discussions"
+              [showAllComments]="true"
+            ></be-comment-history>
+          </td>
+        </tr>
+        <tr *ngIf="discussions.Commentaren06A">
+          <!-- Doelstelling S -->
+          <td class="font-bold" [innerHTML]="data.Vakvragen[6].Titel"></td>
+          <td>
+            <be-comment-history
+              [showComments]="showComments"
+              questionId="06A"
+              [discussions]="discussions"
+              [showAllComments]="true"
+            ></be-comment-history>
+          </td>
+        </tr>
+        <tr *ngIf="discussions.Commentaren06B">
+          <!-- Doelstelling M -->
+          <td class="font-bold" [innerHTML]="data.Vakvragen[7].Titel"></td>
+          <td>
+            <be-comment-history
+              [showComments]="showComments"
+              questionId="06B"
+              [discussions]="discussions"
+              [showAllComments]="true"
+            ></be-comment-history>
+          </td>
+        </tr>
+        <tr *ngIf="discussions.Commentaren06C">
+          <!-- Doelstelling A -->
+          <td class="font-bold" [innerHTML]="data.Vakvragen[8].Titel"></td>
+          <td>
+            <be-comment-history
+              [showComments]="showComments"
+              questionId="06C"
+              [discussions]="discussions"
+              [showAllComments]="true"
+            ></be-comment-history>
+          </td>
+        </tr>
+        <tr *ngIf="discussions.Commentaren06D">
+          <!-- Doelstelling R -->
+          <td class="font-bold" [innerHTML]="data.Vakvragen[9].Titel"></td>
+          <td>
+            <be-comment-history
+              [showComments]="showComments"
+              questionId="06D"
+              [discussions]="discussions"
+              [showAllComments]="true"
+            ></be-comment-history>
+          </td>
+        </tr>
+        <tr *ngIf="discussions.Commentaren06E">
+          <!-- Doelstelling T -->
+          <td class="font-bold" [innerHTML]="data.Vakvragen[10].Titel"></td>
+          <td>
+            <be-comment-history
+              [showComments]="showComments"
+              questionId="06E"
+              [discussions]="discussions"
+              [showAllComments]="true"
+            ></be-comment-history>
+          </td>
+        </tr>
+        <tr *ngIf="discussions.Commentaren07">
+          <!-- Inhoud -->
+          <td class="font-bold" [innerHTML]="data.Vakvragen[11].Titel"></td>
+          <td>
+            <be-comment-history
+              [showComments]="showComments"
+              questionId="07"
+              [discussions]="discussions"
+              [showAllComments]="true"
+            ></be-comment-history>
+          </td>
+        </tr>
+
+        <tr *ngIf="discussions.Commentaren08">
+          <!-- GeintegreerdeGewasbescherming -->
+          <td class="font-bold" [innerHTML]="data.Vakvragen[12].Titel"></td>
+          <td>
+            <be-comment-history
+              [showComments]="showComments"
+              questionId="08"
+              [discussions]="discussions"
+              [showAllComments]="true"
+            ></be-comment-history>
+          </td>
+        </tr>
+
+        <tr *ngIf="discussions.Commentaren08A">
+          <!-- Preventieve maatregelen -->
+          <td class="font-bold" [innerHTML]="data.Vakvragen[13].Titel"></td>
+          <td>
+            <be-comment-history
+              [showComments]="showComments"
+              questionId="08A"
+              [discussions]="discussions"
+              [showAllComments]="true"
+            ></be-comment-history>
+          </td>
+        </tr>
+
+        <tr *ngIf="discussions.Commentaren08B">
+          <!-- Teelttechnische maatregelen -->
+          <td class="font-bold" [innerHTML]="data.Vakvragen[14].Titel"></td>
+          <td>
+            <be-comment-history
+              [showComments]="showComments"
+              questionId="08B"
+              [discussions]="discussions"
+              [showAllComments]="true"
+            ></be-comment-history>
+          </td>
+        </tr>
+
+        <tr *ngIf="discussions.Commentaren08C">
+          <!-- WaarschuwingEnAdviesSystemen -->
+          <td class="font-bold" [innerHTML]="data.Vakvragen[15].Titel"></td>
+          <td>
+            <be-comment-history
+              [showComments]="showComments"
+              questionId="08C"
+              [discussions]="discussions"
+              [showAllComments]="true"
+            ></be-comment-history>
+          </td>
+        </tr>
+
+        <tr *ngIf="discussions.Commentaren08D">
+          <!-- NietChemischeMogelijkheden -->
+          <td class="font-bold" [innerHTML]="data.Vakvragen[16].Titel"></td>
+          <td>
+            <be-comment-history
+              [showComments]="showComments"
+              questionId="08D"
+              [discussions]="discussions"
+              [showAllComments]="true"
+            ></be-comment-history>
+          </td>
+        </tr>
+
+        <tr *ngIf="discussions.Commentaren08E">
+          <!-- ChemischeGewasbescherming -->
+          <td class="font-bold" [innerHTML]="data.Vakvragen[17].Titel"></td>
+          <td>
+            <be-comment-history
+              [showComments]="showComments"
+              questionId="08E"
+              [discussions]="discussions"
+              [showAllComments]="true"
+            ></be-comment-history>
+          </td>
+        </tr>
+
+        <tr *ngIf="discussions.Commentaren08F">
+          <!-- Emissiebeperking -->
+          <td class="font-bold" [innerHTML]="data.Vakvragen[18].Titel"></td>
+          <td>
+            <be-comment-history
+              [showComments]="showComments"
+              questionId="08F"
+              [discussions]="discussions"
+              [showAllComments]="true"
+            ></be-comment-history>
+          </td>
+        </tr>
+
+        <tr *ngIf="discussions.Commentaren05">
+          <!-- Onderwerp -->
+          <td class="font-bold" [innerHTML]="data.Vakvragen[4].Titel"></td>
+          <td>
+            <be-comment-history
+              [showComments]="showComments"
+              questionId="05"
+              [discussions]="discussions"
+              [showAllComments]="true"
+            ></be-comment-history>
+          </td>
+        </tr>
+
+        <tr *ngIf="discussions.Commentaren12">
+          <!-- Individuele relevantie -->
+          <td class="font-bold" [innerHTML]="data.Vakvragen[22].Titel"></td>
+          <td>
+            <be-comment-history
+              [showComments]="showComments"
+              questionId="12"
+              [discussions]="discussions"
+              [showAllComments]="true"
+            ></be-comment-history>
+          </td>
+        </tr>
+
+        <tr *ngIf="discussions.Commentaren09">
+          <!-- Werkvormen -->
+          <td class="font-bold" [innerHTML]="data.Vakvragen[19].Titel"></td>
+          <td>
+            <be-comment-history
+              [showComments]="showComments"
+              questionId="09"
+              [discussions]="discussions"
+              [showAllComments]="true"
+            ></be-comment-history>
+          </td>
+        </tr>
+
+        <tr *ngIf="discussions.Commentaren11">
+          <!-- Docenten -->
+          <td class="font-bold" [innerHTML]="data.Vakvragen[21].Titel"></td>
+          <td>
+            <be-comment-history
+              [showComments]="showComments"
+              questionId="11"
+              [discussions]="discussions"
+              [showAllComments]="true"
+            ></be-comment-history>
+          </td>
+        </tr>
+
+        <tr *ngIf="discussions.Commentaren14">
+          <!-- Evalutatie -->
+          <td class="font-bold" [innerHTML]="data.Vakvragen[24].Titel"></td>
+          <td>
+            <be-comment-history
+              [showComments]="showComments"
+              questionId="14"
+              [discussions]="discussions"
+              [showAllComments]="true"
+            ></be-comment-history>
+          </td>
+        </tr>
+
+        <tr *ngIf="discussions.Commentaren13">
+          <!-- Materiaal -->
+          <td class="font-bold" [innerHTML]="data.Vakvragen[23].Titel"></td>
+          <td>
+            <be-comment-history
+              [showComments]="showComments"
+              questionId="13"
+              [discussions]="discussions"
+              [showAllComments]="true"
+            ></be-comment-history>
+          </td>
+        </tr>
+
+        <tr *ngIf="discussions.CommentarenAlgemeen">
+          <!-- Algemeen -->
+          <td class="font-bold">Algemeen</td>
+          <td>
+            <be-comment-history
+              [showComments]="showComments"
+              questionId="Algemeen"
+              [discussions]="discussions"
+              [showAllComments]="true"
+            ></be-comment-history>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </ng-container>
+</div>
+<div class="panel panel-default" *ngIf="data?.Beoordeling?.Rapport">
+  <div class="panel-heading">
+    <div class="panel-title">Rapportage beoordelaar</div>
+  </div>
+  <div class="panel-body">
+    <p>{{ data.Beoordeling.Rapport }}</p>
+  </div>
 </div>

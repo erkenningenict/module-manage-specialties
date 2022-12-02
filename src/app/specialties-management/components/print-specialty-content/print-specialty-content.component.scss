@@ -1,0 +1,10 @@
+.table {
+  tbody {
+    tr {
+      td:first-of-type {
+        font-weight: bold;
+        text-align: right;
+      }
+    }
+  }
+}
