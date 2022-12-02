@@ -222,7 +222,34 @@ export class PrintDialogContainerComponent implements OnChanges, OnDestroy {
             grid-column-start: span 3;
           }
         }
-        
+        .schemaContainer {
+          display: grid;
+          grid-template-columns: auto auto auto;
+          @media (max-width: 768.1px) {
+            grid-template-columns: auto;
+          } 
+        }
+        .schema-item-header {
+          font-weight: bold;
+          padding: 5px;
+          @media (max-width: 768.1px) {
+            display: none;
+          }
+        }
+        .schema-item-separator {
+          border-top: 1px solid #eee;
+          @media (max-width: 768.1px) {
+            display: none;
+          }
+        }
+        .schema-item-separator-first {
+          @media (max-width: 768.1px) {
+            display: block;
+          }
+        }
+        .schema-item {
+          padding: 5px;
+        }
     </style>
     `;
     printWindow.document.write(

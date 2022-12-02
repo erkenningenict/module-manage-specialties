@@ -40,6 +40,7 @@ export class PrintSpecialtyContentComponent implements OnInit, OnChanges {
   evaluatieWijze: string;
   materiaal: string;
   website: string;
+  schema: { tijd: string; docent: string; omschrijving: string }[] = [];
 
   constructor() {}
 
@@ -102,6 +103,9 @@ export class PrintSpecialtyContentComponent implements OnInit, OnChanges {
     ).currentItem.text;
     const werkvormData = tryParseJSON(this.data.WerkvormData)
       ? JSON.parse(this.data.WerkvormData).Werkvorm
+      : this.data.WerkvormData;
+    this.schema = tryParseJSON(this.data.WerkvormData)
+      ? JSON.parse(this.data.WerkvormData).Schema
       : this.data.WerkvormData;
     this.werkvorm = Array.isArray(werkvormData)
       ? werkvormData.pop().text

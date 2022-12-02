@@ -1,949 +1,973 @@
 <p-blockUI [blocked]="loading"></p-blockUI>
-<be-loader
-    [loading]="loading"
-    [text]="'Aanbod wordt geladen...'"
->
-</be-loader>
+<be-loader [loading]="loading" [text]="'Aanbod wordt geladen...'"> </be-loader>
+
+<div class="row text-right mb-2 mr-2">
+  <button
+    data-test="backToOverviewButton"
+    pButton
+    type="button"
+    label="Terug naar overzicht"
+    icon="pi pi-chevron-left"
+    (click)="toOverview()"
+    class="ui-button-secondary"
+  ></button>
+</div>
 <p-panel>
-    <p-header>
-        <be-header-display [specialty]="data"></be-header-display>
-    </p-header>
-    <div class="container-fluid">
-
-        <div class="row">
-            <div class="col-md-12">
-                <be-title-display [titel]="titel$ | async"></be-title-display>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <be-organization
-                    [status]="status$ | async"
-                    [vakgroepId]="vakgroepId$ | async"
-                    [vakgroepNaam]="vakgroepNaam$ | async"
-                    [vakgroepen]="vakgroepen$ | async"
-                ></be-organization>
-
-            </div>
-            <div class="col-md-4">
-                <be-completeness
-                    [allControls]="allControls$ | async"
-                    [invalidControls]="invalidControls"
-                    [nrOfControls]="nrOfControls"
-                    [loaded]="loaded$ | async"
-                ></be-completeness>
-
-            </div>
-            <div class="col-md-2 float-right">
-                <div class="btn-group btn-group-xs pull-right">
-                    <button
-                        class="ui-button-secondary pull-right"
-                        type="button"
-                        pButton
-                        *ngIf="changeLog?.length"
-                        (click)="toggleChangelog()"
-                        tooltipPosition="left"
-                        label="Historie"
-                        pTooltip="Klik om de historie van dit aanbod te bekijken."
-                    >
-                    </button>
-
-                </div>
-            </div>
-        </div>
-        <div
-            class="row"
-            *ngIf="showChangelog"
-        >
-            <be-change-log [changeLog]="changeLog"></be-change-log>
-        </div>
-        <be-invoice
-            [invoiceId]="invoiceId$ | async"
-            [isHoogleraar]="isHoogleraar$ | async"
-            [data]="data"
-        >
-        </be-invoice>
+  <p-header>
+    <be-header-display [specialty]="data"></be-header-display>
+  </p-header>
+  <div class="container-fluid">
+    <div class="row">
+      <be-title-display [titel]="titel$ | async"></be-title-display>
     </div>
-    <p-tabView
-        [activeIndex]="currentTabIndex"
-        (onChange)="handleTabIndexChange($event)"
-    >
-
-        <p-tabPanel header="Wie">
-
-            <div class="container-fluid scrollable-area">
-                <div class="row">
-
-                    <!-- Titel -->
-                    <be-question-container
-                        [questionTitle]="getTitle('01')"
-                        [questionText]="getDescription('01')"
-                        [visible]="getVisibility('01')"
-                    >
-                        <be-question-value
-                            controlName="titel"
-                            [tabIndex]="0"
-                            [currentTabIndex]="currentTabIndex"
-                            [enableEditing]="enableEditingMain"
-                            [showComments]="showComments"
-                            labelText="Titel"
-                            [maxLength]="200"
-                            [visible]="getVisibility('01')"
-                        >
-                            <be-question-history [data]="titelData$ | async"></be-question-history>
-                        </be-question-value>
-                        <be-comment-text
-                            questionId="01"
-                            [showComments]="showComments"
-                            [enableEditing]="enableEditing"
-                        >
-                            <be-comment-history
-                                [showComments]="showComments"
-                                questionId="01"
-                                [discussions]="discussions"
-                            ></be-comment-history>
-                        </be-comment-text>
-                    </be-question-container>
-
-                    <!-- Thema en competentie -->
-                    <be-question-container
-                        questionTitle="Thema en competentie"
-                        questionText="Kies hier het thema en de competentie"
-                        [visible]="true"
-                    >
-                        <be-theme
-                            [selectedThemaId]="themaId"
-                            [enableEditing]="enableEditing"
-                            [themas]="themas$ | async"
-                            (themaChange)="onThemaChange($event)"
-                        ></be-theme>
-                        <be-competence
-                            [selectedCompetentieId]="competentieId$ | async"
-                            [enableEditing]="enableEditing"
-                            [competenties]="geldigeCompetentiesPerThema$ | async"
-                            (competentieChange)="onCompetentieChange($event)"
-                        >
-                        </be-competence>
-                    </be-question-container>
-
-                    <!--  -->
-                    <be-skill-set
-                        [enableEditing]="enableEditing"
-                        [skills]="skills$ | async"
-                        [themaId]="themaId"
-                        [gekozenVaardigheden]="gekozenVaardigheden$ | async"
-                        (vaardigheidChecked)="onVaardigheidChecked($event)"
-                    ></be-skill-set>
-
-                    <be-sectors
-                        [enableEditing]="enableEditing"
-                        [kennisgebieden]="kennisgebieden$ | async"
-                        [gekozenKennisgebieden]="gekozenKennisgebieden$ | async"
-                        (kennisgebiedChecked)="onKennisgebiedChecked($event)"
-                    >
-                    </be-sectors>
-                </div>
-            </div>
-        </p-tabPanel>
-        <p-tabPanel header="Wat">
-            <be-question-container
-                [questionTitle]="getTitle('06')"
-                [questionText]="getDescription('06')"
-                [visible]="getVisibility('06')"
-            >
-
-                <be-question-value
-                    [tabIndex]="2"
-                    [currentTabIndex]="currentTabIndex"
-                    [enableEditing]="enableEditing"
-                    [showComments]="showComments"
-                    [labelText]="getTitle('06')"
-                    controlName="doelstelling"
-                    [visible]="getVisibility('06')"
-                >
-                    <be-question-history [data]="doelstelling$ | async"></be-question-history>
-                </be-question-value>
-                <be-comment-text
-                    questionId="06"
-                    [showComments]="showComments"
-                    [enableEditing]="enableEditing"
-                >
-                    <be-comment-history
-                        [showComments]="showComments"
-                        questionId="06"
-                        [discussions]="discussions"
-                    ></be-comment-history>
-                </be-comment-text>
-                <!-- Doelstelling S -->
-                <be-sub-question-container
-                    [questionTitle]="getTitle('06A')"
-                    [questionText]="getDescription('06A')"
-                    [visible]="getVisibility('06A')"
-                >
-                    <be-question-value
-                        [tabIndex]="2"
-                        [currentTabIndex]="currentTabIndex"
-                        [enableEditing]="enableEditing"
-                        [showComments]="showComments"
-                        [labelText]="getTitle('06A')"
-                        controlName="doelstellingS"
-                        [visible]="getVisibility('06A')"
-                    >
-                        <be-question-history [data]="doelstellingS$ | async"></be-question-history>
-                    </be-question-value>
-                    <be-comment-text
-                        questionId="06A"
-                        [showComments]="showComments"
-                        [enableEditing]="enableEditing"
-                    >
-                        <be-comment-history
-                            [showComments]="showComments"
-                            questionId="06A"
-                            [discussions]="discussions"
-                        ></be-comment-history>
-                    </be-comment-text>
-                </be-sub-question-container>
-
-                <!-- Doelstelling M -->
-                <be-sub-question-container
-                    [questionTitle]="getTitle('06B')"
-                    [questionText]="getDescription('06B')"
-                    [visible]="getVisibility('06B')"
-                >
-                    <be-question-value
-                        [tabIndex]="2"
-                        [currentTabIndex]="currentTabIndex"
-                        [enableEditing]="enableEditing"
-                        [showComments]="showComments"
-                        [labelText]="getTitle('06B')"
-                        controlName="doelstellingM"
-                        [visible]="getVisibility('06B')"
-                    >
-                        <be-question-history [data]="doelstellingM$ | async"></be-question-history>
-                    </be-question-value>
-                    <be-comment-text
-                        questionId="06B"
-                        [showComments]="showComments"
-                        [enableEditing]="enableEditing"
-                    >
-                        <be-comment-history
-                            [showComments]="showComments"
-                            questionId="06B"
-                            [discussions]="discussions"
-                        ></be-comment-history>
-                    </be-comment-text>
-                </be-sub-question-container>
-
-                <!-- Doelstelling A -->
-                <be-sub-question-container
-                    [questionTitle]="getTitle('06C')"
-                    [questionText]="getDescription('06C')"
-                    [visible]="getVisibility('06C')"
-                >
-                    <be-question-value
-                        [tabIndex]="2"
-                        [currentTabIndex]="currentTabIndex"
-                        [enableEditing]="enableEditing"
-                        [showComments]="showComments"
-                        [labelText]="getTitle('06C')"
-                        controlName="doelstellingA"
-                        [visible]="getVisibility('06C')"
-                    >
-                        <be-question-history [data]="doelstellingA$ | async"></be-question-history>
-                    </be-question-value>
-                    <be-comment-text
-                        questionId="06C"
-                        [showComments]="showComments"
-                        [enableEditing]="enableEditing"
-                    >
-                        <be-comment-history
-                            [showComments]="showComments"
-                            questionId="06C"
-                            [discussions]="discussions"
-                        ></be-comment-history>
-                    </be-comment-text>
-                </be-sub-question-container>
-
-                <!-- Doelstelling R -->
-                <be-sub-question-container
-                    [questionTitle]="getTitle('06D')"
-                    [questionText]="getDescription('06D')"
-                    [visible]="getVisibility('06D')"
-                >
-                    <be-question-value
-                        [tabIndex]="2"
-                        [currentTabIndex]="currentTabIndex"
-                        [enableEditing]="enableEditing"
-                        [showComments]="showComments"
-                        [labelText]="getTitle('06D')"
-                        controlName="doelstellingR"
-                        [visible]="getVisibility('06D')"
-                    >
-                        <be-question-history [data]="doelstellingR$ | async"></be-question-history>
-                    </be-question-value>
-                    <be-comment-text
-                        questionId="06D"
-                        [showComments]="showComments"
-                        [enableEditing]="enableEditing"
-                    >
-                        <be-comment-history
-                            [showComments]="showComments"
-                            questionId="06D"
-                            [discussions]="discussions"
-                        ></be-comment-history>
-                    </be-comment-text>
-                </be-sub-question-container>
-
-                <!-- Doelstelling T -->
-                <be-sub-question-container
-                    [questionTitle]="getTitle('06E')"
-                    [questionText]="getDescription('06E')"
-                    [visible]="getVisibility('06E')"
-                >
-                    <be-question-value
-                        [tabIndex]="2"
-                        [currentTabIndex]="currentTabIndex"
-                        [enableEditing]="enableEditing"
-                        [showComments]="showComments"
-                        [labelText]="getTitle('06E')"
-                        controlName="doelstellingT"
-                        [visible]="getVisibility('06E')"
-                    >
-                        <be-question-history [data]="doelstellingT$ | async"></be-question-history>
-                    </be-question-value>
-                    <be-comment-text
-                        questionId="06E"
-                        [showComments]="showComments"
-                        [enableEditing]="enableEditing"
-                    >
-                        <be-comment-history
-                            [showComments]="showComments"
-                            questionId="06E"
-                            [discussions]="discussions"
-                        ></be-comment-history>
-                    </be-comment-text>
-                </be-sub-question-container>
-            </be-question-container>
-
-            <!-- Inhoud -->
-            <be-question-container
-                [questionTitle]="getTitle('07')"
-                [questionText]="getDescription('07')"
-                [visible]="getVisibility('07')"
-            >
-                <be-question-value
-                    controlName="inhoud"
-                    [tabIndex]="1"
-                    [currentTabIndex]="currentTabIndex"
-                    [enableEditing]="enableEditing"
-                    [showComments]="showComments"
-                    labelText="Inhoud"
-                    [maxLength]="2000"
-                    [visible]="getVisibility('07')"
-                >
-                    <be-question-history [data]="inhoud$ | async"></be-question-history>
-                </be-question-value>
-                <be-comment-text
-                    questionId="07"
-                    [showComments]="showComments"
-                    [enableEditing]="enableEditing"
-                >
-                    <be-comment-history
-                        [showComments]="showComments"
-                        questionId="07"
-                        [discussions]="discussions"
-                    ></be-comment-history>
-                </be-comment-text>
-            </be-question-container>
-
-            <!-- Geintegreerde gewasbescherming -->
-            <be-question-container
-                [questionTitle]="getTitle('08')"
-                [questionText]="getDescription('08')"
-                [visible]="getVisibility('08') || themaId == 25"
-            >
-
-                <ng-container *ngIf="themaId != 25">
-                    <be-question-value
-                        [tabIndex]="2"
-                        [currentTabIndex]="currentTabIndex"
-                        [enableEditing]="enableEditing"
-                        [showComments]="showComments"
-                        [labelText]="getTitle('08')"
-                        controlName="geintegreerdeGewasbescherming"
-                        [visible]="getVisibility('08')"
-                    >
-                        <be-question-history [data]="geintegreerdeGewasbescherming$ | async"></be-question-history>
-                    </be-question-value>
-                    <be-comment-text
-                        questionId="08"
-                        [showComments]="showComments"
-                        [enableEditing]="enableEditing"
-                    >
-                        <be-comment-history
-                            [showComments]="showComments"
-                            questionId="08"
-                            [discussions]="discussions"
-                        ></be-comment-history>
-                    </be-comment-text>
-                </ng-container>
-            </be-question-container>
-            <!-- preventieveMaatregelen -->
-            <be-question-container
-                [questionTitle]="getTitle('08A')"
-                [questionText]="getDescription('08A')"
-                [visible]="getVisibility('08A')"
-            >
-                <be-question-value
-                    [tabIndex]="2"
-                    [currentTabIndex]="currentTabIndex"
-                    [enableEditing]="enableEditing"
-                    [showComments]="showComments"
-                    [labelText]="getTitle('08A')"
-                    controlName="preventieveMaatregelen"
-                    [visible]="getVisibility('08A')"
-                >
-                    <be-question-history [data]="preventieveMaatregelen$ | async"></be-question-history>
-                </be-question-value>
-                <be-comment-text
-                    questionId="08A"
-                    [showComments]="showComments"
-                    [enableEditing]="enableEditing"
-                >
-                    <be-comment-history
-                        [showComments]="showComments"
-                        questionId="08A"
-                        [discussions]="discussions"
-                    ></be-comment-history>
-                </be-comment-text>
-            </be-question-container>
-            <!-- teeltechnischeMaatregelen -->
-            <be-question-container
-                [questionTitle]="getTitle('08B')"
-                [questionText]="getDescription('08B')"
-                [visible]="getVisibility('08B')"
-            >
-                <be-question-value
-                    [tabIndex]="2"
-                    [currentTabIndex]="currentTabIndex"
-                    [enableEditing]="enableEditing"
-                    [showComments]="showComments"
-                    [labelText]="getTitle('08B')"
-                    controlName="teelttechnischeMaatregelen"
-                    [visible]="getVisibility('08B')"
-                >
-                    <be-question-history [data]="teelttechnischeMaatregelen$ | async"></be-question-history>
-                </be-question-value>
-                <be-comment-text
-                    questionId="08B"
-                    [showComments]="showComments"
-                    [enableEditing]="enableEditing"
-                >
-                    <be-comment-history
-                        [showComments]="showComments"
-                        questionId="08B"
-                        [discussions]="discussions"
-                    ></be-comment-history>
-                </be-comment-text>
-            </be-question-container>
-            <!-- waarschuwingEnAdviesSystemen -->
-            <be-question-container
-                [questionTitle]="getTitle('08C')"
-                [questionText]="getDescription('08C')"
-                [visible]="getVisibility('08C')"
-            >
-                <be-question-value
-                    [tabIndex]="2"
-                    [currentTabIndex]="currentTabIndex"
-                    [enableEditing]="enableEditing"
-                    [showComments]="showComments"
-                    [labelText]="getTitle('08C')"
-                    controlName="waarschuwingEnAdviesSystemen"
-                    [visible]="getVisibility('08C')"
-                >
-                    <be-question-history [data]="waarschuwingEnAdviesSystemen$ | async"></be-question-history>
-                </be-question-value>
-                <be-comment-text
-                    questionId="08C"
-                    [showComments]="showComments"
-                    [enableEditing]="enableEditing"
-                >
-                    <be-comment-history
-                        [showComments]="showComments"
-                        questionId="08C"
-                        [discussions]="discussions"
-                    ></be-comment-history>
-                </be-comment-text>
-            </be-question-container>
-            <!-- nietChemischeMogelijkheden -->
-            <be-question-container
-                [questionTitle]="getTitle('08D')"
-                [questionText]="getDescription('08D')"
-                [visible]="getVisibility('08D')"
-            >
-                <be-question-value
-                    [tabIndex]="2"
-                    [currentTabIndex]="currentTabIndex"
-                    [enableEditing]="enableEditing"
-                    [showComments]="showComments"
-                    [labelText]="getTitle('08D')"
-                    controlName="nietChemischeMogelijkheden"
-                    [visible]="getVisibility('08D')"
-                >
-                    <be-question-history [data]="nietChemischeMogelijkheden$ | async"></be-question-history>
-                </be-question-value>
-                <be-comment-text
-                    questionId="08D"
-                    [showComments]="showComments"
-                    [enableEditing]="enableEditing"
-                >
-                    <be-comment-history
-                        [showComments]="showComments"
-                        questionId="08D"
-                        [discussions]="discussions"
-                    ></be-comment-history>
-                </be-comment-text>
-            </be-question-container>
-            <!-- chemischeGewasbescherming -->
-            <be-question-container
-                [questionTitle]="getTitle('08E')"
-                [questionText]="getDescription('08E')"
-                [visible]="getVisibility('08E')"
-            >
-                <be-question-value
-                    [tabIndex]="2"
-                    [currentTabIndex]="currentTabIndex"
-                    [enableEditing]="enableEditing"
-                    [showComments]="showComments"
-                    [labelText]="getTitle('08E')"
-                    controlName="chemischeGewasbescherming"
-                    [visible]="getVisibility('08E')"
-                >
-                    <be-question-history [data]="chemischeGewasbescherming$ | async"></be-question-history>
-                </be-question-value>
-                <be-comment-text
-                    questionId="08E"
-                    [showComments]="showComments"
-                    [enableEditing]="enableEditing"
-                >
-                    <be-comment-history
-                        [showComments]="showComments"
-                        questionId="08E"
-                        [discussions]="discussions"
-                    ></be-comment-history>
-                </be-comment-text>
-            </be-question-container>
-            <!-- emissieBeperking -->
-            <be-question-container
-                [questionTitle]="getTitle('08F')"
-                [questionText]="getDescription('08F')"
-                [visible]="getVisibility('08F')"
-            >
-                <be-question-value
-                    [tabIndex]="2"
-                    [currentTabIndex]="currentTabIndex"
-                    [enableEditing]="enableEditing"
-                    [showComments]="showComments"
-                    [labelText]="getTitle('08F')"
-                    controlName="emissieBeperking"
-                    [visible]="getVisibility('08F')"
-                >
-                    <be-question-history [data]="emissieBeperking$ | async"></be-question-history>
-                </be-question-value>
-                <be-comment-text
-                    questionId="08F"
-                    [showComments]="showComments"
-                    [enableEditing]="enableEditing"
-                >
-                    <be-comment-history
-                        [showComments]="showComments"
-                        questionId="08F"
-                        [discussions]="discussions"
-                    ></be-comment-history>
-                </be-comment-text>
-            </be-question-container>
-
-            <be-question-container
-                questionTitle="Actualiteiten"
-                questionText="Bekijk de volgende links voor actuele informatie per sector."
-                [visible]="getVisibility('05')"
-            >
-                <be-actualities [relevanteActualiteiten]="relevanteActualiteiten$ | async"></be-actualities>
-            </be-question-container>
-
-            <!-- Onderwerp (Actualiteit) -->
-            <be-question-container
-                [questionTitle]="getTitle('05')"
-                [questionText]="getDescription('05')"
-                [visible]="getVisibility('05')"
-            >
-                <be-question-value
-                    [tabIndex]="2"
-                    [currentTabIndex]="currentTabIndex"
-                    [enableEditing]="enableEditing"
-                    [showComments]="showComments"
-                    labelText="Actualiteit"
-                    controlName="actualiteiten"
-                    [visible]="getVisibility('05')"
-                >
-                    <be-question-history [data]="actualiteit$ | async"></be-question-history>
-                </be-question-value>
-                <be-comment-text
-                    questionId="05"
-                    [showComments]="showComments"
-                    [enableEditing]="enableEditing"
-                >
-                    <be-comment-history
-                        [showComments]="showComments"
-                        questionId="05"
-                        [discussions]="discussions"
-                    ></be-comment-history>
-                </be-comment-text>
-            </be-question-container>
-
-            <!-- Individuele relevantie -->
-            <be-question-container
-                [questionTitle]="getTitle('12')"
-                [questionText]="getDescription('12')"
-                [visible]="getVisibility('12')"
-            >
-                <be-question-value
-                    [tabIndex]="2"
-                    [currentTabIndex]="currentTabIndex"
-                    [enableEditing]="enableEditing"
-                    [showComments]="showComments"
-                    labelText="Individuele relevantie"
-                    controlName="individueleRelevantie"
-                    [visible]="getVisibility('12')"
-                >
-                    <be-question-history [data]="individueleRelevantie$ | async"></be-question-history>
-                </be-question-value>
-                <be-comment-text
-                    questionId="12"
-                    [showComments]="showComments"
-                    [enableEditing]="enableEditing"
-                >
-                    <be-comment-history
-                        [showComments]="showComments"
-                        questionId="12"
-                        [discussions]="discussions"
-                    ></be-comment-history>
-                </be-comment-text>
-            </be-question-container>
-        </p-tabPanel>
-        <p-tabPanel header="Hoe">
-
-            <!-- Werkvormen -->
-            <be-question-container
-                [questionTitle]="getTitle('09')"
-                [questionText]="getDescription('09')"
-                [visible]="getVisibility('09')"
-            >
-                <be-question-value
-                    [tabIndex]="2"
-                    [currentTabIndex]="currentTabIndex"
-                    [enableEditing]="enableEditing"
-                    [showComments]="showComments"
-                    [labelText]="getTitle('09')"
-                    controlName="werkvorm"
-                    [visible]="getVisibility('09')"
-                >
-                    <be-question-history [data]="werkvormData$ | async"></be-question-history>
-                </be-question-value>
-                <be-comment-text
-                    questionId="09"
-                    [showComments]="showComments"
-                    [enableEditing]="enableEditing"
-                >
-                    <be-comment-history
-                        [showComments]="showComments"
-                        questionId="09"
-                        [discussions]="discussions"
-                    ></be-comment-history>
-                </be-comment-text>
-                <div class="clearfix"></div>
-                <div class="panel-footer">
-                    <div class="row">
-                        <be-work-form-schema
-                            [enableEditing]="enableEditing"
-                            [scheme]="werkvormSchema$ | async"
-                            (updateScheme)="onEditScheme($event)"
-                        >
-                        </be-work-form-schema>
-                    </div>
-                </div>
-            </be-question-container>
-
-            <!-- Docenten -->
-            <be-question-container
-                [questionTitle]="getTitle('11')"
-                [questionText]="getDescription('11')"
-                [visible]="getVisibility('11')"
-            >
-                <be-question-value
-                    [tabIndex]="2"
-                    [currentTabIndex]="currentTabIndex"
-                    [enableEditing]="enableEditing"
-                    [showComments]="showComments"
-                    [labelText]="getTitle('11')"
-                    controlName="docenten"
-                    [visible]="getVisibility('11')"
-                >
-                    <be-question-history [data]="docenten$ | async"></be-question-history>
-                </be-question-value>
-                <be-comment-text
-                    questionId="11"
-                    [showComments]="showComments"
-                    [enableEditing]="enableEditing"
-                >
-                    <be-comment-history
-                        [showComments]="showComments"
-                        questionId="11"
-                        [discussions]="discussions"
-                    ></be-comment-history>
-                </be-comment-text>
-            </be-question-container>
-
-            <!-- Promotietekst -->
-            <be-question-container
-                [questionTitle]="getTitle('02')"
-                [questionText]="getDescription('02')"
-                [visible]="getVisibility('02')"
-            >
-                <be-question-value
-                    [tabIndex]="2"
-                    [currentTabIndex]="currentTabIndex"
-                    [enableEditing]="enableEditingMain"
-                    [showComments]="showComments"
-                    [labelText]="getTitle('02')"
-                    controlName="promotietekst"
-                    [visible]="getVisibility('02')"
-                >
-                    <be-question-history [data]="promotietekstData$ | async"></be-question-history>
-                </be-question-value>
-                <be-comment-text
-                    questionId="02"
-                    [showComments]="showComments"
-                    [enableEditing]="enableEditing"
-                >
-                    <be-comment-history
-                        [showComments]="showComments"
-                        questionId="02"
-                        [discussions]="discussions"
-                    ></be-comment-history>
-                </be-comment-text>
-            </be-question-container>
-
-            <!-- EvaluatieWijze -->
-            <be-question-container
-                [questionTitle]="getTitle('14')"
-                [questionText]="getDescription('14')"
-                [visible]="getVisibility('14')"
-            >
-                <be-question-value
-                    [tabIndex]="2"
-                    [currentTabIndex]="currentTabIndex"
-                    [enableEditing]="enableEditing"
-                    [showComments]="showComments"
-                    [labelText]="getTitle('14')"
-                    controlName="evaluatieWijze"
-                    [visible]="getVisibility('14')"
-                >
-                    <be-question-history [data]="evaluatieWijze$ | async"></be-question-history>
-                </be-question-value>
-                <be-comment-text
-                    questionId="14"
-                    [showComments]="showComments"
-                    [enableEditing]="enableEditing"
-                >
-                    <be-comment-history
-                        [showComments]="showComments"
-                        questionId="14"
-                        [discussions]="discussions"
-                    ></be-comment-history>
-                </be-comment-text>
-            </be-question-container>
-
-        </p-tabPanel>
-        <p-tabPanel header="Overig">
-
-            <!-- Bijlagen -->
-            <be-question-container
-                questionTitle="Bijlagen"
-                questionText
-                [visible]="true"
-            >
-                <be-attachments
-                    [enableEditing]="enableEditing"
-                    [attachments]="bijlagen$ | async"
-                    (updatedAttachments)="onUpdatedAttachments($event)"
-                    (uploadFile)="onUploadFile($event)"
-                >
-                </be-attachments>
-            </be-question-container>
-
-            <!-- Materiaal -->
-            <be-question-container
-                [questionTitle]="getTitle('13')"
-                [questionText]="getDescription('13')"
-                [visible]="getVisibility('13')"
-            >
-                <be-question-value
-                    [tabIndex]="3"
-                    [currentTabIndex]="currentTabIndex"
-                    [enableEditing]="enableEditing"
-                    [showComments]="showComments"
-                    [labelText]="getTitle('13')"
-                    controlName="materiaal"
-                    [visible]="getVisibility('13')"
-                >
-                    <be-question-history [data]="materiaal$ | async"></be-question-history>
-                </be-question-value>
-                <be-comment-text
-                    questionId="13"
-                    [showComments]="showComments"
-                    [enableEditing]="enableEditing"
-                >
-                    <be-comment-history
-                        [showComments]="showComments"
-                        questionId="13"
-                        [discussions]="discussions"
-                    ></be-comment-history>
-                </be-comment-text>
-            </be-question-container>
-
-            <be-question-container
-                questionTitle="Overige informatie"
-                questionText
-                [visible]="true"
-            >
-
-                <be-other-info
-                    [tabIndex]="3"
-                    [currentTabIndex]="currentTabIndex"
-                    [enableEditing]="enableEditing"
-                    [kostenPerDeelname]="kostenPerDeelname$ | async"
-                    [groepsgrootte]="groepsgrootte$ | async"
-                    [begindatum]="begindatum$ | async"
-                    [einddatum]="einddatum$ | async"
-                    [enableEditingEinddatum]="enableEditingEinddatum$ | async"
-                    [aantalSessies]="aantalSessies$ | async"
-                    [tijdsduur]="tijdsduur$ | async"
-                    [digitaalAanbod]="digitaalAanbod$ | async"
-                >
-
-                </be-other-info>
-            </be-question-container>
-
-            <!-- Website -->
-            <be-question-container
-                [questionTitle]="getTitle('03')"
-                [questionText]="getDescription('03')"
-                [visible]="getVisibility('03')"
-            >
-                <be-question-value
-                    [tabIndex]="3"
-                    [currentTabIndex]="currentTabIndex"
-                    [enableEditing]="enableEditingMain"
-                    [showComments]="showComments"
-                    [labelText]="getTitle('03')"
-                    controlName="website"
-                    [maxLength]="200"
-                    [visible]="getVisibility('03')"
-                >
-                    <be-question-history [data]="website$ | async"></be-question-history>
-                </be-question-value>
-                <be-comment-text
-                    questionId="03"
-                    [showComments]="showComments"
-                    [enableEditing]="enableEditing"
-                >
-                    <be-comment-history
-                        [showComments]="showComments"
-                        questionId="03"
-                        [discussions]="discussions"
-                    ></be-comment-history>
-                </be-comment-text>
-            </be-question-container>
-
-            <!-- Algemeen commentaar -->
-            <be-question-container
-                *ngIf="showComments"
-                questionTitle="Algemeen commentaar"
-                [visible]="true"
-            >
-                <be-comment-text
-                    [largeCommentArea]="true"
-                    questionId="Algemeen"
-                    [showComments]="showComments"
-                    [enableEditing]="enableEditing"
-                >
-                    <be-comment-history
-                        [showComments]="showComments"
-                        questionId="Algemeen"
-                        [discussions]="discussions"
-                    ></be-comment-history>
-                </be-comment-text>
-            </be-question-container>
-
-        </p-tabPanel>
-        <p-tabPanel
-            header="Beoordeling"
-            [disabled]="beoordelingTabDisabled$ | async"
-        >
-
-            <!-- Beoordeling -->
-            <be-question-container
-                questionTitle="Beoordeling"
-                [visible]="true"
-            >
-                <be-judgement
-                    [enableEditing]="enableEditing"
-                    [judges]="beoordelaars$ | async"
-                    [showBeoordelingData]="showBeoordelingData$ | async"
-                    [beoordeling]="beoordeling$ | async"
-                    [canUpdateBeoordelaar]="canUpdateBeoordelaar$ | async"
-                    [canUpdateBeoordeling]="canUpdateBeoordeling$ | async"
-                    (updateBeoordelaar)="onUpdateBeoordelaar($event)"
-                    (updateStatus)="onUpdateBeoordelingStatus($event)"
-                >
-                </be-judgement>
-
-            </be-question-container>
-
-        </p-tabPanel>
-    </p-tabView>
-    <p-footer>
-        <div class="specialty-edit__button-group">
-            <button
-                data-test="backToOverviewButton"
-                pButton
-                type="button"
-                label="Terug naar overzicht"
-                (click)="toOverview()"
-                class="ui-button-secondary"
-            ></button>
-
-            <button
-                data-test="submitSpecialtyButton"
-                pButton
-                type="button"
-                *ngIf="showIndienenButton$ | async"
-                label="Indienen"
-                icon="fa fa-check"
-                [disabled]="submitDisabled"
-                (click)="save(true)"
-            ></button>
-            <button
-                data-test="saveButton"
-                pButton
-                type="button"
-                label="Opslaan"
-                icon="fa fa-check"
-                [disabled]="saveDisabled"
-                (click)="save(false)"
-                *ngIf="!(isVakcommissieAG$ | async)"
-            ></button>
+    <div class="row">
+      <div class="col-md-6">
+        <be-organization
+          [status]="status$ | async"
+          [vakgroepId]="vakgroepId$ | async"
+          [vakgroepNaam]="vakgroepNaam$ | async"
+          [vakgroepen]="vakgroepen$ | async"
+        ></be-organization>
+      </div>
+      <div class="col-md-4">
+        <be-completeness
+          [allControls]="allControls$ | async"
+          [invalidControls]="invalidControls"
+          [nrOfControls]="nrOfControls"
+          [loaded]="loaded$ | async"
+        ></be-completeness>
+      </div>
+      <div class="col-md-2 float-right">
+        <div class="btn-group btn-group-xs pull-right">
+          <button
+            class="ui-button-secondary pull-right"
+            type="button"
+            pButton
+            *ngIf="changeLog?.length"
+            (click)="toggleChangelog()"
+            tooltipPosition="left"
+            label="Historie"
+            pTooltip="Klik om de historie van dit aanbod te bekijken."
+          ></button>
         </div>
-    </p-footer>
+      </div>
+    </div>
+    <div class="row" *ngIf="showChangelog">
+      <be-change-log [changeLog]="changeLog"></be-change-log>
+    </div>
+    <be-invoice
+      [invoiceId]="invoiceId$ | async"
+      [isHoogleraar]="isHoogleraar$ | async"
+      [data]="data"
+    >
+    </be-invoice>
+  </div>
+  <p-tabView
+    [activeIndex]="currentTabIndex"
+    (onChange)="handleTabIndexChange($event)"
+  >
+    <p-tabPanel header="Wie">
+      <div class="container-fluid scrollable-area">
+        <div class="row">
+          <!-- Titel -->
+          <be-question-container
+            [questionTitle]="getTitle('01')"
+            [questionText]="getDescription('01')"
+            [visible]="getVisibility('01')"
+          >
+            <be-question-value
+              controlName="titel"
+              [tabIndex]="0"
+              [currentTabIndex]="currentTabIndex"
+              [enableEditing]="enableEditingMain"
+              [showComments]="showComments"
+              labelText="Titel"
+              [maxLength]="200"
+              [visible]="getVisibility('01')"
+            >
+              <be-question-history
+                [data]="titelData$ | async"
+              ></be-question-history>
+            </be-question-value>
+            <be-comment-text
+              questionId="01"
+              [showComments]="showComments"
+              [enableEditing]="enableEditing"
+            >
+              <be-comment-history
+                [showComments]="showComments"
+                questionId="01"
+                [discussions]="discussions"
+              ></be-comment-history>
+            </be-comment-text>
+          </be-question-container>
+
+          <!-- Thema en competentie -->
+          <be-question-container
+            questionTitle="Thema en competentie"
+            questionText="Kies hier het thema en de competentie"
+            [visible]="true"
+          >
+            <be-theme
+              [selectedThemaId]="themaId"
+              [enableEditing]="enableEditing"
+              [themas]="themas$ | async"
+              (themaChange)="onThemaChange($event)"
+            ></be-theme>
+            <be-competence
+              [selectedCompetentieId]="competentieId$ | async"
+              [enableEditing]="enableEditing"
+              [competenties]="geldigeCompetentiesPerThema$ | async"
+              (competentieChange)="onCompetentieChange($event)"
+            >
+            </be-competence>
+          </be-question-container>
+
+          <!--  -->
+          <be-skill-set
+            [enableEditing]="enableEditing"
+            [skills]="skills$ | async"
+            [themaId]="themaId"
+            [gekozenVaardigheden]="gekozenVaardigheden$ | async"
+            (vaardigheidChecked)="onVaardigheidChecked($event)"
+          ></be-skill-set>
+
+          <be-sectors
+            [enableEditing]="enableEditing"
+            [kennisgebieden]="kennisgebieden$ | async"
+            [gekozenKennisgebieden]="gekozenKennisgebieden$ | async"
+            (kennisgebiedChecked)="onKennisgebiedChecked($event)"
+          >
+          </be-sectors>
+        </div>
+      </div>
+    </p-tabPanel>
+    <p-tabPanel header="Wat">
+      <be-question-container
+        [questionTitle]="getTitle('06')"
+        [questionText]="getDescription('06')"
+        [visible]="getVisibility('06')"
+      >
+        <be-question-value
+          [tabIndex]="2"
+          [currentTabIndex]="currentTabIndex"
+          [enableEditing]="enableEditing"
+          [showComments]="showComments"
+          [labelText]="getTitle('06')"
+          controlName="doelstelling"
+          [visible]="getVisibility('06')"
+        >
+          <be-question-history
+            [data]="doelstelling$ | async"
+          ></be-question-history>
+        </be-question-value>
+        <be-comment-text
+          questionId="06"
+          [showComments]="showComments"
+          [enableEditing]="enableEditing"
+        >
+          <be-comment-history
+            [showComments]="showComments"
+            questionId="06"
+            [discussions]="discussions"
+          ></be-comment-history>
+        </be-comment-text>
+        <!-- Doelstelling S -->
+        <be-sub-question-container
+          [questionTitle]="getTitle('06A')"
+          [questionText]="getDescription('06A')"
+          [visible]="getVisibility('06A')"
+        >
+          <be-question-value
+            [tabIndex]="2"
+            [currentTabIndex]="currentTabIndex"
+            [enableEditing]="enableEditing"
+            [showComments]="showComments"
+            [labelText]="getTitle('06A')"
+            controlName="doelstellingS"
+            [visible]="getVisibility('06A')"
+          >
+            <be-question-history
+              [data]="doelstellingS$ | async"
+            ></be-question-history>
+          </be-question-value>
+          <be-comment-text
+            questionId="06A"
+            [showComments]="showComments"
+            [enableEditing]="enableEditing"
+          >
+            <be-comment-history
+              [showComments]="showComments"
+              questionId="06A"
+              [discussions]="discussions"
+            ></be-comment-history>
+          </be-comment-text>
+        </be-sub-question-container>
+
+        <!-- Doelstelling M -->
+        <be-sub-question-container
+          [questionTitle]="getTitle('06B')"
+          [questionText]="getDescription('06B')"
+          [visible]="getVisibility('06B')"
+        >
+          <be-question-value
+            [tabIndex]="2"
+            [currentTabIndex]="currentTabIndex"
+            [enableEditing]="enableEditing"
+            [showComments]="showComments"
+            [labelText]="getTitle('06B')"
+            controlName="doelstellingM"
+            [visible]="getVisibility('06B')"
+          >
+            <be-question-history
+              [data]="doelstellingM$ | async"
+            ></be-question-history>
+          </be-question-value>
+          <be-comment-text
+            questionId="06B"
+            [showComments]="showComments"
+            [enableEditing]="enableEditing"
+          >
+            <be-comment-history
+              [showComments]="showComments"
+              questionId="06B"
+              [discussions]="discussions"
+            ></be-comment-history>
+          </be-comment-text>
+        </be-sub-question-container>
+
+        <!-- Doelstelling A -->
+        <be-sub-question-container
+          [questionTitle]="getTitle('06C')"
+          [questionText]="getDescription('06C')"
+          [visible]="getVisibility('06C')"
+        >
+          <be-question-value
+            [tabIndex]="2"
+            [currentTabIndex]="currentTabIndex"
+            [enableEditing]="enableEditing"
+            [showComments]="showComments"
+            [labelText]="getTitle('06C')"
+            controlName="doelstellingA"
+            [visible]="getVisibility('06C')"
+          >
+            <be-question-history
+              [data]="doelstellingA$ | async"
+            ></be-question-history>
+          </be-question-value>
+          <be-comment-text
+            questionId="06C"
+            [showComments]="showComments"
+            [enableEditing]="enableEditing"
+          >
+            <be-comment-history
+              [showComments]="showComments"
+              questionId="06C"
+              [discussions]="discussions"
+            ></be-comment-history>
+          </be-comment-text>
+        </be-sub-question-container>
+
+        <!-- Doelstelling R -->
+        <be-sub-question-container
+          [questionTitle]="getTitle('06D')"
+          [questionText]="getDescription('06D')"
+          [visible]="getVisibility('06D')"
+        >
+          <be-question-value
+            [tabIndex]="2"
+            [currentTabIndex]="currentTabIndex"
+            [enableEditing]="enableEditing"
+            [showComments]="showComments"
+            [labelText]="getTitle('06D')"
+            controlName="doelstellingR"
+            [visible]="getVisibility('06D')"
+          >
+            <be-question-history
+              [data]="doelstellingR$ | async"
+            ></be-question-history>
+          </be-question-value>
+          <be-comment-text
+            questionId="06D"
+            [showComments]="showComments"
+            [enableEditing]="enableEditing"
+          >
+            <be-comment-history
+              [showComments]="showComments"
+              questionId="06D"
+              [discussions]="discussions"
+            ></be-comment-history>
+          </be-comment-text>
+        </be-sub-question-container>
+
+        <!-- Doelstelling T -->
+        <be-sub-question-container
+          [questionTitle]="getTitle('06E')"
+          [questionText]="getDescription('06E')"
+          [visible]="getVisibility('06E')"
+        >
+          <be-question-value
+            [tabIndex]="2"
+            [currentTabIndex]="currentTabIndex"
+            [enableEditing]="enableEditing"
+            [showComments]="showComments"
+            [labelText]="getTitle('06E')"
+            controlName="doelstellingT"
+            [visible]="getVisibility('06E')"
+          >
+            <be-question-history
+              [data]="doelstellingT$ | async"
+            ></be-question-history>
+          </be-question-value>
+          <be-comment-text
+            questionId="06E"
+            [showComments]="showComments"
+            [enableEditing]="enableEditing"
+          >
+            <be-comment-history
+              [showComments]="showComments"
+              questionId="06E"
+              [discussions]="discussions"
+            ></be-comment-history>
+          </be-comment-text>
+        </be-sub-question-container>
+      </be-question-container>
+
+      <!-- Inhoud -->
+      <be-question-container
+        [questionTitle]="getTitle('07')"
+        [questionText]="getDescription('07')"
+        [visible]="getVisibility('07')"
+      >
+        <be-question-value
+          controlName="inhoud"
+          [tabIndex]="1"
+          [currentTabIndex]="currentTabIndex"
+          [enableEditing]="enableEditing"
+          [showComments]="showComments"
+          labelText="Inhoud"
+          [maxLength]="2000"
+          [visible]="getVisibility('07')"
+        >
+          <be-question-history [data]="inhoud$ | async"></be-question-history>
+        </be-question-value>
+        <be-comment-text
+          questionId="07"
+          [showComments]="showComments"
+          [enableEditing]="enableEditing"
+        >
+          <be-comment-history
+            [showComments]="showComments"
+            questionId="07"
+            [discussions]="discussions"
+          ></be-comment-history>
+        </be-comment-text>
+      </be-question-container>
+
+      <!-- Geintegreerde gewasbescherming -->
+      <be-question-container
+        [questionTitle]="getTitle('08')"
+        [questionText]="getDescription('08')"
+        [visible]="getVisibility('08') || themaId == 25"
+      >
+        <ng-container *ngIf="themaId != 25">
+          <be-question-value
+            [tabIndex]="2"
+            [currentTabIndex]="currentTabIndex"
+            [enableEditing]="enableEditing"
+            [showComments]="showComments"
+            [labelText]="getTitle('08')"
+            controlName="geintegreerdeGewasbescherming"
+            [visible]="getVisibility('08')"
+          >
+            <be-question-history
+              [data]="geintegreerdeGewasbescherming$ | async"
+            ></be-question-history>
+          </be-question-value>
+          <be-comment-text
+            questionId="08"
+            [showComments]="showComments"
+            [enableEditing]="enableEditing"
+          >
+            <be-comment-history
+              [showComments]="showComments"
+              questionId="08"
+              [discussions]="discussions"
+            ></be-comment-history>
+          </be-comment-text>
+        </ng-container>
+      </be-question-container>
+      <!-- preventieveMaatregelen -->
+      <be-question-container
+        [questionTitle]="getTitle('08A')"
+        [questionText]="getDescription('08A')"
+        [visible]="getVisibility('08A')"
+      >
+        <be-question-value
+          [tabIndex]="2"
+          [currentTabIndex]="currentTabIndex"
+          [enableEditing]="enableEditing"
+          [showComments]="showComments"
+          [labelText]="getTitle('08A')"
+          controlName="preventieveMaatregelen"
+          [visible]="getVisibility('08A')"
+        >
+          <be-question-history
+            [data]="preventieveMaatregelen$ | async"
+          ></be-question-history>
+        </be-question-value>
+        <be-comment-text
+          questionId="08A"
+          [showComments]="showComments"
+          [enableEditing]="enableEditing"
+        >
+          <be-comment-history
+            [showComments]="showComments"
+            questionId="08A"
+            [discussions]="discussions"
+          ></be-comment-history>
+        </be-comment-text>
+      </be-question-container>
+      <!-- teeltechnischeMaatregelen -->
+      <be-question-container
+        [questionTitle]="getTitle('08B')"
+        [questionText]="getDescription('08B')"
+        [visible]="getVisibility('08B')"
+      >
+        <be-question-value
+          [tabIndex]="2"
+          [currentTabIndex]="currentTabIndex"
+          [enableEditing]="enableEditing"
+          [showComments]="showComments"
+          [labelText]="getTitle('08B')"
+          controlName="teelttechnischeMaatregelen"
+          [visible]="getVisibility('08B')"
+        >
+          <be-question-history
+            [data]="teelttechnischeMaatregelen$ | async"
+          ></be-question-history>
+        </be-question-value>
+        <be-comment-text
+          questionId="08B"
+          [showComments]="showComments"
+          [enableEditing]="enableEditing"
+        >
+          <be-comment-history
+            [showComments]="showComments"
+            questionId="08B"
+            [discussions]="discussions"
+          ></be-comment-history>
+        </be-comment-text>
+      </be-question-container>
+      <!-- waarschuwingEnAdviesSystemen -->
+      <be-question-container
+        [questionTitle]="getTitle('08C')"
+        [questionText]="getDescription('08C')"
+        [visible]="getVisibility('08C')"
+      >
+        <be-question-value
+          [tabIndex]="2"
+          [currentTabIndex]="currentTabIndex"
+          [enableEditing]="enableEditing"
+          [showComments]="showComments"
+          [labelText]="getTitle('08C')"
+          controlName="waarschuwingEnAdviesSystemen"
+          [visible]="getVisibility('08C')"
+        >
+          <be-question-history
+            [data]="waarschuwingEnAdviesSystemen$ | async"
+          ></be-question-history>
+        </be-question-value>
+        <be-comment-text
+          questionId="08C"
+          [showComments]="showComments"
+          [enableEditing]="enableEditing"
+        >
+          <be-comment-history
+            [showComments]="showComments"
+            questionId="08C"
+            [discussions]="discussions"
+          ></be-comment-history>
+        </be-comment-text>
+      </be-question-container>
+      <!-- nietChemischeMogelijkheden -->
+      <be-question-container
+        [questionTitle]="getTitle('08D')"
+        [questionText]="getDescription('08D')"
+        [visible]="getVisibility('08D')"
+      >
+        <be-question-value
+          [tabIndex]="2"
+          [currentTabIndex]="currentTabIndex"
+          [enableEditing]="enableEditing"
+          [showComments]="showComments"
+          [labelText]="getTitle('08D')"
+          controlName="nietChemischeMogelijkheden"
+          [visible]="getVisibility('08D')"
+        >
+          <be-question-history
+            [data]="nietChemischeMogelijkheden$ | async"
+          ></be-question-history>
+        </be-question-value>
+        <be-comment-text
+          questionId="08D"
+          [showComments]="showComments"
+          [enableEditing]="enableEditing"
+        >
+          <be-comment-history
+            [showComments]="showComments"
+            questionId="08D"
+            [discussions]="discussions"
+          ></be-comment-history>
+        </be-comment-text>
+      </be-question-container>
+      <!-- chemischeGewasbescherming -->
+      <be-question-container
+        [questionTitle]="getTitle('08E')"
+        [questionText]="getDescription('08E')"
+        [visible]="getVisibility('08E')"
+      >
+        <be-question-value
+          [tabIndex]="2"
+          [currentTabIndex]="currentTabIndex"
+          [enableEditing]="enableEditing"
+          [showComments]="showComments"
+          [labelText]="getTitle('08E')"
+          controlName="chemischeGewasbescherming"
+          [visible]="getVisibility('08E')"
+        >
+          <be-question-history
+            [data]="chemischeGewasbescherming$ | async"
+          ></be-question-history>
+        </be-question-value>
+        <be-comment-text
+          questionId="08E"
+          [showComments]="showComments"
+          [enableEditing]="enableEditing"
+        >
+          <be-comment-history
+            [showComments]="showComments"
+            questionId="08E"
+            [discussions]="discussions"
+          ></be-comment-history>
+        </be-comment-text>
+      </be-question-container>
+      <!-- emissieBeperking -->
+      <be-question-container
+        [questionTitle]="getTitle('08F')"
+        [questionText]="getDescription('08F')"
+        [visible]="getVisibility('08F')"
+      >
+        <be-question-value
+          [tabIndex]="2"
+          [currentTabIndex]="currentTabIndex"
+          [enableEditing]="enableEditing"
+          [showComments]="showComments"
+          [labelText]="getTitle('08F')"
+          controlName="emissieBeperking"
+          [visible]="getVisibility('08F')"
+        >
+          <be-question-history
+            [data]="emissieBeperking$ | async"
+          ></be-question-history>
+        </be-question-value>
+        <be-comment-text
+          questionId="08F"
+          [showComments]="showComments"
+          [enableEditing]="enableEditing"
+        >
+          <be-comment-history
+            [showComments]="showComments"
+            questionId="08F"
+            [discussions]="discussions"
+          ></be-comment-history>
+        </be-comment-text>
+      </be-question-container>
+
+      <be-question-container
+        questionTitle="Actualiteiten"
+        questionText="Bekijk de volgende links voor actuele informatie per sector."
+        [visible]="getVisibility('05')"
+      >
+        <be-actualities
+          [relevanteActualiteiten]="relevanteActualiteiten$ | async"
+        ></be-actualities>
+      </be-question-container>
+
+      <!-- Onderwerp (Actualiteit) -->
+      <be-question-container
+        [questionTitle]="getTitle('05')"
+        [questionText]="getDescription('05')"
+        [visible]="getVisibility('05')"
+      >
+        <be-question-value
+          [tabIndex]="2"
+          [currentTabIndex]="currentTabIndex"
+          [enableEditing]="enableEditing"
+          [showComments]="showComments"
+          labelText="Actualiteit"
+          controlName="actualiteiten"
+          [visible]="getVisibility('05')"
+        >
+          <be-question-history
+            [data]="actualiteit$ | async"
+          ></be-question-history>
+        </be-question-value>
+        <be-comment-text
+          questionId="05"
+          [showComments]="showComments"
+          [enableEditing]="enableEditing"
+        >
+          <be-comment-history
+            [showComments]="showComments"
+            questionId="05"
+            [discussions]="discussions"
+          ></be-comment-history>
+        </be-comment-text>
+      </be-question-container>
+
+      <!-- Individuele relevantie -->
+      <be-question-container
+        [questionTitle]="getTitle('12')"
+        [questionText]="getDescription('12')"
+        [visible]="getVisibility('12')"
+      >
+        <be-question-value
+          [tabIndex]="2"
+          [currentTabIndex]="currentTabIndex"
+          [enableEditing]="enableEditing"
+          [showComments]="showComments"
+          labelText="Individuele relevantie"
+          controlName="individueleRelevantie"
+          [visible]="getVisibility('12')"
+        >
+          <be-question-history
+            [data]="individueleRelevantie$ | async"
+          ></be-question-history>
+        </be-question-value>
+        <be-comment-text
+          questionId="12"
+          [showComments]="showComments"
+          [enableEditing]="enableEditing"
+        >
+          <be-comment-history
+            [showComments]="showComments"
+            questionId="12"
+            [discussions]="discussions"
+          ></be-comment-history>
+        </be-comment-text>
+      </be-question-container>
+    </p-tabPanel>
+    <p-tabPanel header="Hoe">
+      <!-- Werkvormen -->
+      <be-question-container
+        [questionTitle]="getTitle('09')"
+        [questionText]="getDescription('09')"
+        [visible]="getVisibility('09')"
+      >
+        <be-question-value
+          [tabIndex]="2"
+          [currentTabIndex]="currentTabIndex"
+          [enableEditing]="enableEditing"
+          [showComments]="showComments"
+          [labelText]="getTitle('09')"
+          controlName="werkvorm"
+          [visible]="getVisibility('09')"
+        >
+          <be-question-history
+            [data]="werkvormData$ | async"
+          ></be-question-history>
+        </be-question-value>
+        <be-comment-text
+          questionId="09"
+          [showComments]="showComments"
+          [enableEditing]="enableEditing"
+        >
+          <be-comment-history
+            [showComments]="showComments"
+            questionId="09"
+            [discussions]="discussions"
+          ></be-comment-history>
+        </be-comment-text>
+        <div class="clearfix"></div>
+        <div class="panel-footer">
+          <div class="row">
+            <be-work-form-schema
+              [enableEditing]="enableEditing"
+              [scheme]="werkvormSchema$ | async"
+              (updateScheme)="onEditScheme($event)"
+            >
+            </be-work-form-schema>
+          </div>
+        </div>
+      </be-question-container>
+
+      <!-- Docenten -->
+      <be-question-container
+        [questionTitle]="getTitle('11')"
+        [questionText]="getDescription('11')"
+        [visible]="getVisibility('11')"
+      >
+        <be-question-value
+          [tabIndex]="2"
+          [currentTabIndex]="currentTabIndex"
+          [enableEditing]="enableEditing"
+          [showComments]="showComments"
+          [labelText]="getTitle('11')"
+          controlName="docenten"
+          [visible]="getVisibility('11')"
+        >
+          <be-question-history [data]="docenten$ | async"></be-question-history>
+        </be-question-value>
+        <be-comment-text
+          questionId="11"
+          [showComments]="showComments"
+          [enableEditing]="enableEditing"
+        >
+          <be-comment-history
+            [showComments]="showComments"
+            questionId="11"
+            [discussions]="discussions"
+          ></be-comment-history>
+        </be-comment-text>
+      </be-question-container>
+
+      <!-- Promotietekst -->
+      <be-question-container
+        [questionTitle]="getTitle('02')"
+        [questionText]="getDescription('02')"
+        [visible]="getVisibility('02')"
+      >
+        <be-question-value
+          [tabIndex]="2"
+          [currentTabIndex]="currentTabIndex"
+          [enableEditing]="enableEditingMain"
+          [showComments]="showComments"
+          [labelText]="getTitle('02')"
+          controlName="promotietekst"
+          [visible]="getVisibility('02')"
+        >
+          <be-question-history
+            [data]="promotietekstData$ | async"
+          ></be-question-history>
+        </be-question-value>
+        <be-comment-text
+          questionId="02"
+          [showComments]="showComments"
+          [enableEditing]="enableEditing"
+        >
+          <be-comment-history
+            [showComments]="showComments"
+            questionId="02"
+            [discussions]="discussions"
+          ></be-comment-history>
+        </be-comment-text>
+      </be-question-container>
+
+      <!-- EvaluatieWijze -->
+      <be-question-container
+        [questionTitle]="getTitle('14')"
+        [questionText]="getDescription('14')"
+        [visible]="getVisibility('14')"
+      >
+        <be-question-value
+          [tabIndex]="2"
+          [currentTabIndex]="currentTabIndex"
+          [enableEditing]="enableEditing"
+          [showComments]="showComments"
+          [labelText]="getTitle('14')"
+          controlName="evaluatieWijze"
+          [visible]="getVisibility('14')"
+        >
+          <be-question-history
+            [data]="evaluatieWijze$ | async"
+          ></be-question-history>
+        </be-question-value>
+        <be-comment-text
+          questionId="14"
+          [showComments]="showComments"
+          [enableEditing]="enableEditing"
+        >
+          <be-comment-history
+            [showComments]="showComments"
+            questionId="14"
+            [discussions]="discussions"
+          ></be-comment-history>
+        </be-comment-text>
+      </be-question-container>
+    </p-tabPanel>
+    <p-tabPanel header="Overig">
+      <!-- Bijlagen -->
+      <be-question-container
+        questionTitle="Bijlagen"
+        questionText
+        [visible]="true"
+      >
+        <be-attachments
+          [enableEditing]="enableEditing"
+          [attachments]="bijlagen$ | async"
+          (updatedAttachments)="onUpdatedAttachments($event)"
+          (uploadFile)="onUploadFile($event)"
+        >
+        </be-attachments>
+      </be-question-container>
+
+      <!-- Materiaal -->
+      <be-question-container
+        [questionTitle]="getTitle('13')"
+        [questionText]="getDescription('13')"
+        [visible]="getVisibility('13')"
+      >
+        <be-question-value
+          [tabIndex]="3"
+          [currentTabIndex]="currentTabIndex"
+          [enableEditing]="enableEditing"
+          [showComments]="showComments"
+          [labelText]="getTitle('13')"
+          controlName="materiaal"
+          [visible]="getVisibility('13')"
+        >
+          <be-question-history
+            [data]="materiaal$ | async"
+          ></be-question-history>
+        </be-question-value>
+        <be-comment-text
+          questionId="13"
+          [showComments]="showComments"
+          [enableEditing]="enableEditing"
+        >
+          <be-comment-history
+            [showComments]="showComments"
+            questionId="13"
+            [discussions]="discussions"
+          ></be-comment-history>
+        </be-comment-text>
+      </be-question-container>
+
+      <be-question-container
+        questionTitle="Overige informatie"
+        questionText
+        [visible]="true"
+      >
+        <be-other-info
+          [tabIndex]="3"
+          [currentTabIndex]="currentTabIndex"
+          [enableEditing]="enableEditing"
+          [kostenPerDeelname]="kostenPerDeelname$ | async"
+          [groepsgrootte]="groepsgrootte$ | async"
+          [begindatum]="begindatum$ | async"
+          [einddatum]="einddatum$ | async"
+          [enableEditingEinddatum]="enableEditingEinddatum$ | async"
+          [aantalSessies]="aantalSessies$ | async"
+          [tijdsduur]="tijdsduur$ | async"
+          [digitaalAanbod]="digitaalAanbod$ | async"
+        >
+        </be-other-info>
+      </be-question-container>
+
+      <!-- Website -->
+      <be-question-container
+        [questionTitle]="getTitle('03')"
+        [questionText]="getDescription('03')"
+        [visible]="getVisibility('03')"
+      >
+        <be-question-value
+          [tabIndex]="3"
+          [currentTabIndex]="currentTabIndex"
+          [enableEditing]="enableEditingMain"
+          [showComments]="showComments"
+          [labelText]="getTitle('03')"
+          controlName="website"
+          [maxLength]="200"
+          [visible]="getVisibility('03')"
+        >
+          <be-question-history [data]="website$ | async"></be-question-history>
+        </be-question-value>
+        <be-comment-text
+          questionId="03"
+          [showComments]="showComments"
+          [enableEditing]="enableEditing"
+        >
+          <be-comment-history
+            [showComments]="showComments"
+            questionId="03"
+            [discussions]="discussions"
+          ></be-comment-history>
+        </be-comment-text>
+      </be-question-container>
+
+      <!-- Algemeen commentaar -->
+      <be-question-container
+        *ngIf="showComments"
+        questionTitle="Algemeen commentaar"
+        [visible]="true"
+      >
+        <be-comment-text
+          [largeCommentArea]="true"
+          questionId="Algemeen"
+          [showComments]="showComments"
+          [enableEditing]="enableEditing"
+        >
+          <be-comment-history
+            [showComments]="showComments"
+            questionId="Algemeen"
+            [discussions]="discussions"
+          ></be-comment-history>
+        </be-comment-text>
+      </be-question-container>
+    </p-tabPanel>
+    <p-tabPanel
+      header="Beoordeling"
+      [disabled]="beoordelingTabDisabled$ | async"
+    >
+      <!-- Beoordeling -->
+      <be-question-container questionTitle="Beoordeling" [visible]="true">
+        <be-judgement
+          [enableEditing]="enableEditing"
+          [judges]="beoordelaars$ | async"
+          [showBeoordelingData]="showBeoordelingData$ | async"
+          [beoordeling]="beoordeling$ | async"
+          [canUpdateBeoordelaar]="canUpdateBeoordelaar$ | async"
+          [canUpdateBeoordeling]="canUpdateBeoordeling$ | async"
+          (updateBeoordelaar)="onUpdateBeoordelaar($event)"
+          (updateStatus)="onUpdateBeoordelingStatus($event)"
+        >
+        </be-judgement>
+      </be-question-container>
+    </p-tabPanel>
+  </p-tabView>
+  <p-footer>
+    <div class="specialty-edit__button-group">
+      <button
+        data-test="backToOverviewButton"
+        pButton
+        type="button"
+        label="Terug naar overzicht"
+        icon="pi pi-chevron-left"
+        (click)="toOverview()"
+        class="ui-button-secondary"
+      ></button>
+
+      <button
+        data-test="submitSpecialtyButton"
+        pButton
+        type="button"
+        *ngIf="showIndienenButton$ | async"
+        label="Indienen"
+        icon="fa fa-check"
+        [disabled]="submitDisabled"
+        (click)="save(true)"
+      ></button>
+      <button
+        data-test="saveButton"
+        pButton
+        type="button"
+        label="Opslaan"
+        icon="fa fa-check"
+        [disabled]="saveDisabled"
+        (click)="save(false)"
+        *ngIf="!(isVakcommissieAG$ | async)"
+      ></button>
+    </div>
+  </p-footer>
 </p-panel>

@@ -1,124 +1,148 @@
 <div class="panel panel-default">
-    <div class="panel-heading">
-        <div class="panel-title">Inhoud aanbod</div>
-    </div>
-    <ng-container *ngIf="data.hasOwnProperty('VakID')">
-        <table class="table table-condensed table-striped">
-            <tbody>
-                <tr>
-                    <td>Titel</td>
-                    <td>{{data.Titel}}</td>
-                </tr>
-                <tr>
-                    <td>Promotietekst</td>
-                    <td>{{data.Promotietekst}}</td>
-                </tr>
-                <tr *ngIf="data.Vakvragen[5].Zichtbaar">
-                    <td>Doelstelling</td>
-                    <td>{{doelstelling}}</td>
-                </tr>
-                <tr *ngIf="data.Vakvragen[6].Zichtbaar">
-                    <td>Doelstelling S</td>
-                    <td>{{doelstellingS}}</td>
-                </tr>
-                <tr *ngIf="data.Vakvragen[7].Zichtbaar">
-                    <td>Doelstelling M</td>
-                    <td>{{doelstellingM}}</td>
-                </tr>
-                <tr *ngIf="data.Vakvragen[8].Zichtbaar">
-                    <td>Doelstelling A</td>
-                    <td>{{doelstellingA}}</td>
-                </tr>
-                <tr *ngIf="data.Vakvragen[9].Zichtbaar">
-                    <td>Doelstelling R</td>
-                    <td>{{doelstellingR}}</td>
-                </tr>
-                <tr *ngIf="data.Vakvragen[10].Zichtbaar">
-                    <td>Doelstelling T</td>
-                    <td>{{doelstellingT}}</td>
-                </tr>
-                <!-- inhoud -->
-                <tr>
-                    <td [innerHTML]="data.Vakvragen[11].Titel">{{data.Vakvragen[11].Titel}}</td>
-                    <td>{{inhoud}}</td>
-                </tr>
-                <!-- Geintegreerde gewasbescherming -->
-                <tr *ngIf="data.Vakvragen[12].Zichtbaar">
-                    <td [innerHTML]="data.Vakvragen[12].Titel"></td>
-                    <td>{{geintegreerdeGewasbescherming}}</td>
-                </tr>
-                <!-- Preventieve maatregelen -->
-                <tr *ngIf="data.Vakvragen[13].Zichtbaar">
-                    <td [innerHTML]="data.Vakvragen[13].Titel"></td>
-                    <td>{{preventieveMaatregelen}}</td>
-                </tr>
+  <div class="panel-heading">
+    <div class="panel-title">Inhoud aanbod</div>
+  </div>
+  <ng-container *ngIf="data.hasOwnProperty('VakID')">
+    <table class="table table-condensed table-striped">
+      <tbody>
+        <tr>
+          <td>Titel</td>
+          <td>{{ data.Titel }}</td>
+        </tr>
+        <tr>
+          <td>Promotietekst</td>
+          <td>{{ data.Promotietekst }}</td>
+        </tr>
+        <tr *ngIf="data.Vakvragen[5].Zichtbaar">
+          <td>Doelstelling</td>
+          <td>{{ doelstelling }}</td>
+        </tr>
+        <tr *ngIf="data.Vakvragen[6].Zichtbaar">
+          <td>Doelstelling S</td>
+          <td>{{ doelstellingS }}</td>
+        </tr>
+        <tr *ngIf="data.Vakvragen[7].Zichtbaar">
+          <td>Doelstelling M</td>
+          <td>{{ doelstellingM }}</td>
+        </tr>
+        <tr *ngIf="data.Vakvragen[8].Zichtbaar">
+          <td>Doelstelling A</td>
+          <td>{{ doelstellingA }}</td>
+        </tr>
+        <tr *ngIf="data.Vakvragen[9].Zichtbaar">
+          <td>Doelstelling R</td>
+          <td>{{ doelstellingR }}</td>
+        </tr>
+        <tr *ngIf="data.Vakvragen[10].Zichtbaar">
+          <td>Doelstelling T</td>
+          <td>{{ doelstellingT }}</td>
+        </tr>
+        <!-- inhoud -->
+        <tr>
+          <td [innerHTML]="data.Vakvragen[11].Titel">
+            {{ data.Vakvragen[11].Titel }}
+          </td>
+          <td>{{ inhoud }}</td>
+        </tr>
+        <!-- Geintegreerde gewasbescherming -->
+        <tr *ngIf="data.Vakvragen[12].Zichtbaar">
+          <td [innerHTML]="data.Vakvragen[12].Titel"></td>
+          <td>{{ geintegreerdeGewasbescherming }}</td>
+        </tr>
+        <!-- Preventieve maatregelen -->
+        <tr *ngIf="data.Vakvragen[13].Zichtbaar">
+          <td [innerHTML]="data.Vakvragen[13].Titel"></td>
+          <td>{{ preventieveMaatregelen }}</td>
+        </tr>
 
-                <!-- Teelttechnische maatregelen -->
-                <tr *ngIf="data.Vakvragen[14].Zichtbaar">
-                    <td [innerHTML]="data.Vakvragen[14].Titel"></td>
-                    <td>{{teelttechnischeMaatregelen}}</td>
-                </tr>
+        <!-- Teelttechnische maatregelen -->
+        <tr *ngIf="data.Vakvragen[14].Zichtbaar">
+          <td [innerHTML]="data.Vakvragen[14].Titel"></td>
+          <td>{{ teelttechnischeMaatregelen }}</td>
+        </tr>
 
-                <!-- WaarschuwingEnAdviesSystemen -->
-                <tr *ngIf="data.Vakvragen[15].Zichtbaar">
-                    <td [innerHTML]="data.Vakvragen[15].Titel"></td>
-                    <td>{{waarschuwingEnAdviesSystemen}}</td>
-                </tr>
+        <!-- WaarschuwingEnAdviesSystemen -->
+        <tr *ngIf="data.Vakvragen[15].Zichtbaar">
+          <td [innerHTML]="data.Vakvragen[15].Titel"></td>
+          <td>{{ waarschuwingEnAdviesSystemen }}</td>
+        </tr>
 
-                <!-- NietChemischeMogelijkheden -->
-                <tr *ngIf="data.Vakvragen[16].Zichtbaar">
-                    <td [innerHTML]="data.Vakvragen[16].Titel"></td>
-                    <td>{{nietChemischeMogelijkheden}}</td>
-                </tr>
+        <!-- NietChemischeMogelijkheden -->
+        <tr *ngIf="data.Vakvragen[16].Zichtbaar">
+          <td [innerHTML]="data.Vakvragen[16].Titel"></td>
+          <td>{{ nietChemischeMogelijkheden }}</td>
+        </tr>
 
-                <!-- ChemischeGewasbescherming -->
-                <tr *ngIf="data.Vakvragen[17].Zichtbaar">
-                    <td [innerHTML]="data.Vakvragen[17].Titel"></td>
-                    <td>{{chemischeGewasbescherming}}</td>
-                </tr>
+        <!-- ChemischeGewasbescherming -->
+        <tr *ngIf="data.Vakvragen[17].Zichtbaar">
+          <td [innerHTML]="data.Vakvragen[17].Titel"></td>
+          <td>{{ chemischeGewasbescherming }}</td>
+        </tr>
 
-                <!-- Emissiebeperking -->
-                <tr *ngIf="data.Vakvragen[18].Zichtbaar">
-                    <td [innerHTML]="data.Vakvragen[18].Titel"></td>
-                    <td>{{emissieBeperking}}</td>
-                </tr>
+        <!-- Emissiebeperking -->
+        <tr *ngIf="data.Vakvragen[18].Zichtbaar">
+          <td [innerHTML]="data.Vakvragen[18].Titel"></td>
+          <td>{{ emissieBeperking }}</td>
+        </tr>
 
-                <!-- Onderwerp -->
-                <tr *ngIf="data.Vakvragen[4].Zichtbaar">
-                    <td [innerHTML]="data.Vakvragen[4].Titel"></td>
-                    <td>{{actualiteiten}}</td>
-                </tr>
+        <!-- Onderwerp -->
+        <tr *ngIf="data.Vakvragen[4].Zichtbaar">
+          <td [innerHTML]="data.Vakvragen[4].Titel"></td>
+          <td>{{ actualiteiten }}</td>
+        </tr>
 
-                <!-- Individuele relevantie -->
-                <tr *ngIf="data.Vakvragen[22].Zichtbaar">
-                    <td [innerHTML]="data.Vakvragen[22].Titel"></td>
-                    <td>{{individueleRelevantie}}</td>
-                </tr>
+        <!-- Individuele relevantie -->
+        <tr *ngIf="data.Vakvragen[22].Zichtbaar">
+          <td [innerHTML]="data.Vakvragen[22].Titel"></td>
+          <td>{{ individueleRelevantie }}</td>
+        </tr>
 
-                <!-- Werkvormen -->
-                <tr *ngIf="data.Vakvragen[19].Zichtbaar">
-                    <td [innerHTML]="data.Vakvragen[19].Titel"></td>
-                    <td>{{werkvorm}}</td>
-                </tr>
+        <!-- Werkvormen -->
+        <tr *ngIf="data.Vakvragen[19].Zichtbaar">
+          <td [innerHTML]="data.Vakvragen[19].Titel"></td>
+          <td>
+            {{ werkvorm }}
+          </td>
+        </tr>
+        <tr *ngIf="schema && schema.length > 0">
+          <td>Schema</td>
+          <td>
+            <div class="schemaContainer">
+              <div class="schema-item-header font-bold">Tijd</div>
+              <div class="schema-item-header font-bold">Docent</div>
+              <div class="schema-item-header font-bold">Omschrijving</div>
+              <ng-container *ngFor="let schemaItem of schema">
+                <div
+                  class="schema-item-separator schema-item-separator-first"
+                ></div>
+                <div class="schema-item-separator"></div>
+                <div class="schema-item-separator"></div>
+                <div class="schema-item">{{ schemaItem.tijd }}</div>
+                <div class="schema-item">{{ schemaItem.docent }}</div>
+                <div class="schema-item">{{ schemaItem.omschrijving }}</div>
+              </ng-container>
+            </div>
+          </td>
+        </tr>
 
-                <!-- Docenten -->
-                <tr *ngIf="data.Vakvragen[21].Zichtbaar">
-                    <td [innerHTML]="data.Vakvragen[21].Titel"></td>
-                    <td>{{docenten}}</td>
-                </tr>
+        <!-- Docenten -->
+        <tr *ngIf="data.Vakvragen[21].Zichtbaar">
+          <td [innerHTML]="data.Vakvragen[21].Titel"></td>
+          <td>{{ docenten }}</td>
+        </tr>
 
-                <!-- Materiaal -->
-                <tr *ngIf="data.Vakvragen[23].Zichtbaar">
-                    <td [innerHTML]="data.Vakvragen[23].Titel"></td>
-                    <td>{{materiaal}}</td>
-                </tr>
+        <!-- Materiaal -->
+        <tr *ngIf="data.Vakvragen[23].Zichtbaar">
+          <td [innerHTML]="data.Vakvragen[23].Titel"></td>
+          <td>{{ materiaal }}</td>
+        </tr>
 
-                <!-- Evaluatie -->
-                <tr *ngIf="data.Vakvragen[24].Zichtbaar">
-                    <td [innerHTML]="data.Vakvragen[24].Titel"></td>
-                    <td>{{evaluatieWijze}}</td>
-                </tr>
-            </tbody>
-        </table>
-    </ng-container>
+        <!-- Evaluatie -->
+        <tr *ngIf="data.Vakvragen[24].Zichtbaar">
+          <td [innerHTML]="data.Vakvragen[24].Titel"></td>
+          <td>{{ evaluatieWijze }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </ng-container>
 </div>

@@ -1,6 +1,5 @@
 .table-container {
   display: grid;
-  // gap: 10px;
   grid-template-columns: 100px auto 150px auto;
   > div {
     padding: 5px;
