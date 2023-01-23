@@ -171,5 +171,10 @@ export class OtherInfoComponent implements OnInit, OnChanges {
       this.formTijdsduur.controls.tijdsduur.disable();
       this.formDigitaalAanbod.controls.digitaalAanbod.disable();
     }
+    // rector may edit groepsgrootte en digitaalAanbod
+    if (this.enableEditingEinddatum) {
+      this.formGroepsgrootte.controls.groepsgrootte.enable();
+      this.formDigitaalAanbod.controls.digitaalAanbod.enable();
+    }
   }
 }
