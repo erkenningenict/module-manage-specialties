@@ -119,9 +119,9 @@
                     *ngIf="rowData.EditVisible"
                     type="button"
                     pButton
-                    icon="fa fa-edit"
+                    icon="fa fa-eye"
                     [routerLink]="['/manage-specialty', rowData.VakID]"
-                    title="Bewerken"
+                    title="Bekijken"
                 >
                 </button>
                 <button
@@ -133,7 +133,7 @@
                     title="Bekijken"
                 >
                 </button>
-                <button
+                <!-- <button
                     *ngIf="rowData.DeleteVisible"
                     type="button"
                     pButton
@@ -151,7 +151,7 @@
                     (click)="openActionDialog(rowData.VakID, rowData.Titel, false)"
                     title="Intrekken"
                 >
-                </button>
+                </button> -->
 
             </td>
             <td>

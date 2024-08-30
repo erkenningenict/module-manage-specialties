@@ -332,7 +332,8 @@ export class SpecialtyEditComponent implements OnInit, OnDestroy {
           }
         });
 
-        this.saveDisabled = false;
+        this.saveDisabled = true;
+        // this.saveDisabled = false;
         this.submitDisabled = disabled && this.data.VakID !== 0;
       });
     this.store
